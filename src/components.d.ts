@@ -78,6 +78,25 @@ export namespace Components {
     'size': 'is-small' | 'is-medium' | 'is-large';
     'value': number;
   }
+  interface BTag {
+    'class': string;
+    'color': | 'is-black'
+    | 'is-dark'
+    | 'is-light'
+    | 'is-white'
+    | 'is-primary'
+    | 'is-link'
+    | 'is-info'
+    | 'is-success'
+    | 'is-warning'
+    | 'is-danger';
+    'modifier': 'is-rounded' | 'is-delete';
+    'size': 'is-normal' | 'is-medium' | 'is-large';
+  }
+  interface BTags {
+    'class': string;
+    'hasAddons': boolean;
+  }
 }
 
 declare global {
@@ -136,6 +155,18 @@ declare global {
     prototype: HTMLBProgressElement;
     new (): HTMLBProgressElement;
   };
+
+  interface HTMLBTagElement extends Components.BTag, HTMLStencilElement {}
+  var HTMLBTagElement: {
+    prototype: HTMLBTagElement;
+    new (): HTMLBTagElement;
+  };
+
+  interface HTMLBTagsElement extends Components.BTags, HTMLStencilElement {}
+  var HTMLBTagsElement: {
+    prototype: HTMLBTagsElement;
+    new (): HTMLBTagsElement;
+  };
   interface HTMLElementTagNameMap {
     'b-box': HTMLBBoxElement;
     'b-button': HTMLBButtonElement;
@@ -146,6 +177,8 @@ declare global {
     'b-input': HTMLBInputElement;
     'b-notification': HTMLBNotificationElement;
     'b-progress': HTMLBProgressElement;
+    'b-tag': HTMLBTagElement;
+    'b-tags': HTMLBTagsElement;
   }
 }
 
@@ -220,6 +253,25 @@ declare namespace LocalJSX {
     'size'?: 'is-small' | 'is-medium' | 'is-large';
     'value'?: number;
   }
+  interface BTag extends JSXBase.HTMLAttributes<HTMLBTagElement> {
+    'class'?: string;
+    'color'?: | 'is-black'
+    | 'is-dark'
+    | 'is-light'
+    | 'is-white'
+    | 'is-primary'
+    | 'is-link'
+    | 'is-info'
+    | 'is-success'
+    | 'is-warning'
+    | 'is-danger';
+    'modifier'?: 'is-rounded' | 'is-delete';
+    'size'?: 'is-normal' | 'is-medium' | 'is-large';
+  }
+  interface BTags extends JSXBase.HTMLAttributes<HTMLBTagsElement> {
+    'class'?: string;
+    'hasAddons'?: boolean;
+  }
 
   interface IntrinsicElements {
     'b-box': BBox;
@@ -231,6 +283,8 @@ declare namespace LocalJSX {
     'b-input': BInput;
     'b-notification': BNotification;
     'b-progress': BProgress;
+    'b-tag': BTag;
+    'b-tags': BTags;
   }
 }
 
