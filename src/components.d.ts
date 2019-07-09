@@ -9,9 +9,56 @@ import { HTMLStencilElement, JSXBase } from './stencil.core';
 
 
 export namespace Components {
+  interface BBox {
+    'class': string;
+  }
   interface BButton {
+    'class': string;
+    'color': | 'is-primary'
+    | 'is-link'
+    | 'is-info'
+    | 'is-success'
+    | 'is-danger'
+    | 'is-warning'
+    | 'is-white'
+    | 'is-light'
+    | 'is-dark'
+    | 'is-black'
+    | 'is-text';
     'disabled': boolean;
-    'type': 'is-primary' | '';
+    'fullWidth': boolean;
+    'isActive': boolean;
+    'isFocused': boolean;
+    'isHovered': boolean;
+    'isInverted': boolean;
+    'isLoading': boolean;
+    'isOutlined': boolean;
+    'isRounded': boolean;
+    'isStatic': boolean;
+    'size': 'is-small' | 'is-medium' | 'is-large' | 'is-normal';
+  }
+  interface BButtons {
+    'class': string;
+    'size': 'are-small' | 'are-medium' | 'are-large';
+  }
+  interface BContent {
+    'class': string;
+    'size': 'is-small' | 'is-medium' | 'is-large';
+  }
+  interface BIcon {
+    'class': string;
+    'color': 'has-text-info' | 'has-text-success' | 'has-text-warning' | 'has-text-danger';
+    'size': 'is-small' | 'is-medium' | 'is-large';
+  }
+  interface BImage {
+    'class': string;
+    'size': | 'is-16x16'
+    | 'is-24x24'
+    | 'is-32x32'
+    | 'is-48x48'
+    | 'is-64x64'
+    | 'is-96x96'
+    | 'is-128x128';
   }
   interface BInput {
     'name': string;
@@ -19,10 +66,21 @@ export namespace Components {
     'type': string;
     'value': string | number;
   }
+  interface BNotification {
+    'class': string;
+    'color': 'is-primary' | 'is-link' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
+    'dismissable': boolean;
+  }
 }
 
 declare global {
 
+
+  interface HTMLBBoxElement extends Components.BBox, HTMLStencilElement {}
+  var HTMLBBoxElement: {
+    prototype: HTMLBBoxElement;
+    new (): HTMLBBoxElement;
+  };
 
   interface HTMLBButtonElement extends Components.BButton, HTMLStencilElement {}
   var HTMLBButtonElement: {
@@ -30,22 +88,105 @@ declare global {
     new (): HTMLBButtonElement;
   };
 
+  interface HTMLBButtonsElement extends Components.BButtons, HTMLStencilElement {}
+  var HTMLBButtonsElement: {
+    prototype: HTMLBButtonsElement;
+    new (): HTMLBButtonsElement;
+  };
+
+  interface HTMLBContentElement extends Components.BContent, HTMLStencilElement {}
+  var HTMLBContentElement: {
+    prototype: HTMLBContentElement;
+    new (): HTMLBContentElement;
+  };
+
+  interface HTMLBIconElement extends Components.BIcon, HTMLStencilElement {}
+  var HTMLBIconElement: {
+    prototype: HTMLBIconElement;
+    new (): HTMLBIconElement;
+  };
+
+  interface HTMLBImageElement extends Components.BImage, HTMLStencilElement {}
+  var HTMLBImageElement: {
+    prototype: HTMLBImageElement;
+    new (): HTMLBImageElement;
+  };
+
   interface HTMLBInputElement extends Components.BInput, HTMLStencilElement {}
   var HTMLBInputElement: {
     prototype: HTMLBInputElement;
     new (): HTMLBInputElement;
   };
+
+  interface HTMLBNotificationElement extends Components.BNotification, HTMLStencilElement {}
+  var HTMLBNotificationElement: {
+    prototype: HTMLBNotificationElement;
+    new (): HTMLBNotificationElement;
+  };
   interface HTMLElementTagNameMap {
+    'b-box': HTMLBBoxElement;
     'b-button': HTMLBButtonElement;
+    'b-buttons': HTMLBButtonsElement;
+    'b-content': HTMLBContentElement;
+    'b-icon': HTMLBIconElement;
+    'b-image': HTMLBImageElement;
     'b-input': HTMLBInputElement;
+    'b-notification': HTMLBNotificationElement;
   }
 }
 
 declare namespace LocalJSX {
+  interface BBox extends JSXBase.HTMLAttributes<HTMLBBoxElement> {
+    'class'?: string;
+  }
   interface BButton extends JSXBase.HTMLAttributes<HTMLBButtonElement> {
+    'class'?: string;
+    'color'?: | 'is-primary'
+    | 'is-link'
+    | 'is-info'
+    | 'is-success'
+    | 'is-danger'
+    | 'is-warning'
+    | 'is-white'
+    | 'is-light'
+    | 'is-dark'
+    | 'is-black'
+    | 'is-text';
     'disabled'?: boolean;
+    'fullWidth'?: boolean;
+    'isActive'?: boolean;
+    'isFocused'?: boolean;
+    'isHovered'?: boolean;
+    'isInverted'?: boolean;
+    'isLoading'?: boolean;
+    'isOutlined'?: boolean;
+    'isRounded'?: boolean;
+    'isStatic'?: boolean;
     'onClicked'?: (event: CustomEvent<any>) => void;
-    'type'?: 'is-primary' | '';
+    'size'?: 'is-small' | 'is-medium' | 'is-large' | 'is-normal';
+  }
+  interface BButtons extends JSXBase.HTMLAttributes<HTMLBButtonsElement> {
+    'class'?: string;
+    'size'?: 'are-small' | 'are-medium' | 'are-large';
+  }
+  interface BContent extends JSXBase.HTMLAttributes<HTMLBContentElement> {
+    'class'?: string;
+    'size'?: 'is-small' | 'is-medium' | 'is-large';
+  }
+  interface BIcon extends JSXBase.HTMLAttributes<HTMLBIconElement> {
+    'class'?: string;
+    'color'?: 'has-text-info' | 'has-text-success' | 'has-text-warning' | 'has-text-danger';
+    'size'?: 'is-small' | 'is-medium' | 'is-large';
+  }
+  interface BImage extends JSXBase.HTMLAttributes<HTMLBImageElement> {
+    'class'?: string;
+    'size'?: | 'is-16x16'
+    | 'is-24x24'
+    | 'is-32x32'
+    | 'is-48x48'
+    | 'is-64x64'
+    | 'is-96x96'
+    | 'is-128x128';
   }
   interface BInput extends JSXBase.HTMLAttributes<HTMLBInputElement> {
     'name'?: string;
@@ -53,10 +194,21 @@ declare namespace LocalJSX {
     'type'?: string;
     'value'?: string | number;
   }
+  interface BNotification extends JSXBase.HTMLAttributes<HTMLBNotificationElement> {
+    'class'?: string;
+    'color'?: 'is-primary' | 'is-link' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
+    'dismissable'?: boolean;
+  }
 
   interface IntrinsicElements {
+    'b-box': BBox;
     'b-button': BButton;
+    'b-buttons': BButtons;
+    'b-content': BContent;
+    'b-icon': BIcon;
+    'b-image': BImage;
     'b-input': BInput;
+    'b-notification': BNotification;
   }
 }
 
