@@ -71,6 +71,13 @@ export namespace Components {
     'color': 'is-primary' | 'is-link' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
     'dismissable': boolean;
   }
+  interface BProgress {
+    'class': string;
+    'color': 'is-primary' | 'is-link' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
+    'max': number;
+    'size': 'is-small' | 'is-medium' | 'is-large';
+    'value': number;
+  }
 }
 
 declare global {
@@ -123,6 +130,12 @@ declare global {
     prototype: HTMLBNotificationElement;
     new (): HTMLBNotificationElement;
   };
+
+  interface HTMLBProgressElement extends Components.BProgress, HTMLStencilElement {}
+  var HTMLBProgressElement: {
+    prototype: HTMLBProgressElement;
+    new (): HTMLBProgressElement;
+  };
   interface HTMLElementTagNameMap {
     'b-box': HTMLBBoxElement;
     'b-button': HTMLBButtonElement;
@@ -132,6 +145,7 @@ declare global {
     'b-image': HTMLBImageElement;
     'b-input': HTMLBInputElement;
     'b-notification': HTMLBNotificationElement;
+    'b-progress': HTMLBProgressElement;
   }
 }
 
@@ -199,6 +213,13 @@ declare namespace LocalJSX {
     'color'?: 'is-primary' | 'is-link' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
     'dismissable'?: boolean;
   }
+  interface BProgress extends JSXBase.HTMLAttributes<HTMLBProgressElement> {
+    'class'?: string;
+    'color'?: 'is-primary' | 'is-link' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
+    'max'?: number;
+    'size'?: 'is-small' | 'is-medium' | 'is-large';
+    'value'?: number;
+  }
 
   interface IntrinsicElements {
     'b-box': BBox;
@@ -209,6 +230,7 @@ declare namespace LocalJSX {
     'b-image': BImage;
     'b-input': BInput;
     'b-notification': BNotification;
+    'b-progress': BProgress;
   }
 }
 
