@@ -36,7 +36,9 @@
     "test": "yarn test:lint:ts && yarn test:lint:scss && yarn test:stencil"
   },
   "pre-commit": [
-    "test"
+    "test:lint:ts",
+    "test:lint:scss",
+    "test:stencil"
   ],
   "devDependencies": {
     "@stencil/core": "^1.1.5",
