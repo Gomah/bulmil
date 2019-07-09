@@ -2,12 +2,43 @@ import { Component, Prop, h, JSX, Listen, EventEmitter, Event } from '@stencil/c
 
 @Component({
   tag: 'b-button',
-  // shadow: true,
 })
 export class Button {
   @Prop() disabled: boolean = false;
+  @Prop() class: string;
 
-  @Prop() type: 'is-primary' | '' = '';
+  @Prop() color:
+    | 'is-primary'
+    | 'is-link'
+    | 'is-info'
+    | 'is-success'
+    | 'is-danger'
+    | 'is-warning'
+    | 'is-white'
+    | 'is-light'
+    | 'is-dark'
+    | 'is-black'
+    | 'is-text';
+
+  @Prop() size: 'is-small' | 'is-medium' | 'is-large' | 'is-normal';
+
+  @Prop() fullWidth: boolean = false;
+
+  @Prop() isOutlined: boolean = false;
+
+  @Prop() isInverted: boolean = false;
+
+  @Prop() isRounded: boolean = false;
+
+  @Prop() isHovered: boolean = false;
+
+  @Prop() isFocused: boolean = false;
+
+  @Prop() isActive: boolean = false;
+
+  @Prop() isStatic: boolean = false;
+
+  @Prop() isLoading: boolean = false;
 
   @Event() clicked: EventEmitter;
 
@@ -18,7 +49,23 @@ export class Button {
 
   render(): JSX.Element {
     return (
-      <button class={`button ${this.type}`} disabled={this.disabled}>
+      <button
+        class={`button
+        ${this.color || ''}
+        ${this.class || ''}
+        ${this.size || ''}
+        ${this.fullWidth ? 'is-fullwidth' : ''}
+        ${this.isActive ? 'is-active' : ''}
+        ${this.isFocused ? 'is-focused' : ''}
+        ${this.isStatic ? 'is-static' : ''}
+        ${this.isFocused ? 'is-focused' : ''}
+        ${this.isHovered ? 'is-hovered' : ''}
+        ${this.isInverted ? 'is-inverted' : ''}
+        ${this.isRounded ? 'is-rounded' : ''}
+        ${this.isLoading ? 'is-loading' : ''}
+        ${this.isOutlined ? 'is-outlined' : ''}`}
+        disabled={this.disabled}
+      >
         <slot />
       </button>
     );
