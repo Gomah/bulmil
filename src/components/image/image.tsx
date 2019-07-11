@@ -1,4 +1,5 @@
 import { Component, Prop, h, JSX } from '@stencil/core';
+import classNames from 'classnames';
 
 @Component({
   tag: 'b-image',
@@ -15,8 +16,10 @@ export class Image {
     | 'is-128x128';
 
   render(): JSX.Element {
+    const imageClass = classNames('image', this.size, this.class);
+
     return (
-      <figure class={`image ${this.class} ${this.size || ''}`}>
+      <figure class={imageClass}>
         <slot />
       </figure>
     );

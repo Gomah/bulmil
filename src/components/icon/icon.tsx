@@ -1,4 +1,5 @@
 import { Component, Prop, h, JSX } from '@stencil/core';
+import classNames from 'classnames';
 
 @Component({
   tag: 'b-icon',
@@ -9,8 +10,10 @@ export class Icon {
   @Prop() size: 'is-small' | 'is-medium' | 'is-large';
 
   render(): JSX.Element {
+    const iconClass = classNames('icon', this.color, this.size, this.class);
+
     return (
-      <span class={`icon ${this.color || ''} ${this.class} ${this.size || ''}`}>
+      <span class={iconClass}>
         <slot />
       </span>
     );

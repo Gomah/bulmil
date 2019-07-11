@@ -2,7 +2,6 @@ import { Component, Prop, h, JSX } from '@stencil/core';
 
 @Component({
   tag: 'b-input',
-  // styleUrl: 'input.scss',
 })
 export class Input {
   @Prop() value: string | number;

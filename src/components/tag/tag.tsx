@@ -1,5 +1,5 @@
 import { Component, Prop, h, JSX } from '@stencil/core';
-
+import classNames from 'classnames';
 @Component({
   tag: 'b-tag',
 })
@@ -20,14 +20,10 @@ export class Tag {
   @Prop() modifier: 'is-rounded' | 'is-delete';
 
   render(): JSX.Element {
+    const tagClass = classNames('tag', this.color, this.size, this.modifier, this.class);
+
     return (
-      <span
-        class={`tag
-        ${this.color || ''}
-        ${this.size || ''}
-        ${this.modifier || ''}
-        ${this.class || ''}`}
-      >
+      <span class={tagClass}>
         <slot />
       </span>
     );

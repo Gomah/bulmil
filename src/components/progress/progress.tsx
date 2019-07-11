@@ -1,4 +1,5 @@
 import { Component, Prop, h, JSX } from '@stencil/core';
+import classNames from 'classnames';
 
 @Component({
   tag: 'b-progress',
@@ -11,15 +12,10 @@ export class Progress {
   @Prop() size: 'is-small' | 'is-medium' | 'is-large';
 
   render(): JSX.Element {
+    const progressClass = classNames('progress', this.color, this.size, this.class);
+
     return (
-      <progress
-        class={`progress
-        ${this.color || ''}
-        ${this.class || ''}
-        ${this.size || ''}`}
-        value={this.value}
-        max={this.max}
-      >
+      <progress class={progressClass} value={this.value} max={this.max}>
         {this.value && `${this.value}%`}
       </progress>
     );

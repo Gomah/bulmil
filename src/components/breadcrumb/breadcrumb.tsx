@@ -1,4 +1,5 @@
 import { Component, Prop, h, JSX } from '@stencil/core';
+import classNames from 'classnames';
 
 @Component({
   tag: 'b-breadcrumb',
@@ -15,16 +16,19 @@ export class Breadcrumb {
     | 'has-succeeds-separator';
 
   render(): JSX.Element {
+    const breadcrumbClass = classNames(
+      'breadcrumb',
+      this.size,
+      this.separator,
+      {
+        'is-centered': this.isCentered,
+        'is-right': this.isRight,
+      },
+      this.class
+    );
+
     return (
-      <nav
-        class={`breadcrumb
-        ${this.isCentered ? 'is-centered' : ''}
-        ${this.isRight ? 'is-right' : ''}
-        ${this.size ? this.size : ''}
-        ${this.separator ? this.separator : ''}
-        ${this.class}`}
-        aria-label="breadcrumbs"
-      >
+      <nav class={breadcrumbClass} aria-label="breadcrumbs">
         <slot />
       </nav>
     );

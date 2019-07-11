@@ -1,5 +1,5 @@
 import { Component, Prop, h, JSX } from '@stencil/core';
-
+import classNames from 'classnames';
 @Component({
   tag: 'b-table',
 })
@@ -12,14 +12,20 @@ export class Table {
   @Prop() isFullwidth: boolean = false;
 
   render(): JSX.Element {
+    const tableClass = classNames(
+      'table',
+      {
+        'is-bordered': this.isBordered,
+        'is-striped': this.isStriped,
+        'is-narrow': this.isNarrow,
+        'is-hoverable': this.isHoverable,
+        'is-fullwidth': this.isFullwidth,
+      },
+      this.class
+    );
+
     return (
-      <table
-        class={`table ${this.class || ''} ${this.isBordered ? 'is-bordered' : ''} ${
-          this.isStriped ? 'is-striped' : ''
-        } ${this.isNarrow ? 'is-narrow' : ''} ${this.isHoverable ? 'is-hoverable' : ''} ${
-          this.isFullwidth ? 'is-fullwidth' : ''
-        }`}
-      >
+      <table class={tableClass}>
         <thead>
           <tr>
             <th>Tr Head</th>

@@ -1,4 +1,5 @@
 import { Component, Prop, h, JSX, Listen, EventEmitter, Event } from '@stencil/core';
+import classNames from 'classnames';
 
 @Component({
   tag: 'b-button',
@@ -48,24 +49,26 @@ export class Button {
   }
 
   render(): JSX.Element {
+    const btnClass = classNames(
+      'button',
+      this.color,
+      this.size,
+      {
+        'is-fullwidth': this.fullWidth,
+        'is-active': this.isActive,
+        'is-focused': this.isFocused,
+        'is-static': this.isStatic,
+        'is-hovered': this.isHovered,
+        'is-inverted': this.isInverted,
+        'is-rounded': this.isRounded,
+        'is-loading': this.isLoading,
+        'is-outlined': this.isOutlined,
+      },
+      this.class
+    );
+
     return (
-      <button
-        class={`button
-        ${this.color || ''}
-        ${this.class || ''}
-        ${this.size || ''}
-        ${this.fullWidth ? 'is-fullwidth' : ''}
-        ${this.isActive ? 'is-active' : ''}
-        ${this.isFocused ? 'is-focused' : ''}
-        ${this.isStatic ? 'is-static' : ''}
-        ${this.isFocused ? 'is-focused' : ''}
-        ${this.isHovered ? 'is-hovered' : ''}
-        ${this.isInverted ? 'is-inverted' : ''}
-        ${this.isRounded ? 'is-rounded' : ''}
-        ${this.isLoading ? 'is-loading' : ''}
-        ${this.isOutlined ? 'is-outlined' : ''}`}
-        disabled={this.disabled}
-      >
+      <button class={btnClass} disabled={this.disabled}>
         <slot />
       </button>
     );
