@@ -12,6 +12,16 @@ export namespace Components {
   interface BBox {
     'class': string;
   }
+  interface BBreadcrumb {
+    'class': string;
+    'isCentered': boolean;
+    'isRight': boolean;
+    'separator': | 'has-arrow-separator'
+    | 'has-bullet-separator'
+    | 'has-dot-separator'
+    | 'has-succeeds-separator';
+    'size': 'is-small' | 'is-medium' | 'is-large';
+  }
   interface BButton {
     'class': string;
     'color': | 'is-primary'
@@ -78,6 +88,14 @@ export namespace Components {
     'size': 'is-small' | 'is-medium' | 'is-large';
     'value': number;
   }
+  interface BTable {
+    'class': string;
+    'isBordered': boolean;
+    'isFullwidth': boolean;
+    'isHoverable': boolean;
+    'isNarrow': boolean;
+    'isStriped': boolean;
+  }
   interface BTag {
     'class': string;
     'color': | 'is-black'
@@ -106,6 +124,12 @@ declare global {
   var HTMLBBoxElement: {
     prototype: HTMLBBoxElement;
     new (): HTMLBBoxElement;
+  };
+
+  interface HTMLBBreadcrumbElement extends Components.BBreadcrumb, HTMLStencilElement {}
+  var HTMLBBreadcrumbElement: {
+    prototype: HTMLBBreadcrumbElement;
+    new (): HTMLBBreadcrumbElement;
   };
 
   interface HTMLBButtonElement extends Components.BButton, HTMLStencilElement {}
@@ -156,6 +180,12 @@ declare global {
     new (): HTMLBProgressElement;
   };
 
+  interface HTMLBTableElement extends Components.BTable, HTMLStencilElement {}
+  var HTMLBTableElement: {
+    prototype: HTMLBTableElement;
+    new (): HTMLBTableElement;
+  };
+
   interface HTMLBTagElement extends Components.BTag, HTMLStencilElement {}
   var HTMLBTagElement: {
     prototype: HTMLBTagElement;
@@ -169,6 +199,7 @@ declare global {
   };
   interface HTMLElementTagNameMap {
     'b-box': HTMLBBoxElement;
+    'b-breadcrumb': HTMLBBreadcrumbElement;
     'b-button': HTMLBButtonElement;
     'b-buttons': HTMLBButtonsElement;
     'b-content': HTMLBContentElement;
@@ -177,6 +208,7 @@ declare global {
     'b-input': HTMLBInputElement;
     'b-notification': HTMLBNotificationElement;
     'b-progress': HTMLBProgressElement;
+    'b-table': HTMLBTableElement;
     'b-tag': HTMLBTagElement;
     'b-tags': HTMLBTagsElement;
   }
@@ -185,6 +217,16 @@ declare global {
 declare namespace LocalJSX {
   interface BBox extends JSXBase.HTMLAttributes<HTMLBBoxElement> {
     'class'?: string;
+  }
+  interface BBreadcrumb extends JSXBase.HTMLAttributes<HTMLBBreadcrumbElement> {
+    'class'?: string;
+    'isCentered'?: boolean;
+    'isRight'?: boolean;
+    'separator'?: | 'has-arrow-separator'
+    | 'has-bullet-separator'
+    | 'has-dot-separator'
+    | 'has-succeeds-separator';
+    'size'?: 'is-small' | 'is-medium' | 'is-large';
   }
   interface BButton extends JSXBase.HTMLAttributes<HTMLBButtonElement> {
     'class'?: string;
@@ -253,6 +295,14 @@ declare namespace LocalJSX {
     'size'?: 'is-small' | 'is-medium' | 'is-large';
     'value'?: number;
   }
+  interface BTable extends JSXBase.HTMLAttributes<HTMLBTableElement> {
+    'class'?: string;
+    'isBordered'?: boolean;
+    'isFullwidth'?: boolean;
+    'isHoverable'?: boolean;
+    'isNarrow'?: boolean;
+    'isStriped'?: boolean;
+  }
   interface BTag extends JSXBase.HTMLAttributes<HTMLBTagElement> {
     'class'?: string;
     'color'?: | 'is-black'
@@ -275,6 +325,7 @@ declare namespace LocalJSX {
 
   interface IntrinsicElements {
     'b-box': BBox;
+    'b-breadcrumb': BBreadcrumb;
     'b-button': BButton;
     'b-buttons': BButtons;
     'b-content': BContent;
@@ -283,6 +334,7 @@ declare namespace LocalJSX {
     'b-input': BInput;
     'b-notification': BNotification;
     'b-progress': BProgress;
+    'b-table': BTable;
     'b-tag': BTag;
     'b-tags': BTags;
   }
