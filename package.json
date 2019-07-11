@@ -41,12 +41,12 @@
     "test:stencil"
   ],
   "devDependencies": {
-    "@stencil/core": "^1.1.5",
+    "@stencil/core": "^1.1.6",
     "@stencil/postcss": "^1.0.1",
     "@stencil/sass": "^1.0.1",
     "@types/autoprefixer": "^9.5.0",
     "@types/jest": "^24.0.15",
-    "@types/node": "^12.6.1",
+    "@types/node": "^12.6.2",
     "@typescript-eslint/eslint-plugin": "^1.11.0",
     "@typescript-eslint/parser": "^1.11.0",
     "autoprefixer": "^9.6.1",
@@ -67,7 +67,7 @@
     "stylelint": "^10.1.0",
     "stylelint-config-recommended": "^2.2.0",
     "stylelint-prettier": "^1.1.1",
-    "stylelint-scss": "^3.9.0",
+    "stylelint-scss": "^3.9.1",
     "workbox-build": "^4.3.1"
   },
   "dependencies": {
