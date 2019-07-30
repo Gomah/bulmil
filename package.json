@@ -41,7 +41,7 @@
     "test:stencil"
   ],
   "devDependencies": {
-    "@stencil/core": "^1.2.2",
+    "@stencil/core": "^1.2.3",
     "@stencil/postcss": "^1.0.1",
     "@stencil/sass": "^1.0.1",
     "@types/autoprefixer": "^9.5.0",
