@@ -55,6 +55,15 @@ export namespace Components {
     'class': string;
     'size': 'is-small' | 'is-medium' | 'is-large';
   }
+  interface BField {
+    'class': string;
+    'fieldSize': 'is-small' | 'is-normal' | 'is-medium' | 'is-large';
+    'hasAddons': boolean;
+    'isGrouped': boolean;
+    'isGroupedMultiline': boolean;
+    'isHorizontal': boolean;
+    'label': string;
+  }
   interface BIcon {
     'class': string;
     'color': 'has-text-info' | 'has-text-success' | 'has-text-warning' | 'has-text-danger';
@@ -150,6 +159,12 @@ declare global {
     new (): HTMLBContentElement;
   };
 
+  interface HTMLBFieldElement extends Components.BField, HTMLStencilElement {}
+  var HTMLBFieldElement: {
+    prototype: HTMLBFieldElement;
+    new (): HTMLBFieldElement;
+  };
+
   interface HTMLBIconElement extends Components.BIcon, HTMLStencilElement {}
   var HTMLBIconElement: {
     prototype: HTMLBIconElement;
@@ -203,6 +218,7 @@ declare global {
     'b-button': HTMLBButtonElement;
     'b-buttons': HTMLBButtonsElement;
     'b-content': HTMLBContentElement;
+    'b-field': HTMLBFieldElement;
     'b-icon': HTMLBIconElement;
     'b-image': HTMLBImageElement;
     'b-input': HTMLBInputElement;
@@ -261,6 +277,15 @@ declare namespace LocalJSX {
   interface BContent extends JSXBase.HTMLAttributes<HTMLBContentElement> {
     'class'?: string;
     'size'?: 'is-small' | 'is-medium' | 'is-large';
+  }
+  interface BField extends JSXBase.HTMLAttributes<HTMLBFieldElement> {
+    'class'?: string;
+    'fieldSize'?: 'is-small' | 'is-normal' | 'is-medium' | 'is-large';
+    'hasAddons'?: boolean;
+    'isGrouped'?: boolean;
+    'isGroupedMultiline'?: boolean;
+    'isHorizontal'?: boolean;
+    'label'?: string;
   }
   interface BIcon extends JSXBase.HTMLAttributes<HTMLBIconElement> {
     'class'?: string;
@@ -329,6 +354,7 @@ declare namespace LocalJSX {
     'b-button': BButton;
     'b-buttons': BButtons;
     'b-content': BContent;
+    'b-field': BField;
     'b-icon': BIcon;
     'b-image': BImage;
     'b-input': BInput;
