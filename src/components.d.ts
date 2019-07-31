@@ -80,9 +80,19 @@ export namespace Components {
     | 'is-128x128';
   }
   interface BInput {
+    'class': string;
+    'color': 'is-primary' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
+    'controlClass': string;
+    'disabled': boolean;
+    'isLoading': boolean;
+    'isRounded': boolean;
+    'isStatic': boolean;
     'name': string;
+    'readonly': boolean;
     'required': boolean;
-    'type': string;
+    'size': 'is-small' | 'is-normal' | 'is-medium' | 'is-large';
+    'state': 'is-hovered' | 'is-focused';
+    'type': 'text' | 'number' | 'email' | 'password';
     'value': string | number;
   }
   interface BNotification {
@@ -123,6 +133,19 @@ export namespace Components {
   interface BTags {
     'class': string;
     'hasAddons': boolean;
+  }
+  interface BTextarea {
+    'class': string;
+    'color': 'is-primary' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
+    'controlClass': string;
+    'disabled': boolean;
+    'hasFixedSize': boolean;
+    'isLoading': boolean;
+    'readonly': boolean;
+    'rows': number;
+    'size': 'is-small' | 'is-normal' | 'is-medium' | 'is-large';
+    'state': 'is-hovered' | 'is-focused';
+    'value': string | number;
   }
 }
 
@@ -212,6 +235,12 @@ declare global {
     prototype: HTMLBTagsElement;
     new (): HTMLBTagsElement;
   };
+
+  interface HTMLBTextareaElement extends Components.BTextarea, HTMLStencilElement {}
+  var HTMLBTextareaElement: {
+    prototype: HTMLBTextareaElement;
+    new (): HTMLBTextareaElement;
+  };
   interface HTMLElementTagNameMap {
     'b-box': HTMLBBoxElement;
     'b-breadcrumb': HTMLBBreadcrumbElement;
@@ -227,6 +256,7 @@ declare global {
     'b-table': HTMLBTableElement;
     'b-tag': HTMLBTagElement;
     'b-tags': HTMLBTagsElement;
+    'b-textarea': HTMLBTextareaElement;
   }
 }
 
@@ -303,9 +333,19 @@ declare namespace LocalJSX {
     | 'is-128x128';
   }
   interface BInput extends JSXBase.HTMLAttributes<HTMLBInputElement> {
+    'class'?: string;
+    'color'?: 'is-primary' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
+    'controlClass'?: string;
+    'disabled'?: boolean;
+    'isLoading'?: boolean;
+    'isRounded'?: boolean;
+    'isStatic'?: boolean;
     'name'?: string;
+    'readonly'?: boolean;
     'required'?: boolean;
-    'type'?: string;
+    'size'?: 'is-small' | 'is-normal' | 'is-medium' | 'is-large';
+    'state'?: 'is-hovered' | 'is-focused';
+    'type'?: 'text' | 'number' | 'email' | 'password';
     'value'?: string | number;
   }
   interface BNotification extends JSXBase.HTMLAttributes<HTMLBNotificationElement> {
@@ -347,6 +387,19 @@ declare namespace LocalJSX {
     'class'?: string;
     'hasAddons'?: boolean;
   }
+  interface BTextarea extends JSXBase.HTMLAttributes<HTMLBTextareaElement> {
+    'class'?: string;
+    'color'?: 'is-primary' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
+    'controlClass'?: string;
+    'disabled'?: boolean;
+    'hasFixedSize'?: boolean;
+    'isLoading'?: boolean;
+    'readonly'?: boolean;
+    'rows'?: number;
+    'size'?: 'is-small' | 'is-normal' | 'is-medium' | 'is-large';
+    'state'?: 'is-hovered' | 'is-focused';
+    'value'?: string | number;
+  }
 
   interface IntrinsicElements {
     'b-box': BBox;
@@ -363,6 +416,7 @@ declare namespace LocalJSX {
     'b-table': BTable;
     'b-tag': BTag;
     'b-tags': BTags;
+    'b-textarea': BTextarea;
   }
 }
 
