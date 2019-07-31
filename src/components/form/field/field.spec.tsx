@@ -1,11 +1,12 @@
 import { newSpecPage } from '@stencil/core/testing';
 import { Field } from './field';
+import { Input } from '../input/input';
 
 it('Should render properly', async (): Promise<void> => {
   const page = await newSpecPage({
-    components: [Field],
+    components: [Field, Input],
     html: `<b-field label="Hello">
-             <input type="text">
+             <b-input></b-input>
            </b-field>`,
   });
 
@@ -13,9 +14,11 @@ it('Should render properly', async (): Promise<void> => {
     <b-field label="Hello">
       <div class="field">
         <label class="label">Hello</label>
-        <div class="control">
-          <input type="text">
-        </div>
+        <b-input>
+          <div class="control">
+            <input class="input" type="text">
+          </div>
+        </b-input>
       </div>
     </b-field>
   `);
@@ -25,7 +28,11 @@ it('Should render properly (horizontal)', async (): Promise<void> => {
   const page = await newSpecPage({
     components: [Field],
     html: `<b-field is-horizontal label="Hello">
-             <input type="text">
+             <b-input>
+               <div class="control">
+                 <input class="input" type="text">
+               </div>
+             </b-input>
            </b-field>`,
   });
 
@@ -37,9 +44,11 @@ it('Should render properly (horizontal)', async (): Promise<void> => {
         </div>
         <div class="field-body">
           <div class="field">
-            <div class="control">
-              <input type="text">
-            </div>
+            <b-input>
+              <div class="control">
+                <input class="input" type="text">
+              </div>
+            </b-input>
           </div>
         </div>
       </div>

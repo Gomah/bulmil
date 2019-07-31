@@ -9,7 +9,9 @@ it('Should render properly', async (): Promise<void> => {
 
   expect(page.root).toEqualHtml(`
     <b-input type="email">
-      <input type="email">
+      <div class="control">
+        <input class="input" type="email">
+      </div>
     </b-input>
   `);
 

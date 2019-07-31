@@ -33,9 +33,7 @@ export class Field {
           </div>
           <div class="field-body">
             <div class="field">
-              <div class="control">
-                <slot />
-              </div>
+              <slot />
             </div>
           </div>
         </div>
@@ -44,9 +42,7 @@ export class Field {
       return (
         <div class={fieldClass}>
           <label class="label">{this.label}</label>
-          <div class="control">
-            <slot />
-          </div>
+          <slot />
         </div>
       );
     }
