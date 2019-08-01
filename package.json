@@ -46,7 +46,7 @@
     "@stencil/sass": "^1.0.1",
     "@types/autoprefixer": "^9.5.0",
     "@types/jest": "^24.0.16",
-    "@types/node": "^12.6.8",
+    "@types/node": "^12.6.9",
     "@typescript-eslint/eslint-plugin": "^1.13.0",
     "@typescript-eslint/parser": "^1.13.0",
     "autoprefixer": "^9.6.1",
