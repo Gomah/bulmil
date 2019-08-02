@@ -5,7 +5,7 @@
  */
 
 
-import { HTMLStencilElement, JSXBase } from './stencil.core';
+import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
@@ -94,6 +94,9 @@ export namespace Components {
     'isRight': boolean;
     'name': string;
     'size': 'is-small' | 'is-medium' | 'is-large';
+  }
+  interface BFooter {
+    'class': string;
   }
   interface BIcon {
     'class': string;
@@ -258,6 +261,12 @@ declare global {
     new (): HTMLBFileElement;
   };
 
+  interface HTMLBFooterElement extends Components.BFooter, HTMLStencilElement {}
+  var HTMLBFooterElement: {
+    prototype: HTMLBFooterElement;
+    new (): HTMLBFooterElement;
+  };
+
   interface HTMLBIconElement extends Components.BIcon, HTMLStencilElement {}
   var HTMLBIconElement: {
     prototype: HTMLBIconElement;
@@ -339,6 +348,7 @@ declare global {
     'b-content': HTMLBContentElement;
     'b-field': HTMLBFieldElement;
     'b-file': HTMLBFileElement;
+    'b-footer': HTMLBFooterElement;
     'b-icon': HTMLBIconElement;
     'b-image': HTMLBImageElement;
     'b-input': HTMLBInputElement;
@@ -441,6 +451,9 @@ declare namespace LocalJSX {
     'isRight'?: boolean;
     'name'?: string;
     'size'?: 'is-small' | 'is-medium' | 'is-large';
+  }
+  interface BFooter extends JSXBase.HTMLAttributes<HTMLBFooterElement> {
+    'class'?: string;
   }
   interface BIcon extends JSXBase.HTMLAttributes<HTMLBIconElement> {
     'class'?: string;
@@ -557,6 +570,7 @@ declare namespace LocalJSX {
     'b-content': BContent;
     'b-field': BField;
     'b-file': BFile;
+    'b-footer': BFooter;
     'b-icon': BIcon;
     'b-image': BImage;
     'b-input': BInput;
