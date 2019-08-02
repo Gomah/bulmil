@@ -57,6 +57,11 @@ export namespace Components {
     'disabled': boolean;
     'labelClass': string;
   }
+  interface BContainer {
+    'breakpoint': 'is-widescreen' | 'is-fullhd';
+    'class': string;
+    'isFluid': boolean;
+  }
   interface BContent {
     'class': string;
     'size': 'is-small' | 'is-medium' | 'is-large';
@@ -69,6 +74,26 @@ export namespace Components {
     'isGroupedMultiline': boolean;
     'isHorizontal': boolean;
     'label': string;
+  }
+  interface BFile {
+    'alignment': 'is-centered' | 'is-right';
+    'class': string;
+    'color': | 'is-white'
+    | 'is-black'
+    | 'is-light'
+    | 'is-dark'
+    | 'is-primary'
+    | 'is-link'
+    | 'is-info'
+    | 'is-success'
+    | 'is-warning'
+    | 'is-danger';
+    'hasName': boolean;
+    'isBoxed': boolean;
+    'isFullwidth': boolean;
+    'isRight': boolean;
+    'name': string;
+    'size': 'is-small' | 'is-medium' | 'is-large';
   }
   interface BIcon {
     'class': string;
@@ -205,6 +230,12 @@ declare global {
     new (): HTMLBCheckboxElement;
   };
 
+  interface HTMLBContainerElement extends Components.BContainer, HTMLStencilElement {}
+  var HTMLBContainerElement: {
+    prototype: HTMLBContainerElement;
+    new (): HTMLBContainerElement;
+  };
+
   interface HTMLBContentElement extends Components.BContent, HTMLStencilElement {}
   var HTMLBContentElement: {
     prototype: HTMLBContentElement;
@@ -215,6 +246,12 @@ declare global {
   var HTMLBFieldElement: {
     prototype: HTMLBFieldElement;
     new (): HTMLBFieldElement;
+  };
+
+  interface HTMLBFileElement extends Components.BFile, HTMLStencilElement {}
+  var HTMLBFileElement: {
+    prototype: HTMLBFileElement;
+    new (): HTMLBFileElement;
   };
 
   interface HTMLBIconElement extends Components.BIcon, HTMLStencilElement {}
@@ -288,8 +325,10 @@ declare global {
     'b-button': HTMLBButtonElement;
     'b-buttons': HTMLBButtonsElement;
     'b-checkbox': HTMLBCheckboxElement;
+    'b-container': HTMLBContainerElement;
     'b-content': HTMLBContentElement;
     'b-field': HTMLBFieldElement;
+    'b-file': HTMLBFileElement;
     'b-icon': HTMLBIconElement;
     'b-image': HTMLBImageElement;
     'b-input': HTMLBInputElement;
@@ -354,6 +393,11 @@ declare namespace LocalJSX {
     'disabled'?: boolean;
     'labelClass'?: string;
   }
+  interface BContainer extends JSXBase.HTMLAttributes<HTMLBContainerElement> {
+    'breakpoint'?: 'is-widescreen' | 'is-fullhd';
+    'class'?: string;
+    'isFluid'?: boolean;
+  }
   interface BContent extends JSXBase.HTMLAttributes<HTMLBContentElement> {
     'class'?: string;
     'size'?: 'is-small' | 'is-medium' | 'is-large';
@@ -366,6 +410,26 @@ declare namespace LocalJSX {
     'isGroupedMultiline'?: boolean;
     'isHorizontal'?: boolean;
     'label'?: string;
+  }
+  interface BFile extends JSXBase.HTMLAttributes<HTMLBFileElement> {
+    'alignment'?: 'is-centered' | 'is-right';
+    'class'?: string;
+    'color'?: | 'is-white'
+    | 'is-black'
+    | 'is-light'
+    | 'is-dark'
+    | 'is-primary'
+    | 'is-link'
+    | 'is-info'
+    | 'is-success'
+    | 'is-warning'
+    | 'is-danger';
+    'hasName'?: boolean;
+    'isBoxed'?: boolean;
+    'isFullwidth'?: boolean;
+    'isRight'?: boolean;
+    'name'?: string;
+    'size'?: 'is-small' | 'is-medium' | 'is-large';
   }
   interface BIcon extends JSXBase.HTMLAttributes<HTMLBIconElement> {
     'class'?: string;
@@ -474,8 +538,10 @@ declare namespace LocalJSX {
     'b-button': BButton;
     'b-buttons': BButtons;
     'b-checkbox': BCheckbox;
+    'b-container': BContainer;
     'b-content': BContent;
     'b-field': BField;
+    'b-file': BFile;
     'b-icon': BIcon;
     'b-image': BImage;
     'b-input': BInput;
