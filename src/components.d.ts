@@ -113,6 +113,12 @@ export namespace Components {
     'size': 'is-small' | 'is-medium' | 'is-large';
     'value': number;
   }
+  interface BRadio {
+    'checked': boolean;
+    'class': string;
+    'labelClass': string;
+    'name': string;
+  }
   interface BSelect {
     'class': string;
     'color': 'is-primary' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
@@ -241,6 +247,12 @@ declare global {
     new (): HTMLBProgressElement;
   };
 
+  interface HTMLBRadioElement extends Components.BRadio, HTMLStencilElement {}
+  var HTMLBRadioElement: {
+    prototype: HTMLBRadioElement;
+    new (): HTMLBRadioElement;
+  };
+
   interface HTMLBSelectElement extends Components.BSelect, HTMLStencilElement {}
   var HTMLBSelectElement: {
     prototype: HTMLBSelectElement;
@@ -283,6 +295,7 @@ declare global {
     'b-input': HTMLBInputElement;
     'b-notification': HTMLBNotificationElement;
     'b-progress': HTMLBProgressElement;
+    'b-radio': HTMLBRadioElement;
     'b-select': HTMLBSelectElement;
     'b-table': HTMLBTableElement;
     'b-tag': HTMLBTagElement;
@@ -397,6 +410,12 @@ declare namespace LocalJSX {
     'size'?: 'is-small' | 'is-medium' | 'is-large';
     'value'?: number;
   }
+  interface BRadio extends JSXBase.HTMLAttributes<HTMLBRadioElement> {
+    'checked'?: boolean;
+    'class'?: string;
+    'labelClass'?: string;
+    'name'?: string;
+  }
   interface BSelect extends JSXBase.HTMLAttributes<HTMLBSelectElement> {
     'class'?: string;
     'color'?: 'is-primary' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
@@ -462,6 +481,7 @@ declare namespace LocalJSX {
     'b-input': BInput;
     'b-notification': BNotification;
     'b-progress': BProgress;
+    'b-radio': BRadio;
     'b-select': BSelect;
     'b-table': BTable;
     'b-tag': BTag;
