@@ -107,6 +107,17 @@ export namespace Components {
     'size': 'is-small' | 'is-medium' | 'is-large';
     'value': number;
   }
+  interface BSelect {
+    'class': string;
+    'color': 'is-primary' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
+    'controlClass': string;
+    'isLoading': boolean;
+    'isMultiple': boolean;
+    'isRounded': boolean;
+    'size': 'is-small' | 'is-normal' | 'is-medium' | 'is-large';
+    'state': 'is-hovered' | 'is-focused';
+    'value': string | number;
+  }
   interface BTable {
     'class': string;
     'isBordered': boolean;
@@ -218,6 +229,12 @@ declare global {
     new (): HTMLBProgressElement;
   };
 
+  interface HTMLBSelectElement extends Components.BSelect, HTMLStencilElement {}
+  var HTMLBSelectElement: {
+    prototype: HTMLBSelectElement;
+    new (): HTMLBSelectElement;
+  };
+
   interface HTMLBTableElement extends Components.BTable, HTMLStencilElement {}
   var HTMLBTableElement: {
     prototype: HTMLBTableElement;
@@ -253,6 +270,7 @@ declare global {
     'b-input': HTMLBInputElement;
     'b-notification': HTMLBNotificationElement;
     'b-progress': HTMLBProgressElement;
+    'b-select': HTMLBSelectElement;
     'b-table': HTMLBTableElement;
     'b-tag': HTMLBTagElement;
     'b-tags': HTMLBTagsElement;
@@ -360,6 +378,17 @@ declare namespace LocalJSX {
     'size'?: 'is-small' | 'is-medium' | 'is-large';
     'value'?: number;
   }
+  interface BSelect extends JSXBase.HTMLAttributes<HTMLBSelectElement> {
+    'class'?: string;
+    'color'?: 'is-primary' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
+    'controlClass'?: string;
+    'isLoading'?: boolean;
+    'isMultiple'?: boolean;
+    'isRounded'?: boolean;
+    'size'?: 'is-small' | 'is-normal' | 'is-medium' | 'is-large';
+    'state'?: 'is-hovered' | 'is-focused';
+    'value'?: string | number;
+  }
   interface BTable extends JSXBase.HTMLAttributes<HTMLBTableElement> {
     'class'?: string;
     'isBordered'?: boolean;
@@ -413,6 +442,7 @@ declare namespace LocalJSX {
     'b-input': BInput;
     'b-notification': BNotification;
     'b-progress': BProgress;
+    'b-select': BSelect;
     'b-table': BTable;
     'b-tag': BTag;
     'b-tags': BTags;

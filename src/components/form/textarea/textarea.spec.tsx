@@ -12,6 +12,6 @@ it('Should render properly', async (): Promise<void> => {
       <div class="control">
         <textarea class="textarea">Hello World</textarea>
       </div>
-    </b-input>
+    </b-textarea>
   `);
 });
