@@ -144,6 +144,10 @@ export namespace Components {
     'labelClass': string;
     'name': string;
   }
+  interface BSection {
+    'class': string;
+    'size': 'is-medium' | 'is-large';
+  }
   interface BSelect {
     'class': string;
     'color': 'is-primary' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
@@ -290,6 +294,12 @@ declare global {
     new (): HTMLBRadioElement;
   };
 
+  interface HTMLBSectionElement extends Components.BSection, HTMLStencilElement {}
+  var HTMLBSectionElement: {
+    prototype: HTMLBSectionElement;
+    new (): HTMLBSectionElement;
+  };
+
   interface HTMLBSelectElement extends Components.BSelect, HTMLStencilElement {}
   var HTMLBSelectElement: {
     prototype: HTMLBSelectElement;
@@ -335,6 +345,7 @@ declare global {
     'b-notification': HTMLBNotificationElement;
     'b-progress': HTMLBProgressElement;
     'b-radio': HTMLBRadioElement;
+    'b-section': HTMLBSectionElement;
     'b-select': HTMLBSelectElement;
     'b-table': HTMLBTableElement;
     'b-tag': HTMLBTagElement;
@@ -480,6 +491,10 @@ declare namespace LocalJSX {
     'labelClass'?: string;
     'name'?: string;
   }
+  interface BSection extends JSXBase.HTMLAttributes<HTMLBSectionElement> {
+    'class'?: string;
+    'size'?: 'is-medium' | 'is-large';
+  }
   interface BSelect extends JSXBase.HTMLAttributes<HTMLBSelectElement> {
     'class'?: string;
     'color'?: 'is-primary' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
@@ -548,6 +563,7 @@ declare namespace LocalJSX {
     'b-notification': BNotification;
     'b-progress': BProgress;
     'b-radio': BRadio;
+    'b-section': BSection;
     'b-select': BSelect;
     'b-table': BTable;
     'b-tag': BTag;
