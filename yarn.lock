@@ -5727,10 +5727,10 @@ stylelint-prettier@^1.1.1:
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
-stylelint-scss@^3.9.2:
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/stylelint-scss/-/stylelint-scss-3.9.2.tgz#5435174a57696ee52eae40146778a4e62f7ed3a3"
-  integrity sha512-VUh173p3T1qJf016P7yeJ6nxkUpqF5qQ+VSDw3J8P6wEJbA1loaNgBHR3k3skHvUkF+9brLO1ibCHA00pjW3cw==
+stylelint-scss@^3.9.3:
+  version "3.9.3"
+  resolved "https://registry.yarnpkg.com/stylelint-scss/-/stylelint-scss-3.9.3.tgz#4fa300eeb2feced9b00ca6fbe5fa664bca146a06"
+  integrity sha512-pLLpwSpUwiqpAga/C22ZuN/d5ql2zVWGzG8MO+P3DQYcDNue3eZGvda/bJdkx4mDcVy06jlDt+BgSvMYUrwleQ==
   dependencies:
     lodash "^4.17.11"
     postcss-media-query-parser "^0.2.3"
