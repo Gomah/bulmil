@@ -13,6 +13,7 @@ module.exports = {
   extends: [
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
+    'plugin:@stencil/recommended',
     'prettier/@typescript-eslint',
   ],
   plugins: ['@typescript-eslint', 'import'],
@@ -20,6 +21,7 @@ module.exports = {
     'prettier/prettier': ['error', { singleQuote: true, trailingComma: 'es5', printWidth: 100 }],
     '@typescript-eslint/explicit-member-accessibility': 0,
     '@typescript-eslint/explicit-function-return-type': 0,
+    '@typescript-eslint/no-unused-vars': 0,
   },
   settings: {
     'import/core-modules': ['@stencil/core/testing'],
