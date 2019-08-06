@@ -3,6 +3,7 @@ import classNames from 'classnames';
 
 @Component({
   tag: 'b-container',
+  styleUrls: ['container.scss'],
 })
 export class Container {
   @Prop() class: string = '';

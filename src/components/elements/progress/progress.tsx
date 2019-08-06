@@ -3,6 +3,7 @@ import classNames from 'classnames';
 
 @Component({
   tag: 'b-progress',
+  styleUrls: ['progress.scss'],
 })
 export class Progress {
   @Prop() class: string;

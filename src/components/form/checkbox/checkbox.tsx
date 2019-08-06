@@ -3,6 +3,7 @@ import classNames from 'classnames';
 
 @Component({
   tag: 'b-checkbox',
+  styleUrls: ['checkbox.scss'],
 })
 export class Checkbox {
   @Prop() class: string = '';

@@ -3,6 +3,7 @@ import classNames from 'classnames';
 
 @Component({
   tag: 'b-radio',
+  styleUrls: ['radio.scss'],
 })
 export class Radio {
   @Prop() class: string = '';

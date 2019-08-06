@@ -3,6 +3,7 @@ import classNames from 'classnames';
 
 @Component({
   tag: 'b-footer',
+  styleUrls: ['footer.scss'],
 })
 export class Section {
   @Prop() class: string = '';

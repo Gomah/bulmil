@@ -3,6 +3,7 @@ import classNames from 'classnames';
 
 @Component({
   tag: 'b-field',
+  styleUrls: ['field.scss'],
 })
 export class Field {
   @Prop() class: string = '';

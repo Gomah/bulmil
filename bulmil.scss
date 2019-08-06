@@ -1,1 +1,9 @@
-@import './node_modules/bulma/bulma.sass';
+// Import bulma utilities & customised variables
+@import './src/styles/main.scss';
+
+// Bulma base
+@import './node_modules/bulma/sass/base/_all';
+
+// Other elementsm not fitting in any components
+@import './node_modules/bulma/sass/elements/other';
+@import './node_modules/bulma/sass/elements/title';

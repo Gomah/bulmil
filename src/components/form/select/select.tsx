@@ -3,6 +3,7 @@ import classNames from 'classnames';
 
 @Component({
   tag: 'b-select',
+  styleUrls: ['select.scss'],
 })
 export class Select {
   @Prop() class: string = '';

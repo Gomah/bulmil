@@ -3,6 +3,7 @@ import classNames from 'classnames';
 
 @Component({
   tag: 'b-icon',
+  styleUrls: ['icon.scss'],
 })
 export class Icon {
   @Prop() class: string = '';

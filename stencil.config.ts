@@ -7,9 +7,10 @@ export const config: Config = {
   namespace: 'Bulmil',
   globalStyle: 'bulmil.scss',
   plugins: [
-    sass(),
+    sass({
+      injectGlobalPaths: ['src/styles/main.scss'],
+    }),
     postcss({
-      injectGlobalPaths: ['src/styles/variables.scss'],
       plugins: [autoprefixer()],
     }),
   ],

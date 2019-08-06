@@ -3,6 +3,7 @@ import classNames from 'classnames';
 
 @Component({
   tag: 'b-textarea',
+  styleUrls: ['textarea.scss'],
 })
 export class Textarea {
   @Prop() class: string = '';

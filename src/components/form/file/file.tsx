@@ -3,6 +3,7 @@ import classNames from 'classnames';
 
 @Component({
   tag: 'b-file',
+  styleUrls: ['file.scss'],
 })
 export class File {
   @Prop() class: string = '';

@@ -3,6 +3,7 @@ import classNames from 'classnames';
 
 @Component({
   tag: 'b-breadcrumb',
+  styleUrls: ['breadcrumb.scss'],
 })
 export class Breadcrumb {
   @Prop() class: string = '';

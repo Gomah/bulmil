@@ -3,6 +3,7 @@ import classNames from 'classnames';
 
 @Component({
   tag: 'b-button',
+  styleUrls: ['button.scss'],
 })
 export class Button {
   @Prop() disabled: boolean = false;

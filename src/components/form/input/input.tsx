@@ -3,6 +3,7 @@ import classNames from 'classnames';
 
 @Component({
   tag: 'b-input',
+  styleUrls: ['input.scss'],
 })
 export class Input {
   @Prop() class: string = '';

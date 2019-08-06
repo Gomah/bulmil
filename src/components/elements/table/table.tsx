@@ -2,6 +2,7 @@ import { Component, Prop, h, JSX } from '@stencil/core';
 import classNames from 'classnames';
 @Component({
   tag: 'b-table',
+  styleUrls: ['table.scss'],
 })
 export class Table {
   @Prop() class: string;

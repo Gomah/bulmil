@@ -2,6 +2,7 @@ import { Component, Prop, h, JSX } from '@stencil/core';
 import classNames from 'classnames';
 @Component({
   tag: 'b-notification',
+  styleUrls: ['notification.scss'],
 })
 export class Notification {
   @Prop() class: string = '';
