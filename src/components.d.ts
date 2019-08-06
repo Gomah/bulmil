@@ -57,6 +57,21 @@ export namespace Components {
     'disabled': boolean;
     'labelClass': string;
   }
+  interface BColumn {
+    'class': string;
+    'isNarrow': boolean | Breakpoint[] | null;
+    'sizes': any;
+  }
+  interface BColumns {
+    'class': string;
+    'gaps': ['is-0' | 'is-1' | 'is-2' | 'is-3' | 'is-4' | 'is-5' | 'is-6' | 'is-7' | 'is-8'];
+    'isCentered': boolean;
+    'isDesktop': boolean;
+    'isGapless': boolean;
+    'isMobile': boolean;
+    'isMultiline': boolean;
+    'isVcentered': boolean;
+  }
   interface BContainer {
     'breakpoint': 'is-widescreen' | 'is-fullhd';
     'class': string;
@@ -237,6 +252,18 @@ declare global {
     new (): HTMLBCheckboxElement;
   };
 
+  interface HTMLBColumnElement extends Components.BColumn, HTMLStencilElement {}
+  var HTMLBColumnElement: {
+    prototype: HTMLBColumnElement;
+    new (): HTMLBColumnElement;
+  };
+
+  interface HTMLBColumnsElement extends Components.BColumns, HTMLStencilElement {}
+  var HTMLBColumnsElement: {
+    prototype: HTMLBColumnsElement;
+    new (): HTMLBColumnsElement;
+  };
+
   interface HTMLBContainerElement extends Components.BContainer, HTMLStencilElement {}
   var HTMLBContainerElement: {
     prototype: HTMLBContainerElement;
@@ -344,6 +371,8 @@ declare global {
     'b-button': HTMLBButtonElement;
     'b-buttons': HTMLBButtonsElement;
     'b-checkbox': HTMLBCheckboxElement;
+    'b-column': HTMLBColumnElement;
+    'b-columns': HTMLBColumnsElement;
     'b-container': HTMLBContainerElement;
     'b-content': HTMLBContentElement;
     'b-field': HTMLBFieldElement;
@@ -413,6 +442,21 @@ declare namespace LocalJSX {
     'class'?: string;
     'disabled'?: boolean;
     'labelClass'?: string;
+  }
+  interface BColumn extends JSXBase.HTMLAttributes<HTMLBColumnElement> {
+    'class'?: string;
+    'isNarrow'?: boolean | Breakpoint[] | null;
+    'sizes'?: any;
+  }
+  interface BColumns extends JSXBase.HTMLAttributes<HTMLBColumnsElement> {
+    'class'?: string;
+    'gaps'?: ['is-0' | 'is-1' | 'is-2' | 'is-3' | 'is-4' | 'is-5' | 'is-6' | 'is-7' | 'is-8'];
+    'isCentered'?: boolean;
+    'isDesktop'?: boolean;
+    'isGapless'?: boolean;
+    'isMobile'?: boolean;
+    'isMultiline'?: boolean;
+    'isVcentered'?: boolean;
   }
   interface BContainer extends JSXBase.HTMLAttributes<HTMLBContainerElement> {
     'breakpoint'?: 'is-widescreen' | 'is-fullhd';
@@ -566,6 +610,8 @@ declare namespace LocalJSX {
     'b-button': BButton;
     'b-buttons': BButtons;
     'b-checkbox': BCheckbox;
+    'b-column': BColumn;
+    'b-columns': BColumns;
     'b-container': BContainer;
     'b-content': BContent;
     'b-field': BField;
