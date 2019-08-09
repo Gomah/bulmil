@@ -371,10 +371,10 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
-"@stencil/core@^1.2.3":
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-1.2.3.tgz#a87f8121254cdd0862964f7c453484464f20de34"
-  integrity sha512-kfeq5y6Ltp8ObiamdYYuzf9I+8kDYiogpfEleF/HGQHrfnp6y57IhpEjSTC4pgkbXFV/PzVwRVOl9dsbjlw8yw==
+"@stencil/core@^1.2.4":
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-1.2.4.tgz#8fc44731a2e8b90c6562bbba465bdfe3486a8774"
+  integrity sha512-2T2He4tHHagA7Y8WDh5iWDTtBLSUWZjfp7MA8RgPlT5aDuyo5C0+gSHASnQL2QkM+rrvTywSXhfj0X/QPss4Jw==
   dependencies:
     typescript "3.5.3"
 
