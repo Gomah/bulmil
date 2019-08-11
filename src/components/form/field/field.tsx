@@ -1,11 +1,11 @@
-import { Component, Prop, h, JSX } from '@stencil/core';
+import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 import classNames from 'classnames';
 
 @Component({
   tag: 'b-field',
   styleUrls: ['field.scss'],
 })
-export class Field {
+export class Field implements ComponentInterface {
   @Prop() class: string = '';
   @Prop() label: string;
   @Prop() hasAddons: boolean = false;

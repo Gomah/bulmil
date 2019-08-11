@@ -1,11 +1,11 @@
-import { Component, Prop, h, JSX } from '@stencil/core';
+import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 import classNames from 'classnames';
 
 @Component({
   tag: 'b-container',
   styleUrls: ['container.scss'],
 })
-export class Container {
+export class Container implements ComponentInterface {
   @Prop() class: string = '';
   @Prop() breakpoint: 'is-widescreen' | 'is-fullhd';
   @Prop() isFluid: boolean = false;

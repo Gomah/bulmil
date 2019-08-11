@@ -1,11 +1,20 @@
-import { Component, Prop, h, JSX, Listen, EventEmitter, Event } from '@stencil/core';
+import {
+  Component,
+  Prop,
+  h,
+  JSX,
+  Listen,
+  EventEmitter,
+  Event,
+  ComponentInterface,
+} from '@stencil/core';
 import classNames from 'classnames';
 
 @Component({
   tag: 'b-button',
   styleUrls: ['button.scss'],
 })
-export class Button {
+export class Button implements ComponentInterface {
   @Prop() disabled: boolean = false;
   @Prop() class: string;
 

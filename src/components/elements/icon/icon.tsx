@@ -1,11 +1,11 @@
-import { Component, Prop, h, JSX } from '@stencil/core';
+import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 import classNames from 'classnames';
 
 @Component({
   tag: 'b-icon',
   styleUrls: ['icon.scss'],
 })
-export class Icon {
+export class Icon implements ComponentInterface {
   @Prop() class: string = '';
   @Prop() color: 'has-text-info' | 'has-text-success' | 'has-text-warning' | 'has-text-danger';
   @Prop() size: 'is-small' | 'is-medium' | 'is-large';

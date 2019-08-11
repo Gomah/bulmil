@@ -1,10 +1,10 @@
-import { Component, Prop, h, JSX } from '@stencil/core';
+import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 import classNames from 'classnames';
 @Component({
   tag: 'b-notification',
   styleUrls: ['notification.scss'],
 })
-export class Notification {
+export class Notification implements ComponentInterface {
   @Prop() class: string = '';
   @Prop() color: 'is-primary' | 'is-link' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
   @Prop() dismissable: boolean = true;

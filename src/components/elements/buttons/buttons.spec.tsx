@@ -11,12 +11,10 @@ it('Should render properly', async (): Promise<void> => {
   });
 
   expect(page.root).toEqualHtml(`
-    <b-buttons>
-      <div class="buttons">
-        <b-button>
-          <button class="button">Hello</button>
-        </b-button>
-      </div>
+    <b-buttons class="buttons">
+      <b-button>
+        <button class="button">Hello</button>
+      </b-button>
     </b-buttons>
   `);
 });

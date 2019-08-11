@@ -1,11 +1,11 @@
-import { Component, Prop, h, JSX } from '@stencil/core';
+import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 import classNames from 'classnames';
 
 @Component({
   tag: 'b-checkbox',
   styleUrls: ['checkbox.scss'],
 })
-export class Checkbox {
+export class Checkbox implements ComponentInterface {
   @Prop() class: string = '';
   @Prop() labelClass: string = '';
   @Prop() checked: boolean = false;

@@ -1,4 +1,4 @@
-import { Component, Prop, h, JSX } from '@stencil/core';
+import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 import classNames from 'classnames';
 
 type Breakpoint = 'mobile' | 'tablet' | 'touch' | 'desktop' | 'widescreen' | 'fullhd';
@@ -6,7 +6,7 @@ type Breakpoint = 'mobile' | 'tablet' | 'touch' | 'desktop' | 'widescreen' | 'fu
 @Component({
   tag: 'b-column',
 })
-export class Column {
+export class Column implements ComponentInterface {
   @Prop() class: string = '';
 
   // TODO: Generate sizes, https://bulma.io/documentation/columns/sizes/

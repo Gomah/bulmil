@@ -1,11 +1,11 @@
-import { Component, Prop, h, JSX } from '@stencil/core';
+import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 import classNames from 'classnames';
 
 @Component({
   tag: 'b-footer',
   styleUrls: ['footer.scss'],
 })
-export class Section {
+export class Section implements ComponentInterface {
   @Prop() class: string = '';
 
   render(): JSX.Element {

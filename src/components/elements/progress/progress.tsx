@@ -1,11 +1,11 @@
-import { Component, Prop, h, JSX } from '@stencil/core';
+import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 import classNames from 'classnames';
 
 @Component({
   tag: 'b-progress',
   styleUrls: ['progress.scss'],
 })
-export class Progress {
+export class Progress implements ComponentInterface {
   @Prop() class: string;
   @Prop() value: number;
   @Prop() max: number = 100;

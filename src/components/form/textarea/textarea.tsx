@@ -1,11 +1,11 @@
-import { Component, Prop, h, JSX } from '@stencil/core';
+import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 import classNames from 'classnames';
 
 @Component({
   tag: 'b-textarea',
   styleUrls: ['textarea.scss'],
 })
-export class Textarea {
+export class Textarea implements ComponentInterface {
   @Prop() class: string = '';
   @Prop() controlClass: string = '';
   @Prop() value: string | number;

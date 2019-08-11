@@ -1,11 +1,11 @@
-import { Component, Prop, h, JSX } from '@stencil/core';
+import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 import classNames from 'classnames';
 
 @Component({
   tag: 'b-columns',
   styleUrls: ['columns.scss'],
 })
-export class Columns {
+export class Columns implements ComponentInterface {
   @Prop() class: string = '';
   @Prop() isCentered: boolean = false;
   @Prop() isMobile: boolean = false;

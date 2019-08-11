@@ -1,11 +1,11 @@
-import { Component, Prop, h, JSX } from '@stencil/core';
+import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 import classNames from 'classnames';
 
 @Component({
   tag: 'b-content',
   styleUrls: ['content.scss'],
 })
-export class Content {
+export class Content implements ComponentInterface {
   @Prop() class: string = '';
   @Prop() size: 'is-small' | 'is-medium' | 'is-large';
 

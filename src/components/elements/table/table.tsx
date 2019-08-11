@@ -1,10 +1,10 @@
-import { Component, Prop, h, JSX } from '@stencil/core';
+import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 import classNames from 'classnames';
 @Component({
   tag: 'b-table',
   styleUrls: ['table.scss'],
 })
-export class Table {
+export class Table implements ComponentInterface {
   @Prop() class: string;
   @Prop() isBordered: boolean = false;
   @Prop() isStriped: boolean = false;

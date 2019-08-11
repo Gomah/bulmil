@@ -1,10 +1,10 @@
-import { Component, Prop, h, JSX } from '@stencil/core';
+import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 
 @Component({
   tag: 'b-box',
   styleUrls: ['box.scss'],
 })
-export class Box {
+export class Box implements ComponentInterface {
   @Prop() class: string = '';
 
   render(): JSX.Element {

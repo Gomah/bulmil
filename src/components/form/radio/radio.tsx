@@ -1,11 +1,11 @@
-import { Component, Prop, h, JSX } from '@stencil/core';
+import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 import classNames from 'classnames';
 
 @Component({
   tag: 'b-radio',
   styleUrls: ['radio.scss'],
 })
-export class Radio {
+export class Radio implements ComponentInterface {
   @Prop() class: string = '';
   @Prop() labelClass: string = '';
   @Prop() name: string;

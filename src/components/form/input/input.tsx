@@ -1,11 +1,11 @@
-import { Component, Prop, h, JSX } from '@stencil/core';
+import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 import classNames from 'classnames';
 
 @Component({
   tag: 'b-input',
   styleUrls: ['input.scss'],
 })
-export class Input {
+export class Input implements ComponentInterface {
   @Prop() class: string = '';
   @Prop() controlClass: string = '';
   @Prop() value: string | number;

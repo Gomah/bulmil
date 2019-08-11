@@ -1,11 +1,11 @@
-import { Component, Prop, h, JSX } from '@stencil/core';
+import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 import classNames from 'classnames';
 
 @Component({
   tag: 'b-image',
   styleUrls: ['image.scss'],
 })
-export class Image {
+export class Image implements ComponentInterface {
   @Prop() class: string = '';
   @Prop() size:
     | 'is-16x16'

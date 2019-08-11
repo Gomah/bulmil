@@ -1,10 +1,10 @@
-import { Component, Prop, h, JSX } from '@stencil/core';
+import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 import classNames from 'classnames';
 
 @Component({
   tag: 'b-tags',
 })
-export class Tags {
+export class Tags implements ComponentInterface {
   @Prop() class: string;
   @Prop() hasAddons: boolean = false;
 
