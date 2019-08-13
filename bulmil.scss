@@ -2,8 +2,8 @@
 @import './src/styles/main.scss';
 
 // Bulma base
-@import './node_modules/bulma/sass/base/_all';
+@import './node_modules/bulma-scss/base/_all';
 
 // Other elements not fitting in any components
-@import './node_modules/bulma/sass/elements/other';
-@import './node_modules/bulma/sass/elements/title';
+@import './node_modules/bulma-scss/elements/other';
+@import './node_modules/bulma-scss/elements/title';
