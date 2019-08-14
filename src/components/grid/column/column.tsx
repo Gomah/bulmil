@@ -7,7 +7,7 @@ type Breakpoint = 'mobile' | 'tablet' | 'touch' | 'desktop' | 'widescreen' | 'fu
   tag: 'b-column',
 })
 export class Column implements ComponentInterface {
-  @Prop() class: string = '';
+  @Prop() class = '';
 
   // TODO: Generate sizes, https://bulma.io/documentation/columns/sizes/
   @Prop() sizes;

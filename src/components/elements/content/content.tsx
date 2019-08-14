@@ -6,7 +6,7 @@ import classNames from 'classnames';
   styleUrls: ['content.scss'],
 })
 export class Content implements ComponentInterface {
-  @Prop() class: string = '';
+  @Prop() class = '';
   @Prop() size: 'is-small' | 'is-medium' | 'is-large';
 
   render(): JSX.Element {

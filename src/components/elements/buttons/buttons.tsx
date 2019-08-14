@@ -6,7 +6,7 @@ import classNames from 'classnames';
   scoped: true,
 })
 export class Buttons implements ComponentInterface {
-  @Prop() class: string = '';
+  @Prop() class = '';
   @Prop() size: 'are-small' | 'are-medium' | 'are-large';
 
   render(): JSX.Element {

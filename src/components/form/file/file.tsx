@@ -6,8 +6,8 @@ import classNames from 'classnames';
   styleUrls: ['file.scss'],
 })
 export class File implements ComponentInterface {
-  @Prop() class: string = '';
-  @Prop() name: string = '';
+  @Prop() class = '';
+  @Prop() name = '';
   @Prop() color:
     | 'is-white'
     | 'is-black'
@@ -22,10 +22,10 @@ export class File implements ComponentInterface {
 
   @Prop() size: 'is-small' | 'is-medium' | 'is-large';
   @Prop() alignment: 'is-centered' | 'is-right';
-  @Prop() hasName: boolean = false;
-  @Prop() isRight: boolean = false;
-  @Prop() isFullwidth: boolean = false;
-  @Prop() isBoxed: boolean = false;
+  @Prop() hasName = false;
+  @Prop() isRight = false;
+  @Prop() isFullwidth = false;
+  @Prop() isBoxed = false;
 
   render(): JSX.Element {
     const fileClass = classNames(

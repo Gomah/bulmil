@@ -6,13 +6,13 @@ import classNames from 'classnames';
   styleUrls: ['field.scss'],
 })
 export class Field implements ComponentInterface {
-  @Prop() class: string = '';
+  @Prop() class = '';
   @Prop() label: string;
-  @Prop() hasAddons: boolean = false;
+  @Prop() hasAddons = false;
   @Prop() fieldSize: 'is-small' | 'is-normal' | 'is-medium' | 'is-large';
-  @Prop() isHorizontal: boolean = false;
-  @Prop() isGrouped: boolean = false;
-  @Prop() isGroupedMultiline: boolean = false;
+  @Prop() isHorizontal = false;
+  @Prop() isGrouped = false;
+  @Prop() isGroupedMultiline = false;
 
   render(): JSX.Element {
     const fieldClass = classNames(

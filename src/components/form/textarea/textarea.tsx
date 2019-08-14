@@ -6,16 +6,16 @@ import classNames from 'classnames';
   styleUrls: ['textarea.scss'],
 })
 export class Textarea implements ComponentInterface {
-  @Prop() class: string = '';
-  @Prop() controlClass: string = '';
+  @Prop() class = '';
+  @Prop() controlClass = '';
   @Prop() value: string | number;
   @Prop() color: 'is-primary' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
   @Prop() size: 'is-small' | 'is-normal' | 'is-medium' | 'is-large';
   @Prop() state: 'is-hovered' | 'is-focused';
-  @Prop() readonly: boolean = false;
-  @Prop() disabled: boolean = false;
-  @Prop() isLoading: boolean = false;
-  @Prop() hasFixedSize: boolean = false;
+  @Prop() readonly = false;
+  @Prop() disabled = false;
+  @Prop() isLoading = false;
+  @Prop() hasFixedSize = false;
   @Prop() rows: number;
 
   render(): JSX.Element {

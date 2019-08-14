@@ -15,7 +15,7 @@ import classNames from 'classnames';
   styleUrls: ['button.scss'],
 })
 export class Button implements ComponentInterface {
-  @Prop() disabled: boolean = false;
+  @Prop() disabled = false;
   @Prop() class: string;
 
   @Prop() color:
@@ -33,23 +33,23 @@ export class Button implements ComponentInterface {
 
   @Prop() size: 'is-small' | 'is-medium' | 'is-large' | 'is-normal';
 
-  @Prop() fullWidth: boolean = false;
+  @Prop() fullWidth = false;
 
-  @Prop() isOutlined: boolean = false;
+  @Prop() isOutlined = false;
 
-  @Prop() isInverted: boolean = false;
+  @Prop() isInverted = false;
 
-  @Prop() isRounded: boolean = false;
+  @Prop() isRounded = false;
 
-  @Prop() isHovered: boolean = false;
+  @Prop() isHovered = false;
 
-  @Prop() isFocused: boolean = false;
+  @Prop() isFocused = false;
 
-  @Prop() isActive: boolean = false;
+  @Prop() isActive = false;
 
-  @Prop() isStatic: boolean = false;
+  @Prop() isStatic = false;
 
-  @Prop() isLoading: boolean = false;
+  @Prop() isLoading = false;
 
   @Event() clicked: EventEmitter;
 

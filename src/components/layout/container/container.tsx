@@ -6,9 +6,9 @@ import classNames from 'classnames';
   styleUrls: ['container.scss'],
 })
 export class Container implements ComponentInterface {
-  @Prop() class: string = '';
+  @Prop() class = '';
   @Prop() breakpoint: 'is-widescreen' | 'is-fullhd';
-  @Prop() isFluid: boolean = false;
+  @Prop() isFluid = false;
 
   render(): JSX.Element {
     const containerClass = classNames(

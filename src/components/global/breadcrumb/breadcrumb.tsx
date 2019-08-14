@@ -6,9 +6,9 @@ import classNames from 'classnames';
   styleUrls: ['breadcrumb.scss'],
 })
 export class Breadcrumb implements ComponentInterface {
-  @Prop() class: string = '';
-  @Prop() isCentered: boolean = false;
-  @Prop() isRight: boolean = false;
+  @Prop() class = '';
+  @Prop() isCentered = false;
+  @Prop() isRight = false;
   @Prop() size: 'is-small' | 'is-medium' | 'is-large';
   @Prop() separator:
     | 'has-arrow-separator'

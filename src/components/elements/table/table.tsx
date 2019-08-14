@@ -6,11 +6,11 @@ import classNames from 'classnames';
 })
 export class Table implements ComponentInterface {
   @Prop() class: string;
-  @Prop() isBordered: boolean = false;
-  @Prop() isStriped: boolean = false;
-  @Prop() isNarrow: boolean = false;
-  @Prop() isHoverable: boolean = false;
-  @Prop() isFullwidth: boolean = false;
+  @Prop() isBordered = false;
+  @Prop() isStriped = false;
+  @Prop() isNarrow = false;
+  @Prop() isHoverable = false;
+  @Prop() isFullwidth = false;
 
   render(): JSX.Element {
     const tableClass = classNames(

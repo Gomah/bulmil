@@ -6,13 +6,13 @@ import classNames from 'classnames';
   styleUrls: ['columns.scss'],
 })
 export class Columns implements ComponentInterface {
-  @Prop() class: string = '';
-  @Prop() isCentered: boolean = false;
-  @Prop() isMobile: boolean = false;
-  @Prop() isDesktop: boolean = false;
-  @Prop() isMultiline: boolean = false;
-  @Prop() isGapless: boolean = false;
-  @Prop() isVcentered: boolean = false;
+  @Prop() class = '';
+  @Prop() isCentered = false;
+  @Prop() isMobile = false;
+  @Prop() isDesktop = false;
+  @Prop() isMultiline = false;
+  @Prop() isGapless = false;
+  @Prop() isVcentered = false;
 
   // TODO: Generate gap possibilities, e.g: is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd
   @Prop() gaps: ['is-0' | 'is-1' | 'is-2' | 'is-3' | 'is-4' | 'is-5' | 'is-6' | 'is-7' | 'is-8'];

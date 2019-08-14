@@ -6,7 +6,7 @@ import classNames from 'classnames';
 })
 export class Tags implements ComponentInterface {
   @Prop() class: string;
-  @Prop() hasAddons: boolean = false;
+  @Prop() hasAddons = false;
 
   render(): JSX.Element {
     const tagsClass = classNames('tags', { 'has-addons': this.hasAddons }, this.class);

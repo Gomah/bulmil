@@ -5,9 +5,9 @@ import classNames from 'classnames';
   styleUrls: ['notification.scss'],
 })
 export class Notification implements ComponentInterface {
-  @Prop() class: string = '';
+  @Prop() class = '';
   @Prop() color: 'is-primary' | 'is-link' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
-  @Prop() dismissable: boolean = true;
+  @Prop() dismissable = true;
 
   render(): JSX.Element {
     const notificationClass = classNames('notification', this.color, this.class);

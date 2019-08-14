@@ -6,7 +6,7 @@ import classNames from 'classnames';
   styleUrls: ['icon.scss'],
 })
 export class Icon implements ComponentInterface {
-  @Prop() class: string = '';
+  @Prop() class = '';
   @Prop() color: 'has-text-info' | 'has-text-success' | 'has-text-warning' | 'has-text-danger';
   @Prop() size: 'is-small' | 'is-medium' | 'is-large';
 
