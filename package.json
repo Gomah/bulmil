@@ -45,7 +45,7 @@
     "test:stencil"
   ],
   "devDependencies": {
-    "@stencil/core": "^1.2.5",
+    "@stencil/core": "^1.3.0",
     "@stencil/eslint-plugin": "^0.0.3",
     "@stencil/postcss": "^1.0.1",
     "@stencil/sass": "^1.0.1",
