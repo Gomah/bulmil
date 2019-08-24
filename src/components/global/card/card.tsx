@@ -1,4 +1,4 @@
-import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
+import { Component, Prop, Host, h, JSX, ComponentInterface } from '@stencil/core';
 import classNames from 'classnames';
 
 @Component({
@@ -7,31 +7,14 @@ import classNames from 'classnames';
 })
 export class Card implements ComponentInterface {
   @Prop() class = '';
-  @Prop() isCentered = false;
-  @Prop() isRight = false;
-  @Prop() size: 'is-small' | 'is-medium' | 'is-large';
-  @Prop() separator:
-    | 'has-arrow-separator'
-    | 'has-bullet-separator'
-    | 'has-dot-separator'
-    | 'has-succeeds-separator';
 
   render(): JSX.Element {
-    const breadcrumbClass = classNames(
-      'breadcrumb',
-      this.size,
-      this.separator,
-      {
-        'is-centered': this.isCentered,
-        'is-right': this.isRight,
-      },
-      this.class
-    );
+    const cardClass = classNames('card', this.class);
 
     return (
-      <nav class={breadcrumbClass} aria-label="breadcrumbs">
-        <slot />
-      </nav>
+      <div class={cardClass}>
+        <slot></slot>
+      </div>
     );
   }
 }

@@ -51,6 +51,9 @@ export namespace Components {
     'class': string;
     'size': 'are-small' | 'are-medium' | 'are-large';
   }
+  interface BCard {
+    'class': string;
+  }
   interface BCheckbox {
     'checked': boolean;
     'class': string;
@@ -246,6 +249,12 @@ declare global {
     new (): HTMLBButtonsElement;
   };
 
+  interface HTMLBCardElement extends Components.BCard, HTMLStencilElement {}
+  var HTMLBCardElement: {
+    prototype: HTMLBCardElement;
+    new (): HTMLBCardElement;
+  };
+
   interface HTMLBCheckboxElement extends Components.BCheckbox, HTMLStencilElement {}
   var HTMLBCheckboxElement: {
     prototype: HTMLBCheckboxElement;
@@ -370,6 +379,7 @@ declare global {
     'b-breadcrumb': HTMLBBreadcrumbElement;
     'b-button': HTMLBButtonElement;
     'b-buttons': HTMLBButtonsElement;
+    'b-card': HTMLBCardElement;
     'b-checkbox': HTMLBCheckboxElement;
     'b-column': HTMLBColumnElement;
     'b-columns': HTMLBColumnsElement;
@@ -436,6 +446,9 @@ declare namespace LocalJSX {
   interface BButtons extends JSXBase.HTMLAttributes<HTMLBButtonsElement> {
     'class'?: string;
     'size'?: 'are-small' | 'are-medium' | 'are-large';
+  }
+  interface BCard extends JSXBase.HTMLAttributes<HTMLBCardElement> {
+    'class'?: string;
   }
   interface BCheckbox extends JSXBase.HTMLAttributes<HTMLBCheckboxElement> {
     'checked'?: boolean;
@@ -609,6 +622,7 @@ declare namespace LocalJSX {
     'b-breadcrumb': BBreadcrumb;
     'b-button': BButton;
     'b-buttons': BButtons;
+    'b-card': BCard;
     'b-checkbox': BCheckbox;
     'b-column': BColumn;
     'b-columns': BColumns;
