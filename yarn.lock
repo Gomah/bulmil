@@ -391,10 +391,10 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
-"@stencil/core@^1.3.1":
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-1.3.1.tgz#e3793fa184094a0ed175dc2032c89fc28b890ea9"
-  integrity sha512-fob7fr3IpBulEjF1H4gJU9oGhR+InJdC7pYmNgjlgd9W+WuKKy+L8EmUMXpEIDQqfBNgsGP+nTob3hx2AjNj1Q==
+"@stencil/core@^1.3.2":
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-1.3.2.tgz#aba91dc68ad0049b50d4e76a9c5fb174474eaaec"
+  integrity sha512-WHQDvW48TZvtor/NL832DZLWt2r+8t/eoJ6+Rix3MJlpnbCbKsJJtfpIL5goNCKOSwb6+0Bcg77ZrsQ3RHnOgg==
   dependencies:
     typescript "3.5.3"
 
@@ -5874,10 +5874,10 @@ stylelint-prettier@^1.1.1:
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
-stylelint-scss@^3.9.4:
-  version "3.9.4"
-  resolved "https://registry.yarnpkg.com/stylelint-scss/-/stylelint-scss-3.9.4.tgz#c32274575c2e41101105e7606bbd96325b558b23"
-  integrity sha512-RHUHnEDRi2TONwFm2l0OMLo5y78aEYljabZsaf2+27JHM5aLjlO5waMlIwcK7xNfHlD/Ma9LoRAiFtI5ikNI2g==
+stylelint-scss@^3.10.0:
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/stylelint-scss/-/stylelint-scss-3.10.0.tgz#1af9ff00397094364847ed5e62e78e819dd37c28"
+  integrity sha512-cz0CiJ/CEOY9arl1OA7Epb68F+L5iXBVZSOzTdK5AymoTM5dpll4QGeggMIsKN5Put8ZtQ3OwzYXexkPKs15PQ==
   dependencies:
     lodash "^4.17.15"
     postcss-media-query-parser "^0.2.3"

@@ -1,4 +1,4 @@
-import { Component, Prop, Host, h, JSX, ComponentInterface } from '@stencil/core';
+import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 import classNames from 'classnames';
 
 @Component({
