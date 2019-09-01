@@ -395,6 +395,24 @@ export namespace Components {
     */
     'dismissable': boolean;
   }
+  interface BPagination {
+    /**
+    * Alignment
+    */
+    'alignment': 'is-centered' | 'is-right';
+    /**
+    * CSS Classes
+    */
+    'class': string;
+    /**
+    * Rounded
+    */
+    'isRounded': boolean;
+    /**
+    * Pagination size
+    */
+    'size': 'is-small' | 'is-medium' | 'is-large';
+  }
   interface BProgress {
     /**
     * CSS Classes
