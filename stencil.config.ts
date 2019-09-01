@@ -16,11 +16,6 @@ export const config: Config = {
   ],
   outputTargets: [
     { type: 'dist' },
-    // {
-    //   type: 'dist-types',
-    //   typesDir: 'types/',
-    //   dir: 'dist/types',
-    // },
     {
       type: 'dist-hydrate-script',
       dir: 'dist/hydrate',

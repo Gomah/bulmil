@@ -43,34 +43,29 @@ export class Button implements ComponentInterface {
     | 'is-text';
 
   /**
-  * Size
-  */
+   * Size
+   */
   @Prop() size: 'is-small' | 'is-medium' | 'is-large' | 'is-normal';
-
 
   /**
    * Display the button in full-width
    */
   @Prop() fullWidth = false;
 
-
   /**
    * Is outlined
    */
   @Prop() isOutlined = false;
-
 
   /**
    * Is inverted
    */
   @Prop() isInverted = false;
 
-
   /**
    * Rounded button
    */
   @Prop() isRounded = false;
-
 
   /**
    * Hovered state
@@ -81,7 +76,6 @@ export class Button implements ComponentInterface {
    * Focused state
    */
   @Prop() isFocused = false;
-
 
   /**
    * Active state
