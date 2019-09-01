@@ -6,7 +6,14 @@ import classNames from 'classnames';
   styleUrls: ['image.scss'],
 })
 export class Image implements ComponentInterface {
+  /**
+   * CSS Classes
+   */
   @Prop() class = '';
+
+  /**
+   * Size
+   */
   @Prop() size:
     | 'is-16x16'
     | 'is-24x24'

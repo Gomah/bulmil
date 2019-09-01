@@ -9,9 +9,9 @@
 
 | Property | Attribute | Description | Type                                                                               | Default     |
 | -------- | --------- | ----------- | ---------------------------------------------------------------------------------- | ----------- |
-| `class`  | `class`   |             | `string`                                                                           | `''`        |
-| `color`  | `color`   |             | `"has-text-danger" \| "has-text-info" \| "has-text-success" \| "has-text-warning"` | `undefined` |
-| `size`   | `size`    |             | `"is-large" \| "is-medium" \| "is-small"`                                          | `undefined` |
+| `class`  | `class`   | CSS Classes | `string`                                                                           | `''`        |
+| `color`  | `color`   | Color       | `"has-text-danger" \| "has-text-info" \| "has-text-success" \| "has-text-warning"` | `undefined` |
+| `size`   | `size`    | Size        | `"is-large" \| "is-medium" \| "is-small"`                                          | `undefined` |
 
 
 ----------------------------------------------

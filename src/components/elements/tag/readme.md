@@ -9,10 +9,10 @@
 
 | Property   | Attribute  | Description | Type                                                                                                                                           | Default     |
 | ---------- | ---------- | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| `class`    | `class`    |             | `string`                                                                                                                                       | `undefined` |
-| `color`    | `color`    |             | `"is-black" \| "is-danger" \| "is-dark" \| "is-info" \| "is-light" \| "is-link" \| "is-primary" \| "is-success" \| "is-warning" \| "is-white"` | `undefined` |
-| `modifier` | `modifier` |             | `"is-delete" \| "is-rounded"`                                                                                                                  | `undefined` |
-| `size`     | `size`     |             | `"is-large" \| "is-medium" \| "is-normal"`                                                                                                     | `undefined` |
+| `class`    | `class`    | CSS Classes | `string`                                                                                                                                       | `undefined` |
+| `color`    | `color`    | Color       | `"is-black" \| "is-danger" \| "is-dark" \| "is-info" \| "is-light" \| "is-link" \| "is-primary" \| "is-success" \| "is-warning" \| "is-white"` | `undefined` |
+| `modifier` | `modifier` | Modifier    | `"is-delete" \| "is-rounded"`                                                                                                                  | `undefined` |
+| `size`     | `size`     | Size        | `"is-large" \| "is-medium" \| "is-normal"`                                                                                                     | `undefined` |
 
 
 ----------------------------------------------

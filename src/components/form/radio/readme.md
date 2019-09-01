@@ -7,12 +7,12 @@
 
 ## Properties
 
-| Property     | Attribute     | Description | Type      | Default     |
-| ------------ | ------------- | ----------- | --------- | ----------- |
-| `checked`    | `checked`     |             | `boolean` | `false`     |
-| `class`      | `class`       |             | `string`  | `''`        |
-| `labelClass` | `label-class` |             | `string`  | `''`        |
-| `name`       | `name`        |             | `string`  | `undefined` |
+| Property     | Attribute     | Description   | Type      | Default     |
+| ------------ | ------------- | ------------- | --------- | ----------- |
+| `checked`    | `checked`     | Checked       | `boolean` | `false`     |
+| `class`      | `class`       | CSS Classes   | `string`  | `''`        |
+| `labelClass` | `label-class` | Label Classes | `string`  | `''`        |
+| `name`       | `name`        | Name          | `string`  | `undefined` |
 
 
 ----------------------------------------------

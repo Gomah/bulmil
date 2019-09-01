@@ -6,9 +6,24 @@ import classNames from 'classnames';
   styleUrls: ['radio.scss'],
 })
 export class Radio implements ComponentInterface {
+  /**
+   * CSS Classes
+   */
   @Prop() class = '';
+
+  /**
+   * Label Classes
+   */
   @Prop() labelClass = '';
+
+  /**
+   * Name
+   */
   @Prop() name: string;
+
+  /**
+   * Checked
+   */
   @Prop() checked = false;
 
   render(): JSX.Element {

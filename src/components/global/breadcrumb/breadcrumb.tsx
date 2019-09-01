@@ -6,10 +6,29 @@ import classNames from 'classnames';
   styleUrls: ['breadcrumb.scss'],
 })
 export class Breadcrumb implements ComponentInterface {
+  /**
+   * CSS Classes
+   */
   @Prop() class = '';
+
+  /**
+   * Aligned to the center
+   */
   @Prop() isCentered = false;
+
+  /**
+   * Aligned to the right
+   */
   @Prop() isRight = false;
+
+  /**
+   * Size
+   */
   @Prop() size: 'is-small' | 'is-medium' | 'is-large';
+
+  /**
+   * Separator
+   */
   @Prop() separator:
     | 'has-arrow-separator'
     | 'has-bullet-separator'

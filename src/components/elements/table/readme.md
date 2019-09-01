@@ -9,12 +9,12 @@
 
 | Property      | Attribute      | Description | Type      | Default     |
 | ------------- | -------------- | ----------- | --------- | ----------- |
-| `class`       | `class`        |             | `string`  | `undefined` |
-| `isBordered`  | `is-bordered`  |             | `boolean` | `false`     |
-| `isFullwidth` | `is-fullwidth` |             | `boolean` | `false`     |
-| `isHoverable` | `is-hoverable` |             | `boolean` | `false`     |
-| `isNarrow`    | `is-narrow`    |             | `boolean` | `false`     |
-| `isStriped`   | `is-striped`   |             | `boolean` | `false`     |
+| `class`       | `class`        | CSS Classes | `string`  | `undefined` |
+| `isBordered`  | `is-bordered`  | Bordered    | `boolean` | `false`     |
+| `isFullwidth` | `is-fullwidth` | Fullwidth   | `boolean` | `false`     |
+| `isHoverable` | `is-hoverable` | Hoverable   | `boolean` | `false`     |
+| `isNarrow`    | `is-narrow`    | Narrow      | `boolean` | `false`     |
+| `isStriped`   | `is-striped`   | Striped     | `boolean` | `false`     |
 
 
 ----------------------------------------------

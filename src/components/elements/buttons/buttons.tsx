@@ -6,8 +6,15 @@ import classNames from 'classnames';
   scoped: true,
 })
 export class Buttons implements ComponentInterface {
+  /**
+   * CSS classes
+   */
   @Prop() class = '';
-  @Prop() size: 'are-small' | 'are-medium' | 'are-large';
+
+  /**
+   * Buttons size
+   */
+  @Prop() public size: 'are-small' | 'are-medium' | 'are-large';
 
   render(): JSX.Element {
     const buttonsClass = classNames('buttons', this.size, this.class);

@@ -6,7 +6,14 @@ import classNames from 'classnames';
   styleUrls: ['section.scss'],
 })
 export class Section implements ComponentInterface {
+  /**
+   * CSS Classes
+   */
   @Prop() class = '';
+
+  /**
+   * Section size
+   */
   @Prop() size: 'is-medium' | 'is-large';
 
   render(): JSX.Element {

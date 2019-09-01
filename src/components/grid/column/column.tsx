@@ -7,10 +7,20 @@ type Breakpoint = 'mobile' | 'tablet' | 'touch' | 'desktop' | 'widescreen' | 'fu
   tag: 'b-column',
 })
 export class Column implements ComponentInterface {
+  /**
+   * CSS Classes
+   */
   @Prop() class = '';
 
   // TODO: Generate sizes, https://bulma.io/documentation/columns/sizes/
+  /**
+   * Sizes
+   */
   @Prop() sizes;
+
+  /**
+   * Narrow column
+   */
   @Prop() isNarrow: boolean | Breakpoint[] | null;
 
   render(): JSX.Element {

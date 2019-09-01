@@ -6,6 +6,9 @@ import classNames from 'classnames';
   styleUrls: ['footer.scss'],
 })
 export class Section implements ComponentInterface {
+  /**
+   * CSS Classes
+   */
   @Prop() class = '';
 
   render(): JSX.Element {

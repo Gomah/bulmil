@@ -7,10 +7,10 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type                        | Default     |
-| -------- | --------- | ----------- | --------------------------- | ----------- |
-| `class`  | `class`   |             | `string`                    | `''`        |
-| `size`   | `size`    |             | `"is-large" \| "is-medium"` | `undefined` |
+| Property | Attribute | Description  | Type                        | Default     |
+| -------- | --------- | ------------ | --------------------------- | ----------- |
+| `class`  | `class`   | CSS Classes  | `string`                    | `''`        |
+| `size`   | `size`    | Section size | `"is-large" \| "is-medium"` | `undefined` |
 
 
 ----------------------------------------------

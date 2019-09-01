@@ -5,6 +5,9 @@ import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
   styleUrls: ['box.scss'],
 })
 export class Box implements ComponentInterface {
+  /**
+   * CSS classes
+   */
   @Prop() class = '';
 
   render(): JSX.Element {

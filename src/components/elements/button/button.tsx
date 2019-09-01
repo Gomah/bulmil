@@ -4,6 +4,7 @@ import {
   h,
   JSX,
   Listen,
+  Host,
   EventEmitter,
   Event,
   ComponentInterface,
@@ -15,9 +16,19 @@ import classNames from 'classnames';
   styleUrls: ['button.scss'],
 })
 export class Button implements ComponentInterface {
+  /**
+   * Is disabled?
+   */
   @Prop() disabled = false;
+
+  /**
+   * CSS classes
+   */
   @Prop() class: string;
 
+  /**
+   * Color
+   */
   @Prop() color:
     | 'is-primary'
     | 'is-link'
@@ -31,28 +42,70 @@ export class Button implements ComponentInterface {
     | 'is-black'
     | 'is-text';
 
+  /**
+  * Size
+  */
   @Prop() size: 'is-small' | 'is-medium' | 'is-large' | 'is-normal';
 
+
+  /**
+   * Display the button in full-width
+   */
   @Prop() fullWidth = false;
 
+
+  /**
+   * Is outlined
+   */
   @Prop() isOutlined = false;
 
+
+  /**
+   * Is inverted
+   */
   @Prop() isInverted = false;
 
+
+  /**
+   * Rounded button
+   */
   @Prop() isRounded = false;
 
+
+  /**
+   * Hovered state
+   */
   @Prop() isHovered = false;
 
+  /**
+   * Focused state
+   */
   @Prop() isFocused = false;
 
+
+  /**
+   * Active state
+   */
   @Prop() isActive = false;
 
+  /**
+   * Static
+   */
   @Prop() isStatic = false;
 
+  /**
+   * Loading state
+   */
   @Prop() isLoading = false;
 
+  /**
+   * Clicked event
+   */
   @Event() clicked: EventEmitter;
 
+  /**
+   * Click listener
+   */
   @Listen('click', { capture: true })
   handleClick(e: MouseEvent) {
     this.clicked.emit(e);
@@ -78,9 +131,11 @@ export class Button implements ComponentInterface {
     );
 
     return (
-      <button class={btnClass} disabled={this.disabled}>
-        <slot />
-      </button>
+      <Host>
+        <button class={btnClass} disabled={this.disabled}>
+          <slot />
+        </button>
+      </Host>
     );
   }
 }

@@ -9,8 +9,8 @@
 
 | Property    | Attribute    | Description | Type      | Default     |
 | ----------- | ------------ | ----------- | --------- | ----------- |
-| `class`     | `class`      |             | `string`  | `undefined` |
-| `hasAddons` | `has-addons` |             | `boolean` | `false`     |
+| `class`     | `class`      | CSS Classes | `string`  | `undefined` |
+| `hasAddons` | `has-addons` | Has addons  | `boolean` | `false`     |
 
 
 ----------------------------------------------

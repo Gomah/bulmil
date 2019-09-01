@@ -5,7 +5,14 @@ import classNames from 'classnames';
   tag: 'b-tags',
 })
 export class Tags implements ComponentInterface {
+  /**
+   * CSS Classes
+   */
   @Prop() class: string;
+
+  /**
+   * Has addons
+   */
   @Prop() hasAddons = false;
 
   render(): JSX.Element {

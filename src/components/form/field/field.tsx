@@ -6,12 +6,39 @@ import classNames from 'classnames';
   styleUrls: ['field.scss'],
 })
 export class Field implements ComponentInterface {
+  /**
+   * CSS Classes
+   */
   @Prop() class = '';
+
+  /**
+   * Label
+   */
   @Prop() label: string;
+
+  /**
+   * Has addons
+   */
   @Prop() hasAddons = false;
+
+  /**
+   * Field size
+   */
   @Prop() fieldSize: 'is-small' | 'is-normal' | 'is-medium' | 'is-large';
+
+  /**
+   * Horizontal field
+   */
   @Prop() isHorizontal = false;
+
+  /**
+   * Grouped field
+   */
   @Prop() isGrouped = false;
+
+  /**
+   * Grouped, on multiline
+   */
   @Prop() isGroupedMultiline = false;
 
   render(): JSX.Element {

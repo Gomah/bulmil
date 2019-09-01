@@ -5,7 +5,14 @@ import classNames from 'classnames';
   styleUrls: ['tag.scss'],
 })
 export class Tag implements ComponentInterface {
+  /**
+   * CSS Classes
+   */
   @Prop() class: string;
+
+  /**
+   * Color
+   */
   @Prop() color:
     | 'is-black'
     | 'is-dark'
@@ -17,7 +24,15 @@ export class Tag implements ComponentInterface {
     | 'is-success'
     | 'is-warning'
     | 'is-danger';
+
+  /**
+   * Size
+   */
   @Prop() size: 'is-normal' | 'is-medium' | 'is-large';
+
+  /**
+   * Modifier
+   */
   @Prop() modifier: 'is-rounded' | 'is-delete';
 
   render(): JSX.Element {

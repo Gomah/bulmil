@@ -7,28 +7,28 @@
 
 ## Properties
 
-| Property     | Attribute     | Description | Type                                                                                                                                                        | Default     |
-| ------------ | ------------- | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| `class`      | `class`       |             | `string`                                                                                                                                                    | `undefined` |
-| `color`      | `color`       |             | `"is-black" \| "is-danger" \| "is-dark" \| "is-info" \| "is-light" \| "is-link" \| "is-primary" \| "is-success" \| "is-text" \| "is-warning" \| "is-white"` | `undefined` |
-| `disabled`   | `disabled`    |             | `boolean`                                                                                                                                                   | `false`     |
-| `fullWidth`  | `full-width`  |             | `boolean`                                                                                                                                                   | `false`     |
-| `isActive`   | `is-active`   |             | `boolean`                                                                                                                                                   | `false`     |
-| `isFocused`  | `is-focused`  |             | `boolean`                                                                                                                                                   | `false`     |
-| `isHovered`  | `is-hovered`  |             | `boolean`                                                                                                                                                   | `false`     |
-| `isInverted` | `is-inverted` |             | `boolean`                                                                                                                                                   | `false`     |
-| `isLoading`  | `is-loading`  |             | `boolean`                                                                                                                                                   | `false`     |
-| `isOutlined` | `is-outlined` |             | `boolean`                                                                                                                                                   | `false`     |
-| `isRounded`  | `is-rounded`  |             | `boolean`                                                                                                                                                   | `false`     |
-| `isStatic`   | `is-static`   |             | `boolean`                                                                                                                                                   | `false`     |
-| `size`       | `size`        |             | `"is-large" \| "is-medium" \| "is-normal" \| "is-small"`                                                                                                    | `undefined` |
+| Property     | Attribute     | Description                      | Type                                                                                                                                                        | Default     |
+| ------------ | ------------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| `class`      | `class`       | CSS classes                      | `string`                                                                                                                                                    | `undefined` |
+| `color`      | `color`       | Color                            | `"is-black" \| "is-danger" \| "is-dark" \| "is-info" \| "is-light" \| "is-link" \| "is-primary" \| "is-success" \| "is-text" \| "is-warning" \| "is-white"` | `undefined` |
+| `disabled`   | `disabled`    | Is disabled?                     | `boolean`                                                                                                                                                   | `false`     |
+| `fullWidth`  | `full-width`  | Display the button in full-width | `boolean`                                                                                                                                                   | `false`     |
+| `isActive`   | `is-active`   | Active state                     | `boolean`                                                                                                                                                   | `false`     |
+| `isFocused`  | `is-focused`  | Focused state                    | `boolean`                                                                                                                                                   | `false`     |
+| `isHovered`  | `is-hovered`  | Hovered state                    | `boolean`                                                                                                                                                   | `false`     |
+| `isInverted` | `is-inverted` | Is inverted                      | `boolean`                                                                                                                                                   | `false`     |
+| `isLoading`  | `is-loading`  | Loading state                    | `boolean`                                                                                                                                                   | `false`     |
+| `isOutlined` | `is-outlined` | Is outlined                      | `boolean`                                                                                                                                                   | `false`     |
+| `isRounded`  | `is-rounded`  | Rounded button                   | `boolean`                                                                                                                                                   | `false`     |
+| `isStatic`   | `is-static`   | Static                           | `boolean`                                                                                                                                                   | `false`     |
+| `size`       | `size`        | Size                             | `"is-large" \| "is-medium" \| "is-normal" \| "is-small"`                                                                                                    | `undefined` |
 
 
 ## Events
 
-| Event     | Description | Type               |
-| --------- | ----------- | ------------------ |
-| `clicked` |             | `CustomEvent<any>` |
+| Event     | Description   | Type               |
+| --------- | ------------- | ------------------ |
+| `clicked` | Clicked event | `CustomEvent<any>` |
 
 
 ----------------------------------------------

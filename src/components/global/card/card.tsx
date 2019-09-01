@@ -6,6 +6,9 @@ import classNames from 'classnames';
   styleUrls: ['card.scss'],
 })
 export class Card implements ComponentInterface {
+  /**
+   * CSS Classes
+   */
   @Prop() class = '';
 
   render(): JSX.Element {

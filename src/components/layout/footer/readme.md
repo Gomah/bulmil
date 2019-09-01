@@ -9,7 +9,7 @@
 
 | Property | Attribute | Description | Type     | Default |
 | -------- | --------- | ----------- | -------- | ------- |
-| `class`  | `class`   |             | `string` | `''`    |
+| `class`  | `class`   | CSS Classes | `string` | `''`    |
 
 
 ----------------------------------------------

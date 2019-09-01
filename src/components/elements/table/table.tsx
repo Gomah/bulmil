@@ -5,11 +5,34 @@ import classNames from 'classnames';
   styleUrls: ['table.scss'],
 })
 export class Table implements ComponentInterface {
+  /**
+   * CSS Classes
+   */
   @Prop() class: string;
+
+  /**
+   * Bordered
+   */
   @Prop() isBordered = false;
+
+  /**
+   * Striped
+   */
   @Prop() isStriped = false;
+
+  /**
+   * Narrow
+   */
   @Prop() isNarrow = false;
+
+  /**
+   * Hoverable
+   */
   @Prop() isHoverable = false;
+
+  /**
+   * Fullwidth
+   */
   @Prop() isFullwidth = false;
 
   render(): JSX.Element {

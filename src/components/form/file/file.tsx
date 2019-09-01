@@ -6,8 +6,19 @@ import classNames from 'classnames';
   styleUrls: ['file.scss'],
 })
 export class File implements ComponentInterface {
+  /**
+   * CSS Classes
+   */
   @Prop() class = '';
+
+  /**
+   * Name
+   */
   @Prop() name = '';
+
+  /**
+   * Color
+   */
   @Prop() color:
     | 'is-white'
     | 'is-black'
@@ -20,11 +31,34 @@ export class File implements ComponentInterface {
     | 'is-warning'
     | 'is-danger';
 
+  /**
+   * CSS Classes
+   */
   @Prop() size: 'is-small' | 'is-medium' | 'is-large';
+
+  /**
+   * Alignment
+   */
   @Prop() alignment: 'is-centered' | 'is-right';
+
+  /**
+   * Add a placeholder for the selected file name
+   */
   @Prop() hasName = false;
+
+  /**
+   * Move the CTA to the right side
+   */
   @Prop() isRight = false;
+
+  /**
+   * Expand the name to fill up the space
+   */
   @Prop() isFullwidth = false;
+
+  /**
+   * Boxed block
+   */
   @Prop() isBoxed = false;
 
   render(): JSX.Element {

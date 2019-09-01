@@ -6,9 +6,24 @@ import classNames from 'classnames';
   styleUrls: ['checkbox.scss'],
 })
 export class Checkbox implements ComponentInterface {
+  /**
+   * CSS Classes
+   */
   @Prop() class = '';
+
+  /**
+   * Label classes
+   */
   @Prop() labelClass = '';
+
+  /**
+   * Checked
+   */
   @Prop() checked = false;
+
+  /**
+   * Disabled
+   */
   @Prop() disabled = false;
 
   render(): JSX.Element {

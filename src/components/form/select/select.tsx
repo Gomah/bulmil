@@ -6,14 +6,49 @@ import classNames from 'classnames';
   styleUrls: ['select.scss'],
 })
 export class Select implements ComponentInterface {
+  /**
+   * CSS Classes
+   */
   @Prop() class = '';
+
+  /**
+   * Control classes
+   */
   @Prop() controlClass = '';
+
+  /**
+   * Value
+   */
   @Prop() value: string | number;
+
+  /**
+   * Color
+   */
   @Prop() color: 'is-primary' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
+
+  /**
+   * Size
+   */
   @Prop() size: 'is-small' | 'is-normal' | 'is-medium' | 'is-large';
+
+  /**
+   * State
+   */
   @Prop() state: 'is-hovered' | 'is-focused';
+
+  /**
+   * Allows multiple selection
+   */
   @Prop() isMultiple = false;
+
+  /**
+   * Loading state
+   */
   @Prop() isLoading = false;
+
+  /**
+   * Rounded
+   */
   @Prop() isRounded = false;
 
   render(): JSX.Element {

@@ -6,8 +6,19 @@ import classNames from 'classnames';
   styleUrls: ['icon.scss'],
 })
 export class Icon implements ComponentInterface {
+  /**
+   * CSS Classes
+   */
   @Prop() class = '';
+
+  /**
+   * Color
+   */
   @Prop() color: 'has-text-info' | 'has-text-success' | 'has-text-warning' | 'has-text-danger';
+
+  /**
+   * Size
+   */
   @Prop() size: 'is-small' | 'is-medium' | 'is-large';
 
   render(): JSX.Element {

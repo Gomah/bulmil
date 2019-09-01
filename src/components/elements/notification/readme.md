@@ -9,9 +9,9 @@
 
 | Property      | Attribute     | Description | Type                                                                                    | Default     |
 | ------------- | ------------- | ----------- | --------------------------------------------------------------------------------------- | ----------- |
-| `class`       | `class`       |             | `string`                                                                                | `''`        |
-| `color`       | `color`       |             | `"is-danger" \| "is-info" \| "is-link" \| "is-primary" \| "is-success" \| "is-warning"` | `undefined` |
-| `dismissable` | `dismissable` |             | `boolean`                                                                               | `true`      |
+| `class`       | `class`       | CSS Classes | `string`                                                                                | `''`        |
+| `color`       | `color`       | Color       | `"is-danger" \| "is-info" \| "is-link" \| "is-primary" \| "is-success" \| "is-warning"` | `undefined` |
+| `dismissable` | `dismissable` | Dismissable | `boolean`                                                                               | `true`      |
 
 
 ----------------------------------------------

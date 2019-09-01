@@ -6,8 +6,19 @@ import classNames from 'classnames';
   styleUrls: ['container.scss'],
 })
 export class Container implements ComponentInterface {
+  /**
+   * CSS Classes
+   */
   @Prop() class = '';
+
+  /**
+   * Container breakpoint
+   */
   @Prop() breakpoint: 'is-widescreen' | 'is-fullhd';
+
+  /**
+   * Fluid container
+   */
   @Prop() isFluid = false;
 
   render(): JSX.Element {

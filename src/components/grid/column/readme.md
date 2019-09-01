@@ -7,11 +7,11 @@
 
 ## Properties
 
-| Property   | Attribute   | Description | Type                      | Default     |
-| ---------- | ----------- | ----------- | ------------------------- | ----------- |
-| `class`    | `class`     |             | `string`                  | `''`        |
-| `isNarrow` | `is-narrow` |             | `Breakpoint[] \| boolean` | `undefined` |
-| `sizes`    | `sizes`     |             | `any`                     | `undefined` |
+| Property   | Attribute   | Description   | Type                      | Default     |
+| ---------- | ----------- | ------------- | ------------------------- | ----------- |
+| `class`    | `class`     | CSS Classes   | `string`                  | `''`        |
+| `isNarrow` | `is-narrow` | Narrow column | `Breakpoint[] \| boolean` | `undefined` |
+| `sizes`    | `sizes`     | Sizes         | `any`                     | `undefined` |
 
 
 ----------------------------------------------
