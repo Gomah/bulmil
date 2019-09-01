@@ -14,6 +14,7 @@ import classNames from 'classnames';
 @Component({
   tag: 'b-button',
   styleUrls: ['button.scss'],
+  shadow: true,
 })
 export class Button implements ComponentInterface {
   /**
@@ -125,7 +126,7 @@ export class Button implements ComponentInterface {
     );
 
     return (
-      <Host>
+      <Host onClick={this.handleClick} aria-disabled={this.disabled ? 'true' : null}>
         <button class={btnClass} disabled={this.disabled}>
           <slot />
         </button>

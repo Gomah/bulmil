@@ -1,8 +1,9 @@
-import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
+import { Component, Prop, h, JSX, ComponentInterface, Host } from '@stencil/core';
 
 @Component({
   tag: 'b-box',
   styleUrls: ['box.scss'],
+  shadow: true,
 })
 export class Box implements ComponentInterface {
   /**
@@ -12,9 +13,11 @@ export class Box implements ComponentInterface {
 
   render(): JSX.Element {
     return (
-      <div class={`box ${this.class}`}>
-        <slot />
-      </div>
+      <Host>
+        <div class={`box ${this.class}`}>
+          <slot />
+        </div>
+      </Host>
     );
   }
 }

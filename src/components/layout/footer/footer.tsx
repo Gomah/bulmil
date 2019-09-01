@@ -6,7 +6,7 @@ import classNames from 'classnames';
   styleUrls: ['footer.scss'],
   shadow: true,
 })
-export class Section implements ComponentInterface {
+export class Footer implements ComponentInterface {
   /**
    * CSS Classes
    */

@@ -1,9 +1,10 @@
-import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
+import { Component, Prop, h, JSX, ComponentInterface, Host } from '@stencil/core';
 import classNames from 'classnames';
 
 @Component({
   tag: 'b-content',
   styleUrls: ['content.scss'],
+  shadow: true,
 })
 export class Content implements ComponentInterface {
   /**
@@ -20,9 +21,11 @@ export class Content implements ComponentInterface {
     const contentClass = classNames('content', this.size, this.class);
 
     return (
-      <div class={contentClass}>
-        <slot />
-      </div>
+      <Host>
+        <div class={contentClass}>
+          <slot />
+        </div>
+      </Host>
     );
   }
 }

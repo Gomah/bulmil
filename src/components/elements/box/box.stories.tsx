@@ -2,7 +2,7 @@ import centered from '@storybook/addon-centered/html';
 import { storiesOf } from '@storybook/html';
 import notes from './readme.md';
 
-storiesOf('Components|Box', module)
+storiesOf('Elements|Box', module)
   .addDecorator(centered)
   .addParameters({
     notes: {

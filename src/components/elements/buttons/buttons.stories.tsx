@@ -11,7 +11,7 @@ const sizes: { [key: string]: Buttons['size'] } = {
   none: null,
 };
 
-storiesOf('Components|Buttons', module)
+storiesOf('Elements|Buttons', module)
   .addDecorator(centered)
   .addParameters({
     notes: {
@@ -21,7 +21,7 @@ storiesOf('Components|Buttons', module)
 
   .add('Example', () => {
     return `
-      <b-buttons size=${select('Size', sizes, null, 'test')}>
+      <b-buttons size=${select('Size', sizes, null)}>
         <b-button color="is-primary">Primary</b-button>
         <b-button color="is-danger">Danger</b-button>
       </b-buttons>
