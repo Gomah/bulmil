@@ -1,9 +1,10 @@
-import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
+import { Component, Prop, h, JSX, Host, ComponentInterface } from '@stencil/core';
 import classNames from 'classnames';
 
 @Component({
   tag: 'b-footer',
   styleUrls: ['footer.scss'],
+  shadow: true,
 })
 export class Section implements ComponentInterface {
   /**
@@ -15,9 +16,11 @@ export class Section implements ComponentInterface {
     const footerClass = classNames('footer', this.class);
 
     return (
-      <footer class={footerClass}>
-        <slot />
-      </footer>
+      <Host>
+        <footer class={footerClass}>
+          <slot />
+        </footer>
+      </Host>
     );
   }
 }

@@ -4,6 +4,7 @@ import classNames from 'classnames';
 @Component({
   tag: 'b-container',
   styleUrls: ['container.scss'],
+  shadow: true,
 })
 export class Container implements ComponentInterface {
   /**
