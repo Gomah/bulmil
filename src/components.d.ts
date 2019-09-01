@@ -527,6 +527,32 @@ export namespace Components {
     */
     'isStriped': boolean;
   }
+  interface BTabs {
+    /**
+    * Alignment
+    */
+    'alignment': 'is-centered' | 'is-right';
+    /**
+    * CSS Classes
+    */
+    'class': string;
+    /**
+    * Full width
+    */
+    'isFullwidth': boolean;
+    /**
+    * Rounded
+    */
+    'isRounded': boolean;
+    /**
+    * Pagination size
+    */
+    'size': 'is-small' | 'is-medium' | 'is-large';
+    /**
+    * Style
+    */
+    'tabStyle': 'is-boxed' | 'is-toggle';
+  }
   interface BTag {
     /**
     * CSS Classes
@@ -717,6 +743,12 @@ declare global {
     new (): HTMLBNotificationElement;
   };
 
+  interface HTMLBPaginationElement extends Components.BPagination, HTMLStencilElement {}
+  var HTMLBPaginationElement: {
+    prototype: HTMLBPaginationElement;
+    new (): HTMLBPaginationElement;
+  };
+
   interface HTMLBProgressElement extends Components.BProgress, HTMLStencilElement {}
   var HTMLBProgressElement: {
     prototype: HTMLBProgressElement;
@@ -745,6 +777,12 @@ declare global {
   var HTMLBTableElement: {
     prototype: HTMLBTableElement;
     new (): HTMLBTableElement;
+  };
+
+  interface HTMLBTabsElement extends Components.BTabs, HTMLStencilElement {}
+  var HTMLBTabsElement: {
+    prototype: HTMLBTabsElement;
+    new (): HTMLBTabsElement;
   };
 
   interface HTMLBTagElement extends Components.BTag, HTMLStencilElement {}
@@ -782,11 +820,13 @@ declare global {
     'b-image': HTMLBImageElement;
     'b-input': HTMLBInputElement;
     'b-notification': HTMLBNotificationElement;
+    'b-pagination': HTMLBPaginationElement;
     'b-progress': HTMLBProgressElement;
     'b-radio': HTMLBRadioElement;
     'b-section': HTMLBSectionElement;
     'b-select': HTMLBSelectElement;
     'b-table': HTMLBTableElement;
+    'b-tabs': HTMLBTabsElement;
     'b-tag': HTMLBTagElement;
     'b-tags': HTMLBTagsElement;
     'b-textarea': HTMLBTextareaElement;
@@ -1184,6 +1224,24 @@ declare namespace LocalJSX {
     */
     'dismissable'?: boolean;
   }
+  interface BPagination extends JSXBase.HTMLAttributes<HTMLBPaginationElement> {
+    /**
+    * Alignment
+    */
+    'alignment'?: 'is-centered' | 'is-right';
+    /**
+    * CSS Classes
+    */
+    'class'?: string;
+    /**
+    * Rounded
+    */
+    'isRounded'?: boolean;
+    /**
+    * Pagination size
+    */
+    'size'?: 'is-small' | 'is-medium' | 'is-large';
+  }
   interface BProgress extends JSXBase.HTMLAttributes<HTMLBProgressElement> {
     /**
     * CSS Classes
@@ -1298,6 +1356,32 @@ declare namespace LocalJSX {
     */
     'isStriped'?: boolean;
   }
+  interface BTabs extends JSXBase.HTMLAttributes<HTMLBTabsElement> {
+    /**
+    * Alignment
+    */
+    'alignment'?: 'is-centered' | 'is-right';
+    /**
+    * CSS Classes
+    */
+    'class'?: string;
+    /**
+    * Full width
+    */
+    'isFullwidth'?: boolean;
+    /**
+    * Rounded
+    */
+    'isRounded'?: boolean;
+    /**
+    * Pagination size
+    */
+    'size'?: 'is-small' | 'is-medium' | 'is-large';
+    /**
+    * Style
+    */
+    'tabStyle'?: 'is-boxed' | 'is-toggle';
+  }
   interface BTag extends JSXBase.HTMLAttributes<HTMLBTagElement> {
     /**
     * CSS Classes
@@ -1400,11 +1484,13 @@ declare namespace LocalJSX {
     'b-image': BImage;
     'b-input': BInput;
     'b-notification': BNotification;
+    'b-pagination': BPagination;
     'b-progress': BProgress;
     'b-radio': BRadio;
     'b-section': BSection;
     'b-select': BSelect;
     'b-table': BTable;
+    'b-tabs': BTabs;
     'b-tag': BTag;
     'b-tags': BTags;
     'b-textarea': BTextarea;
