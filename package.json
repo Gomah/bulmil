@@ -28,6 +28,7 @@
     "build:docs": "stencil build --docs",
     "build:clean": "rimraf css",
     "build:components": "stencil build --prod",
+    "build:storybook": "build-storybook -c .storybook -s www -o storybook/",
     "start": "stencil build --dev --watch --serve",
     "watch": "node --max_old_space_size=4096 ./node_modules/.bin/stencil build --watch --recursive --serve",
     "storybook.run": "start-storybook -p 9006 -s www",
