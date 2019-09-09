@@ -4,7 +4,6 @@ import classNames from 'classnames';
 @Component({
   tag: 'b-footer',
   styleUrls: ['footer.scss'],
-  shadow: true,
 })
 export class Footer implements ComponentInterface {
   /**

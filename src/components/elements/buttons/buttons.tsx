@@ -3,7 +3,6 @@ import classNames from 'classnames';
 
 @Component({
   tag: 'b-buttons',
-  scoped: true,
 })
 export class Buttons implements ComponentInterface {
   /**
@@ -18,6 +17,12 @@ export class Buttons implements ComponentInterface {
 
   render(): JSX.Element {
     const buttonsClass = classNames('buttons', this.size, this.class);
-    return <Host class={buttonsClass} />;
+    return (
+      <Host class={buttonsClass}>
+        <div class={buttonsClass}>
+          <slot />
+        </div>
+      </Host>
+    );
   }
 }

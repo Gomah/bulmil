@@ -4,7 +4,6 @@ import classNames from 'classnames';
 @Component({
   tag: 'b-icon',
   styleUrls: ['icon.scss'],
-  shadow: true,
 })
 export class Icon implements ComponentInterface {
   /**

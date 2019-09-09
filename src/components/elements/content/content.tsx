@@ -4,7 +4,6 @@ import classNames from 'classnames';
 @Component({
   tag: 'b-content',
   styleUrls: ['content.scss'],
-  shadow: true,
 })
 export class Content implements ComponentInterface {
   /**

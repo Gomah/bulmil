@@ -4,7 +4,6 @@ import classNames from 'classnames';
 @Component({
   tag: 'b-section',
   styleUrls: ['section.scss'],
-  shadow: true,
 })
 export class Section implements ComponentInterface {
   /**

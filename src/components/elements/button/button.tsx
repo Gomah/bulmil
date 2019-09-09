@@ -14,7 +14,6 @@ import classNames from 'classnames';
 @Component({
   tag: 'b-button',
   styleUrls: ['button.scss'],
-  shadow: true,
 })
 export class Button implements ComponentInterface {
   /**
