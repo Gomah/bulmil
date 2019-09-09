@@ -11,12 +11,9 @@ it('Should render properly', async (): Promise<void> => {
 
   expect(page.root).toEqualHtml(`
     <b-footer>
-      <mock:shadow-root>
-        <footer class="footer">
-          <slot />
-        </footer>
-      </mock:shadow-root>
-      <p>Hello, I'm in a footer!</p>
+      <footer class="footer">
+        <p>Hello, I'm in a footer!</p>
+      </footer>
     </b-footer>
   `);
 });

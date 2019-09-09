@@ -10,12 +10,9 @@ it('Should render properly', async (): Promise<void> => {
 
   expect(page.root).toEqualHtml(`
     <b-button>
-      <mock:shadow-root>
-        <button class="button">
-          <slot/>
-        </button>
-      </mock:shadow-root>
-      Hello
+      <button class="button">
+        Hello
+      </button>
     </b-button>
   `);
 

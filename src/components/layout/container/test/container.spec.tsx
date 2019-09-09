@@ -11,12 +11,9 @@ it('Should render properly', async (): Promise<void> => {
 
   expect(page.root).toEqualHtml(`
     <b-container is-fluid>
-      <mock:shadow-root>
-        <div class="container is-fluid">
-          <slot />
-        </div>
-      </mock:shadow-root>
-      <p>Hello, I'm in a container!</p>
+      <div class="container is-fluid">
+        <p>Hello, I'm in a container!</p>
+      </div>
     </b-container>
   `);
 });

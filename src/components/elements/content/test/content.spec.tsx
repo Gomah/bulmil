@@ -11,12 +11,9 @@ it('Should render properly', async (): Promise<void> => {
 
   expect(page.root).toEqualHtml(`
     <b-content size="is-large">
-      <mock:shadow-root>
-        <div class="content is-large">
-          <slot />
-        </div>
-      </mock:shadow-root>
-      <h2>Hello</h2>
+      <div class="content is-large">
+        <h2>Hello</h2>
+      </div>
     </b-content>
   `);
 });

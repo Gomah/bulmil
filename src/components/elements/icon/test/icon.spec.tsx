@@ -11,12 +11,9 @@ it('Should render properly', async (): Promise<void> => {
 
   expect(page.root).toEqualHtml(`
     <b-icon size="is-large">
-      <mock:shadow-root>
-        <span class="icon is-large">
-          <slot />
-        </span>
-      </mock:shadow-root>
-      <i class="fas fa-home"></i>
+      <span class="icon is-large">
+        <i class="fas fa-home"></i>
+      </span>
     </b-icon>
   `);
 });

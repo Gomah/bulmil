@@ -11,12 +11,9 @@ it('Should render properly', async (): Promise<void> => {
 
   expect(page.root).toEqualHtml(`
     <b-box>
-      <mock:shadow-root>
-        <div class="box">
-          <slot />
-        </div>
-      </mock:shadow-root>
-      <p>Hello, I'm in a box!</p>
+      <div class="box">
+        <p>Hello, I'm in a box!</p>
+      </div>
     </b-box>
   `);
 });
