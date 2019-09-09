@@ -33,7 +33,7 @@ storiesOf('Elements|Progress', module)
           <b-progress
             color="${select('Color', colors, null)}"
             size="${select('Size', sizes, null)}"
-            number="${number('Max', 100)}"
+            max="${number('Max', 100)}"
             value="${number('Value', null)}"
             >
             </b-progress>
