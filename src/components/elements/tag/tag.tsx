@@ -11,6 +11,11 @@ export class Tag implements ComponentInterface {
   @Prop() class: string;
 
   /**
+   * Tag
+   */
+  @Prop() tag = 'span';
+
+  /**
    * Color
    */
   @Prop() color:
@@ -37,11 +42,8 @@ export class Tag implements ComponentInterface {
 
   render(): JSX.Element {
     const tagClass = classNames('tag', this.color, this.size, this.modifier, this.class);
+    const TagType = this.tag;
 
-    return (
-      <span class={tagClass}>
-        <slot />
-      </span>
-    );
+    return <TagType class={tagClass}>{this.modifier !== 'is-delete' && <slot />}</TagType>;
   }
 }

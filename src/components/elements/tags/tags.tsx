@@ -11,12 +11,17 @@ export class Tags implements ComponentInterface {
   @Prop() class: string;
 
   /**
+   * Size
+   */
+  @Prop() size: 'are-medium' | 'are-large';
+
+  /**
    * Has addons
    */
   @Prop() hasAddons = false;
 
   render(): JSX.Element {
-    const tagsClass = classNames('tags', { 'has-addons': this.hasAddons }, this.class);
+    const tagsClass = classNames('tags', { 'has-addons': this.hasAddons }, this.size, this.class);
 
     return (
       <div class={tagsClass}>

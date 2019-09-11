@@ -579,6 +579,10 @@ export namespace Components {
     * Size
     */
     'size': 'is-normal' | 'is-medium' | 'is-large';
+    /**
+    * Tag
+    */
+    'tag': string;
   }
   interface BTags {
     /**
@@ -589,6 +593,10 @@ export namespace Components {
     * Has addons
     */
     'hasAddons': boolean;
+    /**
+    * Size
+    */
+    'size': 'are-medium' | 'are-large';
   }
   interface BTextarea {
     /**
@@ -1408,6 +1416,10 @@ declare namespace LocalJSX {
     * Size
     */
     'size'?: 'is-normal' | 'is-medium' | 'is-large';
+    /**
+    * Tag
+    */
+    'tag'?: string;
   }
   interface BTags extends JSXBase.HTMLAttributes<HTMLBTagsElement> {
     /**
@@ -1418,6 +1430,10 @@ declare namespace LocalJSX {
     * Has addons
     */
     'hasAddons'?: boolean;
+    /**
+    * Size
+    */
+    'size'?: 'are-medium' | 'are-large';
   }
   interface BTextarea extends JSXBase.HTMLAttributes<HTMLBTextareaElement> {
     /**
