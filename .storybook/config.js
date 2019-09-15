@@ -1,16 +1,18 @@
 import { configure, addDecorator, addParameters } from '@storybook/html';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withA11y } from '@storybook/addon-a11y';
-import { withViewport } from '@storybook/addon-viewport';
+import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import { withNotes } from '@storybook/addon-notes';
 import { bulmilTheme } from './bulmil-theme';
 
 addDecorator(withKnobs);
 addDecorator(withA11y);
-addDecorator(withViewport);
 addDecorator(withNotes);
 
 addParameters({
+  viewport: {
+    viewports: INITIAL_VIEWPORTS,
+  },
   options: {
     theme: bulmilTheme,
   },
