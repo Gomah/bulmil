@@ -34,7 +34,7 @@
     "storybook.run": "start-storybook -p 9006 -s www",
     "storybook": "npm-run-all --parallel watch storybook.run",
     "prepublishOnly": "yarn build",
-    "test:lint:ts": "eslint --ext .ts,.tsx --ignore-path .gitignore src/components/",
+    "test:lint:ts": "eslint --ext .ts,.tsx --ignore-path .gitignore src/core/",
     "test:lint:scss": "stylelint 'src/**/*.scss' --syntax scss",
     "test:stencil:e2e": "stencil test --e2e",
     "test:stencil:e2e.watch": "stencil test --e2e --watchAll",
@@ -100,7 +100,6 @@
     "workbox-build": "^4.3.1"
   },
   "dependencies": {
-    "bulma-scss": "^0.7.5-1",
-    "classnames": "^2.2.6"
+    "bulma-scss": "^0.7.5-1"
   }
 }

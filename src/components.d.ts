@@ -146,7 +146,8 @@ export namespace Components {
     /**
     * Narrow column
     */
-    'isNarrow': boolean | Breakpoint[] | null;
+    'isNarrow': boolean;
+    'narrowBreakpoints': string;
     /**
     * Sizes
     */
@@ -160,7 +161,7 @@ export namespace Components {
     /**
     * Columns gaps
     */
-    'gaps': ['is-0' | 'is-1' | 'is-2' | 'is-3' | 'is-4' | 'is-5' | 'is-6' | 'is-7' | 'is-8'];
+    'gaps': string;
     /**
     * Centered
     */
@@ -983,7 +984,8 @@ declare namespace LocalJSX {
     /**
     * Narrow column
     */
-    'isNarrow'?: boolean | Breakpoint[] | null;
+    'isNarrow'?: boolean;
+    'narrowBreakpoints'?: string;
     /**
     * Sizes
     */
@@ -997,7 +999,7 @@ declare namespace LocalJSX {
     /**
     * Columns gaps
     */
-    'gaps'?: ['is-0' | 'is-1' | 'is-2' | 'is-3' | 'is-4' | 'is-5' | 'is-6' | 'is-7' | 'is-8'];
+    'gaps'?: string;
     /**
     * Centered
     */
