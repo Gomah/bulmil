@@ -1,27 +1,26 @@
 @-webkit-keyframes spinAround {
   from {
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
+            transform: rotate(359deg);
   }
 }
 
 @keyframes spinAround {
   from {
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
+            transform: rotate(359deg);
   }
 }
 
-.delete,
-.is-unselectable {
+.delete, .is-unselectable {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -29,9 +28,7 @@
   user-select: none;
 }
 
-.block:not(:last-child),
-.highlight:not(:last-child),
-.title:not(:last-child),
+.block:not(:last-child), .highlight:not(:last-child), .title:not(:last-child),
 .subtitle:not(:last-child) {
   margin-bottom: 1.5rem;
 }
@@ -46,9 +43,9 @@
   pointer-events: auto;
   display: inline-block;
   -ms-flex-positive: 0;
-  flex-grow: 0;
+      flex-grow: 0;
   -ms-flex-negative: 0;
-  flex-shrink: 0;
+      flex-shrink: 0;
   font-size: 0;
   height: 20px;
   max-height: 20px;
@@ -61,20 +58,19 @@
   width: 20px;
 }
 
-.delete::before,
-.delete::after {
+.delete::before, .delete::after {
   background-color: white;
-  content: '';
+  content: "";
   display: block;
   left: 50%;
   position: absolute;
   top: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-  -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+      -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+          transform: translateX(-50%) translateY(-50%) rotate(45deg);
   -webkit-transform-origin: center center;
-  -ms-transform-origin: center center;
-  transform-origin: center center;
+      -ms-transform-origin: center center;
+          transform-origin: center center;
 }
 
 .delete::before {
@@ -87,8 +83,7 @@
   width: 2px;
 }
 
-.delete:hover,
-.delete:focus {
+.delete:hover, .delete:focus {
   background-color: rgba(10, 10, 10, 0.3);
 }
 
@@ -125,12 +120,12 @@
 
 .loader {
   -webkit-animation: spinAround 500ms infinite linear;
-  animation: spinAround 500ms infinite linear;
+          animation: spinAround 500ms infinite linear;
   border: 2px solid #dbdbdb;
   border-radius: 290486px;
   border-right-color: transparent;
   border-top-color: transparent;
-  content: '';
+  content: "";
   display: block;
   height: 1em;
   position: relative;
@@ -198,9 +193,7 @@ html {
   box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: inherit;
 }
 
@@ -239,9 +232,9 @@ html {
   overflow-y: scroll;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
 }
 
 article,
@@ -259,8 +252,7 @@ button,
 input,
 select,
 textarea {
-  font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 code,
@@ -312,8 +304,8 @@ img {
   max-width: 100%;
 }
 
-input[type='checkbox'],
-input[type='radio'] {
+input[type="checkbox"],
+input[type="radio"] {
   vertical-align: baseline;
 }
 
@@ -369,7 +361,7 @@ table th {
 
 .is-clearfix::after {
   clear: both;
-  content: ' ';
+  content: " ";
   display: table;
 }
 
@@ -809,8 +801,7 @@ table th {
   color: white !important;
 }
 
-a.has-text-white:hover,
-a.has-text-white:focus {
+a.has-text-white:hover, a.has-text-white:focus {
   color: #e6e6e6 !important;
 }
 
@@ -822,8 +813,7 @@ a.has-text-white:focus {
   color: #0a0a0a !important;
 }
 
-a.has-text-black:hover,
-a.has-text-black:focus {
+a.has-text-black:hover, a.has-text-black:focus {
   color: black !important;
 }
 
@@ -835,8 +825,7 @@ a.has-text-black:focus {
   color: whitesmoke !important;
 }
 
-a.has-text-light:hover,
-a.has-text-light:focus {
+a.has-text-light:hover, a.has-text-light:focus {
   color: #dbdbdb !important;
 }
 
@@ -848,8 +837,7 @@ a.has-text-light:focus {
   color: #363636 !important;
 }
 
-a.has-text-dark:hover,
-a.has-text-dark:focus {
+a.has-text-dark:hover, a.has-text-dark:focus {
   color: #1c1c1c !important;
 }
 
@@ -861,8 +849,7 @@ a.has-text-dark:focus {
   color: #5851ff !important;
 }
 
-a.has-text-primary:hover,
-a.has-text-primary:focus {
+a.has-text-primary:hover, a.has-text-primary:focus {
   color: #271eff !important;
 }
 
@@ -874,8 +861,7 @@ a.has-text-primary:focus {
   color: #209cee !important;
 }
 
-a.has-text-info:hover,
-a.has-text-info:focus {
+a.has-text-info:hover, a.has-text-info:focus {
   color: #0f81cc !important;
 }
 
@@ -887,8 +873,7 @@ a.has-text-info:focus {
   color: #23d160 !important;
 }
 
-a.has-text-success:hover,
-a.has-text-success:focus {
+a.has-text-success:hover, a.has-text-success:focus {
   color: #1ca64c !important;
 }
 
@@ -900,8 +885,7 @@ a.has-text-success:focus {
   color: #ffdd57 !important;
 }
 
-a.has-text-warning:hover,
-a.has-text-warning:focus {
+a.has-text-warning:hover, a.has-text-warning:focus {
   color: #ffd324 !important;
 }
 
@@ -913,8 +897,7 @@ a.has-text-warning:focus {
   color: #ff3860 !important;
 }
 
-a.has-text-danger:hover,
-a.has-text-danger:focus {
+a.has-text-danger:hover, a.has-text-danger:focus {
   color: #ff0537 !important;
 }
 
@@ -1015,18 +998,15 @@ a.has-text-danger:focus {
 }
 
 .is-family-primary {
-  font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !important;
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
 }
 
 .is-family-secondary {
-  font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !important;
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
 }
 
 .is-family-sans-serif {
-  font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !important;
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
 }
 
 .is-family-monospace {
@@ -1516,7 +1496,7 @@ a.has-text-danger:focus {
 
 .number {
   -ms-flex-align: center;
-  align-items: center;
+      align-items: center;
   background-color: whitesmoke;
   border-radius: 290486px;
   display: -ms-inline-flexbox;
@@ -1524,7 +1504,7 @@ a.has-text-danger:focus {
   font-size: 1.25rem;
   height: 2em;
   -ms-flex-pack: center;
-  justify-content: center;
+      justify-content: center;
   margin-right: 1.5rem;
   min-width: 2.5em;
   padding: 0.25rem 0.5rem;

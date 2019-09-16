@@ -22,6 +22,9 @@ export class Column implements ComponentInterface {
    */
   @Prop() isNarrow: boolean;
 
+  /**
+   * Narrow breakpoints
+   */
   @Prop() narrowBreakpoints: string;
 
   private _narrowBreakpoints: Breakpoint[] = [];

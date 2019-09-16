@@ -147,6 +147,9 @@ export namespace Components {
     * Narrow column
     */
     'isNarrow': boolean;
+    /**
+    * Narrow breakpoints
+    */
     'narrowBreakpoints': string;
     /**
     * Sizes
@@ -985,6 +988,9 @@ declare namespace LocalJSX {
     * Narrow column
     */
     'isNarrow'?: boolean;
+    /**
+    * Narrow breakpoints
+    */
     'narrowBreakpoints'?: string;
     /**
     * Sizes

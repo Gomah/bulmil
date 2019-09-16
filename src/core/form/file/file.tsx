@@ -1,5 +1,4 @@
 import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
-import { threadId } from 'worker_threads';
 
 @Component({
   tag: 'b-file',
