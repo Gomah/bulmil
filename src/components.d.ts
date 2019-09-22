@@ -120,6 +120,30 @@ export namespace Components {
     */
     'class': string;
   }
+  interface BCardContent {
+    /**
+    * CSS Classes
+    */
+    'class': string;
+  }
+  interface BCardFooter {
+    /**
+    * CSS Classes
+    */
+    'class': string;
+  }
+  interface BCardHeader {
+    /**
+    * CSS Classes
+    */
+    'class': string;
+  }
+  interface BCardImage {
+    /**
+    * CSS Classes
+    */
+    'class': string;
+  }
   interface BCheckbox {
     /**
     * Checked
@@ -683,6 +707,30 @@ declare global {
     new (): HTMLBCardElement;
   };
 
+  interface HTMLBCardContentElement extends Components.BCardContent, HTMLStencilElement {}
+  var HTMLBCardContentElement: {
+    prototype: HTMLBCardContentElement;
+    new (): HTMLBCardContentElement;
+  };
+
+  interface HTMLBCardFooterElement extends Components.BCardFooter, HTMLStencilElement {}
+  var HTMLBCardFooterElement: {
+    prototype: HTMLBCardFooterElement;
+    new (): HTMLBCardFooterElement;
+  };
+
+  interface HTMLBCardHeaderElement extends Components.BCardHeader, HTMLStencilElement {}
+  var HTMLBCardHeaderElement: {
+    prototype: HTMLBCardHeaderElement;
+    new (): HTMLBCardHeaderElement;
+  };
+
+  interface HTMLBCardImageElement extends Components.BCardImage, HTMLStencilElement {}
+  var HTMLBCardImageElement: {
+    prototype: HTMLBCardImageElement;
+    new (): HTMLBCardImageElement;
+  };
+
   interface HTMLBCheckboxElement extends Components.BCheckbox, HTMLStencilElement {}
   var HTMLBCheckboxElement: {
     prototype: HTMLBCheckboxElement;
@@ -820,6 +868,10 @@ declare global {
     'b-button': HTMLBButtonElement;
     'b-buttons': HTMLBButtonsElement;
     'b-card': HTMLBCardElement;
+    'b-card-content': HTMLBCardContentElement;
+    'b-card-footer': HTMLBCardFooterElement;
+    'b-card-header': HTMLBCardHeaderElement;
+    'b-card-image': HTMLBCardImageElement;
     'b-checkbox': HTMLBCheckboxElement;
     'b-column': HTMLBColumnElement;
     'b-columns': HTMLBColumnsElement;
@@ -956,6 +1008,30 @@ declare namespace LocalJSX {
     'size'?: 'are-small' | 'are-medium' | 'are-large';
   }
   interface BCard extends JSXBase.HTMLAttributes<HTMLBCardElement> {
+    /**
+    * CSS Classes
+    */
+    'class'?: string;
+  }
+  interface BCardContent extends JSXBase.HTMLAttributes<HTMLBCardContentElement> {
+    /**
+    * CSS Classes
+    */
+    'class'?: string;
+  }
+  interface BCardFooter extends JSXBase.HTMLAttributes<HTMLBCardFooterElement> {
+    /**
+    * CSS Classes
+    */
+    'class'?: string;
+  }
+  interface BCardHeader extends JSXBase.HTMLAttributes<HTMLBCardHeaderElement> {
+    /**
+    * CSS Classes
+    */
+    'class'?: string;
+  }
+  interface BCardImage extends JSXBase.HTMLAttributes<HTMLBCardImageElement> {
     /**
     * CSS Classes
     */
@@ -1496,6 +1572,10 @@ declare namespace LocalJSX {
     'b-button': BButton;
     'b-buttons': BButtons;
     'b-card': BCard;
+    'b-card-content': BCardContent;
+    'b-card-footer': BCardFooter;
+    'b-card-header': BCardHeader;
+    'b-card-image': BCardImage;
     'b-checkbox': BCheckbox;
     'b-column': BColumn;
     'b-columns': BColumns;
