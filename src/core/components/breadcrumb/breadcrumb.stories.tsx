@@ -1,4 +1,3 @@
-// import centered from '@storybook/addon-centered/html';
 import notes from './readme.md';
 import { storiesOf } from '@storybook/html';
 import { boolean, select } from '@storybook/addon-knobs';
@@ -19,7 +18,6 @@ const sizes = {
 };
 
 storiesOf('Components|Breadcrumb', module)
-  // .addDecorator(centered)
   .addParameters({
     notes: {
       markdown: notes,
