@@ -46,7 +46,7 @@
     "test": "yarn test:lint:ts && yarn test:lint:scss && yarn test:stencil"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.0",
+    "@babel/core": "^7.6.2",
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
     "@stencil/core": "^1.4.0",
