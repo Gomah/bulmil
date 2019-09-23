@@ -238,6 +238,28 @@ export namespace Components {
     */
     'size': 'is-small' | 'is-medium' | 'is-large';
   }
+  interface BDropdown {
+    /**
+    * CSS Classes
+    */
+    'class': string;
+    /**
+    * The dropdown active
+    */
+    'isActive': boolean;
+    /**
+    * The dropdown will show up when hovering the dropdown-trigger
+    */
+    'isHoverable': boolean;
+    /**
+    * Align the dropdown to the right
+    */
+    'isRight': boolean;
+    /**
+    * Dropdown menu that appears above the dropdown button
+    */
+    'isUp': boolean;
+  }
   interface BField {
     /**
     * CSS Classes
@@ -761,6 +783,12 @@ declare global {
     new (): HTMLBContentElement;
   };
 
+  interface HTMLBDropdownElement extends Components.BDropdown, HTMLStencilElement {}
+  var HTMLBDropdownElement: {
+    prototype: HTMLBDropdownElement;
+    new (): HTMLBDropdownElement;
+  };
+
   interface HTMLBFieldElement extends Components.BField, HTMLStencilElement {}
   var HTMLBFieldElement: {
     prototype: HTMLBFieldElement;
@@ -877,6 +905,7 @@ declare global {
     'b-columns': HTMLBColumnsElement;
     'b-container': HTMLBContainerElement;
     'b-content': HTMLBContentElement;
+    'b-dropdown': HTMLBDropdownElement;
     'b-field': HTMLBFieldElement;
     'b-file': HTMLBFileElement;
     'b-footer': HTMLBFooterElement;
@@ -1130,6 +1159,28 @@ declare namespace LocalJSX {
     * Content size
     */
     'size'?: 'is-small' | 'is-medium' | 'is-large';
+  }
+  interface BDropdown extends JSXBase.HTMLAttributes<HTMLBDropdownElement> {
+    /**
+    * CSS Classes
+    */
+    'class'?: string;
+    /**
+    * The dropdown active
+    */
+    'isActive'?: boolean;
+    /**
+    * The dropdown will show up when hovering the dropdown-trigger
+    */
+    'isHoverable'?: boolean;
+    /**
+    * Align the dropdown to the right
+    */
+    'isRight'?: boolean;
+    /**
+    * Dropdown menu that appears above the dropdown button
+    */
+    'isUp'?: boolean;
   }
   interface BField extends JSXBase.HTMLAttributes<HTMLBFieldElement> {
     /**
@@ -1581,6 +1632,7 @@ declare namespace LocalJSX {
     'b-columns': BColumns;
     'b-container': BContainer;
     'b-content': BContent;
+    'b-dropdown': BDropdown;
     'b-field': BField;
     'b-file': BFile;
     'b-footer': BFooter;

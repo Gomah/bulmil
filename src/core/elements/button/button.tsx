@@ -4,7 +4,6 @@ import {
   h,
   JSX,
   Listen,
-  Host,
   EventEmitter,
   Event,
   ComponentInterface,
@@ -106,28 +105,27 @@ export class Button implements ComponentInterface {
 
   render(): JSX.Element {
     return (
-      <Host onClick={this.handleClick} aria-disabled={this.disabled ? 'true' : null}>
-        <button
-          class={{
-            button: true,
-            [this.color]: !!this.color,
-            [this.size]: !!this.size,
-            'is-fullwidth': this.fullWidth,
-            'is-active': this.isActive,
-            'is-focused': this.isFocused,
-            'is-static': this.isStatic,
-            'is-hovered': this.isHovered,
-            'is-inverted': this.isInverted,
-            'is-rounded': this.isRounded,
-            'is-loading': this.isLoading,
-            'is-outlined': this.isOutlined,
-            [this.class]: !!this.class,
-          }}
-          disabled={this.disabled}
-        >
-          <slot />
-        </button>
-      </Host>
+      <button
+        class={{
+          button: true,
+          [this.color]: !!this.color,
+          [this.size]: !!this.size,
+          'is-fullwidth': this.fullWidth,
+          'is-active': this.isActive,
+          'is-focused': this.isFocused,
+          'is-static': this.isStatic,
+          'is-hovered': this.isHovered,
+          'is-inverted': this.isInverted,
+          'is-rounded': this.isRounded,
+          'is-loading': this.isLoading,
+          'is-outlined': this.isOutlined,
+          [this.class]: !!this.class,
+        }}
+        disabled={this.disabled}
+        aria-disabled={this.disabled ? 'true' : null}
+      >
+        <slot />
+      </button>
     );
   }
 }
