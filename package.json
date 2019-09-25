@@ -46,10 +46,10 @@
     "test": "yarn test:lint:ts && yarn test:lint:scss && yarn test:stencil"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.0",
+    "@babel/core": "^7.6.2",
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
-    "@stencil/core": "^1.4.0",
+    "@stencil/core": "^1.5.0",
     "@stencil/eslint-plugin": "^0.0.3",
     "@stencil/postcss": "^1.0.1",
     "@stencil/sass": "^1.0.1",
@@ -64,12 +64,12 @@
     "@storybook/theming": "^5.2.1",
     "@types/autoprefixer": "^9.6.1",
     "@types/jest": "^24.0.18",
-    "@types/node": "^12.7.5",
+    "@types/node": "^12.7.7",
     "@types/puppeteer": "1.19.1",
     "@types/storybook__addon-knobs": "^5.0.4",
     "@types/storybook__html": "^5.0.2",
-    "@typescript-eslint/eslint-plugin": "^2.3.0",
-    "@typescript-eslint/parser": "^2.3.0",
+    "@typescript-eslint/eslint-plugin": "^2.3.1",
+    "@typescript-eslint/parser": "^2.3.1",
     "autoprefixer": "^9.6.1",
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.0.6",
@@ -95,7 +95,7 @@
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-prettier": "^1.1.1",
     "stylelint-scss": "^3.11.1",
-    "webpack": "^4.40.2",
+    "webpack": "^4.41.0",
     "workbox-build": "^4.3.1"
   },
   "dependencies": {
