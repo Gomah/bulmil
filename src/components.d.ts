@@ -527,6 +527,10 @@ export namespace Components {
     */
     'controlClass': string;
     /**
+    * Icon
+    */
+    'icon': string;
+    /**
     * Loading state
     */
     'isLoading': boolean;
@@ -1448,6 +1452,10 @@ declare namespace LocalJSX {
     * Control classes
     */
     'controlClass'?: string;
+    /**
+    * Icon
+    */
+    'icon'?: string;
     /**
     * Loading state
     */

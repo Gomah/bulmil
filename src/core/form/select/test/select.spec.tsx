@@ -4,7 +4,12 @@ import { Select } from '../select';
 it('Should render properly', async (): Promise<void> => {
   const page = await newSpecPage({
     components: [Select],
-    html: `<b-select></b-select>`,
+    html: `
+      <b-select>
+        <option>Select dropdown</option>
+        <option>With options</option>
+      </b-select>
+    `,
   });
 
   expect(page.root).toEqualHtml(`

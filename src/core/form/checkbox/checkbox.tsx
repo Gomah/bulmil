@@ -41,6 +41,7 @@ export class Checkbox implements ComponentInterface {
           disabled={this.disabled}
           checked={this.checked}
         />
+        <slot />
       </label>
     );
   }

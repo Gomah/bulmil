@@ -50,12 +50,17 @@ export class Select implements ComponentInterface {
    */
   @Prop() isRounded = false;
 
+  /**
+   * Icon
+   */
+  @Prop() icon: string;
+
   render(): JSX.Element {
-    // TODO: Add icon
     return (
       <div
         class={{
           control: true,
+          'has-icons-left': !!this.icon,
           [this.controlClass]: !!this.controlClass,
         }}
       >
@@ -64,18 +69,32 @@ export class Select implements ComponentInterface {
             select: true,
             [this.color]: !!this.color,
             [this.size]: !!this.size,
-            [this.state]: !!this.state,
             [this.class]: !!this.class,
             'is-multiple': this.isMultiple,
             'is-rounded': this.isRounded,
             'is-loading': this.isLoading,
           }}
         >
-          <select class={this.state || ''}>
-            <option>Select dropdown</option>
-            <option>With options</option>
+          <select
+            multiple={this.isMultiple}
+            class={{
+              [this.state]: !!this.state,
+            }}
+          >
+            <slot />
           </select>
         </div>
+        {!!this.icon && (
+          <span
+            class={{
+              icon: true,
+              'is-left': true,
+              [this.size]: !!this.size,
+            }}
+          >
+            <i class={this.icon}></i>
+          </span>
+        )}
       </div>
     );
   }
