@@ -1,0 +1,24 @@
+{
+  "name": "bulmil-nuxt",
+  "version": "1.0.0",
+  "description": "My terrific Nuxt.js project",
+  "author": "Gomah",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "test": "jest"
+  },
+  "dependencies": {
+    "nuxt": "^2.9.2",
+    "bulmil": "../..",
+    "@nuxtjs/pwa": "^3.0.0-beta.19"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^1.18.2"
+  }
+}
