@@ -1333,10 +1333,10 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
-"@stencil/core@^1.5.1":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-1.5.1.tgz#259690036709aeb398040723992009c53ef69ea2"
-  integrity sha512-kMJb5r9t3O7z/eXBNRnSEz5SeAQCQs3Ije9tKwFL4IX8OW3TLJj4GUcK1YjFFvI3+wPRZmyO23H0Wqq1nJ4jVw==
+"@stencil/core@^1.5.2":
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-1.5.2.tgz#3f73a1fbd26dadb9a3fbb0c720fb4c2febff1037"
+  integrity sha512-bxsPDTWuQQRtK7ExjX7rMYYn7t5Kjp/VWbJaM31wXKIHzseaOkMaQGlJiQui8B66YV0BcZOBtRX0rbWxigJ0/w==
   dependencies:
     typescript "3.6.3"
 
