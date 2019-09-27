@@ -495,6 +495,10 @@ export namespace Components {
     */
     'class': string;
     /**
+    * Disabled
+    */
+    'disabled': boolean;
+    /**
     * Label Classes
     */
     'labelClass': string;
@@ -931,13 +935,13 @@ declare global {
 }
 
 declare namespace LocalJSX {
-  interface BBox extends JSXBase.HTMLAttributes<HTMLBBoxElement> {
+  interface BBox {
     /**
     * CSS classes
     */
     'class'?: string;
   }
-  interface BBreadcrumb extends JSXBase.HTMLAttributes<HTMLBBreadcrumbElement> {
+  interface BBreadcrumb {
     /**
     * CSS Classes
     */
@@ -962,7 +966,7 @@ declare namespace LocalJSX {
     */
     'size'?: 'is-small' | 'is-medium' | 'is-large';
   }
-  interface BButton extends JSXBase.HTMLAttributes<HTMLBButtonElement> {
+  interface BButton {
     /**
     * CSS classes
     */
@@ -1030,7 +1034,7 @@ declare namespace LocalJSX {
     */
     'size'?: 'is-small' | 'is-medium' | 'is-large' | 'is-normal';
   }
-  interface BButtons extends JSXBase.HTMLAttributes<HTMLBButtonsElement> {
+  interface BButtons {
     /**
     * CSS classes
     */
@@ -1040,37 +1044,37 @@ declare namespace LocalJSX {
     */
     'size'?: 'are-small' | 'are-medium' | 'are-large';
   }
-  interface BCard extends JSXBase.HTMLAttributes<HTMLBCardElement> {
+  interface BCard {
     /**
     * CSS Classes
     */
     'class'?: string;
   }
-  interface BCardContent extends JSXBase.HTMLAttributes<HTMLBCardContentElement> {
+  interface BCardContent {
     /**
     * CSS Classes
     */
     'class'?: string;
   }
-  interface BCardFooter extends JSXBase.HTMLAttributes<HTMLBCardFooterElement> {
+  interface BCardFooter {
     /**
     * CSS Classes
     */
     'class'?: string;
   }
-  interface BCardHeader extends JSXBase.HTMLAttributes<HTMLBCardHeaderElement> {
+  interface BCardHeader {
     /**
     * CSS Classes
     */
     'class'?: string;
   }
-  interface BCardImage extends JSXBase.HTMLAttributes<HTMLBCardImageElement> {
+  interface BCardImage {
     /**
     * CSS Classes
     */
     'class'?: string;
   }
-  interface BCheckbox extends JSXBase.HTMLAttributes<HTMLBCheckboxElement> {
+  interface BCheckbox {
     /**
     * Checked
     */
@@ -1088,7 +1092,7 @@ declare namespace LocalJSX {
     */
     'labelClass'?: string;
   }
-  interface BColumn extends JSXBase.HTMLAttributes<HTMLBColumnElement> {
+  interface BColumn {
     /**
     * CSS Classes
     */
@@ -1106,7 +1110,7 @@ declare namespace LocalJSX {
     */
     'sizes'?: any;
   }
-  interface BColumns extends JSXBase.HTMLAttributes<HTMLBColumnsElement> {
+  interface BColumns {
     /**
     * CSS Classes
     */
@@ -1140,7 +1144,7 @@ declare namespace LocalJSX {
     */
     'isVcentered'?: boolean;
   }
-  interface BContainer extends JSXBase.HTMLAttributes<HTMLBContainerElement> {
+  interface BContainer {
     /**
     * Container breakpoint
     */
@@ -1154,7 +1158,7 @@ declare namespace LocalJSX {
     */
     'isFluid'?: boolean;
   }
-  interface BContent extends JSXBase.HTMLAttributes<HTMLBContentElement> {
+  interface BContent {
     /**
     * CSS Classes
     */
@@ -1164,7 +1168,7 @@ declare namespace LocalJSX {
     */
     'size'?: 'is-small' | 'is-medium' | 'is-large';
   }
-  interface BDropdown extends JSXBase.HTMLAttributes<HTMLBDropdownElement> {
+  interface BDropdown {
     /**
     * CSS Classes
     */
@@ -1186,7 +1190,7 @@ declare namespace LocalJSX {
     */
     'isUp'?: boolean;
   }
-  interface BField extends JSXBase.HTMLAttributes<HTMLBFieldElement> {
+  interface BField {
     /**
     * CSS Classes
     */
@@ -1216,7 +1220,7 @@ declare namespace LocalJSX {
     */
     'label'?: string;
   }
-  interface BFile extends JSXBase.HTMLAttributes<HTMLBFileElement> {
+  interface BFile {
     /**
     * Alignment
     */
@@ -1263,13 +1267,13 @@ declare namespace LocalJSX {
     */
     'size'?: 'is-small' | 'is-medium' | 'is-large';
   }
-  interface BFooter extends JSXBase.HTMLAttributes<HTMLBFooterElement> {
+  interface BFooter {
     /**
     * CSS Classes
     */
     'class'?: string;
   }
-  interface BIcon extends JSXBase.HTMLAttributes<HTMLBIconElement> {
+  interface BIcon {
     /**
     * CSS Classes
     */
@@ -1283,7 +1287,7 @@ declare namespace LocalJSX {
     */
     'size'?: 'is-small' | 'is-medium' | 'is-large';
   }
-  interface BImage extends JSXBase.HTMLAttributes<HTMLBImageElement> {
+  interface BImage {
     /**
     * CSS Classes
     */
@@ -1299,7 +1303,7 @@ declare namespace LocalJSX {
     | 'is-96x96'
     | 'is-128x128';
   }
-  interface BInput extends JSXBase.HTMLAttributes<HTMLBInputElement> {
+  interface BInput {
     /**
     * CSS Classes
     */
@@ -1357,7 +1361,7 @@ declare namespace LocalJSX {
     */
     'value'?: string | number;
   }
-  interface BNotification extends JSXBase.HTMLAttributes<HTMLBNotificationElement> {
+  interface BNotification {
     /**
     * CSS Classes
     */
@@ -1371,7 +1375,7 @@ declare namespace LocalJSX {
     */
     'dismissable'?: boolean;
   }
-  interface BPagination extends JSXBase.HTMLAttributes<HTMLBPaginationElement> {
+  interface BPagination {
     /**
     * Alignment
     */
@@ -1389,7 +1393,7 @@ declare namespace LocalJSX {
     */
     'size'?: 'is-small' | 'is-medium' | 'is-large';
   }
-  interface BProgress extends JSXBase.HTMLAttributes<HTMLBProgressElement> {
+  interface BProgress {
     /**
     * CSS Classes
     */
@@ -1411,7 +1415,7 @@ declare namespace LocalJSX {
     */
     'value'?: number;
   }
-  interface BRadio extends JSXBase.HTMLAttributes<HTMLBRadioElement> {
+  interface BRadio {
     /**
     * Checked
     */
@@ -1421,6 +1425,10 @@ declare namespace LocalJSX {
     */
     'class'?: string;
     /**
+    * Disabled
+    */
+    'disabled'?: boolean;
+    /**
     * Label Classes
     */
     'labelClass'?: string;
@@ -1429,7 +1437,7 @@ declare namespace LocalJSX {
     */
     'name'?: string;
   }
-  interface BSection extends JSXBase.HTMLAttributes<HTMLBSectionElement> {
+  interface BSection {
     /**
     * CSS Classes
     */
@@ -1439,7 +1447,7 @@ declare namespace LocalJSX {
     */
     'size'?: 'is-medium' | 'is-large';
   }
-  interface BSelect extends JSXBase.HTMLAttributes<HTMLBSelectElement> {
+  interface BSelect {
     /**
     * CSS Classes
     */
@@ -1481,7 +1489,7 @@ declare namespace LocalJSX {
     */
     'value'?: string | number;
   }
-  interface BTable extends JSXBase.HTMLAttributes<HTMLBTableElement> {
+  interface BTable {
     /**
     * CSS Classes
     */
@@ -1507,7 +1515,7 @@ declare namespace LocalJSX {
     */
     'isStriped'?: boolean;
   }
-  interface BTabs extends JSXBase.HTMLAttributes<HTMLBTabsElement> {
+  interface BTabs {
     /**
     * Alignment
     */
@@ -1533,7 +1541,7 @@ declare namespace LocalJSX {
     */
     'tabStyle'?: 'is-boxed' | 'is-toggle';
   }
-  interface BTag extends JSXBase.HTMLAttributes<HTMLBTagElement> {
+  interface BTag {
     /**
     * CSS Classes
     */
@@ -1564,7 +1572,7 @@ declare namespace LocalJSX {
     */
     'tag'?: string;
   }
-  interface BTags extends JSXBase.HTMLAttributes<HTMLBTagsElement> {
+  interface BTags {
     /**
     * CSS Classes
     */
@@ -1578,7 +1586,7 @@ declare namespace LocalJSX {
     */
     'size'?: 'are-medium' | 'are-large';
   }
-  interface BTextarea extends JSXBase.HTMLAttributes<HTMLBTextareaElement> {
+  interface BTextarea {
     /**
     * CSS Classes
     */
@@ -1666,7 +1674,40 @@ export { LocalJSX as JSX };
 
 declare module "@stencil/core" {
   export namespace JSX {
-    interface IntrinsicElements extends LocalJSX.IntrinsicElements {}
+    interface IntrinsicElements {
+      'b-box': LocalJSX.BBox & JSXBase.HTMLAttributes<HTMLBBoxElement>;
+      'b-breadcrumb': LocalJSX.BBreadcrumb & JSXBase.HTMLAttributes<HTMLBBreadcrumbElement>;
+      'b-button': LocalJSX.BButton & JSXBase.HTMLAttributes<HTMLBButtonElement>;
+      'b-buttons': LocalJSX.BButtons & JSXBase.HTMLAttributes<HTMLBButtonsElement>;
+      'b-card': LocalJSX.BCard & JSXBase.HTMLAttributes<HTMLBCardElement>;
+      'b-card-content': LocalJSX.BCardContent & JSXBase.HTMLAttributes<HTMLBCardContentElement>;
+      'b-card-footer': LocalJSX.BCardFooter & JSXBase.HTMLAttributes<HTMLBCardFooterElement>;
+      'b-card-header': LocalJSX.BCardHeader & JSXBase.HTMLAttributes<HTMLBCardHeaderElement>;
+      'b-card-image': LocalJSX.BCardImage & JSXBase.HTMLAttributes<HTMLBCardImageElement>;
+      'b-checkbox': LocalJSX.BCheckbox & JSXBase.HTMLAttributes<HTMLBCheckboxElement>;
+      'b-column': LocalJSX.BColumn & JSXBase.HTMLAttributes<HTMLBColumnElement>;
+      'b-columns': LocalJSX.BColumns & JSXBase.HTMLAttributes<HTMLBColumnsElement>;
+      'b-container': LocalJSX.BContainer & JSXBase.HTMLAttributes<HTMLBContainerElement>;
+      'b-content': LocalJSX.BContent & JSXBase.HTMLAttributes<HTMLBContentElement>;
+      'b-dropdown': LocalJSX.BDropdown & JSXBase.HTMLAttributes<HTMLBDropdownElement>;
+      'b-field': LocalJSX.BField & JSXBase.HTMLAttributes<HTMLBFieldElement>;
+      'b-file': LocalJSX.BFile & JSXBase.HTMLAttributes<HTMLBFileElement>;
+      'b-footer': LocalJSX.BFooter & JSXBase.HTMLAttributes<HTMLBFooterElement>;
+      'b-icon': LocalJSX.BIcon & JSXBase.HTMLAttributes<HTMLBIconElement>;
+      'b-image': LocalJSX.BImage & JSXBase.HTMLAttributes<HTMLBImageElement>;
+      'b-input': LocalJSX.BInput & JSXBase.HTMLAttributes<HTMLBInputElement>;
+      'b-notification': LocalJSX.BNotification & JSXBase.HTMLAttributes<HTMLBNotificationElement>;
+      'b-pagination': LocalJSX.BPagination & JSXBase.HTMLAttributes<HTMLBPaginationElement>;
+      'b-progress': LocalJSX.BProgress & JSXBase.HTMLAttributes<HTMLBProgressElement>;
+      'b-radio': LocalJSX.BRadio & JSXBase.HTMLAttributes<HTMLBRadioElement>;
+      'b-section': LocalJSX.BSection & JSXBase.HTMLAttributes<HTMLBSectionElement>;
+      'b-select': LocalJSX.BSelect & JSXBase.HTMLAttributes<HTMLBSelectElement>;
+      'b-table': LocalJSX.BTable & JSXBase.HTMLAttributes<HTMLBTableElement>;
+      'b-tabs': LocalJSX.BTabs & JSXBase.HTMLAttributes<HTMLBTabsElement>;
+      'b-tag': LocalJSX.BTag & JSXBase.HTMLAttributes<HTMLBTagElement>;
+      'b-tags': LocalJSX.BTags & JSXBase.HTMLAttributes<HTMLBTagsElement>;
+      'b-textarea': LocalJSX.BTextarea & JSXBase.HTMLAttributes<HTMLBTextareaElement>;
+    }
   }
 }
 

@@ -25,6 +25,11 @@ export class Radio implements ComponentInterface {
    */
   @Prop() checked = false;
 
+  /**
+   * Disabled
+   */
+  @Prop() disabled = false;
+
   render(): JSX.Element {
     return (
       <label
@@ -39,8 +44,9 @@ export class Radio implements ComponentInterface {
           }}
           type="radio"
           name={this.name}
+          disabled={this.disabled}
           checked={this.checked}
-        />{' '}
+        />
         <slot />
       </label>
     );
