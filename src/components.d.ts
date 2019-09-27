@@ -407,6 +407,10 @@ export namespace Components {
     */
     'name': string;
     /**
+    * Placeholder
+    */
+    'placeholder': string;
+    /**
     * The input will look similar to a normal one, but is not editable and has no shadow
     */
     'readonly': boolean;
@@ -1336,6 +1340,10 @@ declare namespace LocalJSX {
     * Name
     */
     'name'?: string;
+    /**
+    * Placeholder
+    */
+    'placeholder'?: string;
     /**
     * The input will look similar to a normal one, but is not editable and has no shadow
     */

@@ -16,6 +16,11 @@ export class Input implements ComponentInterface {
   @Prop() controlClass = '';
 
   /**
+   * Placeholder
+   */
+  @Prop() placeholder: string;
+
+  /**
    * Value
    */
   @Prop() value: string | number;
@@ -94,6 +99,7 @@ export class Input implements ComponentInterface {
             'is-static': this.isStatic,
             [this.class]: !!this.class,
           }}
+          placeholder={this.placeholder}
           required={this.required}
           disabled={this.disabled}
           readonly={this.readonly}

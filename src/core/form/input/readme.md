@@ -17,6 +17,7 @@
 | `isRounded`    | `is-rounded`    | Rounded                                                                            | `boolean`                                                                  | `false`     |
 | `isStatic`     | `is-static`     | Removes the background, border, shadow, and horizontal padding                     | `boolean`                                                                  | `false`     |
 | `name`         | `name`          | Name                                                                               | `string`                                                                   | `''`        |
+| `placeholder`  | `placeholder`   | Placeholder                                                                        | `string`                                                                   | `undefined` |
 | `readonly`     | `readonly`      | The input will look similar to a normal one, but is not editable and has no shadow | `boolean`                                                                  | `false`     |
 | `required`     | `required`      | Required                                                                           | `boolean`                                                                  | `false`     |
 | `size`         | `size`          | Size                                                                               | `"is-large" \| "is-medium" \| "is-normal" \| "is-small"`                   | `undefined` |
