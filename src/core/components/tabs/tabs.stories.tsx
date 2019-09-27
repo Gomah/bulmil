@@ -40,6 +40,20 @@ storiesOf('Components|Tabs', module)
         alignment=${select('Alignment', alignments, null)}
         size=${select('Size', sizes, null)}
       >
+        <ul>
+          <li class="is-active">
+            <a>Pictures</a>
+          </li>
+          <li>
+            <a>Music</a>
+          </li>
+          <li>
+            <a>Videos</a>
+          </li>
+          <li>
+            <a>Documents</a>
+          </li>
+        </ul>
       </b-tabs>
     `;
   });

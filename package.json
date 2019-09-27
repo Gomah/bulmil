@@ -6,9 +6,26 @@
   "license": "MIT",
   "files": [
     "bulmil.scss",
-    "src/",
+    "src/styles/",
     "dist/",
     "css/"
+  ],
+  "keywords": [
+    "bulmil",
+    "bulma",
+    "css",
+    "stencil",
+    "stenciljs",
+    "storybook",
+    "angular",
+    "vue",
+    "react",
+    "ember",
+    "vanilla",
+    "ui-framework",
+    "custom-elements",
+    "webcomponents",
+    "web-components"
   ],
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -20,6 +37,9 @@
   "collection:main": "dist/collection/index.js",
   "unpkg": "css/bulmil.css",
   "style": "css/bulmil.min.css",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "yarn build:clean && yarn build:scss && yarn build:autoprefix && yarn build:min && yarn build:components",
     "build:autoprefix": "postcss --use autoprefixer --map false --output css/bulmil.css css/bulmil.css",

@@ -49,20 +49,7 @@ export class Tabs implements ComponentInterface {
             [this.class]: !!this.class,
           }}
         >
-          <ul>
-            <li class="is-active">
-              <a>Pictures</a>
-            </li>
-            <li>
-              <a>Music</a>
-            </li>
-            <li>
-              <a>Videos</a>
-            </li>
-            <li>
-              <a>Documents</a>
-            </li>
-          </ul>
+          <slot />
         </div>
       </Host>
     );

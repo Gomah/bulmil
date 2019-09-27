@@ -1,2 +1,10 @@
 @import '../../../../node_modules/bulma-scss/form/shared';
 @import '../../../../node_modules/bulma-scss/form/tools';
+
+b-field {
+  &:not(:last-child) {
+    .field {
+      margin-bottom: 0.75rem;
+    }
+  }
+}

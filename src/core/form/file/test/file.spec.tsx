@@ -1,9 +1,9 @@
 import { newSpecPage } from '@stencil/core/testing';
-import { File } from '../file';
+import { FileInput } from '../file';
 
 it('Should render properly', async (): Promise<void> => {
   const page = await newSpecPage({
-    components: [File],
+    components: [FileInput],
     html: `<b-file name="upload" size="is-small" color="is-black"></b-file>`,
   });
 

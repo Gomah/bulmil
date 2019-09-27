@@ -64,10 +64,6 @@ export namespace Components {
     */
     'disabled': boolean;
     /**
-    * Display the button in full-width
-    */
-    'fullWidth': boolean;
-    /**
     * Active state
     */
     'isActive': boolean;
@@ -75,6 +71,10 @@ export namespace Components {
     * Focused state
     */
     'isFocused': boolean;
+    /**
+    * Display the button in full-width
+    */
+    'isFullwidth': boolean;
     /**
     * Hovered state
     */
@@ -266,10 +266,6 @@ export namespace Components {
     */
     'class': string;
     /**
-    * Field size
-    */
-    'fieldSize': 'is-small' | 'is-normal' | 'is-medium' | 'is-large';
-    /**
     * Has addons
     */
     'hasAddons': boolean;
@@ -289,6 +285,14 @@ export namespace Components {
     * Label
     */
     'label': string;
+    /**
+    * Help or error message
+    */
+    'message': string;
+    /**
+    * Field size
+    */
+    'size': 'is-small' | 'is-normal' | 'is-medium' | 'is-large';
   }
   interface BFile {
     /**
@@ -333,7 +337,11 @@ export namespace Components {
     */
     'name': string;
     /**
-    * CSS Classes
+    * Placeholder
+    */
+    'placeholder': string;
+    /**
+    * Size
     */
     'size': 'is-small' | 'is-medium' | 'is-large';
   }
@@ -435,6 +443,77 @@ export namespace Components {
     */
     'value': string | number;
   }
+  interface BMenu {
+    /**
+    * CSS Classes
+    */
+    'class': string;
+  }
+  interface BMessage {
+    /**
+    * CSS Classes
+    */
+    'class': string;
+    /**
+    * Color
+    */
+    'color': | 'is-dark'
+    | 'is-primary'
+    | 'is-link'
+    | 'is-info'
+    | 'is-success'
+    | 'is-warning'
+    | 'is-danger';
+    /**
+    * Size
+    */
+    'size': 'is-small' | 'is-medium' | 'is-large';
+  }
+  interface BModal {
+    /**
+    * CSS Classes
+    */
+    'class': string;
+    /**
+    * Modal Card
+    */
+    'hasModalCard': boolean;
+    /**
+    * Is Active
+    */
+    'isActive': boolean;
+  }
+  interface BNavbar {
+    /**
+    * CSS Classes
+    */
+    'class': string;
+    /**
+    * Color
+    */
+    'color': | 'is-black'
+    | 'is-dark'
+    | 'is-light'
+    | 'is-white'
+    | 'is-primary'
+    | 'is-link'
+    | 'is-info'
+    | 'is-success'
+    | 'is-warning'
+    | 'is-danger';
+    /**
+    * Fixed position
+    */
+    'fixedPosition': 'is-fixed-top' | 'is-fixed-bottom';
+    /**
+    * Spaced
+    */
+    'isSpaced': boolean;
+    /**
+    * Transparent
+    */
+    'isTransparent': boolean;
+  }
   interface BNotification {
     /**
     * CSS Classes
@@ -466,6 +545,12 @@ export namespace Components {
     * Pagination size
     */
     'size': 'is-small' | 'is-medium' | 'is-large';
+  }
+  interface BPanel {
+    /**
+    * CSS Classes
+    */
+    'class': string;
   }
   interface BProgress {
     /**
@@ -837,6 +922,30 @@ declare global {
     new (): HTMLBInputElement;
   };
 
+  interface HTMLBMenuElement extends Components.BMenu, HTMLStencilElement {}
+  var HTMLBMenuElement: {
+    prototype: HTMLBMenuElement;
+    new (): HTMLBMenuElement;
+  };
+
+  interface HTMLBMessageElement extends Components.BMessage, HTMLStencilElement {}
+  var HTMLBMessageElement: {
+    prototype: HTMLBMessageElement;
+    new (): HTMLBMessageElement;
+  };
+
+  interface HTMLBModalElement extends Components.BModal, HTMLStencilElement {}
+  var HTMLBModalElement: {
+    prototype: HTMLBModalElement;
+    new (): HTMLBModalElement;
+  };
+
+  interface HTMLBNavbarElement extends Components.BNavbar, HTMLStencilElement {}
+  var HTMLBNavbarElement: {
+    prototype: HTMLBNavbarElement;
+    new (): HTMLBNavbarElement;
+  };
+
   interface HTMLBNotificationElement extends Components.BNotification, HTMLStencilElement {}
   var HTMLBNotificationElement: {
     prototype: HTMLBNotificationElement;
@@ -847,6 +956,12 @@ declare global {
   var HTMLBPaginationElement: {
     prototype: HTMLBPaginationElement;
     new (): HTMLBPaginationElement;
+  };
+
+  interface HTMLBPanelElement extends Components.BPanel, HTMLStencilElement {}
+  var HTMLBPanelElement: {
+    prototype: HTMLBPanelElement;
+    new (): HTMLBPanelElement;
   };
 
   interface HTMLBProgressElement extends Components.BProgress, HTMLStencilElement {}
@@ -924,8 +1039,13 @@ declare global {
     'b-icon': HTMLBIconElement;
     'b-image': HTMLBImageElement;
     'b-input': HTMLBInputElement;
+    'b-menu': HTMLBMenuElement;
+    'b-message': HTMLBMessageElement;
+    'b-modal': HTMLBModalElement;
+    'b-navbar': HTMLBNavbarElement;
     'b-notification': HTMLBNotificationElement;
     'b-pagination': HTMLBPaginationElement;
+    'b-panel': HTMLBPanelElement;
     'b-progress': HTMLBProgressElement;
     'b-radio': HTMLBRadioElement;
     'b-section': HTMLBSectionElement;
@@ -994,10 +1114,6 @@ declare namespace LocalJSX {
     */
     'disabled'?: boolean;
     /**
-    * Display the button in full-width
-    */
-    'fullWidth'?: boolean;
-    /**
     * Active state
     */
     'isActive'?: boolean;
@@ -1005,6 +1121,10 @@ declare namespace LocalJSX {
     * Focused state
     */
     'isFocused'?: boolean;
+    /**
+    * Display the button in full-width
+    */
+    'isFullwidth'?: boolean;
     /**
     * Hovered state
     */
@@ -1200,10 +1320,6 @@ declare namespace LocalJSX {
     */
     'class'?: string;
     /**
-    * Field size
-    */
-    'fieldSize'?: 'is-small' | 'is-normal' | 'is-medium' | 'is-large';
-    /**
     * Has addons
     */
     'hasAddons'?: boolean;
@@ -1223,6 +1339,14 @@ declare namespace LocalJSX {
     * Label
     */
     'label'?: string;
+    /**
+    * Help or error message
+    */
+    'message'?: string;
+    /**
+    * Field size
+    */
+    'size'?: 'is-small' | 'is-normal' | 'is-medium' | 'is-large';
   }
   interface BFile {
     /**
@@ -1267,7 +1391,11 @@ declare namespace LocalJSX {
     */
     'name'?: string;
     /**
-    * CSS Classes
+    * Placeholder
+    */
+    'placeholder'?: string;
+    /**
+    * Size
     */
     'size'?: 'is-small' | 'is-medium' | 'is-large';
   }
@@ -1369,6 +1497,77 @@ declare namespace LocalJSX {
     */
     'value'?: string | number;
   }
+  interface BMenu {
+    /**
+    * CSS Classes
+    */
+    'class'?: string;
+  }
+  interface BMessage {
+    /**
+    * CSS Classes
+    */
+    'class'?: string;
+    /**
+    * Color
+    */
+    'color'?: | 'is-dark'
+    | 'is-primary'
+    | 'is-link'
+    | 'is-info'
+    | 'is-success'
+    | 'is-warning'
+    | 'is-danger';
+    /**
+    * Size
+    */
+    'size'?: 'is-small' | 'is-medium' | 'is-large';
+  }
+  interface BModal {
+    /**
+    * CSS Classes
+    */
+    'class'?: string;
+    /**
+    * Modal Card
+    */
+    'hasModalCard'?: boolean;
+    /**
+    * Is Active
+    */
+    'isActive'?: boolean;
+  }
+  interface BNavbar {
+    /**
+    * CSS Classes
+    */
+    'class'?: string;
+    /**
+    * Color
+    */
+    'color'?: | 'is-black'
+    | 'is-dark'
+    | 'is-light'
+    | 'is-white'
+    | 'is-primary'
+    | 'is-link'
+    | 'is-info'
+    | 'is-success'
+    | 'is-warning'
+    | 'is-danger';
+    /**
+    * Fixed position
+    */
+    'fixedPosition'?: 'is-fixed-top' | 'is-fixed-bottom';
+    /**
+    * Spaced
+    */
+    'isSpaced'?: boolean;
+    /**
+    * Transparent
+    */
+    'isTransparent'?: boolean;
+  }
   interface BNotification {
     /**
     * CSS Classes
@@ -1400,6 +1599,12 @@ declare namespace LocalJSX {
     * Pagination size
     */
     'size'?: 'is-small' | 'is-medium' | 'is-large';
+  }
+  interface BPanel {
+    /**
+    * CSS Classes
+    */
+    'class'?: string;
   }
   interface BProgress {
     /**
@@ -1663,8 +1868,13 @@ declare namespace LocalJSX {
     'b-icon': BIcon;
     'b-image': BImage;
     'b-input': BInput;
+    'b-menu': BMenu;
+    'b-message': BMessage;
+    'b-modal': BModal;
+    'b-navbar': BNavbar;
     'b-notification': BNotification;
     'b-pagination': BPagination;
+    'b-panel': BPanel;
     'b-progress': BProgress;
     'b-radio': BRadio;
     'b-section': BSection;
@@ -1704,8 +1914,13 @@ declare module "@stencil/core" {
       'b-icon': LocalJSX.BIcon & JSXBase.HTMLAttributes<HTMLBIconElement>;
       'b-image': LocalJSX.BImage & JSXBase.HTMLAttributes<HTMLBImageElement>;
       'b-input': LocalJSX.BInput & JSXBase.HTMLAttributes<HTMLBInputElement>;
+      'b-menu': LocalJSX.BMenu & JSXBase.HTMLAttributes<HTMLBMenuElement>;
+      'b-message': LocalJSX.BMessage & JSXBase.HTMLAttributes<HTMLBMessageElement>;
+      'b-modal': LocalJSX.BModal & JSXBase.HTMLAttributes<HTMLBModalElement>;
+      'b-navbar': LocalJSX.BNavbar & JSXBase.HTMLAttributes<HTMLBNavbarElement>;
       'b-notification': LocalJSX.BNotification & JSXBase.HTMLAttributes<HTMLBNotificationElement>;
       'b-pagination': LocalJSX.BPagination & JSXBase.HTMLAttributes<HTMLBPaginationElement>;
+      'b-panel': LocalJSX.BPanel & JSXBase.HTMLAttributes<HTMLBPanelElement>;
       'b-progress': LocalJSX.BProgress & JSXBase.HTMLAttributes<HTMLBProgressElement>;
       'b-radio': LocalJSX.BRadio & JSXBase.HTMLAttributes<HTMLBRadioElement>;
       'b-section': LocalJSX.BSection & JSXBase.HTMLAttributes<HTMLBSectionElement>;

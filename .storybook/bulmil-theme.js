@@ -33,6 +33,6 @@ export const bulmilTheme = create({
   inputBorderRadius: 4,
 
   brandTitle: 'Bulmil',
-  brandUrl: 'https://bulmil.io',
+  brandUrl: 'https://bulmil.netlify.com',
   // brandImage: ''
 });

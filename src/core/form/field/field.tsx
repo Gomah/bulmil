@@ -16,6 +16,11 @@ export class Field implements ComponentInterface {
   @Prop() label: string;
 
   /**
+   * Help or error message
+   */
+  @Prop() message: string;
+
+  /**
    * Has addons
    */
   @Prop() hasAddons = false;
@@ -23,7 +28,7 @@ export class Field implements ComponentInterface {
   /**
    * Field size
    */
-  @Prop() fieldSize: 'is-small' | 'is-normal' | 'is-medium' | 'is-large';
+  @Prop() size: 'is-small' | 'is-normal' | 'is-medium' | 'is-large';
 
   /**
    * Horizontal field
@@ -52,7 +57,7 @@ export class Field implements ComponentInterface {
     if (this.isHorizontal) {
       return (
         <div class={fieldClass}>
-          <div class={`field-label ${this.fieldSize || ''}`}>
+          <div class={`field-label ${this.size || ''}`}>
             <label class="label">{this.label}</label>
           </div>
           <div class="field-body">
@@ -67,6 +72,15 @@ export class Field implements ComponentInterface {
         <div class={fieldClass}>
           <label class="label">{this.label}</label>
           <slot />
+          {this.message && (
+            <p
+              class={{
+                help: true,
+              }}
+            >
+              {this.message}
+            </p>
+          )}
         </div>
       );
     }

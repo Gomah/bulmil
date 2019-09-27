@@ -48,7 +48,7 @@ export class Button implements ComponentInterface {
   /**
    * Display the button in full-width
    */
-  @Prop() fullWidth = false;
+  @Prop() isFullwidth = false;
 
   /**
    * Is outlined
@@ -110,7 +110,7 @@ export class Button implements ComponentInterface {
           button: true,
           [this.color]: !!this.color,
           [this.size]: !!this.size,
-          'is-fullwidth': this.fullWidth,
+          'is-fullwidth': this.isFullwidth,
           'is-active': this.isActive,
           'is-focused': this.isFocused,
           'is-static': this.isStatic,

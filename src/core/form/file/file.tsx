@@ -4,7 +4,7 @@ import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
   tag: 'b-file',
   styleUrls: ['file.scss'],
 })
-export class File implements ComponentInterface {
+export class FileInput implements ComponentInterface {
   /**
    * CSS Classes
    */
@@ -14,6 +14,11 @@ export class File implements ComponentInterface {
    * Name
    */
   @Prop() name = '';
+
+  /**
+   * Placeholder
+   */
+  @Prop() placeholder = 'Choose a file…';
 
   /**
    * Color
@@ -31,7 +36,7 @@ export class File implements ComponentInterface {
     | 'is-danger';
 
   /**
-   * CSS Classes
+   * Size
    */
   @Prop() size: 'is-small' | 'is-medium' | 'is-large';
 
@@ -60,6 +65,12 @@ export class File implements ComponentInterface {
    */
   @Prop() isBoxed = false;
 
+  public file: File;
+
+  handleFileChange = event => {
+    this.file = event.target.files[0];
+  };
+
   render(): JSX.Element {
     return (
       <div
@@ -76,14 +87,16 @@ export class File implements ComponentInterface {
         }}
       >
         <label class="file-label">
-          <input class="file-input" type="file" name={this.name} />
+          <input onChange={this.handleFileChange} class="file-input" type="file" name={this.name} />
           <span class="file-cta">
             <span class="file-icon">
               <i class="fas fa-upload"></i>
             </span>
-            <span class="file-label">Choose a file…</span>
+            <span class="file-label">{this.placeholder}</span>
           </span>
-          {this.hasName && <span class="file-name">Screen Shot 2019-07-29 at 15.54.25.png</span>}
+          {this.hasName && this.file && this.file.name.length > 0 && (
+            <span class="file-name">{this.file.name}</span>
+          )}
         </label>
       </div>
     );

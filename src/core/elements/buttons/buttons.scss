@@ -1,0 +1,7 @@
+b-buttons {
+  b-button {
+    &:not(:last-child):not(.is-fullwidth) {
+      margin-right: 0.5rem;
+    }
+  }
+}

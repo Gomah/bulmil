@@ -2,6 +2,7 @@ import { Component, ComponentInterface, Prop, Host, h, JSX } from '@stencil/core
 
 @Component({
   tag: 'b-buttons',
+  styleUrls: ['buttons.scss'],
 })
 export class Buttons implements ComponentInterface {
   /**
