@@ -1,23 +1,61 @@
-![bulmil](https://user-images.githubusercontent.com/2362138/65763930-cab12980-e167-11e9-8e52-e081c27e4dee.jpg)
+![bulmil](https://user-images.githubusercontent.com/2362138/65766959-c721a080-e16f-11e9-9fb9-45a5a2ad0391.jpg)
 
-![Built With Stencil](https://img.shields.io/badge/-Built%20With%20Stencil-16161d.svg?logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjIuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI%2BCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI%2BCgkuc3Qwe2ZpbGw6I0ZGRkZGRjt9Cjwvc3R5bGU%2BCjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik00MjQuNywzNzMuOWMwLDM3LjYtNTUuMSw2OC42LTkyLjcsNjguNkgxODAuNGMtMzcuOSwwLTkyLjctMzAuNy05Mi43LTY4LjZ2LTMuNmgzMzYuOVYzNzMuOXoiLz4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTQyNC43LDI5Mi4xSDE4MC40Yy0zNy42LDAtOTIuNy0zMS05Mi43LTY4LjZ2LTMuNkgzMzJjMzcuNiwwLDkyLjcsMzEsOTIuNyw2OC42VjI5Mi4xeiIvPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNDI0LjcsMTQxLjdIODcuN3YtMy42YzAtMzcuNiw1NC44LTY4LjYsOTIuNy02OC42SDMzMmMzNy45LDAsOTIuNywzMC43LDkyLjcsNjguNlYxNDEuN3oiLz4KPC9zdmc%2BCg%3D%3D&colorA=16161d&style=flat-square)
-[![npm version][npm-version-src]][npm-version-href]
-[![Dependencies][david-dm-src]][david-dm-href]
-[![npm downloads][npm-downloads-src]][npm-downloads-href]
-[![code style: prettier](https://img.shields.io/badge/code_style-stencil/stylelint/prettier-5851ff.svg?style=flat-square)](https://github.com/airbnb/javascript)
-[![package phobia][package-phobia-src]][package-phobia-href]
-[![bundle phobia][bundle-phobia-src]][bundle-phobia-href]
-[![License: MIT](https://img.shields.io/badge/License-MIT-black.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+<!-- Badges -->
 
-## Stencil
+<p align="center">
+  <a href="#">
+    <img src="https://img.shields.io/badge/-Built%20With%20Stencil-16161d.svg?logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjIuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI%2BCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI%2BCgkuc3Qwe2ZpbGw6I0ZGRkZGRjt9Cjwvc3R5bGU%2BCjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik00MjQuNywzNzMuOWMwLDM3LjYtNTUuMSw2OC42LTkyLjcsNjguNkgxODAuNGMtMzcuOSwwLTkyLjctMzAuNy05Mi43LTY4LjZ2LTMuNmgzMzYuOVYzNzMuOXoiLz4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTQyNC43LDI5Mi4xSDE4MC40Yy0zNy42LDAtOTIuNy0zMS05Mi43LTY4LjZ2LTMuNkgzMzJjMzcuNiwwLDkyLjcsMzEsOTIuNyw2OC42VjI5Mi4xeiIvPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNDI0LjcsMTQxLjdIODcuN3YtMy42YzAtMzcuNiw1NC44LTY4LjYsOTIuNy02OC42SDMzMmMzNy45LDAsOTIuNywzMC43LDkyLjcsNjguNlYxNDEuN3oiLz4KPC9zdmc%2BCg%3D%3D&colorA=16161d&style=flat-square" alt="Built with Stencil" />
+  </a>
+
+  <a href="https://bulmil.netlify.com/" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg">
+  </a>
+
+  <a href="https://stenciljs.com/docs/style-guide">
+    <img src="https://img.shields.io/badge/code_style-stencil/stylelint/prettier-5851ff.svg?style=flat-square" alt="Code Style" />
+  </a>
+
+  <a href="https://npmjs.com/package/bulmil">
+    <img src="https://img.shields.io/npm/v/bulmil/latest.svg?style=flat-square" alt="npm version" />
+  </a>
+
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-black.svg?style=flat-square" alt="License MIT" />
+  </a>
+
+  <br />
+
+  <a href="https://david-dm.org/gomah/bulmil">
+    <img src="https://david-dm.org/gomah/bulmil/status.svg?style=flat-square" alt="dependencies" />
+  </a>
+
+  <a href="https://circleci.com/gh/Gomah/bulmil">
+    <img src="https://circleci.com/gh/Gomah/bulmil.svg?style=shield" alt="Circle CI" />
+  </a>
+
+  <a href="https://npmjs.com/package/bulmil">
+    <img src="https://img.shields.io/npm/dt/bulmil.svg?style=flat-square" alt="npm downloads" />
+  </a>
+
+  <a href="https://packagephobia.now.sh/result?p=bulmil">
+    <img src="https://flat.badgen.net/packagephobia/install/bulmil" alt="Package Phobia" />
+  </a>
+
+  <a href="https://bundlephobia.com/result?p=bulmil">
+    <img src="https://flat.badgen.net/bundlephobia/minzip/bulmil" alt="Bundle Phobia" />
+  </a>
+
+</p>
+
+Bulmil is an agnostic UI library based on Web Components, made with [Bulma.io](https://bulma.io/) & [Stencil.js](https://stenciljs.com/).
+
+## Why Stencil?
 
 Stencil is a compiler for building fast web apps using Web Components.
 
 Stencil combines the best concepts of the most popular frontend frameworks into a compile-time rather than run-time tool. Stencil takes TypeScript, JSX, a tiny virtual DOM layer, efficient one-way data binding, an asynchronous rendering pipeline (similar to React Fiber), and lazy-loading out of the box, and generates 100% standards-based Web Components that run in any browser supporting the Custom Elements v1 spec.
 
 Stencil components are just Web Components, so they work in any major framework or with no framework at all.
-
----
 
 ## Getting Started
 
@@ -47,7 +85,7 @@ Integrating a component built with Stencil to a project without a JavaScript fra
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="https://unpkg.com/test-components/latest/dist/test-components.js"></script>
+    <script src="https://unpkg.com/bulmil/latest/dist/bulmil.js"></script>
   </head>
   <body>
     <b-button>Button</b-button>
@@ -65,14 +103,14 @@ Alternatively, if you wanted to take advantage of ES Modules, you could include 
       import {
         applyPolyfills,
         defineCustomElements,
-      } from 'https://unpkg.com/test-components/latest/dist/esm/es2017/test-components.define.js';
+      } from 'https://unpkg.com/bulmil/latest/dist/esm/es2017/bulmil.define.js';
       applyPolyfills().then(() => {
         defineCustomElements(window);
       });
     </script>
   </head>
   <body>
-    <test-component></test-component>
+    <b-button>Button</b-button>
   </body>
 </html>
 ```
@@ -145,8 +183,6 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-// test-component is the name of our made up Web Component that we have
-// published to npm:
 import { applyPolyfills, defineCustomElements } from 'bulmil/dist/loader';
 
 ReactDOM.render(<App />, document.getElementById('root'));
@@ -165,7 +201,7 @@ Following the steps above will enable your web components to be used in React, h
 
 In order to use the custom element library within the Vue app, the application must be modified to define the custom elements and to inform the Vue compiler which elements to ignore during compilation. This can all be done within the `main.js` file.
 
-Assuming you’ve run `npm install --save test-components` beforehand, and that `test-component` is the name of our made up Web Components that we have published to npm, you import the components into the 'main.js' file by
+Assuming you’ve run `npm install --save bulmil` beforehand, and that `bulmil` is the name of our made up Web Components that we have published to npm, you import the components into the 'main.js' file by
 
 - importing the node module
 - telling Vue to ignore the custom element tags (see `https://vuejs.org/v2/api/#ignoredElements`)
@@ -179,9 +215,8 @@ import { applyPolyfills, defineCustomElements } from 'bulmil/dist/loader';
 
 Vue.config.productionTip = false;
 
-// Tell Vue to ignore all components defined in the test-components
-// package. The regex assumes all components names are prefixed
-// 'test'
+// Tell Vue to ignore all components defined in the bulmil package.
+//T he regex assumes all components names are prefixed with 'b-'
 Vue.config.ignoredElements = [/b-\w*/];
 
 // Bind the custom elements to the window object
@@ -201,13 +236,15 @@ Create a plugin, (e.g bulmil.ts):
 ```ts
 import Vue from 'vue';
 
-import { defineCustomElements } from 'bulmil/dist/loader';
+import { applyPolyfills, defineCustomElements } from 'bulmil/dist/loader';
 
 Vue.config.productionTip = false;
 Vue.config.ignoredElements = [/b-\w*/];
 
 // Bind the custom elements to the window object
-defineCustomElements(window);
+applyPolyfills().then(() => {
+  defineCustomElements(window);
+});
 ```
 
 ```ts
@@ -317,7 +354,7 @@ import 'bulmil/dist';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
-  @ViewChild('button') buttonComponent: ElementRef<HTMLTestComponentElement>;
+  @ViewChild('button') buttonComponent: ElementRef<HTMLBulmilComponentElement>;
 
   async onAction() {
     await this.buttonComponent.nativeElement.componentMethod();
@@ -345,21 +382,6 @@ Now, when you build your application, Stencil collections in your dependencies w
 
 ---
 
-<!-- Badges: -->
-<!-- Add Stylelint -->
-<!-- Add Downloads -->
-<!-- Add Dependencies -->
-<!-- Add Minzipped size -->
-<!-- Add Install size -->
-<!-- Add Prettier -->
-<!-- Add Storybook -->
-<!-- Add Npm version -->
-<!-- Add CircleCI badge -->
-<!-- Add License badge -->
-
-<!-- Add Contribute -->
-<!-- Add CircleCI -->
-
 ## Development
 
 1. Clone this repository
@@ -369,16 +391,3 @@ Now, when you build your application, Stencil collections in your dependencies w
 ## 📑 License
 
 [MIT License](./LICENSE)
-
-<!-- Badges -->
-
-[npm-version-src]: https://img.shields.io/npm/dt/bulmil.svg?style=flat-square
-[npm-version-href]: https://npmjs.com/package/bulmil
-[npm-downloads-src]: https://img.shields.io/npm/v/bulmil/latest.svg?style=flat-square
-[npm-downloads-href]: https://npmjs.com/package/bulmil
-[david-dm-src]: https://david-dm.org/gomah/bulmil/status.svg?style=flat-square
-[david-dm-href]: https://david-dm.org/gomah/bulmil
-[package-phobia-src]: https://flat.badgen.net/packagephobia/install/bulmil
-[package-phobia-href]: https://packagephobia.now.sh/result?p=bulmil
-[bundle-phobia-src]: https://flat.badgen.net/bundlephobia/minzip/bulmil
-[bundle-phobia-href]: https://bundlephobia.com/result?p=bulmil
