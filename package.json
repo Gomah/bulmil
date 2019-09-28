@@ -50,7 +50,7 @@
     "build:components": "node --max_old_space_size=1024 ./node_modules/.bin/stencil build --prod",
     "build:storybook": "build-storybook -c .storybook -s www -o storybook/",
     "start": "node --max_old_space_size=1024 ./node_modules/.bin/stencil build --dev --watch --serve",
-    "release": "yarn test && standard-version && git push --follow-tags && npm publish",
+    "release": "yarn run test && standard-version && git push --follow-tags && npm publish",
     "watch": "node --max_old_space_size=4096 ./node_modules/.bin/stencil build --watch --recursive --serve",
     "storybook.run": "start-storybook -p 9006 -s www",
     "storybook": "npm-run-all --parallel watch storybook.run",
@@ -62,8 +62,8 @@
     "test:stencil:unit": "node --max_old_space_size=1024 ./node_modules/.bin/stencil test --spec",
     "test:stencil:unit:watch": "node --max_old_space_size=1024 ./node_modules/.bin/stencil test --spec --watch",
     "test:stencil:snapshots": "node --max_old_space_size=1024 ./node_modules/.bin/stencil test --e2e --screenshot",
-    "test:stencil": "yarn test:stencil:unit && yarn test:stencil:e2e",
-    "test": "yarn test:lint:ts && yarn test:lint:scss && yarn test:stencil"
+    "test:stencil": "yarn  run test:stencil:unit && yarn  run test:stencil:e2e",
+    "test": "yarn run test:lint:ts && yarn run test:lint:scss && yarn run test:stencil"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
