@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/gomah/bulmil/compare/v0.0.1...v0.0.2) (2019-09-28)
+
+
+### Bug Fixes
+
+* **husky:** use yarn run ([b49333b](https://github.com/gomah/bulmil/commit/b49333b))
+* **node:** set max_old_space_size to 1024 ([1c74c47](https://github.com/gomah/bulmil/commit/1c74c47))
+* **node:** set max_old_space_size to 2048 ([08a7129](https://github.com/gomah/bulmil/commit/08a7129))
+* **unpkg:** unpkg should point to bulmil.js ([f6f1973](https://github.com/gomah/bulmil/commit/f6f1973))
+
+
+### Chore
+
+* **deps:** upgrade dependencies ([3988afa](https://github.com/gomah/bulmil/commit/3988afa))
+* **examples:** add nuxt example ([324b624](https://github.com/gomah/bulmil/commit/324b624))
+
 ### 0.0.1 (2019-09-27)
 
 
