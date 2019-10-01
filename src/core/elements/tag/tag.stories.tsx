@@ -49,4 +49,78 @@ storiesOf('Elements|Tag', module)
         Tag
       </b-tag>
     `;
+  })
+  .add('Colors', () => {
+    return `
+      <b-tags>
+        <b-tag
+          color="is-black"
+        >
+          Black
+        </b-tag>
+        <b-tag
+          color="is-dark"
+        >
+          Dark
+        </b-tag>
+        <b-tag
+          color="is-light"
+        >
+          Light
+        </b-tag>
+        <b-tag
+          color="is-white"
+        >
+          White
+        </b-tag>
+        <b-tag
+          color="is-primary"
+        >
+          Primary
+        </b-tag>
+        <b-tag
+          color="is-link"
+        >
+          Link
+        </b-tag>
+        <b-tag
+          color="is-info"
+        >
+          Info
+        </b-tag>
+        <b-tag
+          color="is-success"
+        >
+          Success
+        </b-tag>
+        <b-tag
+          color="is-warning"
+        >
+          Warning
+        </b-tag>
+        <b-tag
+          color="is-danger"
+        >
+          Danger
+        </b-tag>
+      </b-tags>
+    `;
+  })
+  .add('Sizes', () => {
+    return `
+      <b-tags>
+        <b-tag color="is-link" size="is-normal">
+          Normal
+        </b-tag>
+        <b-tag color="is-primary" size="is-medium">
+          Medium
+        </b-tag>
+        <b-tag
+          color="is-info"
+          size="is-large"
+        >
+          Large
+        </b-tag>
+      </b-tags>
+    `;
   });

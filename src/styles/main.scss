@@ -1,5 +1,9 @@
 // Bulma utilities
-@import './node_modules/bulma-scss/utilities/_all';
+@import './node_modules/bulma-scss/utilities/initial-variables';
+@import './node_modules/bulma-scss/utilities/functions';
+@import './node_modules/bulma-scss/utilities/derived-variables';
+@import './node_modules/bulma-scss/utilities/mixins';
+@import './node_modules/bulma-scss/utilities/controls';
 
 $purple: #5851ff;
 

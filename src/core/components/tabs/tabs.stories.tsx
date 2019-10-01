@@ -33,27 +33,31 @@ storiesOf('Components|Tabs', module)
 
   .add('Example', () => {
     return `
-      <b-tabs
-        is-rounded=${boolean('Rounded', false)}
-        is-fullwidth=${boolean('Fullwidth', false)}
-        tab-style=${select('Style', styles, null)}
-        alignment=${select('Alignment', alignments, null)}
-        size=${select('Size', sizes, null)}
-      >
-        <ul>
-          <li class="is-active">
-            <a>Pictures</a>
-          </li>
-          <li>
-            <a>Music</a>
-          </li>
-          <li>
-            <a>Videos</a>
-          </li>
-          <li>
-            <a>Documents</a>
-          </li>
-        </ul>
-      </b-tabs>
+      <b-section>
+        <b-container>
+          <b-tabs
+            is-rounded=${boolean('Rounded', false)}
+            is-fullwidth=${boolean('Fullwidth', false)}
+            tab-style=${select('Style', styles, null)}
+            alignment=${select('Alignment', alignments, null)}
+            size=${select('Size', sizes, null)}
+          >
+            <ul>
+              <li class="is-active">
+                <a>Pictures</a>
+              </li>
+              <li>
+                <a>Music</a>
+              </li>
+              <li>
+                <a>Videos</a>
+              </li>
+              <li>
+                <a>Documents</a>
+              </li>
+            </ul>
+          </b-tabs>
+        </b-container>
+      </b-section>
     `;
   });

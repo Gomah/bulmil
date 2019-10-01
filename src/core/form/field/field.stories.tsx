@@ -1,9 +1,7 @@
-// import centered from '@storybook/addon-centered/html';
 import { storiesOf } from '@storybook/html';
 import notes from './readme.md';
 
 storiesOf('Form|Field', module)
-  // .addDecorator(centered)
   .addParameters({
     notes: {
       markdown: notes,

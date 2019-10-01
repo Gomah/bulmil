@@ -19,6 +19,7 @@ storiesOf('Elements|Box', module)
               <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image" />
             </figure>
           </div>
+
           <div class="media-content">
             <div class="content">
               <p>

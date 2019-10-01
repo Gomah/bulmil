@@ -1,4 +1,3 @@
-import centered from '@storybook/addon-centered/html';
 import notes from './readme.md';
 import { storiesOf } from '@storybook/html';
 import { boolean, select } from '@storybook/addon-knobs';
@@ -18,7 +17,6 @@ const sizes = {
 };
 
 storiesOf('Components|Pagination', module)
-  .addDecorator(centered)
   .addParameters({
     notes: {
       markdown: notes,
@@ -27,11 +25,15 @@ storiesOf('Components|Pagination', module)
 
   .add('Example', () => {
     return `
-      <b-pagination
-        is-rounded=${boolean('Rounded', false)}
-        alignment=${select('Alignment', alignments, null)}
-        size=${select('Size', sizes, null)}
-      >
-      </b-pagination>
+      <b-section>
+        <b-container>
+          <b-pagination
+            is-rounded=${boolean('Rounded', false)}
+            alignment=${select('Alignment', alignments, null)}
+            size=${select('Size', sizes, null)}
+          >
+          </b-pagination>
+        </b-container>
+      </b-section>
     `;
   });

@@ -26,18 +26,26 @@ storiesOf('Components|Breadcrumb', module)
 
   .add('Example', () => {
     return `
-      <b-breadcrumb
-        is-centered=${boolean('Centered', false)}
-        is-right=${boolean('Right', false)}
-        separator=${select('Separator', separators, null)}
-        size=${select('Size', sizes, null)}
-      >
-        <ul>
-          <li><a href="#">Bulmil</a></li>
-          <li><a href="#">Documentation</a></li>
-          <li><a href="#">Components</a></li>
-          <li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li>
-        </ul>
-      </b-breadcrumb>
+      <b-section>
+        <b-container>
+          <b-breadcrumb
+            is-centered=${boolean('Centered', false)}
+            alignment=${select(
+              'Alignment',
+              { 'is-centered': 'is-centered', 'is-right': 'is-right', 'Not set': null },
+              null
+            )}
+            separator=${select('Separator', separators, null)}
+            size=${select('Size', sizes, null)}
+          >
+            <ul>
+              <li><a href="#">Bulmil</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Components</a></li>
+              <li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li>
+            </ul>
+          </b-breadcrumb>
+        </b-container>
+      </b-section>
     `;
   });

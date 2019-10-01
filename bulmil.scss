@@ -4,6 +4,11 @@
 // Bulma base
 @import './node_modules/bulma-scss/base/_all';
 
-// Other elements not fitting in any components
+// Other components & elements not fitting in any components or not implemented yet.
+@import './node_modules/bulma-scss/components/level';
+@import './node_modules/bulma-scss/components/list';
+@import './node_modules/bulma-scss/components/media';
+@import './node_modules/bulma-scss/grid/tiles';
+@import './node_modules/bulma-scss/layout/hero';
 @import './node_modules/bulma-scss/elements/other';
 @import './node_modules/bulma-scss/elements/title';

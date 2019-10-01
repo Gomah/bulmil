@@ -13,7 +13,11 @@ export class Modal implements ComponentInterface {
   /**
    * Is Active
    */
-  @Prop() isActive = false;
+  @Prop({
+    mutable: true,
+    reflect: true,
+  })
+  isActive = false;
 
   /**
    * Modal Card

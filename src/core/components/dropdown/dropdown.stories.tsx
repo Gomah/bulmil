@@ -19,6 +19,7 @@ storiesOf('Components|Dropdown', module)
           is-hoverable="${boolean('Hoverable', false)}"
           is-right="${boolean('Right aligned', false)}"
           is-up="${boolean('Is UP?', false)}">
+
           <b-button slot="trigger" color="is-primary" size="is-medium">Dropdown button</b-button>
 
           <a href="#" class="dropdown-item">

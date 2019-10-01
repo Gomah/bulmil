@@ -24,13 +24,6 @@
 | `size`        | `size`         | Size                             | `"is-large" \| "is-medium" \| "is-normal" \| "is-small"`                                                                                                    | `undefined` |
 
 
-## Events
-
-| Event     | Description   | Type               |
-| --------- | ------------- | ------------------ |
-| `clicked` | Clicked event | `CustomEvent<any>` |
-
-
 ----------------------------------------------
 
 *Built with [StencilJS](https://stenciljs.com/)*

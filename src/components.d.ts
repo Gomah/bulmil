@@ -17,17 +17,13 @@ export namespace Components {
   }
   interface BBreadcrumb {
     /**
+    * Breadcrumb alignment
+    */
+    'alignment': 'is-centered' | 'is-right';
+    /**
     * CSS Classes
     */
     'class': string;
-    /**
-    * Aligned to the center
-    */
-    'isCentered': boolean;
-    /**
-    * Aligned to the right
-    */
-    'isRight': boolean;
     /**
     * Separator
     */
@@ -244,7 +240,7 @@ export namespace Components {
     */
     'class': string;
     /**
-    * The dropdown active
+    * The dropdown visibility
     */
     'isActive': boolean;
     /**
@@ -670,6 +666,10 @@ export namespace Components {
     */
     'isNarrow': boolean;
     /**
+    * Scrollable
+    */
+    'isScrollable': boolean;
+    /**
     * Striped
     */
     'isStriped': boolean;
@@ -1067,17 +1067,13 @@ declare namespace LocalJSX {
   }
   interface BBreadcrumb {
     /**
+    * Breadcrumb alignment
+    */
+    'alignment'?: 'is-centered' | 'is-right';
+    /**
     * CSS Classes
     */
     'class'?: string;
-    /**
-    * Aligned to the center
-    */
-    'isCentered'?: boolean;
-    /**
-    * Aligned to the right
-    */
-    'isRight'?: boolean;
     /**
     * Separator
     */
@@ -1149,10 +1145,6 @@ declare namespace LocalJSX {
     * Static
     */
     'isStatic'?: boolean;
-    /**
-    * Clicked event
-    */
-    'onClicked'?: (event: CustomEvent<any>) => void;
     /**
     * Size
     */
@@ -1298,7 +1290,7 @@ declare namespace LocalJSX {
     */
     'class'?: string;
     /**
-    * The dropdown active
+    * The dropdown visibility
     */
     'isActive'?: boolean;
     /**
@@ -1723,6 +1715,10 @@ declare namespace LocalJSX {
     * Narrow
     */
     'isNarrow'?: boolean;
+    /**
+    * Scrollable
+    */
+    'isScrollable'?: boolean;
     /**
     * Striped
     */

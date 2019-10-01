@@ -1,5 +1,6 @@
 import notes from './readme.md';
 import { storiesOf } from '@storybook/html';
+import { select, boolean } from '@storybook/addon-knobs';
 
 storiesOf('Components|Navbar', module)
   .addParameters({
@@ -10,7 +11,36 @@ storiesOf('Components|Navbar', module)
 
   .add('Example', () => {
     return `
-      <b-navbar color="is-primary">
+      <b-navbar
+        color="${select(
+          'Color',
+          {
+            'is-black': 'is-black',
+            'is-dark': 'is-dark',
+            'is-light': 'is-light',
+            'is-white': 'is-white',
+            'is-primary': 'is-primary',
+            'is-link': 'is-link',
+            'is-info': 'is-info',
+            'is-success': 'is-success',
+            'is-warning': 'is-warning',
+            'is-danger': 'is-danger',
+            'not set': null,
+          },
+          null
+        )}"
+        is-spaced="${boolean('Spaced', false)}"
+        is-transparent="${boolean('Transparent', false)}"
+        fixed-position="${select(
+          'Fixed position',
+          {
+            top: 'is-fixed-top',
+            bottom: 'is-fixed-bottom',
+            'Not fixed': null,
+          },
+          null
+        )}"
+      >
         <div class="navbar-brand">
           <a class="navbar-item" href="https://bulma.io">
             <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" />

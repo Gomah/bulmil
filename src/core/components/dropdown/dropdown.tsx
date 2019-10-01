@@ -11,9 +11,13 @@ export class Dropdown implements ComponentInterface {
   @Prop() class = '';
 
   /**
-   * The dropdown active
+   * The dropdown visibility
    */
-  @Prop() isActive = false;
+  @Prop({
+    mutable: true,
+    reflect: true,
+  })
+  isActive = false;
 
   /**
    * Align the dropdown to the right

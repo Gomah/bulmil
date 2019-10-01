@@ -20,6 +20,11 @@ export class Table implements ComponentInterface {
   @Prop() isStriped = false;
 
   /**
+   * Scrollable
+   */
+  @Prop() isScrollable = false;
+
+  /**
    * Narrow
    */
   @Prop() isNarrow = false;
@@ -35,7 +40,7 @@ export class Table implements ComponentInterface {
   @Prop() isFullwidth = false;
 
   render(): JSX.Element {
-    return (
+    const table: HTMLTableElement = (
       <table
         class={{
           table: true,
@@ -47,24 +52,9 @@ export class Table implements ComponentInterface {
           'is-fullwidth': this.isFullwidth,
         }}
       >
-        <thead>
-          <tr>
-            <th>Tr Head</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <th>Tr Body</th>
-          </tr>
-        </tbody>
-
-        <tfoot>
-          <tr>
-            <th>Tr Foot</th>
-          </tr>
-        </tfoot>
+        <slot />
       </table>
     );
+    return this.isScrollable ? <div class="table-container">{table}</div> : table;
   }
 }

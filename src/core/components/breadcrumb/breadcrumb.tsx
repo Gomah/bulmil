@@ -11,14 +11,9 @@ export class Breadcrumb implements ComponentInterface {
   @Prop() class = '';
 
   /**
-   * Aligned to the center
+   * Breadcrumb alignment
    */
-  @Prop() isCentered = false;
-
-  /**
-   * Aligned to the right
-   */
-  @Prop() isRight = false;
+  @Prop() alignment: 'is-centered' | 'is-right';
 
   /**
    * Size
@@ -41,8 +36,7 @@ export class Breadcrumb implements ComponentInterface {
           breadcrumb: true,
           [this.size]: !!this.size,
           [this.separator]: !!this.separator,
-          'is-centered': this.isCentered,
-          'is-right': this.isRight,
+          [this.alignment]: !!this.alignment,
           [this.class]: !!this.class,
         }}
         aria-label="breadcrumbs"

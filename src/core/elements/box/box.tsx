@@ -13,7 +13,12 @@ export class Box implements ComponentInterface {
   render(): JSX.Element {
     return (
       <Host>
-        <div class={`box ${this.class}`}>
+        <div
+          class={{
+            box: true,
+            [this.class]: !!this.class,
+          }}
+        >
           <slot />
         </div>
       </Host>

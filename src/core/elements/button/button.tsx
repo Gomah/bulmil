@@ -1,13 +1,4 @@
-import {
-  Component,
-  Prop,
-  h,
-  JSX,
-  Listen,
-  EventEmitter,
-  Event,
-  ComponentInterface,
-} from '@stencil/core';
+import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 
 @Component({
   tag: 'b-button',
@@ -89,19 +80,6 @@ export class Button implements ComponentInterface {
    * Loading state
    */
   @Prop() isLoading = false;
-
-  /**
-   * Clicked event
-   */
-  @Event() clicked: EventEmitter;
-
-  /**
-   * Click listener
-   */
-  @Listen('click', { capture: true })
-  handleClick(e: MouseEvent) {
-    this.clicked.emit(e);
-  }
 
   render(): JSX.Element {
     return (
