@@ -12,3 +12,7 @@
 @import './node_modules/bulma-scss/layout/hero';
 @import './node_modules/bulma-scss/elements/other';
 @import './node_modules/bulma-scss/elements/title';
+
+// As slot table won't render tr nor td
+// https://github.com/ionic-team/stencil/issues/1641
+@import './node_modules/bulma-scss/elements/table';
