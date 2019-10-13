@@ -23,7 +23,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['../../css/bulmil.css'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -35,7 +35,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa'],
+  modules: [],
   /*
    ** Build configuration
    */
