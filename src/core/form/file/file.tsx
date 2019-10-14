@@ -65,9 +65,9 @@ export class FileInput implements ComponentInterface {
    */
   @Prop() isBoxed = false;
 
-  public file: File;
+  private file: File;
 
-  handleFileChange = event => {
+  private handleFileChange = event => {
     this.file = event.target.files[0];
   };
 
