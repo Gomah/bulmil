@@ -33,9 +33,9 @@ storiesOf('Components|Tabs', module)
 
   .add('Example', () => {
     return `
-      <b-section>
-        <b-container>
-          <b-tabs
+      <bm-section>
+        <bm-container>
+          <bm-tabs
             is-rounded=${boolean('Rounded', false)}
             is-fullwidth=${boolean('Fullwidth', false)}
             tab-style=${select('Style', styles, null)}
@@ -56,8 +56,8 @@ storiesOf('Components|Tabs', module)
                 <a>Documents</a>
               </li>
             </ul>
-          </b-tabs>
-        </b-container>
-      </b-section>
+          </bm-tabs>
+        </bm-container>
+      </bm-section>
     `;
   });

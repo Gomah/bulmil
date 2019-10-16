@@ -4,14 +4,14 @@ import { Textarea } from '../textarea';
 it('Should render properly', async (): Promise<void> => {
   const page = await newSpecPage({
     components: [Textarea],
-    html: `<b-textarea value="Hello World"></b-textarea>`,
+    html: `<bm-textarea value="Hello World"></bm-textarea>`,
   });
 
   expect(page.root).toEqualHtml(`
-    <b-textarea value="Hello World">
+    <bm-textarea value="Hello World">
       <div class="control">
         <textarea class="textarea">Hello World</textarea>
       </div>
-    </b-textarea>
+    </bm-textarea>
   `);
 });

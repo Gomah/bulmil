@@ -10,13 +10,13 @@ storiesOf('Components|Panel', module)
 
   .add('Example', () => {
     return `
-      <b-section>
-        <b-container>
-          <b-panel>
+      <bm-section>
+        <bm-container>
+          <bm-panel>
             <p class="panel-heading">repositories</p>
             <div class="panel-block">
               <p class="control has-icons-left">
-                <b-input size="is-small" type="text" placeholder="search"></b-input>
+                <bm-input size="is-small" type="text" placeholder="search"></bm-input>
                 <span class="icon is-small is-left">
                   <i class="fas fa-search" aria-hidden="true"></i>
                 </span>
@@ -65,12 +65,12 @@ storiesOf('Components|Panel', module)
               </span>
               mojs
             </a>
-            <label class="panel-block"> <b-checkbox> remember me</b-checkbox> </label>
+            <label class="panel-block"> <bm-checkbox> remember me</bm-checkbox> </label>
             <div class="panel-block">
-              <b-button color="is-link" is-outlined is-fullwidth>reset all filters</b-button>
+              <bm-button color="is-link" is-outlined is-fullwidth>reset all filters</bm-button>
             </div>
-          </b-panel>
-        </b-container>
-      </b-section>
+          </bm-panel>
+        </bm-container>
+      </bm-section>
     `;
   });

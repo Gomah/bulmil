@@ -1,10 +1,10 @@
 import { newE2EPage } from '@stencil/core/testing';
 
-describe('basic: b-box', () => {
-  it('should render a b-box component', async () => {
+describe('basic: bm-box', () => {
+  it('should render a bm-box component', async () => {
     const page = await newE2EPage();
     await page.setContent(`
-      <b-box>
+      <bm-box>
         <article class="media">
           <div class="media-left">
             <figure class="image is-64x64">
@@ -41,9 +41,9 @@ describe('basic: b-box', () => {
             </nav>
           </div>
         </article>
-      </b-box>
+      </bm-box>
     `);
-    const el = await page.find('b-box');
+    const el = await page.find('bm-box');
     expect(el).not.toBeNull();
 
     const compare = await page.compareScreenshot();

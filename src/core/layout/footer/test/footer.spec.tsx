@@ -4,16 +4,16 @@ import { Footer } from '../footer';
 it('Should render properly', async (): Promise<void> => {
   const page = await newSpecPage({
     components: [Footer],
-    html: `<b-footer>
+    html: `<bm-footer>
              <p>Hello, I'm in a footer!</p>
-           </b-sec>`,
+           </bm-sec>`,
   });
 
   expect(page.root).toEqualHtml(`
-    <b-footer>
+    <bm-footer>
       <footer class="footer">
         <p>Hello, I'm in a footer!</p>
       </footer>
-    </b-footer>
+    </bm-footer>
   `);
 });

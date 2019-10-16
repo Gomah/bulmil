@@ -13,22 +13,22 @@ storiesOf('Form|Radio', module)
 
   .add('Example', () => {
     return `
-      <b-section>
-        <b-container>
-          <b-field>
-            <b-radio name="storybook">
+      <bm-section>
+        <bm-container>
+          <bm-field>
+            <bm-radio name="storybook">
               Yes
-            </b-radio>
+            </bm-radio>
 
-            <b-radio name="storybook" checked="${boolean('Checked', false)}">
+            <bm-radio name="storybook" checked="${boolean('Checked', false)}">
               No
-            </b-radio>
+            </bm-radio>
 
-            <b-radio name="storybook" disabled="${boolean('Disabled', false)}">
+            <bm-radio name="storybook" disabled="${boolean('Disabled', false)}">
               Maybe
-            </b-radio>
-          </b-field>
-        </b-container>
-      </b-section>
+            </bm-radio>
+          </bm-field>
+        </bm-container>
+      </bm-section>
     `;
   });

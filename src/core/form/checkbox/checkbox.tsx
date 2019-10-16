@@ -1,7 +1,7 @@
 import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 
 @Component({
-  tag: 'b-checkbox',
+  tag: 'bm-checkbox',
   styleUrls: ['checkbox.scss'],
 })
 export class Checkbox implements ComponentInterface {

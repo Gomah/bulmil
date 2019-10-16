@@ -11,7 +11,7 @@ storiesOf('Components|Navbar', module)
 
   .add('Example', () => {
     return `
-      <b-navbar
+      <bm-navbar
         color="${select(
           'Color',
           {
@@ -94,17 +94,17 @@ storiesOf('Components|Navbar', module)
 
           <div class="navbar-end">
             <div class="navbar-item">
-              <b-buttons>
-                <b-button color="is-primary">
+              <bm-buttons>
+                <bm-button color="is-primary">
                   <strong>Sign up</strong>
-                </b-button>
-                <b-button color="is-light">
+                </bm-button>
+                <bm-button color="is-light">
                   Log in
-                </b-button>
-              </b-buttons>
+                </bm-button>
+              </bm-buttons>
             </div>
           </div>
         </div>
-      </b-navbar>
+      </bm-navbar>
     `;
   });

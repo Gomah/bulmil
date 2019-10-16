@@ -40,87 +40,87 @@ storiesOf('Elements|Tag', module)
 
   .add('Example', () => {
     return `
-      <b-tag
+      <bm-tag
         color="${select('Color', colors, 'is-primary')}"
         size="${select('Size', sizes, null)}"
         tag="${text('Tag', 'span')}"
         modifier="${select('Modifier', modifiers, null)}"
       >
         Tag
-      </b-tag>
+      </bm-tag>
     `;
   })
   .add('Colors', () => {
     return `
-      <b-tags>
-        <b-tag
+      <bm-tags>
+        <bm-tag
           color="is-black"
         >
           Black
-        </b-tag>
-        <b-tag
+        </bm-tag>
+        <bm-tag
           color="is-dark"
         >
           Dark
-        </b-tag>
-        <b-tag
+        </bm-tag>
+        <bm-tag
           color="is-light"
         >
           Light
-        </b-tag>
-        <b-tag
+        </bm-tag>
+        <bm-tag
           color="is-white"
         >
           White
-        </b-tag>
-        <b-tag
+        </bm-tag>
+        <bm-tag
           color="is-primary"
         >
           Primary
-        </b-tag>
-        <b-tag
+        </bm-tag>
+        <bm-tag
           color="is-link"
         >
           Link
-        </b-tag>
-        <b-tag
+        </bm-tag>
+        <bm-tag
           color="is-info"
         >
           Info
-        </b-tag>
-        <b-tag
+        </bm-tag>
+        <bm-tag
           color="is-success"
         >
           Success
-        </b-tag>
-        <b-tag
+        </bm-tag>
+        <bm-tag
           color="is-warning"
         >
           Warning
-        </b-tag>
-        <b-tag
+        </bm-tag>
+        <bm-tag
           color="is-danger"
         >
           Danger
-        </b-tag>
-      </b-tags>
+        </bm-tag>
+      </bm-tags>
     `;
   })
   .add('Sizes', () => {
     return `
-      <b-tags>
-        <b-tag color="is-link" size="is-normal">
+      <bm-tags>
+        <bm-tag color="is-link" size="is-normal">
           Normal
-        </b-tag>
-        <b-tag color="is-primary" size="is-medium">
+        </bm-tag>
+        <bm-tag color="is-primary" size="is-medium">
           Medium
-        </b-tag>
-        <b-tag
+        </bm-tag>
+        <bm-tag
           color="is-info"
           size="is-large"
         >
           Large
-        </b-tag>
-      </b-tags>
+        </bm-tag>
+      </bm-tags>
     `;
   });

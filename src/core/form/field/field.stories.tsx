@@ -10,52 +10,52 @@ storiesOf('Form|Field', module)
 
   .add('Example', () => {
     return `
-      <b-section>
-        <b-container>
-          <b-field label="Name">
-            <b-input placeholder="Text input" />
-          </b-field>
+      <bm-section>
+        <bm-container>
+          <bm-field label="Name">
+            <bm-input placeholder="Text input" />
+          </bm-field>
 
-          <b-field label="Username" message="This username is available">
-            <b-input color="is-success" value="bulmil" >
-            </b-input>
-          </b-field>
+          <bm-field label="Username" message="This username is available">
+            <bm-input color="is-success" value="bulmil" >
+            </bm-input>
+          </bm-field>
 
-          <b-field label="Email" message="This email is invalid">
-            <b-input type="email" color="is-danger" value="hello@">
-            </b-input>
-          </b-field>
+          <bm-field label="Email" message="This email is invalid">
+            <bm-input type="email" color="is-danger" value="hello@">
+            </bm-input>
+          </bm-field>
 
-          <b-field label="Subject">
-            <b-select>
+          <bm-field label="Subject">
+            <bm-select>
               <option>Select dropdown</option>
               <option>With options</option>
-            </b-select>
-          </b-field>
+            </bm-select>
+          </bm-field>
 
-          <b-field label="Message">
-            <b-textarea></b-textarea>
-          </b-field>
+          <bm-field label="Message">
+            <bm-textarea></bm-textarea>
+          </bm-field>
 
-          <b-field>
-            <b-checkbox>I agree to the <a href="#">terms and conditions</a></b-checkbox>
-          </b-field>
+          <bm-field>
+            <bm-checkbox>I agree to the <a href="#">terms and conditions</a></bm-checkbox>
+          </bm-field>
 
-          <b-field>
-            <b-radio name="value">Yes</b-radio>
-            <b-radio name="value">No</b-radio>
-          </b-field>
+          <bm-field>
+            <bm-radio name="value">Yes</bm-radio>
+            <bm-radio name="value">No</bm-radio>
+          </bm-field>
 
-          <b-field is-grouped>
+          <bm-field is-grouped>
             <div class="control">
-              <b-button color="is-primary">Submit</b-button>
+              <bm-button color="is-primary">Submit</bm-button>
             </div>
             <div class="control">
-              <b-button color="is-dark">Cancel</b-button>
+              <bm-button color="is-dark">Cancel</bm-button>
             </div>
-          </b-field>
+          </bm-field>
 
-        </b-container>
-      </b-section>
+        </bm-container>
+      </bm-section>
     `;
   });

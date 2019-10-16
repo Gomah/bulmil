@@ -49,6 +49,13 @@
 
 Bulmil is an agnostic UI library based on Web Components, made with [Bulma.io](https://bulma.io/) & [Stencil.js](https://stenciljs.com/).
 
+Bulmil was created as a proof of concept to introduce an easy way to consume common reusable web components for use with various modern application frameworks (Angular, Vue, React, Ember) or simply with pure Javascript.
+
+:warning: Currently in Alpha, beta will be available once these two issues are resolved:
+
+- https://github.com/Gomah/bulmil/issues/25
+- https://github.com/Gomah/bulmil/issues/26
+
 ## Why Stencil?
 
 Stencil is a compiler for building fast web apps using Web Components.
@@ -88,7 +95,7 @@ Integrating a component built with Stencil to a project without a JavaScript fra
     <script src="https://unpkg.com/bulmil/latest/dist/bulmil.js"></script>
   </head>
   <body>
-    <b-button>Button</b-button>
+    <bm-button>Button</bm-button>
   </body>
 </html>
 ```
@@ -110,63 +117,9 @@ Alternatively, if you wanted to take advantage of ES Modules, you could include 
     </script>
   </head>
   <body>
-    <b-button>Button</b-button>
+    <bm-button>Button</bm-button>
   </body>
 </html>
-```
-
-#### Passing object props from a non-JSX element
-
-##### Setting the prop manually
-
-```tsx
-import { Prop } from '@stencil/core';
-
-export class TodoList {
-  @Prop() myObject: object;
-  @Prop() myArray: Array<string>;
-}
-```
-
-```tsx
-<todo-list></todo-list>
-<script>
-  const todoListElement = document.querySelector('todo-list');
-  todoListElement.myObject = {};
-  todoListElement.myArray = [];
-</script>
-```
-
-##### Watching props changes
-
-```tsx
-import { Prop, State, Watch } from '@stencil/core';
-
-export class TodoList {
-  @Prop() myObject: string;
-  @Prop() myArray: string;
-  @State() myInnerObject: object;
-  @State() myInnerArray: Array<string>;
-
-  componentWillLoad() {
-    this.parseMyObjectProp(this.myObject);
-    this.parseMyArrayProp(this.myArray);
-  }
-
-  @Watch('myObject')
-  parseMyObjectProp(newValue: string) {
-    if (newValue) this.myInnerObject = JSON.parse(newValue);
-  }
-
-  @Watch('myArray')
-  parseMyArrayProp(newValue: string) {
-    if (newValue) this.myInnerArray = JSON.parse(newValue);
-  }
-}
-```
-
-```tsx
-<todo-list my-object="{}" my-array="[]"></todo-list>
 ```
 
 ---
@@ -216,8 +169,8 @@ import { applyPolyfills, defineCustomElements } from 'bulmil/dist/loader';
 Vue.config.productionTip = false;
 
 // Tell Vue to ignore all components defined in the bulmil package.
-//T he regex assumes all components names are prefixed with 'b-'
-Vue.config.ignoredElements = [/b-\w*/];
+//T he regex assumes all components names are prefixed with 'bm-'
+Vue.config.ignoredElements = [/bm-\w*/];
 
 // Bind the custom elements to the window object
 applyPolyfills().then(() => {
@@ -239,7 +192,7 @@ import Vue from 'vue';
 import { applyPolyfills, defineCustomElements } from 'bulmil/dist/loader';
 
 Vue.config.productionTip = false;
-Vue.config.ignoredElements = [/b-\w*/];
+Vue.config.ignoredElements = [/bm-\w*/];
 
 // Bind the custom elements to the window object
 applyPolyfills().then(() => {
@@ -262,7 +215,7 @@ The components should then be available in any of the Vue components
 render() {
   return (
     <div>
-      <b-button>Button</b-button>
+      <bm-button>Button</bm-button>
     </div>
   )
 }
@@ -349,7 +302,7 @@ import 'bulmil/dist';
 @Component({
   selector: 'app-home',
   template: `
-    <b-button #button></b-button>
+    <bm-button #button></bm-button>
   `,
   styleUrls: ['./home.component.scss'],
 })

@@ -5,7 +5,7 @@ it('Should render properly', async (): Promise<void> => {
   const page = await newSpecPage({
     components: [Tabs],
     html: `
-      <b-tabs>
+      <bm-tabs>
         <ul>
           <li class="is-active">
             <a>Pictures</a>
@@ -20,12 +20,12 @@ it('Should render properly', async (): Promise<void> => {
             <a>Documents</a>
           </li>
         </ul>
-      </b-tabs>
+      </bm-tabs>
     `,
   });
 
   expect(page.root).toEqualHtml(`
-    <b-tabs>
+    <bm-tabs>
       <div class="tabs">
         <ul>
           <li class="is-active">
@@ -42,6 +42,6 @@ it('Should render properly', async (): Promise<void> => {
           </li>
         </ul>
       </div>
-    </b-tabs>
+    </bm-tabs>
   `);
 });

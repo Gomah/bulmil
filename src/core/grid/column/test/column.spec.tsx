@@ -4,16 +4,16 @@ import { Column } from '../column';
 it('Should render properly', async (): Promise<void> => {
   const page = await newSpecPage({
     components: [Column],
-    html: `<b-column>
+    html: `<bm-column>
              Hello, I'm in a column!
-           </b-column>`,
+           </bm-column>`,
   });
 
   expect(page.root).toEqualHtml(`
-    <b-column>
+    <bm-column>
       <div class="column">
         Hello, I'm in a column!
       </div>
-    </b-column>
+    </bm-column>
   `);
 });

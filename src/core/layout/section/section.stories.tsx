@@ -20,7 +20,7 @@ storiesOf('Layout|Section', module)
 
   .add('Sizes', () => {
     return `
-      <b-section size="${select('Size', sizes, null)}">
+      <bm-section size="${select('Size', sizes, null)}">
         <div class="container">
           <h1 class="title">Section</h1>
           <h2 class="subtitle">
@@ -28,6 +28,6 @@ storiesOf('Layout|Section', module)
             you're currently reading
           </h2>
         </div>
-      </b-section>
+      </bm-section>
     `;
   });

@@ -4,16 +4,16 @@ import { Card } from '../card';
 it('Should render properly', async (): Promise<void> => {
   const page = await newSpecPage({
     components: [Card],
-    html: `<b-card>
+    html: `<bm-card>
              <p>Hello, I'm in a card</p>
-           </b-card>`,
+           </bm-card>`,
   });
 
   expect(page.root).toEqualHtml(`
-    <b-card>
+    <bm-card>
       <div class="card">
         <p>Hello, I'm in a card</p>
       </div>
-    </b-card>
+    </bm-card>
   `);
 });

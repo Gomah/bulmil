@@ -13,10 +13,10 @@ storiesOf('Form|Textarea', module)
 
   .add('Example', () => {
     return `
-      <b-section>
-        <b-container>
-          <b-field>
-            <b-textarea
+      <bm-section>
+        <bm-container>
+          <bm-field>
+            <bm-textarea
               state="${select(
                 'State',
                 { 'is-hovered': 'is-hovered', 'is-focused': 'is-focused', 'Not set': null },
@@ -52,9 +52,9 @@ storiesOf('Form|Textarea', module)
               readonly="${boolean('Readonly', false)}"
               has-fixed-size="${boolean('Fixed size', false)}"
             >
-            </b-textarea>
-          </b-field>
-        </b-container>
-      </b-section>
+            </bm-textarea>
+          </bm-field>
+        </bm-container>
+      </bm-section>
     `;
   });

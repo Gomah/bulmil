@@ -1,7 +1,7 @@
 import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 
 @Component({
-  tag: 'b-panel',
+  tag: 'bm-panel',
   styleUrls: ['panel.scss'],
 })
 export class Panel implements ComponentInterface {

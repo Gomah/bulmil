@@ -4,11 +4,11 @@ import { FileInput } from '../file';
 it('Should render properly', async (): Promise<void> => {
   const page = await newSpecPage({
     components: [FileInput],
-    html: `<b-file name="upload" size="is-small" color="is-black"></b-file>`,
+    html: `<bm-file name="upload" size="is-small" color="is-black"></bm-file>`,
   });
 
   expect(page.root).toEqualHtml(`
-    <b-file name="upload" size="is-small" color="is-black">
+    <bm-file name="upload" size="is-small" color="is-black">
       <div class="file is-small is-black">
         <label class="file-label">
           <input class="file-input" type="file" name="upload" />
@@ -20,6 +20,6 @@ it('Should render properly', async (): Promise<void> => {
           </span>
         </label>
       </div>
-    </b-file>
+    </bm-file>
   `);
 });

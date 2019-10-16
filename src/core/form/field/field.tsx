@@ -1,7 +1,7 @@
 import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 
 @Component({
-  tag: 'b-field',
+  tag: 'bm-field',
   styleUrls: ['field.scss'],
 })
 export class Field implements ComponentInterface {

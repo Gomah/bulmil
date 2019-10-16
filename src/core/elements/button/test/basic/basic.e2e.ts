@@ -2,8 +2,8 @@ import { newE2EPage } from '@stencil/core/testing';
 
 it('should render a button component', async () => {
   const page = await newE2EPage();
-  await page.setContent(`<b-button>Basic</b-button>`);
-  const el = await page.find('b-button');
+  await page.setContent(`<bm-button>Basic</bm-button>`);
+  const el = await page.find('bm-button');
 
   expect(el).not.toBeNull();
 

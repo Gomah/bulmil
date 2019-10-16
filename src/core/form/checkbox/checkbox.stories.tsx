@@ -13,29 +13,29 @@ storiesOf('Form|Checkbox', module)
 
   .add('Example', () => {
     return `
-      <b-section>
-        <b-container>
-          <b-checkbox
+      <bm-section>
+        <bm-container>
+          <bm-checkbox
             checked="${boolean('Checked', false)}"
             disabled="${boolean('Disabled', false)}"
           >
             Remember me
-          </b-checkbox>
-        </b-container>
-      </b-section>
+          </bm-checkbox>
+        </bm-container>
+      </bm-section>
     `;
   })
   .add('With links', () => {
     return `
-      <b-section>
-        <b-container>
-          <b-checkbox
+      <bm-section>
+        <bm-container>
+          <bm-checkbox
           checked="${boolean('Checked', false)}"
             disabled="${boolean('Disabled', false)}"
             >
             I agree to the <a href="#">terms and conditions</a>
-          </b-checkbox>
-        </b-container>
-      </b-section>
+          </bm-checkbox>
+        </bm-container>
+      </bm-section>
     `;
   });

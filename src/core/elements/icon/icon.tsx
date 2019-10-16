@@ -1,7 +1,7 @@
 import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 
 @Component({
-  tag: 'b-icon',
+  tag: 'bm-icon',
   styleUrls: ['icon.scss'],
 })
 export class Icon implements ComponentInterface {

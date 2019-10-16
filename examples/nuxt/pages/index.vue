@@ -1,8 +1,8 @@
 <template>
   <div class="container">
-    <b-button :color="color" :size="size" @click="changeMe">
+    <bm-button :color="color" :size="size" @click="changeMe">
       Click Me!
-    </b-button>
+    </bm-button>
   </div>
 </template>
 

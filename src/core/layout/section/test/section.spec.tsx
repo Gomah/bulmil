@@ -4,16 +4,16 @@ import { Section } from '../section';
 it('Should render properly', async (): Promise<void> => {
   const page = await newSpecPage({
     components: [Section],
-    html: `<b-section size="is-large">
+    html: `<bm-section size="is-large">
              <p>Hello, I'm in a section!</p>
-           </b-sec>`,
+           </bm-sec>`,
   });
 
   expect(page.root).toEqualHtml(`
-    <b-section size="is-large">
+    <bm-section size="is-large">
       <div class="section is-large">
         <p>Hello, I'm in a section!</p>
       </div>
-    </b-section>
+    </bm-section>
   `);
 });

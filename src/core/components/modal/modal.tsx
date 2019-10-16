@@ -1,7 +1,7 @@
 import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 
 @Component({
-  tag: 'b-modal',
+  tag: 'bm-modal',
   styleUrls: ['modal.scss'],
 })
 export class Modal implements ComponentInterface {

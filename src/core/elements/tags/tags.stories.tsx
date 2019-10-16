@@ -19,15 +19,15 @@ storiesOf('Elements|Tags', module)
 
   .add('Example', () => {
     return `
-      <b-tags
+      <bm-tags
         size="${select('Size', sizes, null)}"
         has-addons="${boolean('Has addons', false)}">
-        <b-tag color="is-primary" >
+        <bm-tag color="is-primary" >
           Primary
-        </b-tag>
-        <b-tag color="is-dark" >
+        </bm-tag>
+        <bm-tag color="is-dark" >
           Dark
-        </b-tag>
-      </b-tags>
+        </bm-tag>
+      </bm-tags>
     `;
   });

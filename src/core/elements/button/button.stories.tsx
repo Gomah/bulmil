@@ -37,12 +37,12 @@ storiesOf('Elements|Button', module)
 
   .add('Example', () => {
     return `
-      <b-button
+      <bm-button
         size=${select('Size', sizes, null)}
         color=${select('Color', colors, null)}
         disabled=${boolean('Disabled', false)}
       >
         Button
-      </b-button>
+      </bm-button>
     `;
   });

@@ -13,10 +13,10 @@ storiesOf('Form|Select', module)
 
   .add('Example', () => {
     return `
-      <b-section>
-        <b-container>
-          <b-field>
-            <b-select
+      <bm-section>
+        <bm-container>
+          <bm-field>
+            <bm-select
               state="${select(
                 'State',
                 {
@@ -57,10 +57,10 @@ storiesOf('Form|Select', module)
             >
               <option value="dropdown">Select dropdown</option>
               <option value="options">With options</option>
-            </b-select>
+            </bm-select>
 
-          </b-field>
-        </b-container>
-      </b-section>
+          </bm-field>
+        </bm-container>
+      </bm-section>
     `;
   });

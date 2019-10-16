@@ -1,4 +1,4 @@
-# b-image
+# bm-image
 
 
 

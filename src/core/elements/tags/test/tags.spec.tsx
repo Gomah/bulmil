@@ -5,22 +5,22 @@ import { Tag } from '../../tag/tag';
 it('Should render properly', async (): Promise<void> => {
   const page = await newSpecPage({
     components: [Tags, Tag],
-    html: `<b-tags has-addons>
-             <b-tag>Hello</b-tag>
-             <b-tag>World</b-tag>
-           </b-tags>`,
+    html: `<bm-tags has-addons>
+             <bm-tag>Hello</bm-tag>
+             <bm-tag>World</bm-tag>
+           </bm-tags>`,
   });
 
   expect(page.root).toEqualHtml(`
-    <b-tags has-addons>
+    <bm-tags has-addons>
       <div class="tags has-addons">
-        <b-tag>
+        <bm-tag>
           <span class="tag">Hello</span>
-        </b-tag>
-        <b-tag>
+        </bm-tag>
+        <bm-tag>
           <span class="tag">World</span>
-        </b-tag>
+        </bm-tag>
       </div>
-    </b-tags>
+    </bm-tags>
   `);
 });

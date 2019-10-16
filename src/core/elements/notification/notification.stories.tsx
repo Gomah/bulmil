@@ -21,15 +21,15 @@ storiesOf('Elements|Notification', module)
 
   .add('Example', () => {
     return `
-      <b-section>
-        <b-container>
-          <b-notification
+      <bm-section>
+        <bm-container>
+          <bm-notification
             color=${select('Color', colors, null)}
             dismissable="${boolean('Dismissable', false)}"
           >
             <h2 class="subtitle">Notification</h2>
-          </b-notification>
-        </b-container>
-      </b-section>
+          </bm-notification>
+        </bm-container>
+      </bm-section>
     `;
   });

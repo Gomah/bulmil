@@ -25,8 +25,8 @@ storiesOf('Elements|Image', module)
 
   .add('Sizes', () => {
     return `
-      <b-image size="${select('Size', sizes, 'is-128x128')}">
+      <bm-image size="${select('Size', sizes, 'is-128x128')}">
         <img src="https://bulma.io/images/placeholders/128x128.png" />
-      </b-image>
+      </bm-image>
     `;
   });

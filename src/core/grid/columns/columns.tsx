@@ -1,7 +1,7 @@
 import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 
 @Component({
-  tag: 'b-columns',
+  tag: 'bm-columns',
   styleUrls: ['columns.scss'],
 })
 export class Columns implements ComponentInterface {
@@ -39,9 +39,6 @@ export class Columns implements ComponentInterface {
    * Vertically centered
    */
   @Prop() isVcentered = false;
-
-  // TODO: Generate gap possibilities, e.g: is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd
-  // @Prop() gaps: ['is-0' | 'is-1' | 'is-2' | 'is-3' | 'is-4' | 'is-5' | 'is-6' | 'is-7' | 'is-8'];
 
   /**
    * Columns gaps

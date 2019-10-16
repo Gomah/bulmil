@@ -5,15 +5,15 @@ it('Should render properly', async (): Promise<void> => {
   const page = await newSpecPage({
     components: [Select],
     html: `
-      <b-select>
+      <bm-select>
         <option>Select dropdown</option>
         <option>With options</option>
-      </b-select>
+      </bm-select>
     `,
   });
 
   expect(page.root).toEqualHtml(`
-    <b-select>
+    <bm-select>
       <div class="control">
         <div class="select">
           <select>
@@ -22,6 +22,6 @@ it('Should render properly', async (): Promise<void> => {
           </select>
         </div>
       </div>
-    </b-select>
+    </bm-select>
   `);
 });

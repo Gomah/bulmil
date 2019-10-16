@@ -11,12 +11,12 @@ storiesOf('Components|Modal', module)
 
   .add('Example', () => {
     return `
-      <b-section>
-        <b-container>
-          <b-modal
+      <bm-section>
+        <bm-container>
+          <bm-modal
           is-active="${boolean('Active', true)}"
           has-modal-card="${boolean('Has Modal Card', false)}">
-            <b-box>
+            <bm-box>
               <article class="media">
                 <div class="media-left">
                   <figure class="image is-64x64">
@@ -53,17 +53,17 @@ storiesOf('Components|Modal', module)
                   </nav>
                 </div>
               </article>
-            </b-box>
-          </b-modal>
-        </b-container>
-      </b-section>
+            </bm-box>
+          </bm-modal>
+        </bm-container>
+      </bm-section>
     `;
   })
   .add('Modal Card', () => {
     return `
-      <b-section>
-        <b-container>
-          <b-modal
+      <bm-section>
+        <bm-container>
+          <bm-modal
             is-active="${boolean('Active', true)}"
             has-modal-card="${boolean('Has Modal Card', true)}"
           >
@@ -71,7 +71,7 @@ storiesOf('Components|Modal', module)
               <p class="modal-card-title">Modal title</p>
             </header>
             <section class="modal-card-body">
-              <b-content>
+              <bm-content>
                 <div class="content">
                   <h1>Hello World</h1>
                   <p>
@@ -163,16 +163,16 @@ storiesOf('Components|Modal', module)
                     Etiam at cursus metus.
                   </p>
                 </div>
-              </b-content>
+              </bm-content>
             </section>
             <footer class="modal-card-foot">
-              <b-buttons>
-                <b-button color="is-success">Save changes</b-button>
-                <b-button>Cancel</b-button>
-              </b-buttons>
+              <bm-buttons>
+                <bm-button color="is-success">Save changes</bm-button>
+                <bm-button>Cancel</bm-button>
+              </bm-buttons>
             </footer>
-          </b-modal>
-        </b-container>
-      </b-section>
+          </bm-modal>
+        </bm-container>
+      </bm-section>
     `;
   });

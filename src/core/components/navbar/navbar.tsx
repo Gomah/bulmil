@@ -1,7 +1,7 @@
 import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 
 @Component({
-  tag: 'b-navbar',
+  tag: 'bm-navbar',
   styleUrls: ['navbar.scss'],
 })
 export class Navbar implements ComponentInterface {

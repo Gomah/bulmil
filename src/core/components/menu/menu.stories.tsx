@@ -10,9 +10,9 @@ storiesOf('Components|Menu', module)
 
   .add('Example', () => {
     return `
-      <b-section>
-        <b-container>
-          <b-menu>
+      <bm-section>
+        <bm-container>
+          <bm-menu>
             <p class="menu-label">
               General
             </p>
@@ -45,8 +45,8 @@ storiesOf('Components|Menu', module)
               <li><a>Transfers</a></li>
               <li><a>Balance</a></li>
             </ul>
-          </b-menu>
-        </b-container>
-      </b-section>
+          </bm-menu>
+        </bm-container>
+      </bm-section>
     `;
   });

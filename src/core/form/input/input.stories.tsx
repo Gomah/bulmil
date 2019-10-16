@@ -12,122 +12,122 @@ storiesOf('Form|Input', module)
 
   .add('Example', () => {
     return `
-      <b-section>
-        <b-container>
-          <b-field>
-            <b-input placeholder="Text input"></b-input>
-          </b-field>
-        </b-container>
-      </b-section>
+      <bm-section>
+        <bm-container>
+          <bm-field>
+            <bm-input placeholder="Text input"></bm-input>
+          </bm-field>
+        </bm-container>
+      </bm-section>
     `;
   })
   .add('Colors', () => {
     return `
-      <b-section>
-        <b-container>
-          <b-field>
-            <b-input color="is-primary" placeholder="Primary input"></b-input>
-          </b-field>
-          <b-field>
-            <b-input color="is-info" placeholder="Info input"></b-input>
-          </b-field>
-          <b-field>
-            <b-input color="is-success" placeholder="Success input"></b-input>
-          </b-field>
-          <b-field>
-            <b-input color="is-warning" placeholder="Warning input"></b-input>
-          </b-field>
-          <b-field>
-            <b-input color="is-danger" placeholder="Danger input"></b-input>
-          </b-field>
-        </b-container>
-      </b-section>
+      <bm-section>
+        <bm-container>
+          <bm-field>
+            <bm-input color="is-primary" placeholder="Primary input"></bm-input>
+          </bm-field>
+          <bm-field>
+            <bm-input color="is-info" placeholder="Info input"></bm-input>
+          </bm-field>
+          <bm-field>
+            <bm-input color="is-success" placeholder="Success input"></bm-input>
+          </bm-field>
+          <bm-field>
+            <bm-input color="is-warning" placeholder="Warning input"></bm-input>
+          </bm-field>
+          <bm-field>
+            <bm-input color="is-danger" placeholder="Danger input"></bm-input>
+          </bm-field>
+        </bm-container>
+      </bm-section>
     `;
   })
   .add('Sizes', () => {
     return `
-      <b-section>
-        <b-container>
-          <b-field>
-            <b-input size="is-small" placeholder="Small input"></b-input>
-          </b-field>
+      <bm-section>
+        <bm-container>
+          <bm-field>
+            <bm-input size="is-small" placeholder="Small input"></bm-input>
+          </bm-field>
 
-          <b-field>
-            <b-input placeholder="Normal input"></b-input>
-          </b-field>
+          <bm-field>
+            <bm-input placeholder="Normal input"></bm-input>
+          </bm-field>
 
-          <b-field>
-            <b-input size="is-medium" placeholder="Medium input"></b-input>
-          </b-field>
+          <bm-field>
+            <bm-input size="is-medium" placeholder="Medium input"></bm-input>
+          </bm-field>
 
-          <b-field>
-            <b-input size="is-large" placeholder="Large input"></b-input>
-          </b-field>
+          <bm-field>
+            <bm-input size="is-large" placeholder="Large input"></bm-input>
+          </bm-field>
 
-        </b-container>
-      </b-section>
+        </bm-container>
+      </bm-section>
     `;
   })
   .add('Rounded', () => {
     return `
-      <b-section>
-        <b-container>
-          <b-field>
-            <b-input is-rounded placeholder="Rounded input"></b-input>
-          </b-field>
+      <bm-section>
+        <bm-container>
+          <bm-field>
+            <bm-input is-rounded placeholder="Rounded input"></bm-input>
+          </bm-field>
 
-        </b-container>
-      </b-section>
+        </bm-container>
+      </bm-section>
     `;
   })
   .add('States', () => {
     return `
-      <b-section>
-        <b-container>
-          <b-field>
-            <b-input placeholder="Normal input"></b-input>
-          </b-field>
+      <bm-section>
+        <bm-container>
+          <bm-field>
+            <bm-input placeholder="Normal input"></bm-input>
+          </bm-field>
 
-          <b-field>
-            <b-input state="is-hovered" placeholder="Hovered input"></b-input>
-          </b-field>
+          <bm-field>
+            <bm-input state="is-hovered" placeholder="Hovered input"></bm-input>
+          </bm-field>
 
-          <b-field>
-            <b-input state="is-focused" placeholder="Focused input"></b-input>
-          </b-field>
+          <bm-field>
+            <bm-input state="is-focused" placeholder="Focused input"></bm-input>
+          </bm-field>
 
-          <b-field>
-            <b-input is-loading placeholder="Loading input"></b-input>
-          </b-field>
+          <bm-field>
+            <bm-input is-loading placeholder="Loading input"></bm-input>
+          </bm-field>
 
-        </b-container>
-      </b-section>
+        </bm-container>
+      </bm-section>
     `;
   })
   .add('Disabled', () => {
     return `
-      <b-section>
-        <b-container>
-          <b-field>
-            <b-input disabled placeholder="Disabled input"></b-input>
-          </b-field>
+      <bm-section>
+        <bm-container>
+          <bm-field>
+            <bm-input disabled placeholder="Disabled input"></bm-input>
+          </bm-field>
 
-        </b-container>
-      </b-section>
+        </bm-container>
+      </bm-section>
     `;
   })
   .add('Readonly and static inputs', () => {
     return `
-      <b-section>
-        <b-container>
-          <b-field>
-            <b-input readonly value="This text is readonly"></b-input>
-          </b-field>
+      <bm-section>
+        <bm-container>
+          <bm-field>
+            <bm-input readonly value="This text is readonly"></bm-input>
+          </bm-field>
 
-          <b-field>
-            <b-input is-static placeholder="Static input"></b-input>
-          </b-field>
-        </b-container>
-      </b-section>
+          <bm-field>
+            <bm-input is-static placeholder="Static input"></bm-input>
+          </bm-field>
+        </bm-container>
+      </bm-section>
     `;
   });

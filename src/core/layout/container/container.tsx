@@ -1,7 +1,7 @@
 import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 
 @Component({
-  tag: 'b-container',
+  tag: 'bm-container',
   styleUrls: ['container.scss'],
 })
 export class Container implements ComponentInterface {

@@ -5,20 +5,20 @@ import { Button } from '../../button/button';
 it('Should render properly', async (): Promise<void> => {
   const page = await newSpecPage({
     components: [Buttons, Button],
-    html: `<b-buttons>
-             <b-button>Hello</b-button>
-           </b-buttons>`,
+    html: `<bm-buttons>
+             <bm-button>Hello</bm-button>
+           </bm-buttons>`,
   });
 
   expect(page.root).toEqualHtml(`
-    <b-buttons>
+    <bm-buttons>
       <div class="buttons">
-        <b-button>
+        <bm-button>
           <button class="button">
             Hello
           </button>
-        </b-button>
+        </bm-button>
       </div>
-    </b-buttons>
+    </bm-buttons>
   `);
 });

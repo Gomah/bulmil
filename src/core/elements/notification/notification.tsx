@@ -1,6 +1,6 @@
 import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 @Component({
-  tag: 'b-notification',
+  tag: 'bm-notification',
   styleUrls: ['notification.scss'],
 })
 export class Notification implements ComponentInterface {

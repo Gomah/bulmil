@@ -1,7 +1,7 @@
 import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 
 @Component({
-  tag: 'b-breadcrumb',
+  tag: 'bm-breadcrumb',
   styleUrls: ['breadcrumb.scss'],
 })
 export class Breadcrumb implements ComponentInterface {

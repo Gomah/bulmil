@@ -1,7 +1,7 @@
 import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 
 @Component({
-  tag: 'b-radio',
+  tag: 'bm-radio',
   styleUrls: ['radio.scss'],
 })
 export class Radio implements ComponentInterface {

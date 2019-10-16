@@ -4,16 +4,16 @@ import { Box } from '../box';
 it('Should render properly', async (): Promise<void> => {
   const page = await newSpecPage({
     components: [Box],
-    html: `<b-box>
+    html: `<bm-box>
              <p>Hello, I'm in a box!</p>
-           </b-box>`,
+           </bm-box>`,
   });
 
   expect(page.root).toEqualHtml(`
-    <b-box>
+    <bm-box>
       <div class="box">
         <p>Hello, I'm in a box!</p>
       </div>
-    </b-box>
+    </bm-box>
   `);
 });

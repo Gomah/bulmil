@@ -5,13 +5,13 @@ it('Should render properly', async (): Promise<void> => {
   const page = await newSpecPage({
     components: [Table],
     html: `
-      <b-table is-striped></b-table>
+      <bm-table is-striped></bm-table>
     `,
   });
 
   expect(page.root).toEqualHtml(`
-    <b-table is-striped>
+    <bm-table is-striped>
       <table class="table is-striped"></table>
-    </b-table>
+    </bm-table>
   `);
 });

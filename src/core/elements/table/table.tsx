@@ -1,6 +1,6 @@
 import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 @Component({
-  tag: 'b-table',
+  tag: 'bm-table',
   styleUrls: ['table.scss'],
 })
 export class Table implements ComponentInterface {

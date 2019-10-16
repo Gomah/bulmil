@@ -14,13 +14,13 @@ storiesOf('Components|Dropdown', module)
   .add('Example', () => {
     return `
       <div style="max-width:480px;">
-        <b-dropdown
+        <bm-dropdown
           is-active="${boolean('Active', false)}"
           is-hoverable="${boolean('Hoverable', false)}"
           is-right="${boolean('Right aligned', false)}"
           is-up="${boolean('Is UP?', false)}">
 
-          <b-button slot="trigger" color="is-primary" size="is-medium">Dropdown button</b-button>
+          <bm-button slot="trigger" color="is-primary" size="is-medium">Dropdown button</bm-button>
 
           <a href="#" class="dropdown-item">
             Dropdown item
@@ -38,20 +38,20 @@ storiesOf('Components|Dropdown', module)
           <a href="#" class="dropdown-item">
             With a divider
           </a>
-        </b-dropdown>
+        </bm-dropdown>
       </div>
     `;
   })
   .add('Content Type', () => {
     return `
       <div style="max-width:480px;">
-        <b-dropdown
+        <bm-dropdown
           is-active="${boolean('Active', false)}"
           is-hoverable="${boolean('Hoverable', false)}"
           is-right="${boolean('Right aligned', false)}"
           is-up="${boolean('Is UP?', false)}"
         >
-          <b-button slot="trigger" color="is-primary" size="is-medium">Content</b-button>
+          <bm-button slot="trigger" color="is-primary" size="is-medium">Content</bm-button>
 
           <div class="dropdown-item">
             <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
@@ -64,7 +64,7 @@ storiesOf('Components|Dropdown', module)
           <a href="#" class="dropdown-item">
             This is a link
           </a>
-        </b-dropdown>
+        </bm-dropdown>
       </div>
     `;
   });

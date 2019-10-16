@@ -13,10 +13,10 @@ storiesOf('Form|File', module)
 
   .add('Example', () => {
     return `
-      <b-section>
-        <b-container>
-          <b-field>
-            <b-file
+      <bm-section>
+        <bm-container>
+          <bm-field>
+            <bm-file
               name="example"
               placeholder="${text('Placeholder', 'Choose a file...')}"
               color="${select(
@@ -57,9 +57,9 @@ storiesOf('Form|File', module)
               is-boxed="${boolean('Boxed block', false)}"
               has-name="${boolean('Has name', false)}"
               >
-            </b-file>
-          </b-field>
-        </b-container>
-      </b-section>
+            </bm-file>
+          </bm-field>
+        </bm-container>
+      </bm-section>
     `;
   });

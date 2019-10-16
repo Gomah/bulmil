@@ -1,7 +1,7 @@
 import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 
 @Component({
-  tag: 'b-dropdown',
+  tag: 'bm-dropdown',
   styleUrls: ['dropdown.scss'],
 })
 export class Dropdown implements ComponentInterface {

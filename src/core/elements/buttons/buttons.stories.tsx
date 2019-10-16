@@ -21,9 +21,9 @@ storiesOf('Elements|Buttons', module)
 
   .add('Example', () => {
     return `
-      <b-buttons size=${select('Size', sizes, null)}>
-        <b-button color="is-primary">Primary</b-button>
-        <b-button color="is-danger">Danger</b-button>
-      </b-buttons>
+      <bm-buttons size=${select('Size', sizes, null)}>
+        <bm-button color="is-primary">Primary</bm-button>
+        <bm-button color="is-danger">Danger</bm-button>
+      </bm-buttons>
     `;
   });

@@ -13,16 +13,16 @@ storiesOf('Components|Card', module)
   .add('Image & Content', () => {
     return `
       <div style="max-width:480px;">
-        <b-card>
-          <b-card-image>
+        <bm-card>
+          <bm-card-image>
             <figure class="image is-4by3">
               <img
                 src="https://bulma.io/images/placeholders/1280x960.png"
                 alt="Placeholder image"
               />
             </figure>
-          </b-card-image>
-          <b-card-content>
+          </bm-card-image>
+          <bm-card-content>
             <div class="media">
               <div class="media-left">
                 <figure class="image is-48x48">
@@ -38,22 +38,22 @@ storiesOf('Components|Card', module)
               </div>
             </div>
 
-            <b-content>
+            <bm-content>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
               <a>@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
               <br />
               <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-            </b-content>
-          </b-card-content>
-        </b-card>
+            </bm-content>
+          </bm-card-content>
+        </bm-card>
       </div>
     `;
   })
   .add('Header, Content & Footer', () => {
     return `
       <div style="max-width:480px;">
-        <b-card>
-          <b-card-header>
+        <bm-card>
+          <bm-card-header>
             <p class="card-header-title">
               Component
             </p>
@@ -62,30 +62,30 @@ storiesOf('Components|Card', module)
                 <i class="fas fa-angle-down" aria-hidden="true"></i>
               </span>
             </a>
-          </b-card-header>
-          <b-card-content>
+          </bm-card-header>
+          <bm-card-content>
             <div class="content">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
               <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
               <br />
               <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
             </div>
-          </b-card-content>
+          </bm-card-content>
 
-          <b-card-footer>
+          <bm-card-footer>
             <a href="#" class="card-footer-item">Save</a>
             <a href="#" class="card-footer-item">Edit</a>
             <a href="#" class="card-footer-item">Delete</a>
-          </b-card-footer>
-        </b-card>
+          </bm-card-footer>
+        </bm-card>
       </div>
     `;
   })
   .add('Content & Footer', () => {
     return `
       <div style="max-width:480px; margin: 5vh auto;">
-        <b-card>
-          <b-card-content>
+        <bm-card>
+          <bm-card-content>
             <p class="title">
               “There are two hard things in computer science: cache invalidation, naming things, and
               off-by-one errors.”
@@ -93,9 +93,9 @@ storiesOf('Components|Card', module)
             <p class="subtitle">
               Jeff Atwood
             </p>
-          </b-card-content>
+          </bm-card-content>
 
-          <b-card-footer>
+          <bm-card-footer>
             <p class="card-footer-item">
               <span>
                 View on
@@ -105,8 +105,8 @@ storiesOf('Components|Card', module)
             <p class="card-footer-item">
               <span> Share on <a href="#">Facebook</a> </span>
             </p>
-          </b-card-footer>
-        </b-card>
+          </bm-card-footer>
+        </bm-card>
       </div>
     `;
   });

@@ -1,7 +1,7 @@
 import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 
 @Component({
-  tag: 'b-tags',
+  tag: 'bm-tags',
 })
 export class Tags implements ComponentInterface {
   /**

@@ -12,19 +12,19 @@ storiesOf('Grid|Columns', module)
 
   .add('Basics', () => {
     return `
-      <b-columns>
-        <b-column>
+      <bm-columns>
+        <bm-column>
           First column
-        </b-column>
-        <b-column>
+        </bm-column>
+        <bm-column>
           Second column
-        </b-column>
-        <b-column>
+        </bm-column>
+        <bm-column>
           Third column
-        </b-column>
-        <b-column>
+        </bm-column>
+        <bm-column>
           Fourth column
-        </b-column>
-      </b-columns>
+        </bm-column>
+      </bm-columns>
     `;
   });

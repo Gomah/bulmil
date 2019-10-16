@@ -1,4 +1,4 @@
-# b-icon
+# bm-icon
 
 
 

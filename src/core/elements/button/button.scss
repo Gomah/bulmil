@@ -1,1 +1,7 @@
 @import '../../../../node_modules/bulma-scss/elements/button';
+
+bm-button {
+  &[is-fullwidth] {
+    width: 100%;
+  }
+}

@@ -5,20 +5,20 @@ import { Column } from '../../column/column';
 it('Should render properly', async (): Promise<void> => {
   const page = await newSpecPage({
     components: [Columns, Column],
-    html: `<b-columns>
-             <b-column>Hello, I'm in a column!</b-column>
-           </b-columns>`,
+    html: `<bm-columns>
+             <bm-column>Hello, I'm in a column!</bm-column>
+           </bm-columns>`,
   });
 
   expect(page.root).toEqualHtml(`
-    <b-columns>
+    <bm-columns>
       <div class="columns">
-        <b-column>
+        <bm-column>
           <div class="column">
             Hello, I'm in a column!
           </div>
-        </b-column>
+        </bm-column>
       </div>
-    </b-columns>
+    </bm-columns>
   `);
 });

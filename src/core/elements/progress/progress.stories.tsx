@@ -28,16 +28,16 @@ storiesOf('Elements|Progress', module)
 
   .add('Example', () => {
     return `
-      <b-section>
-        <b-container>
-          <b-progress
+      <bm-section>
+        <bm-container>
+          <bm-progress
             color="${select('Color', colors, null)}"
             size="${select('Size', sizes, null)}"
             max="${number('Max', 100)}"
             value="${number('Value', null)}"
             >
-            </b-progress>
-        </b-container>
-      </b-section>
+            </bm-progress>
+        </bm-container>
+      </bm-section>
     `;
   });

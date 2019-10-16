@@ -21,7 +21,7 @@ storiesOf('Elements|Content', module)
 
   .add('Sizes', () => {
     return `
-      <b-content size="${select('Size', sizes, null)}">
+      <bm-content size="${select('Size', sizes, null)}">
         <h1>Hello World</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices
@@ -41,6 +41,6 @@ storiesOf('Elements|Content', module)
           <li>Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.</li>
           <li>Ut non enim metus.</li>
         </ul>
-      </b-content>
+      </bm-content>
     `;
   });

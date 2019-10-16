@@ -26,9 +26,9 @@ storiesOf('Components|Breadcrumb', module)
 
   .add('Example', () => {
     return `
-      <b-section>
-        <b-container>
-          <b-breadcrumb
+      <bm-section>
+        <bm-container>
+          <bm-breadcrumb
             is-centered=${boolean('Centered', false)}
             alignment=${select(
               'Alignment',
@@ -44,8 +44,8 @@ storiesOf('Components|Breadcrumb', module)
               <li><a href="#">Components</a></li>
               <li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li>
             </ul>
-          </b-breadcrumb>
-        </b-container>
-      </b-section>
+          </bm-breadcrumb>
+        </bm-container>
+      </bm-section>
     `;
   });

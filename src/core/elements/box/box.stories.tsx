@@ -12,7 +12,7 @@ storiesOf('Elements|Box', module)
 
   .add('Example', () => {
     return `
-      <b-box>
+      <bm-box>
         <article class="media">
           <div class="media-left">
             <figure class="image is-64x64">
@@ -50,6 +50,6 @@ storiesOf('Elements|Box', module)
             </nav>
           </div>
         </article>
-      </b-box>
+      </bm-box>
     `;
   });

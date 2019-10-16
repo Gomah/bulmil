@@ -1,7 +1,7 @@
 import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 
 @Component({
-  tag: 'b-image',
+  tag: 'bm-image',
   styleUrls: ['image.scss'],
 })
 export class Image implements ComponentInterface {

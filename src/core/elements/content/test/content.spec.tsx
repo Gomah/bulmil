@@ -4,16 +4,16 @@ import { Content } from '../content';
 it('Should render properly', async (): Promise<void> => {
   const page = await newSpecPage({
     components: [Content],
-    html: `<b-content size="is-large">
+    html: `<bm-content size="is-large">
              <h2>Hello</h2>
-           </b-content>`,
+           </bm-content>`,
   });
 
   expect(page.root).toEqualHtml(`
-    <b-content size="is-large">
+    <bm-content size="is-large">
       <div class="content is-large">
         <h2>Hello</h2>
       </div>
-    </b-content>
+    </bm-content>
   `);
 });

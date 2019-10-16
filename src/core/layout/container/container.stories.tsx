@@ -20,12 +20,12 @@ storiesOf('Layout|Container', module)
 
   .add('Example', () => {
     return `
-      <b-container is-fluid=${boolean('Fluid', false)} breakpoint=${select(
+      <bm-container is-fluid=${boolean('Fluid', false)} breakpoint=${select(
       'Breakpoint',
       breakpoints,
       null
     )}>
         Hello Container 👋
-      </b-container>
+      </bm-container>
     `;
   });

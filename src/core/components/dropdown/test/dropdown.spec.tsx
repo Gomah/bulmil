@@ -6,25 +6,25 @@ it('Should render properly', async (): Promise<void> => {
   const page = await newSpecPage({
     components: [Dropdown, Button],
     html: `
-      <b-dropdown>
-        <b-button slot="trigger">Trigger</b-button>
+      <bm-dropdown>
+        <bm-button slot="trigger">Trigger</bm-button>
 
         <a href="#" class="dropdown-item">
           Dropdown item
         </a>
-      </b-dropdown>
+      </bm-dropdown>
     `,
   });
 
   expect(page.root).toEqualHtml(`
-    <b-dropdown>
+    <bm-dropdown>
       <div class="dropdown">
         <div class="dropdown-trigger">
-          <b-button slot="trigger">
+          <bm-button slot="trigger">
             <button class="button">
               Trigger
             </button>
-          </b-button>
+          </bm-button>
         </div>
 
         <div class="dropdown-menu" role="menu">
@@ -35,6 +35,6 @@ it('Should render properly', async (): Promise<void> => {
           </div>
         </div>
       </div>
-    </b-dropdown>
+    </bm-dropdown>
   `);
 });

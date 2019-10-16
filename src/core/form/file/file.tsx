@@ -1,7 +1,7 @@
 import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 
 @Component({
-  tag: 'b-file',
+  tag: 'bm-file',
   styleUrls: ['file.scss'],
 })
 export class FileInput implements ComponentInterface {

@@ -1,7 +1,7 @@
 import { Component, Prop, h, JSX, Host, ComponentInterface } from '@stencil/core';
 
 @Component({
-  tag: 'b-footer',
+  tag: 'bm-footer',
   styleUrls: ['footer.scss'],
 })
 export class Footer implements ComponentInterface {

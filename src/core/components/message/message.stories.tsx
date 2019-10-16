@@ -11,9 +11,9 @@ storiesOf('Components|Message', module)
 
   .add('Example', () => {
     return `
-      <b-section>
-        <b-container>
-          <b-message
+      <bm-section>
+        <bm-container>
+          <bm-message
             color="${select(
               'Color',
               {
@@ -49,16 +49,16 @@ storiesOf('Components|Message', module)
               Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor
               mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
             </div>
-          </b-message>
-        </b-container>
-      </b-section>
+          </bm-message>
+        </bm-container>
+      </bm-section>
     `;
   })
   .add('Colors', () => {
     return `
-      <b-section>
-        <b-container>
-          <b-message color="is-dark">
+      <bm-section>
+        <bm-container>
+          <bm-message color="is-dark">
             <div class="message-header">
               <p>Dark</p>
               <button class="delete" aria-label="delete"></button>
@@ -71,9 +71,9 @@ storiesOf('Components|Message', module)
               Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor
               mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
             </div>
-          </b-message>
+          </bm-message>
 
-          <b-message color="is-primary">
+          <bm-message color="is-primary">
             <div class="message-header">
               <p>Primary</p>
               <button class="delete" aria-label="delete"></button>
@@ -86,9 +86,9 @@ storiesOf('Components|Message', module)
               Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor
               mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
             </div>
-          </b-message>
+          </bm-message>
 
-          <b-message color="is-link">
+          <bm-message color="is-link">
             <div class="message-header">
               <p>Link</p>
               <button class="delete" aria-label="delete"></button>
@@ -101,9 +101,9 @@ storiesOf('Components|Message', module)
               Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor
               mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
             </div>
-          </b-message>
+          </bm-message>
 
-          <b-message color="is-info">
+          <bm-message color="is-info">
             <div class="message-header">
               <p>Info</p>
               <button class="delete" aria-label="delete"></button>
@@ -116,9 +116,9 @@ storiesOf('Components|Message', module)
               Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor
               mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
             </div>
-          </b-message>
+          </bm-message>
 
-          <b-message color="is-success">
+          <bm-message color="is-success">
             <div class="message-header">
               <p>Success</p>
               <button class="delete" aria-label="delete"></button>
@@ -131,9 +131,9 @@ storiesOf('Components|Message', module)
               Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor
               mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
             </div>
-          </b-message>
+          </bm-message>
 
-          <b-message color="is-warning">
+          <bm-message color="is-warning">
             <div class="message-header">
               <p>Warning</p>
               <button class="delete" aria-label="delete"></button>
@@ -146,9 +146,9 @@ storiesOf('Components|Message', module)
               Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor
               mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
             </div>
-          </b-message>
+          </bm-message>
 
-          <b-message color="is-danger">
+          <bm-message color="is-danger">
             <div class="message-header">
               <p>Danger</p>
               <button class="delete" aria-label="delete"></button>
@@ -161,16 +161,16 @@ storiesOf('Components|Message', module)
               Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor
               mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
             </div>
-          </b-message>
-        </b-container>
-      </b-section>
+          </bm-message>
+        </bm-container>
+      </bm-section>
     `;
   })
   .add('Message body only', () => {
     return `
-      <b-section>
-        <b-container>
-          <b-message color="is-dark">
+      <bm-section>
+        <bm-container>
+          <bm-message color="is-dark">
             <div class="message-body">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla.
@@ -179,9 +179,9 @@ storiesOf('Components|Message', module)
               Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor
               mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
             </div>
-          </b-message>
+          </bm-message>
 
-          <b-message color="is-primary">
+          <bm-message color="is-primary">
             <div class="message-body">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla.
@@ -190,9 +190,9 @@ storiesOf('Components|Message', module)
               Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor
               mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
             </div>
-          </b-message>
+          </bm-message>
 
-          <b-message color="is-link">
+          <bm-message color="is-link">
             <div class="message-body">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla.
@@ -201,9 +201,9 @@ storiesOf('Components|Message', module)
               Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor
               mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
             </div>
-          </b-message>
+          </bm-message>
 
-          <b-message color="is-info">
+          <bm-message color="is-info">
             <div class="message-body">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla.
@@ -212,9 +212,9 @@ storiesOf('Components|Message', module)
               Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor
               mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
             </div>
-          </b-message>
+          </bm-message>
 
-          <b-message color="is-success">
+          <bm-message color="is-success">
             <div class="message-body">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla.
@@ -223,9 +223,9 @@ storiesOf('Components|Message', module)
               Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor
               mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
             </div>
-          </b-message>
+          </bm-message>
 
-          <b-message color="is-warning">
+          <bm-message color="is-warning">
             <div class="message-body">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla.
@@ -234,9 +234,9 @@ storiesOf('Components|Message', module)
               Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor
               mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
             </div>
-          </b-message>
+          </bm-message>
 
-          <b-message color="is-danger">
+          <bm-message color="is-danger">
             <div class="message-body">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla.
@@ -245,8 +245,8 @@ storiesOf('Components|Message', module)
               Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor
               mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
             </div>
-          </b-message>
-        </b-container>
-      </b-section>
+          </bm-message>
+        </bm-container>
+      </bm-section>
     `;
   });

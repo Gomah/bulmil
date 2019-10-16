@@ -1,7 +1,7 @@
 import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 
 @Component({
-  tag: 'b-textarea',
+  tag: 'bm-textarea',
   styleUrls: ['textarea.scss'],
 })
 export class Textarea implements ComponentInterface {
