@@ -70,7 +70,7 @@
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
     "@stencil/core": "^1.7.2",
-    "@stencil/eslint-plugin": "^0.0.3",
+    "@stencil/eslint-plugin": "^0.2.0",
     "@stencil/postcss": "^1.0.1",
     "@stencil/sass": "^1.1.0",
     "@storybook/addon-a11y": "^5.2.4",
