@@ -33,8 +33,8 @@ export default {
     changeMe() {
       const sizes = this.sizes.filter(s => s !== this.size)
       const colors = this.colors.filter(c => c !== this.color)
-      this.color = this.colors[Math.floor(Math.random() * this.colors.length)]
-      this.size = this.sizes[Math.floor(Math.random() * this.sizes.length)]
+      this.color = colors[Math.floor(Math.random() * colors.length)]
+      this.size = sizes[Math.floor(Math.random() * sizes.length)]
     }
   }
 }
