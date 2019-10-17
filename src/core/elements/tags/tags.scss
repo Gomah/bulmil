@@ -1,12 +1,8 @@
-bm-buttons {
-  bm-button {
-    &:not(:last-child):not(.is-fullwidth) {
+bm-tags {
+  bm-tag {
+    &:not(:last-child) {
       margin-right: 0.5rem;
     }
-  }
-
-  .buttons:last-child {
-    margin-bottom: initial;
   }
 
   &:last-child {
@@ -17,27 +13,37 @@ bm-buttons {
     margin-bottom: 1rem;
   }
 
-  .buttons {
-    &.has-addons {
-      bm-button {
+  .tags {
+    &.is-right {
+      bm-tag {
         &:not(:first-child) {
-          .button {
+          .tag {
+            margin-left: 0.5rem;
+          }
+        }
+
+        &:not(:last-child) {
+          .tag {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    &.has-addons {
+      bm-tag {
+        &:not(:first-child) {
+          .tag {
+            margin-left: 0;
             border-bottom-left-radius: 0;
             border-top-left-radius: 0;
           }
         }
 
         &:not(:last-child) {
-          .button {
+          .tag {
             border-bottom-right-radius: 0;
             border-top-right-radius: 0;
-            margin-right: -1px;
-          }
-        }
-
-        &:last-child {
-          .button {
-            margin-right: 0;
           }
         }
       }

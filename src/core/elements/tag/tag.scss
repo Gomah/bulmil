@@ -1,1 +1,24 @@
 @import '../../../../node_modules/bulma-scss/elements/tag';
+
+bm-tag {
+  &:first-child:not(:last-child) {
+    .icon {
+      margin-left: -0.375em;
+      margin-right: 0.1875em;
+    }
+
+    &:last-child:not(:first-child) {
+      .icon {
+        margin-left: 0.1875em;
+        margin-right: -0.375em;
+      }
+    }
+
+    &:first-child:last-child {
+      .icon {
+        margin-left: -0.375em;
+        margin-right: -0.375em;
+      }
+    }
+  }
+}

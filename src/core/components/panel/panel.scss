@@ -1,1 +1,7 @@
 @import '../../../../node_modules/bulma-scss/components/panel';
+
+bm-panel {
+  &:not(:last-child) {
+    margin-bottom: $panel-margin;
+  }
+}

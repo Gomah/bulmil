@@ -12,7 +12,7 @@ storiesOf('Elements|Table', module)
 
   .add('Example', () => {
     return `
-      <bm-table>
+      <table class="table">
         <thead>
           <tr>
             <th><abbr title="Position">Pos</abbr></th>
@@ -469,6 +469,6 @@ storiesOf('Elements|Table', module)
             </td>
           </tr>
         </tbody>
-      </bm-table>
+      </table>
     `;
   });
