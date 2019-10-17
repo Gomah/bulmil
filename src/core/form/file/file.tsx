@@ -61,15 +61,26 @@ export class FileInput implements ComponentInterface {
   @Prop() isFullwidth = false;
 
   /**
+   * File
+   */
+  @Prop({ mutable: true }) file: File;
+
+  /**
    * Boxed block
    */
   @Prop() isBoxed = false;
 
-  private file: File;
-
   private handleFileChange = (event): void => {
     this.file = event.target.files[0];
   };
+
+  private get fileName(): string | undefined {
+    return this.file && this.file.name;
+  }
+
+  get displayName(): boolean {
+    return this.hasName && Boolean(this.fileName);
+  }
 
   render(): JSX.Element {
     return (
@@ -79,7 +90,7 @@ export class FileInput implements ComponentInterface {
           [this.size]: Boolean(this.size),
           [this.color]: Boolean(this.color),
           [this.alignment]: Boolean(this.alignment),
-          'has-name': this.hasName,
+          'has-name': this.displayName,
           'is-right': this.isRight,
           'is-fullwidth': this.isFullwidth,
           'is-boxed': this.isBoxed,
@@ -94,9 +105,7 @@ export class FileInput implements ComponentInterface {
             </span>
             <span class="file-label">{this.placeholder}</span>
           </span>
-          {this.hasName && this.file && this.file.name.length > 0 && (
-            <span class="file-name">{this.file.name}</span>
-          )}
+          {this.displayName && <span class="file-name">{this.fileName}</span>}
         </label>
       </div>
     );

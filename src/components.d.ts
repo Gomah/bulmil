@@ -310,6 +310,10 @@ export namespace Components {
     | 'is-warning'
     | 'is-danger';
     /**
+    * File
+    */
+    'file': File;
+    /**
     * Add a placeholder for the selected file name
     */
     'hasName': boolean;
@@ -1355,6 +1359,10 @@ declare namespace LocalJSX {
     | 'is-success'
     | 'is-warning'
     | 'is-danger';
+    /**
+    * File
+    */
+    'file'?: File;
     /**
     * Add a placeholder for the selected file name
     */
