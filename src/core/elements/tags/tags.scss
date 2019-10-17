@@ -1,7 +1,9 @@
 bm-tags {
   bm-tag {
     &:not(:last-child) {
-      margin-right: 0.5rem;
+      .tag {
+        margin-right: 0.5rem;
+      }
     }
   }
 

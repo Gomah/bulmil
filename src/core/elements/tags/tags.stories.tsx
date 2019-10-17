@@ -4,8 +4,8 @@ import notes from './readme.md';
 import { boolean, select } from '@storybook/addon-knobs';
 
 const sizes = {
-  'is-medium': 'is-medium',
-  'is-large': 'is-large',
+  'are-medium': 'are-medium',
+  'are-large': 'are-large',
   none: null,
 };
 
@@ -22,7 +22,7 @@ storiesOf('Elements|Tags', module)
       <bm-tags
         size="${select('Size', sizes, null)}"
         has-addons="${boolean('Has addons', false)}">
-        <bm-tag color="is-primary" >
+        <bm-tag color="is-primary">
           Primary
         </bm-tag>
         <bm-tag color="is-dark" >
