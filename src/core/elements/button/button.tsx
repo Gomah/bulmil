@@ -86,8 +86,8 @@ export class Button implements ComponentInterface {
       <button
         class={{
           button: true,
-          [this.color]: !!this.color,
-          [this.size]: !!this.size,
+          [this.color]: Boolean(this.color),
+          [this.size]: Boolean(this.size),
           'is-fullwidth': this.isFullwidth,
           'is-active': this.isActive,
           'is-focused': this.isFocused,
@@ -97,7 +97,7 @@ export class Button implements ComponentInterface {
           'is-rounded': this.isRounded,
           'is-loading': this.isLoading,
           'is-outlined': this.isOutlined,
-          [this.class]: !!this.class,
+          [this.class]: Boolean(this.class),
         }}
         disabled={this.disabled}
         aria-disabled={this.disabled ? 'true' : null}

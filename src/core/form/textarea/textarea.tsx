@@ -66,17 +66,17 @@ export class Textarea implements ComponentInterface {
         class={{
           control: true,
           'is-loading': this.isLoading,
-          [this.controlClass]: !!this.controlClass,
+          [this.controlClass]: Boolean(this.controlClass),
         }}
       >
         <textarea
           class={{
             textarea: true,
             'has-fixed-size': this.hasFixedSize,
-            [this.color]: !!this.color,
-            [this.size]: !!this.size,
-            [this.state]: !!this.state,
-            [this.class]: !!this.class,
+            [this.color]: Boolean(this.color),
+            [this.size]: Boolean(this.size),
+            [this.state]: Boolean(this.state),
+            [this.class]: Boolean(this.class),
           }}
           disabled={this.disabled}
           readonly={this.readonly}

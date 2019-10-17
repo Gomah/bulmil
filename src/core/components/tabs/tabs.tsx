@@ -41,12 +41,12 @@ export class Tabs implements ComponentInterface {
         <div
           class={{
             tabs: true,
-            [this.size]: !!this.size,
-            [this.alignment]: !!this.alignment,
-            [this.tabStyle]: !!this.tabStyle,
+            [this.size]: Boolean(this.size),
+            [this.alignment]: Boolean(this.alignment),
+            [this.tabStyle]: Boolean(this.tabStyle),
             'is-fullwidth': this.isFullwidth,
             'is-toggle-rounded': this.isRounded && this.tabStyle === 'is-toggle',
-            [this.class]: !!this.class,
+            [this.class]: Boolean(this.class),
           }}
         >
           <slot />

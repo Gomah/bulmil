@@ -26,8 +26,8 @@ export class Container implements ComponentInterface {
         class={{
           container: true,
           'is-fluid': this.isFluid,
-          [this.breakpoint]: !!this.breakpoint,
-          [this.class]: !!this.class,
+          [this.breakpoint]: Boolean(this.breakpoint),
+          [this.class]: Boolean(this.class),
         }}
       >
         <slot />

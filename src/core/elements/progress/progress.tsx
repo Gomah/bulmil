@@ -35,9 +35,9 @@ export class Progress implements ComponentInterface {
       <progress
         class={{
           progress: true,
-          [this.color]: !!this.color,
-          [this.size]: !!this.size,
-          [this.class]: !!this.class,
+          [this.color]: Boolean(this.color),
+          [this.size]: Boolean(this.size),
+          [this.class]: Boolean(this.class),
         }}
         value={this.value}
         max={this.max}

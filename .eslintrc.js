@@ -2,6 +2,8 @@ module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
   parserOptions: {
+    ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
+    sourceType: 'module', // Allows for the use of imports
     useJSXTextNode: true,
     ecmaFeatures: {
       jsx: true,
@@ -19,14 +21,15 @@ module.exports = {
     'plugin:@stencil/recommended',
     'prettier/@typescript-eslint',
   ],
-  plugins: ['@typescript-eslint', 'import'],
+  plugins: ['@typescript-eslint'],
   rules: {
     'prettier/prettier': ['error', { singleQuote: true, trailingComma: 'es5', printWidth: 100 }],
-    '@typescript-eslint/explicit-member-accessibility': 0,
-    '@typescript-eslint/explicit-function-return-type': 0,
     '@typescript-eslint/no-unused-vars': 0,
   },
   settings: {
     'import/core-modules': ['@stencil/core/testing'],
+    react: {
+      version: 'detect', // Tells eslint-plugin-react to automatically detect the version of React to use
+    },
   },
 };

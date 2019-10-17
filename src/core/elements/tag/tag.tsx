@@ -46,10 +46,10 @@ export class Tag implements ComponentInterface {
       <TagType
         class={{
           tag: true,
-          [this.color]: !!this.color,
-          [this.size]: !!this.size,
-          [this.modifier]: !!this.modifier,
-          [this.class]: !!this.class,
+          [this.color]: Boolean(this.color),
+          [this.size]: Boolean(this.size),
+          [this.modifier]: Boolean(this.modifier),
+          [this.class]: Boolean(this.class),
         }}
       >
         {this.modifier !== 'is-delete' && <slot />}

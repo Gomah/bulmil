@@ -25,7 +25,7 @@ export class Column implements ComponentInterface {
         class={{
           column: true,
           'is-narrow': this.isNarrow && typeof this.isNarrow === 'boolean',
-          [this.class]: !!this.class,
+          [this.class]: Boolean(this.class),
         }}
       >
         <slot />

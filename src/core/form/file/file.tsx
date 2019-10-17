@@ -67,7 +67,7 @@ export class FileInput implements ComponentInterface {
 
   private file: File;
 
-  private handleFileChange = event => {
+  private handleFileChange = (event): void => {
     this.file = event.target.files[0];
   };
 
@@ -76,14 +76,14 @@ export class FileInput implements ComponentInterface {
       <div
         class={{
           file: true,
-          [this.size]: !!this.size,
-          [this.color]: !!this.color,
-          [this.alignment]: !!this.alignment,
+          [this.size]: Boolean(this.size),
+          [this.color]: Boolean(this.color),
+          [this.alignment]: Boolean(this.alignment),
           'has-name': this.hasName,
           'is-right': this.isRight,
           'is-fullwidth': this.isFullwidth,
           'is-boxed': this.isBoxed,
-          [this.class]: !!this.class,
+          [this.class]: Boolean(this.class),
         }}
       >
         <label class="file-label">

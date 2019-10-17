@@ -47,9 +47,9 @@ export class Navbar implements ComponentInterface {
           navbar: true,
           'is-spaced': this.isSpaced,
           'is-transparent': this.isTransparent,
-          [this.color]: !!this.color,
-          [this.fixedPosition]: !!this.fixedPosition,
-          [this.class]: !!this.class,
+          [this.color]: Boolean(this.color),
+          [this.fixedPosition]: Boolean(this.fixedPosition),
+          [this.class]: Boolean(this.class),
         }}
         role="navigation"
         aria-label="main navigation"

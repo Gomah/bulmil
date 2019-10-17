@@ -26,8 +26,8 @@ export class Tags implements ComponentInterface {
         class={{
           tags: true,
           'has-addons': this.hasAddons,
-          [this.size]: !!this.size,
-          [this.class]: !!this.class,
+          [this.size]: Boolean(this.size),
+          [this.class]: Boolean(this.class),
         }}
       >
         <slot />

@@ -15,7 +15,7 @@ export class Card implements ComponentInterface {
       <div
         class={{
           card: true,
-          [this.class]: !!this.class,
+          [this.class]: Boolean(this.class),
         }}
       >
         <slot></slot>

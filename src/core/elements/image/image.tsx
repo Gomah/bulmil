@@ -27,8 +27,8 @@ export class Image implements ComponentInterface {
       <figure
         class={{
           image: true,
-          [this.size]: !!this.size,
-          [this.class]: !!this.class,
+          [this.size]: Boolean(this.size),
+          [this.class]: Boolean(this.class),
         }}
       >
         <slot />

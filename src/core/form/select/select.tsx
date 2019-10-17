@@ -60,16 +60,16 @@ export class Select implements ComponentInterface {
       <div
         class={{
           control: true,
-          'has-icons-left': !!this.icon,
-          [this.controlClass]: !!this.controlClass,
+          'has-icons-left': Boolean(this.icon),
+          [this.controlClass]: Boolean(this.controlClass),
         }}
       >
         <div
           class={{
             select: true,
-            [this.color]: !!this.color,
-            [this.size]: !!this.size,
-            [this.class]: !!this.class,
+            [this.color]: Boolean(this.color),
+            [this.size]: Boolean(this.size),
+            [this.class]: Boolean(this.class),
             'is-multiple': this.isMultiple,
             'is-rounded': this.isRounded,
             'is-loading': this.isLoading,
@@ -78,18 +78,18 @@ export class Select implements ComponentInterface {
           <select
             multiple={this.isMultiple}
             class={{
-              [this.state]: !!this.state,
+              [this.state]: Boolean(this.state),
             }}
           >
             <slot />
           </select>
         </div>
-        {!!this.icon && (
+        {Boolean(this.icon) && (
           <span
             class={{
               icon: true,
               'is-left': true,
-              [this.size]: !!this.size,
+              [this.size]: Boolean(this.size),
             }}
           >
             <i class={this.icon}></i>

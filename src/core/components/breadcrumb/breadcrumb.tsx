@@ -34,10 +34,10 @@ export class Breadcrumb implements ComponentInterface {
       <nav
         class={{
           breadcrumb: true,
-          [this.size]: !!this.size,
-          [this.separator]: !!this.separator,
-          [this.alignment]: !!this.alignment,
-          [this.class]: !!this.class,
+          [this.size]: Boolean(this.size),
+          [this.separator]: Boolean(this.separator),
+          [this.alignment]: Boolean(this.alignment),
+          [this.class]: Boolean(this.class),
         }}
         aria-label="breadcrumbs"
       >

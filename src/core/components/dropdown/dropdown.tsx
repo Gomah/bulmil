@@ -13,11 +13,7 @@ export class Dropdown implements ComponentInterface {
   /**
    * The dropdown visibility
    */
-  @Prop({
-    mutable: true,
-    reflect: true,
-  })
-  isActive = false;
+  @Prop({ mutable: true, reflect: true }) isActive = false;
 
   /**
    * Align the dropdown to the right
@@ -34,6 +30,13 @@ export class Dropdown implements ComponentInterface {
    */
   @Prop() isHoverable = false;
 
+  /**
+   * Handle Trigger click action
+   */
+  private handleTriggerClick = (): void => {
+    this.isActive = !this.isActive;
+  };
+
   render(): JSX.Element {
     return (
       <div
@@ -45,7 +48,7 @@ export class Dropdown implements ComponentInterface {
           'is-hoverable': this.isHoverable,
         }}
       >
-        <div onClick={() => (this.isActive = !this.isActive)} class="dropdown-trigger">
+        <div onClick={this.handleTriggerClick} class="dropdown-trigger">
           <slot name="trigger" aria-haspopup="true" />
         </div>
 

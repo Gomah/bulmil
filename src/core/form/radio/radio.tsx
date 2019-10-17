@@ -35,12 +35,12 @@ export class Radio implements ComponentInterface {
       <label
         class={{
           radio: true,
-          [this.labelClass]: !!this.labelClass,
+          [this.labelClass]: Boolean(this.labelClass),
         }}
       >
         <input
           class={{
-            [this.class]: !!this.class,
+            [this.class]: Boolean(this.class),
           }}
           type="radio"
           name={this.name}

@@ -31,10 +31,10 @@ export class Pagination implements ComponentInterface {
         <nav
           class={{
             pagination: true,
-            [this.size]: !!this.size,
-            [this.alignment]: !!this.alignment,
+            [this.size]: Boolean(this.size),
+            [this.alignment]: Boolean(this.alignment),
             'is-rounded': this.isRounded,
-            [this.class]: !!this.class,
+            [this.class]: Boolean(this.class),
           }}
           role="navigation"
           aria-label="pagination"

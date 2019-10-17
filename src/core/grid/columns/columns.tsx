@@ -56,9 +56,9 @@ export class Columns implements ComponentInterface {
           'is-multiline': this.isMultiline,
           'is-gapless': this.isGapless,
           'is-vcentered': this.isVcentered,
-          'is-variable': !!this.gaps,
-          [this.gaps]: !!this.gaps,
-          [this.class]: !!this.class,
+          'is-variable': Boolean(this.gaps),
+          [this.gaps]: Boolean(this.gaps),
+          [this.class]: Boolean(this.class),
         }}
       >
         <slot />

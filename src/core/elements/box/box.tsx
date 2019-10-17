@@ -16,7 +16,7 @@ export class Box implements ComponentInterface {
         <div
           class={{
             box: true,
-            [this.class]: !!this.class,
+            [this.class]: Boolean(this.class),
           }}
         >
           <slot />

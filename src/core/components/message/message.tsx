@@ -32,8 +32,8 @@ export class Message implements ComponentInterface {
       <article
         class={{
           message: true,
-          [this.color]: !!this.color,
-          [this.size]: !!this.size,
+          [this.color]: Boolean(this.color),
+          [this.size]: Boolean(this.size),
         }}
       >
         <slot />

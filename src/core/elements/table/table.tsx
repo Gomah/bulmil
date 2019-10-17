@@ -44,7 +44,7 @@ export class Table implements ComponentInterface {
       <table
         class={{
           table: true,
-          [this.class]: !!this.class,
+          [this.class]: Boolean(this.class),
           'is-bordered': this.isBordered,
           'is-striped': this.isStriped,
           'is-narrow': this.isNarrow,

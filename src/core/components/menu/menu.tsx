@@ -15,7 +15,7 @@ export class Menu implements ComponentInterface {
       <aside
         class={{
           menu: true,
-          [this.class]: !!this.class,
+          [this.class]: Boolean(this.class),
         }}
       >
         <slot />

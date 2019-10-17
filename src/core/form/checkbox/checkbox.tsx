@@ -30,13 +30,13 @@ export class Checkbox implements ComponentInterface {
       <label
         class={{
           checkbox: true,
-          [this.labelClass]: !!this.labelClass,
+          [this.labelClass]: Boolean(this.labelClass),
         }}
       >
         <input
           type="checkbox"
           class={{
-            [this.class]: !!this.class,
+            [this.class]: Boolean(this.class),
           }}
           disabled={this.disabled}
           checked={this.checked}

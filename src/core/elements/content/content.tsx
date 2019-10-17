@@ -21,8 +21,8 @@ export class Content implements ComponentInterface {
         <div
           class={{
             content: true,
-            [this.size]: !!this.size,
-            [this.class]: !!this.class,
+            [this.size]: Boolean(this.size),
+            [this.class]: Boolean(this.class),
           }}
         >
           <slot />

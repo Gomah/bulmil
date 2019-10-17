@@ -24,8 +24,8 @@ export class Notification implements ComponentInterface {
       <div
         class={{
           notification: true,
-          [this.color]: !!this.color,
-          [this.class]: !!this.class,
+          [this.color]: Boolean(this.color),
+          [this.class]: Boolean(this.class),
         }}
       >
         {this.dismissable && <button class="delete"></button>}

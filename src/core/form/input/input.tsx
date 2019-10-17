@@ -86,18 +86,18 @@ export class Input implements ComponentInterface {
         class={{
           control: true,
           'is-loading': this.isLoading,
-          [this.controlClass]: !!this.controlClass,
+          [this.controlClass]: Boolean(this.controlClass),
         }}
       >
         <input
           class={{
             input: true,
-            [this.color]: !!this.color,
-            [this.size]: !!this.size,
-            [this.state]: !!this.state,
+            [this.color]: Boolean(this.color),
+            [this.size]: Boolean(this.size),
+            [this.state]: Boolean(this.state),
             'is-rounded': this.isRounded,
             'is-static': this.isStatic,
-            [this.class]: !!this.class,
+            [this.class]: Boolean(this.class),
           }}
           placeholder={this.placeholder}
           required={this.required}

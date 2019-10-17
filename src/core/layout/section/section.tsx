@@ -21,8 +21,8 @@ export class Section implements ComponentInterface {
         <div
           class={{
             section: true,
-            [this.size]: !!this.size,
-            [this.class]: !!this.class,
+            [this.size]: Boolean(this.size),
+            [this.class]: Boolean(this.class),
           }}
         >
           <slot />

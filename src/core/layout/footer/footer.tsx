@@ -16,7 +16,7 @@ export class Footer implements ComponentInterface {
         <footer
           class={{
             footer: true,
-            [this.class]: !!this.class,
+            [this.class]: Boolean(this.class),
           }}
         >
           <slot />
