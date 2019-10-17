@@ -42,7 +42,7 @@ export class Progress implements ComponentInterface {
         value={this.value}
         max={this.max}
       >
-        {this.value && `${this.value}%`}
+        {typeof this.value === 'number' && `${this.value}%`}
       </progress>
     );
   }
