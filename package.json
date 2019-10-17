@@ -46,7 +46,7 @@
     "build:min": "cleancss -o css/bulmil.min.css css/bulmil.css",
     "build:scss": "node-sass --output-style expanded --source-map true bulmil.scss css/bulmil.css",
     "build:docs": "node --max_old_space_size=1024 ./node_modules/.bin/stencil build --docs",
-    "build:clean": "rimraf css",
+    "build:clean": "rimraf css dist",
     "build:components": "node --max_old_space_size=1024 ./node_modules/.bin/stencil build --prod",
     "build:storybook": "build-storybook -c .storybook -s www -o storybook/",
     "start": "node --max_old_space_size=1024 ./node_modules/.bin/stencil build --dev --watch --serve",
