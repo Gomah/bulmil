@@ -6,6 +6,7 @@ import autoprefixer from 'autoprefixer';
 export const config: Config = {
   namespace: 'Bulmil',
   globalStyle: 'bulmil.scss',
+  excludeSrc: ['**/*.stories.tsx'],
   plugins: [
     sass({
       injectGlobalPaths: ['src/styles/main.scss'],
