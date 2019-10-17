@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/gomah/bulmil/compare/v0.0.3...v0.0.4) (2019-10-17)
+
+
+### Bug Fixes
+
+* **components:** fix margin-right on last-child ([aedda04](https://github.com/gomah/bulmil/commit/aedda04))
+* **file-component:** use file mutable prop ([35808c4](https://github.com/gomah/bulmil/commit/35808c4))
+* **progress-component:** display progress value correctly ([1dcd772](https://github.com/gomah/bulmil/commit/1dcd772))
+
+
+### Chore
+
+* **lint:** implement stencil/eslint rules ([be43cd2](https://github.com/gomah/bulmil/commit/be43cd2))
+
 ### [0.0.3](https://github.com/gomah/bulmil/compare/v0.0.2...v0.0.3) (2019-10-17)
 
 
