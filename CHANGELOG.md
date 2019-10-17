@@ -2,6 +2,36 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/gomah/bulmil/compare/v0.0.2...v0.0.3) (2019-10-17)
+
+
+### Bug Fixes
+
+* **deps:** revert @stencil/eslint-plugin ([6abc3ed](https://github.com/gomah/bulmil/commit/6abc3ed))
+* **selectors:** add missing selectors for first & last child, closes [#25](https://github.com/gomah/bulmil/issues/25) ([5cbf202](https://github.com/gomah/bulmil/commit/5cbf202))
+* **table:** import table styles globally ([55ab1dd](https://github.com/gomah/bulmil/commit/55ab1dd))
+
+
+### Chore
+
+* **cleanup:** cleanup components & stories ([471f678](https://github.com/gomah/bulmil/commit/471f678))
+* **cleanup:** prepare public release ([9b87855](https://github.com/gomah/bulmil/commit/9b87855))
+* **deps:** upgrade dependencies ([541be6a](https://github.com/gomah/bulmil/commit/541be6a))
+* **deps:** upgrade dependencies ([d4854cf](https://github.com/gomah/bulmil/commit/d4854cf))
+* **deps:** upgrade dependencies ([bbd87f0](https://github.com/gomah/bulmil/commit/bbd87f0))
+* **deps:** upgrade dependencies ([5e92b11](https://github.com/gomah/bulmil/commit/5e92b11))
+* **deps:** upgrade dependencies ([24fe6d8](https://github.com/gomah/bulmil/commit/24fe6d8))
+* **deps:** upgrade dependencies ([0e3a792](https://github.com/gomah/bulmil/commit/0e3a792))
+* **deps:** upgrade dependencies ([0d2f839](https://github.com/gomah/bulmil/commit/0d2f839))
+* **deps:** upgrade dependencies ([20b62bf](https://github.com/gomah/bulmil/commit/20b62bf))
+* **deps:** upgrade dependencies ([5365dbe](https://github.com/gomah/bulmil/commit/5365dbe))
+* **deps-dev:** bump @typescript-eslint/eslint-plugin ([91986b5](https://github.com/gomah/bulmil/commit/91986b5))
+* **deps-dev:** bump @typescript-eslint/parser from 2.3.1 to 2.3.2 ([8c7c0a6](https://github.com/gomah/bulmil/commit/8c7c0a6))
+* **deps-dev:** bump eslint from 6.4.0 to 6.5.1 ([8342eac](https://github.com/gomah/bulmil/commit/8342eac))
+* **dist:** rebuild bulmil.css ([c48598b](https://github.com/gomah/bulmil/commit/c48598b))
+* **examples:** add next.js example (csr only) ([5b3c2a2](https://github.com/gomah/bulmil/commit/5b3c2a2))
+* **examples:** cleanup nuxt example ([5707215](https://github.com/gomah/bulmil/commit/5707215))
+
 ### [0.0.2](https://github.com/gomah/bulmil/compare/v0.0.1...v0.0.2) (2019-09-28)
 
 
