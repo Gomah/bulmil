@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://github.com/gomah/bulmil/compare/v0.0.5...v0.0.6) (2019-10-20)
+
+
+### Chore
+
+* **deps:** update @stencil/core & bulma ([f1c0363](https://github.com/gomah/bulmil/commit/f1c0363))
+
 ### [0.0.5](https://github.com/gomah/bulmil/compare/v0.0.4...v0.0.5) (2019-10-17)
 
 
