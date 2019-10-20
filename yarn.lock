@@ -1380,10 +1380,10 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
-"@stencil/core@^1.7.2":
-  version "1.7.2"
-  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-1.7.2.tgz#a8301d8799da4b60319dee02bcac8aaf2ed8ab97"
-  integrity sha512-P/FKf4dEhxCOGYjg7BSczLWXIKGJG4wbym7sj98z+8GXSpVqpldg+wkzadN+kaUiZTMdNQ/p5rDNFI0KXyx/QQ==
+"@stencil/core@^1.7.3":
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-1.7.3.tgz#ffc67fe416bc24cbd5e4a3a2c98e2fdff32424dd"
+  integrity sha512-3zfir9ndh0+bcIeetjJFPIGYmzgfZtV2SxYSTYOJNvBNaghn3r5mSo8Xtqwhbppkyni8CsGwWCf1WKDyFYkK4w==
   dependencies:
     typescript "3.6.3"
 
@@ -3351,10 +3351,10 @@ builtin-status-codes@^3.0.0:
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
   integrity sha1-hZgoeOIbmOHGZCXgPQF0eI9Wnug=
 
-bulma-scss@^0.7.5-1:
-  version "0.7.5-1"
-  resolved "https://registry.yarnpkg.com/bulma-scss/-/bulma-scss-0.7.5-1.tgz#28cca2e36e04a46df4584b390950c12b1f7a33a6"
-  integrity sha512-aGsGq9S5I/3dSgu71Vm3Pq9+g1rk04T7/7HmlZUTYTRncjUKBM3OlHrOijuS6HyErR6SzI/NSVcPzC7r1276Ww==
+bulma-scss@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/bulma-scss/-/bulma-scss-0.8.0.tgz#d5e33bc2848e1735c8c4738af9c39f30e1dcf45b"
+  integrity sha512-fm/wMyR5zNSBR3YrptGgPFSQOmGcUWYQabqB9jZQgrk6gBUwYZokiU4Uvgb4lfXxqIIKroCvM5lz/CMYXR0oVg==
 
 bytes@3.1.0:
   version "3.1.0"

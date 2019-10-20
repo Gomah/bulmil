@@ -69,7 +69,7 @@
     "@babel/core": "^7.6.4",
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
-    "@stencil/core": "^1.7.2",
+    "@stencil/core": "^1.7.3",
     "@stencil/eslint-plugin": "^0.2.1",
     "@stencil/postcss": "^1.0.1",
     "@stencil/sass": "^1.1.0",
@@ -117,6 +117,6 @@
     "workbox-build": "^4.3.1"
   },
   "dependencies": {
-    "bulma-scss": "^0.7.5-1"
+    "bulma-scss": "^0.8.0"
   }
 }
