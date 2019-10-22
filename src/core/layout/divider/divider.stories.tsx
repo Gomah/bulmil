@@ -8,7 +8,7 @@ const orientations = {
 };
 
 
-storiesOf('Components|Divider', module)
+storiesOf('Layout|Divider', module)
   .addParameters({
     notes: {
       markdown: notes,
