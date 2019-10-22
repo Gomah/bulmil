@@ -231,6 +231,20 @@ export namespace Components {
     */
     'size': 'is-small' | 'is-medium' | 'is-large';
   }
+  interface BmDivider {
+    /**
+    * CSS Classes
+    */
+    'class': string;
+    /**
+    * CSS Classes
+    */
+    'content': string;
+    /**
+    * Orientation
+    */
+    'orientation': 'is-horizontal' | 'is-vertical';
+  }
   interface BmDropdown {
     /**
     * CSS Classes
@@ -885,6 +899,12 @@ declare global {
     new (): HTMLBmContentElement;
   };
 
+  interface HTMLBmDividerElement extends Components.BmDivider, HTMLStencilElement {}
+  const HTMLBmDividerElement: {
+    prototype: HTMLBmDividerElement;
+    new (): HTMLBmDividerElement;
+  };
+
   interface HTMLBmDropdownElement extends Components.BmDropdown, HTMLStencilElement {}
   const HTMLBmDropdownElement: {
     prototype: HTMLBmDropdownElement;
@@ -1037,6 +1057,7 @@ declare global {
     'bm-columns': HTMLBmColumnsElement;
     'bm-container': HTMLBmContainerElement;
     'bm-content': HTMLBmContentElement;
+    'bm-divider': HTMLBmDividerElement;
     'bm-dropdown': HTMLBmDropdownElement;
     'bm-field': HTMLBmFieldElement;
     'bm-file': HTMLBmFileElement;
@@ -1284,6 +1305,20 @@ declare namespace LocalJSX {
     * Content size
     */
     'size'?: 'is-small' | 'is-medium' | 'is-large';
+  }
+  interface BmDivider {
+    /**
+    * CSS Classes
+    */
+    'class'?: string;
+    /**
+    * CSS Classes
+    */
+    'content'?: string;
+    /**
+    * Orientation
+    */
+    'orientation'?: 'is-horizontal' | 'is-vertical';
   }
   interface BmDropdown {
     /**
@@ -1866,6 +1901,7 @@ declare namespace LocalJSX {
     'bm-columns': BmColumns;
     'bm-container': BmContainer;
     'bm-content': BmContent;
+    'bm-divider': BmDivider;
     'bm-dropdown': BmDropdown;
     'bm-field': BmField;
     'bm-file': BmFile;
@@ -1912,6 +1948,7 @@ declare module "@stencil/core" {
       'bm-columns': LocalJSX.BmColumns & JSXBase.HTMLAttributes<HTMLBmColumnsElement>;
       'bm-container': LocalJSX.BmContainer & JSXBase.HTMLAttributes<HTMLBmContainerElement>;
       'bm-content': LocalJSX.BmContent & JSXBase.HTMLAttributes<HTMLBmContentElement>;
+      'bm-divider': LocalJSX.BmDivider & JSXBase.HTMLAttributes<HTMLBmDividerElement>;
       'bm-dropdown': LocalJSX.BmDropdown & JSXBase.HTMLAttributes<HTMLBmDropdownElement>;
       'bm-field': LocalJSX.BmField & JSXBase.HTMLAttributes<HTMLBmFieldElement>;
       'bm-file': LocalJSX.BmFile & JSXBase.HTMLAttributes<HTMLBmFileElement>;

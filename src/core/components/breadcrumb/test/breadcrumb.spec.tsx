@@ -6,7 +6,7 @@ it('Should render properly', async (): Promise<void> => {
     components: [Breadcrumb],
     html: `<bm-breadcrumb>
              <p>Hello, I'm in a breadcrumb!</p>
-           </bm-br>`,
+           </bm-breadcrumb>`,
   });
 
   expect(page.root).toEqualHtml(`

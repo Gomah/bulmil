@@ -117,6 +117,7 @@
     "workbox-build": "^4.3.1"
   },
   "dependencies": {
+    "bulma-divider": "^0.2.0",
     "bulma-scss": "^0.8.0"
   }
 }
