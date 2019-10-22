@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](https://github.com/gomah/bulmil/compare/v0.0.6...v0.0.7) (2019-10-22)
+
+
+### Chore
+
+* **deps-dev:** bump @types/node from 12.11.1 to 12.11.2 ([56e8047](https://github.com/gomah/bulmil/commit/56e8047))
+* **deps-dev:** bump @typescript-eslint/eslint-plugin ([b08ac7f](https://github.com/gomah/bulmil/commit/b08ac7f))
+* **deps-dev:** bump @typescript-eslint/parser from 2.4.0 to 2.5.0 ([9eba699](https://github.com/gomah/bulmil/commit/9eba699))
+
+
+### Features
+
+* **components:** add color prop to Panel ([2eb5d28](https://github.com/gomah/bulmil/commit/2eb5d28))
+* **components:** add divider component ([ce41c89](https://github.com/gomah/bulmil/commit/ce41c89))
+
 ### [0.0.6](https://github.com/gomah/bulmil/compare/v0.0.5...v0.0.6) (2019-10-20)
 
 
