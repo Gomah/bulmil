@@ -548,6 +548,10 @@ export namespace Components {
     * CSS Classes
     */
     'class': string;
+    /**
+    * Panel color
+    */
+    'color': 'is-primary' | 'is-link' | 'is-info' | 'is-success' | 'is-danger' | 'is-warning';
   }
   interface BmProgress {
     /**
@@ -1598,6 +1602,10 @@ declare namespace LocalJSX {
     * CSS Classes
     */
     'class'?: string;
+    /**
+    * Panel color
+    */
+    'color'?: 'is-primary' | 'is-link' | 'is-info' | 'is-success' | 'is-danger' | 'is-warning';
   }
   interface BmProgress {
     /**

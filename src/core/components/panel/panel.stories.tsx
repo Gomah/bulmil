@@ -1,5 +1,16 @@
 import notes from './readme.md';
 import { storiesOf } from '@storybook/html';
+import { select } from '@storybook/addon-knobs';
+
+const colors: { [key: string]: string } = {
+  primary: 'is-primary',
+  link: 'is-link',
+  info: 'is-info',
+  success: 'is-success',
+  danger: 'is-danger',
+  warning: 'is-warning',
+  none: null,
+};
 
 storiesOf('Components|Panel', module)
   .addParameters({
@@ -12,7 +23,7 @@ storiesOf('Components|Panel', module)
     return `
       <bm-section>
         <bm-container>
-          <bm-panel>
+          <bm-panel color="${select('Color', colors, null)}">
             <p class="panel-heading">repositories</p>
             <div class="panel-block">
               <p class="control has-icons-left">

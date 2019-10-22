@@ -10,9 +10,19 @@ export class Panel implements ComponentInterface {
    */
   @Prop() class = '';
 
+  /**
+   * Panel color
+   */
+  @Prop() color: 'is-primary' | 'is-link' | 'is-info' | 'is-success' | 'is-danger' | 'is-warning';
+
   render(): JSX.Element {
     return (
-      <nav class="panel">
+      <nav
+        class={{
+          panel: true,
+          [this.color]: Boolean(this.color),
+        }}
+      >
         <slot />
       </nav>
     );
