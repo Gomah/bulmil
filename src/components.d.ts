@@ -816,229 +816,229 @@ declare global {
 
 
   interface HTMLBmBoxElement extends Components.BmBox, HTMLStencilElement {}
-  const HTMLBmBoxElement: {
+  var HTMLBmBoxElement: {
     prototype: HTMLBmBoxElement;
     new (): HTMLBmBoxElement;
   };
 
   interface HTMLBmBreadcrumbElement extends Components.BmBreadcrumb, HTMLStencilElement {}
-  const HTMLBmBreadcrumbElement: {
+  var HTMLBmBreadcrumbElement: {
     prototype: HTMLBmBreadcrumbElement;
     new (): HTMLBmBreadcrumbElement;
   };
 
   interface HTMLBmButtonElement extends Components.BmButton, HTMLStencilElement {}
-  const HTMLBmButtonElement: {
+  var HTMLBmButtonElement: {
     prototype: HTMLBmButtonElement;
     new (): HTMLBmButtonElement;
   };
 
   interface HTMLBmButtonsElement extends Components.BmButtons, HTMLStencilElement {}
-  const HTMLBmButtonsElement: {
+  var HTMLBmButtonsElement: {
     prototype: HTMLBmButtonsElement;
     new (): HTMLBmButtonsElement;
   };
 
   interface HTMLBmCardElement extends Components.BmCard, HTMLStencilElement {}
-  const HTMLBmCardElement: {
+  var HTMLBmCardElement: {
     prototype: HTMLBmCardElement;
     new (): HTMLBmCardElement;
   };
 
   interface HTMLBmCardContentElement extends Components.BmCardContent, HTMLStencilElement {}
-  const HTMLBmCardContentElement: {
+  var HTMLBmCardContentElement: {
     prototype: HTMLBmCardContentElement;
     new (): HTMLBmCardContentElement;
   };
 
   interface HTMLBmCardFooterElement extends Components.BmCardFooter, HTMLStencilElement {}
-  const HTMLBmCardFooterElement: {
+  var HTMLBmCardFooterElement: {
     prototype: HTMLBmCardFooterElement;
     new (): HTMLBmCardFooterElement;
   };
 
   interface HTMLBmCardHeaderElement extends Components.BmCardHeader, HTMLStencilElement {}
-  const HTMLBmCardHeaderElement: {
+  var HTMLBmCardHeaderElement: {
     prototype: HTMLBmCardHeaderElement;
     new (): HTMLBmCardHeaderElement;
   };
 
   interface HTMLBmCardImageElement extends Components.BmCardImage, HTMLStencilElement {}
-  const HTMLBmCardImageElement: {
+  var HTMLBmCardImageElement: {
     prototype: HTMLBmCardImageElement;
     new (): HTMLBmCardImageElement;
   };
 
   interface HTMLBmCheckboxElement extends Components.BmCheckbox, HTMLStencilElement {}
-  const HTMLBmCheckboxElement: {
+  var HTMLBmCheckboxElement: {
     prototype: HTMLBmCheckboxElement;
     new (): HTMLBmCheckboxElement;
   };
 
   interface HTMLBmColumnElement extends Components.BmColumn, HTMLStencilElement {}
-  const HTMLBmColumnElement: {
+  var HTMLBmColumnElement: {
     prototype: HTMLBmColumnElement;
     new (): HTMLBmColumnElement;
   };
 
   interface HTMLBmColumnsElement extends Components.BmColumns, HTMLStencilElement {}
-  const HTMLBmColumnsElement: {
+  var HTMLBmColumnsElement: {
     prototype: HTMLBmColumnsElement;
     new (): HTMLBmColumnsElement;
   };
 
   interface HTMLBmContainerElement extends Components.BmContainer, HTMLStencilElement {}
-  const HTMLBmContainerElement: {
+  var HTMLBmContainerElement: {
     prototype: HTMLBmContainerElement;
     new (): HTMLBmContainerElement;
   };
 
   interface HTMLBmContentElement extends Components.BmContent, HTMLStencilElement {}
-  const HTMLBmContentElement: {
+  var HTMLBmContentElement: {
     prototype: HTMLBmContentElement;
     new (): HTMLBmContentElement;
   };
 
   interface HTMLBmDividerElement extends Components.BmDivider, HTMLStencilElement {}
-  const HTMLBmDividerElement: {
+  var HTMLBmDividerElement: {
     prototype: HTMLBmDividerElement;
     new (): HTMLBmDividerElement;
   };
 
   interface HTMLBmDropdownElement extends Components.BmDropdown, HTMLStencilElement {}
-  const HTMLBmDropdownElement: {
+  var HTMLBmDropdownElement: {
     prototype: HTMLBmDropdownElement;
     new (): HTMLBmDropdownElement;
   };
 
   interface HTMLBmFieldElement extends Components.BmField, HTMLStencilElement {}
-  const HTMLBmFieldElement: {
+  var HTMLBmFieldElement: {
     prototype: HTMLBmFieldElement;
     new (): HTMLBmFieldElement;
   };
 
   interface HTMLBmFileElement extends Components.BmFile, HTMLStencilElement {}
-  const HTMLBmFileElement: {
+  var HTMLBmFileElement: {
     prototype: HTMLBmFileElement;
     new (): HTMLBmFileElement;
   };
 
   interface HTMLBmFooterElement extends Components.BmFooter, HTMLStencilElement {}
-  const HTMLBmFooterElement: {
+  var HTMLBmFooterElement: {
     prototype: HTMLBmFooterElement;
     new (): HTMLBmFooterElement;
   };
 
   interface HTMLBmIconElement extends Components.BmIcon, HTMLStencilElement {}
-  const HTMLBmIconElement: {
+  var HTMLBmIconElement: {
     prototype: HTMLBmIconElement;
     new (): HTMLBmIconElement;
   };
 
   interface HTMLBmImageElement extends Components.BmImage, HTMLStencilElement {}
-  const HTMLBmImageElement: {
+  var HTMLBmImageElement: {
     prototype: HTMLBmImageElement;
     new (): HTMLBmImageElement;
   };
 
   interface HTMLBmInputElement extends Components.BmInput, HTMLStencilElement {}
-  const HTMLBmInputElement: {
+  var HTMLBmInputElement: {
     prototype: HTMLBmInputElement;
     new (): HTMLBmInputElement;
   };
 
   interface HTMLBmMenuElement extends Components.BmMenu, HTMLStencilElement {}
-  const HTMLBmMenuElement: {
+  var HTMLBmMenuElement: {
     prototype: HTMLBmMenuElement;
     new (): HTMLBmMenuElement;
   };
 
   interface HTMLBmMessageElement extends Components.BmMessage, HTMLStencilElement {}
-  const HTMLBmMessageElement: {
+  var HTMLBmMessageElement: {
     prototype: HTMLBmMessageElement;
     new (): HTMLBmMessageElement;
   };
 
   interface HTMLBmModalElement extends Components.BmModal, HTMLStencilElement {}
-  const HTMLBmModalElement: {
+  var HTMLBmModalElement: {
     prototype: HTMLBmModalElement;
     new (): HTMLBmModalElement;
   };
 
   interface HTMLBmNavbarElement extends Components.BmNavbar, HTMLStencilElement {}
-  const HTMLBmNavbarElement: {
+  var HTMLBmNavbarElement: {
     prototype: HTMLBmNavbarElement;
     new (): HTMLBmNavbarElement;
   };
 
   interface HTMLBmNotificationElement extends Components.BmNotification, HTMLStencilElement {}
-  const HTMLBmNotificationElement: {
+  var HTMLBmNotificationElement: {
     prototype: HTMLBmNotificationElement;
     new (): HTMLBmNotificationElement;
   };
 
   interface HTMLBmPaginationElement extends Components.BmPagination, HTMLStencilElement {}
-  const HTMLBmPaginationElement: {
+  var HTMLBmPaginationElement: {
     prototype: HTMLBmPaginationElement;
     new (): HTMLBmPaginationElement;
   };
 
   interface HTMLBmPanelElement extends Components.BmPanel, HTMLStencilElement {}
-  const HTMLBmPanelElement: {
+  var HTMLBmPanelElement: {
     prototype: HTMLBmPanelElement;
     new (): HTMLBmPanelElement;
   };
 
   interface HTMLBmProgressElement extends Components.BmProgress, HTMLStencilElement {}
-  const HTMLBmProgressElement: {
+  var HTMLBmProgressElement: {
     prototype: HTMLBmProgressElement;
     new (): HTMLBmProgressElement;
   };
 
   interface HTMLBmRadioElement extends Components.BmRadio, HTMLStencilElement {}
-  const HTMLBmRadioElement: {
+  var HTMLBmRadioElement: {
     prototype: HTMLBmRadioElement;
     new (): HTMLBmRadioElement;
   };
 
   interface HTMLBmSectionElement extends Components.BmSection, HTMLStencilElement {}
-  const HTMLBmSectionElement: {
+  var HTMLBmSectionElement: {
     prototype: HTMLBmSectionElement;
     new (): HTMLBmSectionElement;
   };
 
   interface HTMLBmSelectElement extends Components.BmSelect, HTMLStencilElement {}
-  const HTMLBmSelectElement: {
+  var HTMLBmSelectElement: {
     prototype: HTMLBmSelectElement;
     new (): HTMLBmSelectElement;
   };
 
   interface HTMLBmTableElement extends Components.BmTable, HTMLStencilElement {}
-  const HTMLBmTableElement: {
+  var HTMLBmTableElement: {
     prototype: HTMLBmTableElement;
     new (): HTMLBmTableElement;
   };
 
   interface HTMLBmTabsElement extends Components.BmTabs, HTMLStencilElement {}
-  const HTMLBmTabsElement: {
+  var HTMLBmTabsElement: {
     prototype: HTMLBmTabsElement;
     new (): HTMLBmTabsElement;
   };
 
   interface HTMLBmTagElement extends Components.BmTag, HTMLStencilElement {}
-  const HTMLBmTagElement: {
+  var HTMLBmTagElement: {
     prototype: HTMLBmTagElement;
     new (): HTMLBmTagElement;
   };
 
   interface HTMLBmTagsElement extends Components.BmTags, HTMLStencilElement {}
-  const HTMLBmTagsElement: {
+  var HTMLBmTagsElement: {
     prototype: HTMLBmTagsElement;
     new (): HTMLBmTagsElement;
   };
 
   interface HTMLBmTextareaElement extends Components.BmTextarea, HTMLStencilElement {}
-  const HTMLBmTextareaElement: {
+  var HTMLBmTextareaElement: {
     prototype: HTMLBmTextareaElement;
     new (): HTMLBmTextareaElement;
   };
