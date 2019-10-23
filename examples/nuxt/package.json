@@ -12,8 +12,9 @@
     "test": "jest"
   },
   "dependencies": {
-    "nuxt": "^2.10.1",
-    "bulmil": "../.."
+    "bulmil": "latest",
+    "nuxt": "^2.10.2",
+    "nuxt-stencil": "^0.1.0"
   },
   "devDependencies": {
     "eslint-config-prettier": "^6.4.0",

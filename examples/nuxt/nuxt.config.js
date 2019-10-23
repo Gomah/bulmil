@@ -27,7 +27,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '~/plugins/bulmil.js', mode: 'client' }],
+  plugins: [],
   /*
    ** Nuxt.js dev-modules
    */
@@ -35,7 +35,12 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: ['nuxt-stencil'],
+
+  stencil: {
+    lib: 'bulmil',
+    prefix: 'bm-'
+  },
   /*
    ** Build configuration
    */
