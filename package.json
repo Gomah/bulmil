@@ -88,7 +88,7 @@
     "@types/puppeteer": "1.20.2",
     "@typescript-eslint/eslint-plugin": "^2.5.0",
     "@typescript-eslint/parser": "^2.5.0",
-    "autoprefixer": "^9.6.5",
+    "autoprefixer": "^9.7.0",
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.0.6",
     "clean-css-cli": "^4.3.0",
