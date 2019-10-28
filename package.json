@@ -93,7 +93,7 @@
     "babel-loader": "^8.0.6",
     "clean-css-cli": "^4.3.0",
     "css-loader": "^3.2.0",
-    "eslint": "^6.5.1",
+    "eslint": "^6.6.0",
     "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.16.0",
