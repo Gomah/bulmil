@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.8](https://github.com/gomah/bulmil/compare/v0.0.7...v0.0.8) (2019-10-30)
+
+
+### Chore
+
+* **dependencies:** bump storybook ([823d28a](https://github.com/gomah/bulmil/commit/823d28a))
+* **deps:** upgrade dependencies ([1a2c247](https://github.com/gomah/bulmil/commit/1a2c247))
+* **deps:** upgrade dependencies ([e9eed12](https://github.com/gomah/bulmil/commit/e9eed12))
+* **deps-dev:** bump @types/jest from 24.0.19 to 24.0.20 ([2c279b4](https://github.com/gomah/bulmil/commit/2c279b4))
+* **deps-dev:** bump @types/node from 12.11.6 to 12.11.7 ([bc149dd](https://github.com/gomah/bulmil/commit/bc149dd))
+* **deps-dev:** bump @typescript-eslint/eslint-plugin ([b1bd515](https://github.com/gomah/bulmil/commit/b1bd515))
+* **deps-dev:** bump @typescript-eslint/parser from 2.5.0 to 2.6.0 ([3b0ae95](https://github.com/gomah/bulmil/commit/3b0ae95))
+* **deps-dev:** bump autoprefixer from 9.6.5 to 9.7.0 ([f552c58](https://github.com/gomah/bulmil/commit/f552c58))
+* **deps-dev:** bump eslint from 6.5.1 to 6.6.0 ([95ca65d](https://github.com/gomah/bulmil/commit/95ca65d))
+* **deps-dev:** bump eslint-config-prettier from 6.4.0 to 6.5.0 ([9148db2](https://github.com/gomah/bulmil/commit/9148db2))
+* **deps-dev:** bump jest from 24.8.0 to 24.9.0 ([ad5bc3a](https://github.com/gomah/bulmil/commit/ad5bc3a))
+* **deps-dev:** bump jest-cli from 24.8.0 to 24.9.0 ([37527e5](https://github.com/gomah/bulmil/commit/37527e5))
+* **deps-dev:** bump node-sass from 4.12.0 to 4.13.0 ([bd39ae6](https://github.com/gomah/bulmil/commit/bd39ae6))
+* **deps-dev:** bump puppeteer from 1.19.0 to 2.0.0 ([af8d2da](https://github.com/gomah/bulmil/commit/af8d2da))
+* **examples:** update examples ([8f631ad](https://github.com/gomah/bulmil/commit/8f631ad))
+* **node:** use node 12.13.x ([b7f7da6](https://github.com/gomah/bulmil/commit/b7f7da6))
+* **structure:** move divider to layout ([cfdda7a](https://github.com/gomah/bulmil/commit/cfdda7a))
+
 ### [0.0.7](https://github.com/gomah/bulmil/compare/v0.0.6...v0.0.7) (2019-10-22)
 
 
