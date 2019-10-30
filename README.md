@@ -51,10 +51,7 @@ Bulmil is an agnostic UI library based on Web Components, made with [Bulma.io](h
 
 Bulmil was created as a proof of concept to introduce an easy way to consume common reusable web components for use with various modern application frameworks (Angular, Vue, React, Ember) or simply with pure Javascript.
 
-:warning: Currently in Alpha, beta will be available once these two issues are resolved:
-
-- https://github.com/Gomah/bulmil/issues/25
-- https://github.com/Gomah/bulmil/issues/26
+:warning: Currently in Alpha, beta will be available once [this issue](https://github.com/Gomah/bulmil/issues/26) is resolved. 
 
 ## Why Stencil?
 
