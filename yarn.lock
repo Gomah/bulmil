@@ -1380,6 +1380,11 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
+"@stencil/angular-output-target@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@stencil/angular-output-target/-/angular-output-target-0.0.1.tgz#147e057d80a19dd7492413086d1868debeee1b63"
+  integrity sha512-kp0jZfwTq6TzV745G3IiTk0rVKgMRNWD+JU1Z23m2cCBbzaKkneZp+U8QjuEVI1Gp8UUWYI/f5fUoC+dcejEWQ==
+
 "@stencil/core@^1.7.5":
   version "1.7.5"
   resolved "https://registry.yarnpkg.com/@stencil/core/-/core-1.7.5.tgz#2b8c6b5306b267d344e9cbd57fc0f87881b272c7"
@@ -1401,6 +1406,11 @@
   integrity sha512-+QOLwdiMSeE6XbvjOM8bfMIX6E6L4DFLmnp0wZqCj4O/PVkNfEQA6IXZgd6F+OIfZ1wBy/dxR4Jvtwfo+QXa2g==
   dependencies:
     postcss "~7.0.17"
+
+"@stencil/react-output-target@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@stencil/react-output-target/-/react-output-target-0.0.1.tgz#411f7befff114835e6592b1d2f43dfce467d90bd"
+  integrity sha512-LRGafNL3qkjMsqfVIG5K+KtmrndHv9CtxK2TpV13yDAYHtntAPeJvMx8McHOjCI4CtLoKIE3TFq3k30Y4hIovw==
 
 "@stencil/sass@^1.1.1":
   version "1.1.1"
@@ -1959,10 +1969,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.11.7.tgz#57682a9771a3f7b09c2497f28129a0462966524a"
   integrity sha512-JNbGaHFCLwgHn/iCckiGSOZ1XYHsKFwREtzPwSGCVld1SGhOlmZw2D4ZI94HQCrBHbADzW9m4LER/8olJTRGHA==
 
-"@types/node@^12.12.0":
-  version "12.12.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.0.tgz#ff3201972d6dc851a9275308a17b9b5094e68057"
-  integrity sha512-6N8Sa5AaENRtJnpKXZgvc119PKxT1Lk9VPy4kfT8JF23tIe1qDfaGkBR2DRKJFIA7NptMz+fps//C6aLi1Uoug==
+"@types/node@^12.12.5":
+  version "12.12.5"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.5.tgz#66103d2eddc543d44a04394abb7be52506d7f290"
+  integrity sha512-KEjODidV4XYUlJBF3XdjSH5FWoMCtO0utnhtdLf1AgeuZLOrRbvmU/gaRCVg7ZaQDjVf3l84egiY0mRNe5xE4A==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -2666,7 +2676,7 @@ atob@^2.1.1:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-autoprefixer@^9.4.9, autoprefixer@^9.5.1, autoprefixer@^9.7.0:
+autoprefixer@^9.4.9, autoprefixer@^9.5.1:
   version "9.7.0"
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-9.7.0.tgz#905ec19e50f04545fe9ff131182cc9ab25246901"
   integrity sha512-j2IRvaCfrUxIiZun9ba4mhJ2omhw4OY88/yVzLO+lHhGBumAAK72PgM6gkbSN8iregPOn1ZlxGkmZh2CQ7X4AQ==
@@ -2677,6 +2687,19 @@ autoprefixer@^9.4.9, autoprefixer@^9.5.1, autoprefixer@^9.7.0:
     normalize-range "^0.1.2"
     num2fraction "^1.2.2"
     postcss "^7.0.19"
+    postcss-value-parser "^4.0.2"
+
+autoprefixer@^9.7.1:
+  version "9.7.1"
+  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-9.7.1.tgz#9ffc44c55f5ca89253d9bb7186cefb01ef57747f"
+  integrity sha512-w3b5y1PXWlhYulevrTJ0lizkQ5CyqfeU6BIRDbuhsMupstHQOeb1Ur80tcB1zxSu7AwyY/qCQ7Vvqklh31ZBFw==
+  dependencies:
+    browserslist "^4.7.2"
+    caniuse-lite "^1.0.30001006"
+    chalk "^2.4.2"
+    normalize-range "^0.1.2"
+    num2fraction "^1.2.2"
+    postcss "^7.0.21"
     postcss-value-parser "^4.0.2"
 
 awesome-typescript-loader@^5.2.1:
@@ -3439,6 +3462,11 @@ caniuse-lite@^1.0.30000984, caniuse-lite@^1.0.30001004:
   version "1.0.30001004"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001004.tgz#d879b73981b255488316da946c39327d8c00a586"
   integrity sha512-3nfOR4O8Wa2RWoYfJkMtwRVOsK96TQ+eq57wd0iKaEWl8dwG4hKZ/g0MVBfCvysFvMLi9fQGR/DvozMdkEPl3g==
+
+caniuse-lite@^1.0.30001006:
+  version "1.0.30001006"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001006.tgz#5b6e8288792cfa275f007b2819a00ccad7112655"
+  integrity sha512-MXnUVX27aGs/QINz+QG1sWSLDr3P1A3Hq5EUWoIt0T7K24DuvMxZEnh3Y5aHlJW6Bz2aApJdSewdYLd8zQnUuw==
 
 capture-exit@^2.0.0:
   version "2.0.0"
@@ -9223,6 +9251,15 @@ postcss@7.x.x, postcss@^7.0.0, postcss@^7.0.14, postcss@^7.0.16, postcss@^7.0.17
     source-map "^0.6.1"
     supports-color "^6.1.0"
 
+postcss@^7.0.21:
+  version "7.0.21"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.21.tgz#06bb07824c19c2021c5d056d5b10c35b989f7e17"
+  integrity sha512-uIFtJElxJo29QC753JzhidoAhvp/e/Exezkdhfmt8AymWT6/5B7W1WmponYWkHk2eg6sONyTch0A3nkMPun3SQ==
+  dependencies:
+    chalk "^2.4.2"
+    source-map "^0.6.1"
+    supports-color "^6.1.0"
+
 prelude-ls@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
@@ -11185,10 +11222,10 @@ stylelint-prettier@^1.1.1:
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
-stylelint-scss@^3.12.0:
-  version "3.12.0"
-  resolved "https://registry.yarnpkg.com/stylelint-scss/-/stylelint-scss-3.12.0.tgz#8b4e4b365eaa90da99d7fd5256fd9092d3344a8c"
-  integrity sha512-RvZqmCnILJ0etFBjSGTXQKOspYjF+jjtFdUGoqjuis2YILy/3LCtgSdBP2I+LUOfRT+eJFCrb8g+j3ZND4FaNA==
+stylelint-scss@^3.12.1:
+  version "3.12.1"
+  resolved "https://registry.yarnpkg.com/stylelint-scss/-/stylelint-scss-3.12.1.tgz#0b06122a33dd2ef368121e920bd3ecfa323bedf2"
+  integrity sha512-k6B78HrqJ6pib5yOtmId7osVGrE2Amcf0VU+tdzk+oqwXe/0+VKtbkogeXrmGKt+z54QhxvjEO++qlE/a7EWlA==
   dependencies:
     lodash "^4.17.15"
     postcss-media-query-parser "^0.2.3"
