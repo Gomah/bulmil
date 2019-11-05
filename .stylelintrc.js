@@ -1,6 +1,6 @@
 module.exports = {
   extends: 'stylelint-config-recommended',
-  plugins: ['stylelint-scss', 'stylelint-prettier'],
+  plugins: ['stylelint-scss', 'stylelint-a11y', 'stylelint-prettier'],
   rules: {
     'prettier/prettier': true,
     'selector-type-no-unknown': [true, { ignoreTypes: [/^bm-/] }],
