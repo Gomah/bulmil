@@ -62,7 +62,7 @@
     "test:stencil:unit": "node --max_old_space_size=1024 ./node_modules/.bin/stencil test --spec",
     "test:stencil:unit:watch": "node --max_old_space_size=1024 ./node_modules/.bin/stencil test --spec --watch",
     "test:stencil:snapshots": "node --max_old_space_size=1024 ./node_modules/.bin/stencil test --e2e --screenshot",
-    "test:stencil": "yarn  run test:stencil:unit && yarn  run test:stencil:e2e",
+    "test:stencil": "yarn run test:stencil:unit && yarn run test:stencil:e2e",
     "test": "yarn run test:lint:ts && yarn run test:lint:scss && yarn run test:stencil"
   },
   "devDependencies": {
