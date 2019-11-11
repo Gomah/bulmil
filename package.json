@@ -7,8 +7,7 @@
   "files": [
     "bulmil.scss",
     "src/styles/",
-    "dist/",
-    "css/"
+    "dist/"
   ],
   "keywords": [
     "bulmil",
@@ -36,17 +35,17 @@
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
   "unpkg": "dist/bulmil/bulmil.js",
-  "style": "css/bulmil.min.css",
+  "style": "dist/css/bulmil.min.css",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "build": "yarn build:clean && yarn build:scss && yarn build:autoprefix && yarn build:min && yarn build:components",
-    "build:autoprefix": "postcss --use autoprefixer --map false --output css/bulmil.css css/bulmil.css",
-    "build:min": "cleancss -o css/bulmil.min.css css/bulmil.css",
-    "build:scss": "node-sass --output-style expanded --source-map true bulmil.scss css/bulmil.css",
+    "build": "yarn build:clean && yarn build:components && yarn build:scss && yarn build:autoprefix && yarn build:min",
+    "build:autoprefix": "postcss --use autoprefixer --map false --output dist/css/bulmil.css dist/css/bulmil.css",
+    "build:min": "cleancss -o dist/css/bulmil.min.css dist/css/bulmil.css",
+    "build:scss": "node-sass --output-style expanded --source-map true bulmil.scss dist/css/bulmil.css",
     "build:docs": "node --max_old_space_size=1024 ./node_modules/.bin/stencil build --docs",
-    "build:clean": "rimraf css dist",
+    "build:clean": "rimraf dist",
     "build:components": "node --max_old_space_size=1024 ./node_modules/.bin/stencil build --prod",
     "build:storybook": "build-storybook -c .storybook -s www -o storybook/",
     "start": "node --max_old_space_size=1024 ./node_modules/.bin/stencil build --dev --watch --serve",
