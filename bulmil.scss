@@ -1,5 +1,6 @@
 // Import bulma utilities & customised variables
 @import './src/styles/main.scss';
+@import './node_modules/bulma-scss/utilities/animations';
 
 // Bulma base
 @import './node_modules/bulma-scss/base/_all';
