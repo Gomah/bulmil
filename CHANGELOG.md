@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.9](https://github.com/gomah/bulmil/compare/v0.0.8...v0.0.9) (2019-11-11)
+
+
+### Bug Fixes
+
+* **checkbox:** add disabled checkbox, closes [#24](https://github.com/gomah/bulmil/issues/24) ([cc90cd0](https://github.com/gomah/bulmil/commit/cc90cd0))
+* **css:** import missing css animations in globalStyle ([a736bda](https://github.com/gomah/bulmil/commit/a736bda))
+* **dist:** rebuild css ([fadc71f](https://github.com/gomah/bulmil/commit/fadc71f))
+
+
+### Chore
+
+* **config:** add stylelint-a11y ([abd7be8](https://github.com/gomah/bulmil/commit/abd7be8))
+* **deps:** upgrade dependencies ([6860981](https://github.com/gomah/bulmil/commit/6860981))
+* **deps:** upgrade dependencies ([043ca40](https://github.com/gomah/bulmil/commit/043ca40))
+* **deps-dev:** bump @typescript-eslint/eslint-plugin ([800ee9b](https://github.com/gomah/bulmil/commit/800ee9b))
+* **deps-dev:** bump @typescript-eslint/parser from 2.6.0 to 2.6.1 ([ce259c5](https://github.com/gomah/bulmil/commit/ce259c5))
+
+
+### Styling
+
+* **config:** remove spaces ([6973034](https://github.com/gomah/bulmil/commit/6973034))
+
 ### [0.0.8](https://github.com/gomah/bulmil/compare/v0.0.7...v0.0.8) (2019-10-30)
 
 
