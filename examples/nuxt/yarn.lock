@@ -1770,9 +1770,9 @@ bulma-scss@^0.8.0:
   integrity sha512-fm/wMyR5zNSBR3YrptGgPFSQOmGcUWYQabqB9jZQgrk6gBUwYZokiU4Uvgb4lfXxqIIKroCvM5lz/CMYXR0oVg==
 
 bulmil@latest:
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/bulmil/-/bulmil-0.0.7.tgz#450400193f830c766d4322f0223b5fc6e933ad19"
-  integrity sha512-/wQ73eJdvNFY5r/JZjmEVWvj20UKHTzspkXpki3Z2IVjcqeUlJbR+WZM4YptNg3SFB3nGbvceLsVN6px8r6jbg==
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/bulmil/-/bulmil-0.0.10.tgz#427e9c7dedcb9195fa5f79bd1efd6dd13115e2e6"
+  integrity sha512-1tycvTsvyA+RKR1X7okmPdnZphXTLOMMwEJHr26XlbQP3CnKpZCoePSH2k0ozWzEW2VPJXF8kafBa5AfpkpZ4g==
   dependencies:
     bulma-divider "^0.2.0"
     bulma-scss "^0.8.0"
