@@ -23,7 +23,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['../../css/bulmil.css'],
+  css: ['bulmil/dist/css/bulmil.css'],
   /*
    ** Plugins to load before mounting the App
    */
