@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.10](https://github.com/gomah/bulmil/compare/v0.0.9...v0.0.10) (2019-11-13)
+
+
+### Chore
+
+* **deps:** upgrade dependencies ([7ed5d1f](https://github.com/gomah/bulmil/commit/7ed5d1f))
+* **deps-dev:** bump @typescript-eslint/eslint-plugin ([690c8cb](https://github.com/gomah/bulmil/commit/690c8cb))
+* **deps-dev:** bump @typescript-eslint/parser from 2.6.1 to 2.7.0 ([d2a3c42](https://github.com/gomah/bulmil/commit/d2a3c42))
+* **examples:** update nuxt example for 0.0.10 ([a1cd936](https://github.com/gomah/bulmil/commit/a1cd936))
+
+
+### Internal
+
+* **build:** output css in dist/ ([7e32910](https://github.com/gomah/bulmil/commit/7e32910))
+
 ### [0.0.9](https://github.com/gomah/bulmil/compare/v0.0.8...v0.0.9) (2019-11-11)
 
 
