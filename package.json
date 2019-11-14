@@ -120,6 +120,7 @@
   },
   "dependencies": {
     "bulma-divider": "^0.2.0",
-    "bulma-scss": "^0.8.0"
+    "bulma-scss": "^0.8.0",
+    "bulma-switch": "^2.0.0"
   }
 }

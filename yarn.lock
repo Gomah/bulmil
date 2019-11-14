@@ -3298,6 +3298,11 @@ bulma-scss@^0.8.0:
   resolved "https://registry.yarnpkg.com/bulma-scss/-/bulma-scss-0.8.0.tgz#d5e33bc2848e1735c8c4738af9c39f30e1dcf45b"
   integrity sha512-fm/wMyR5zNSBR3YrptGgPFSQOmGcUWYQabqB9jZQgrk6gBUwYZokiU4Uvgb4lfXxqIIKroCvM5lz/CMYXR0oVg==
 
+bulma-switch@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/bulma-switch/-/bulma-switch-2.0.0.tgz#7a187cd1bb8073e9a542478d936b89315f1ffcd8"
+  integrity sha512-myD38zeUfjmdduq+pXabhJEe3x2hQP48l/OI+Y0fO3HdDynZUY/VJygucvEAJKRjr4HxD5DnEm4yx+oDOBXpAA==
+
 bytes@3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/bytes/-/bytes-3.1.0.tgz#f6cf7933a360e0588fa9fde85651cdc7f805d1f6"

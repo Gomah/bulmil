@@ -663,6 +663,40 @@ export namespace Components {
     */
     'value': string | number;
   }
+  interface BmSwitch {
+    /**
+    * Checked
+    */
+    'checked': boolean;
+    /**
+    * CSS Classes
+    */
+    'class': string;
+    /**
+    * Color
+    */
+    'color': 'is-success' | 'is-warning' | 'is-danger' | 'is-info';
+    /**
+    * Disabled
+    */
+    'disabled': boolean;
+    /**
+    * Outlined
+    */
+    'isOutlined': boolean;
+    /**
+    * Rounded
+    */
+    'isRounded': boolean;
+    /**
+    * Thin
+    */
+    'isThin': boolean;
+    /**
+    * Size
+    */
+    'size': 'is-small' | 'is-medium' | 'is-large';
+  }
   interface BmTable {
     /**
     * CSS Classes
@@ -1013,6 +1047,12 @@ declare global {
     new (): HTMLBmSelectElement;
   };
 
+  interface HTMLBmSwitchElement extends Components.BmSwitch, HTMLStencilElement {}
+  var HTMLBmSwitchElement: {
+    prototype: HTMLBmSwitchElement;
+    new (): HTMLBmSwitchElement;
+  };
+
   interface HTMLBmTableElement extends Components.BmTable, HTMLStencilElement {}
   var HTMLBmTableElement: {
     prototype: HTMLBmTableElement;
@@ -1076,6 +1116,7 @@ declare global {
     'bm-radio': HTMLBmRadioElement;
     'bm-section': HTMLBmSectionElement;
     'bm-select': HTMLBmSelectElement;
+    'bm-switch': HTMLBmSwitchElement;
     'bm-table': HTMLBmTableElement;
     'bm-tabs': HTMLBmTabsElement;
     'bm-tag': HTMLBmTagElement;
@@ -1738,6 +1779,40 @@ declare namespace LocalJSX {
     */
     'value'?: string | number;
   }
+  interface BmSwitch {
+    /**
+    * Checked
+    */
+    'checked'?: boolean;
+    /**
+    * CSS Classes
+    */
+    'class'?: string;
+    /**
+    * Color
+    */
+    'color'?: 'is-success' | 'is-warning' | 'is-danger' | 'is-info';
+    /**
+    * Disabled
+    */
+    'disabled'?: boolean;
+    /**
+    * Outlined
+    */
+    'isOutlined'?: boolean;
+    /**
+    * Rounded
+    */
+    'isRounded'?: boolean;
+    /**
+    * Thin
+    */
+    'isThin'?: boolean;
+    /**
+    * Size
+    */
+    'size'?: 'is-small' | 'is-medium' | 'is-large';
+  }
   interface BmTable {
     /**
     * CSS Classes
@@ -1920,6 +1995,7 @@ declare namespace LocalJSX {
     'bm-radio': BmRadio;
     'bm-section': BmSection;
     'bm-select': BmSelect;
+    'bm-switch': BmSwitch;
     'bm-table': BmTable;
     'bm-tabs': BmTabs;
     'bm-tag': BmTag;
@@ -1967,6 +2043,7 @@ declare module "@stencil/core" {
       'bm-radio': LocalJSX.BmRadio & JSXBase.HTMLAttributes<HTMLBmRadioElement>;
       'bm-section': LocalJSX.BmSection & JSXBase.HTMLAttributes<HTMLBmSectionElement>;
       'bm-select': LocalJSX.BmSelect & JSXBase.HTMLAttributes<HTMLBmSelectElement>;
+      'bm-switch': LocalJSX.BmSwitch & JSXBase.HTMLAttributes<HTMLBmSwitchElement>;
       'bm-table': LocalJSX.BmTable & JSXBase.HTMLAttributes<HTMLBmTableElement>;
       'bm-tabs': LocalJSX.BmTabs & JSXBase.HTMLAttributes<HTMLBmTabsElement>;
       'bm-tag': LocalJSX.BmTag & JSXBase.HTMLAttributes<HTMLBmTagElement>;
