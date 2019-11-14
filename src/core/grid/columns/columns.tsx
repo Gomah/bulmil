@@ -1,4 +1,4 @@
-import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
+import { Component, Prop, h, JSX, ComponentInterface, Host } from '@stencil/core';
 
 @Component({
   tag: 'bm-columns',
@@ -47,7 +47,7 @@ export class Columns implements ComponentInterface {
 
   render(): JSX.Element {
     return (
-      <div
+      <Host
         class={{
           columns: true,
           'is-centered': this.isCentered,
@@ -60,9 +60,7 @@ export class Columns implements ComponentInterface {
           [this.gaps]: Boolean(this.gaps),
           [this.class]: Boolean(this.class),
         }}
-      >
-        <slot />
-      </div>
+      />
     );
   }
 }

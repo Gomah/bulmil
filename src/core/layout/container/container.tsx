@@ -1,4 +1,4 @@
-import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
+import { Component, Prop, h, JSX, ComponentInterface, Host } from '@stencil/core';
 
 @Component({
   tag: 'bm-container',
@@ -22,16 +22,14 @@ export class Container implements ComponentInterface {
 
   render(): JSX.Element {
     return (
-      <div
+      <Host
         class={{
           container: true,
           'is-fluid': this.isFluid,
           [this.breakpoint]: Boolean(this.breakpoint),
           [this.class]: Boolean(this.class),
         }}
-      >
-        <slot />
-      </div>
+      />
     );
   }
 }

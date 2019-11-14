@@ -1,4 +1,4 @@
-import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
+import { Component, Prop, h, JSX, ComponentInterface, Host } from '@stencil/core';
 
 @Component({
   tag: 'bm-column',
@@ -21,15 +21,14 @@ export class Column implements ComponentInterface {
 
   render(): JSX.Element {
     return (
-      <div
+      <Host
         class={{
           column: true,
           'is-narrow': this.isNarrow && typeof this.isNarrow === 'boolean',
+          [this.sizes]: Boolean(this.sizes),
           [this.class]: Boolean(this.class),
         }}
-      >
-        <slot />
-      </div>
+      />
     );
   }
 }

@@ -17,17 +17,13 @@ export class Section implements ComponentInterface {
 
   render(): JSX.Element {
     return (
-      <Host>
-        <div
-          class={{
-            section: true,
-            [this.size]: Boolean(this.size),
-            [this.class]: Boolean(this.class),
-          }}
-        >
-          <slot />
-        </div>
-      </Host>
+      <Host
+        class={{
+          section: true,
+          [this.size]: Boolean(this.size),
+          [this.class]: Boolean(this.class),
+        }}
+      />
     );
   }
 }
