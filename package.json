@@ -69,7 +69,7 @@
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
     "@stencil/angular-output-target": "^0.0.1",
-    "@stencil/core": "^1.8.0",
+    "@stencil/core": "^1.8.1",
     "@stencil/eslint-plugin": "^0.2.1",
     "@stencil/postcss": "^1.0.1",
     "@stencil/react-output-target": "^0.0.1",
