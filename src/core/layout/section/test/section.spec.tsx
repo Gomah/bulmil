@@ -10,10 +10,8 @@ it('Should render properly', async (): Promise<void> => {
   });
 
   expect(page.root).toEqualHtml(`
-    <bm-section size="is-large">
-      <div class="section is-large">
-        <p>Hello, I'm in a section!</p>
-      </div>
+    <bm-section size="is-large" class="section is-large">
+      <p>Hello, I'm in a section!</p>
     </bm-section>
   `);
 });

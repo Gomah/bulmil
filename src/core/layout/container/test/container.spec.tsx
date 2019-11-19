@@ -10,10 +10,8 @@ it('Should render properly', async (): Promise<void> => {
   });
 
   expect(page.root).toEqualHtml(`
-    <bm-container is-fluid>
-      <div class="container is-fluid">
-        <p>Hello, I'm in a container!</p>
-      </div>
+    <bm-container is-fluid  class="container is-fluid">
+      <p>Hello, I'm in a container!</p>
     </bm-container>
   `);
 });

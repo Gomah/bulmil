@@ -10,10 +10,8 @@ it('Should render properly', async (): Promise<void> => {
   });
 
   expect(page.root).toEqualHtml(`
-    <bm-column>
-      <div class="column">
-        Hello, I'm in a column!
-      </div>
+    <bm-column class="column">
+      Hello, I'm in a column!
     </bm-column>
   `);
 });

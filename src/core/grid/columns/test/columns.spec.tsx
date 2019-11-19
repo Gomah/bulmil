@@ -11,14 +11,10 @@ it('Should render properly', async (): Promise<void> => {
   });
 
   expect(page.root).toEqualHtml(`
-    <bm-columns>
-      <div class="columns">
-        <bm-column>
-          <div class="column">
-            Hello, I'm in a column!
-          </div>
-        </bm-column>
-      </div>
+    <bm-columns class="columns">
+      <bm-column  class="column">
+        Hello, I'm in a column!
+      </bm-column>
     </bm-columns>
   `);
 });
