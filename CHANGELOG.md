@@ -2,6 +2,36 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.11](https://github.com/gomah/bulmil/compare/v0.0.10...v0.0.11) (2019-11-19)
+
+
+### Features
+
+* **components:** add switch component ([1998909](https://github.com/gomah/bulmil/commit/199890964473dabaa3512300faf936cde810d8c3))
+
+
+### Bug Fixes
+
+* **components:** use Host for grid & layouts ([e521689](https://github.com/gomah/bulmil/commit/e52168931fd78ff74df5016b41973480aeae390a))
+
+
+### Chore
+
+* **deps:** upgrade dependencies ([a8bded7](https://github.com/gomah/bulmil/commit/a8bded7e774b4534d1474f86d98b6bddba7e2a5b))
+* **deps-dev:** bump @stencil/core from 1.8.0 to 1.8.1 ([16a1f1d](https://github.com/gomah/bulmil/commit/16a1f1dadf27467a5db02c3c6c03226f4095f999))
+* **deps-dev:** bump @types/node from 12.12.7 to 12.12.8 ([b581e94](https://github.com/gomah/bulmil/commit/b581e94ee175ffa86dfd1743de55031b10fd3737))
+* **deps-dev:** bump @typescript-eslint/eslint-plugin ([85063bc](https://github.com/gomah/bulmil/commit/85063bca50e1ef614edd81a5ab217268c490be8d))
+* **deps-dev:** bump @typescript-eslint/parser from 2.7.0 to 2.8.0 ([a305c5b](https://github.com/gomah/bulmil/commit/a305c5b0737b91e702a1e879c6789eacfce09343))
+* **deps-dev:** bump eslint-config-prettier from 6.5.0 to 6.6.0 ([56ea591](https://github.com/gomah/bulmil/commit/56ea591b6e86f0225a3a569e39bf43af7b1c911f))
+* **deps-dev:** bump husky from 3.0.9 to 3.1.0 ([5f96bd2](https://github.com/gomah/bulmil/commit/5f96bd279f38a3520d2adcb1414cf4d2a106c545))
+* **deps-dev:** bump standard-version from 7.0.0 to 7.0.1 ([345d18b](https://github.com/gomah/bulmil/commit/345d18b3770b12f4905e17424b13c267c768056b))
+* **example:** fix nuxt example ([43a88b6](https://github.com/gomah/bulmil/commit/43a88b6b6fdebb4b04ed87076884105de3d76b36))
+
+
+### Internal
+
+* **components:** fix tests for <Host /> components ([d8cc705](https://github.com/gomah/bulmil/commit/d8cc705848ba98360eaf66fb762893a1795591f9))
+
 ### [0.0.10](https://github.com/gomah/bulmil/compare/v0.0.9...v0.0.10) (2019-11-13)
 
 
