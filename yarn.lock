@@ -1337,16 +1337,16 @@
     prop-types "^15.7.2"
     util-deprecate "^1.0.2"
 
-"@storybook/addon-storysource@^5.2.7":
-  version "5.2.7"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-storysource/-/addon-storysource-5.2.7.tgz#4c94b7f5c7514f444ef1f765d4d559692f0b3c07"
-  integrity sha512-9tF+dHEZgSbSEYCMsw9loPmbhPeN1/3dEdIpertB91JrTxOBkhfD4AXVS3GDgqah2l39tCwAbcw3P0jDzVWIyg==
+"@storybook/addon-storysource@^5.2.8":
+  version "5.2.8"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-storysource/-/addon-storysource-5.2.8.tgz#5527c6ef022e0b284a18de7ea907645390965ea7"
+  integrity sha512-Lse1nIruOU01DQqfeBSoh1ha79tR8M879Juzmp439P3c4PTqc8i/p8dazE5n8H5kgWijfc8tuPHmzZT43l/yXQ==
   dependencies:
-    "@storybook/addons" "5.2.7"
-    "@storybook/components" "5.2.7"
-    "@storybook/router" "5.2.7"
-    "@storybook/source-loader" "5.2.7"
-    "@storybook/theming" "5.2.7"
+    "@storybook/addons" "5.2.8"
+    "@storybook/components" "5.2.8"
+    "@storybook/router" "5.2.8"
+    "@storybook/source-loader" "5.2.8"
+    "@storybook/theming" "5.2.8"
     core-js "^3.0.1"
     estraverse "^4.2.0"
     loader-utils "^1.2.3"
@@ -1727,13 +1727,14 @@
     memoizerific "^1.11.3"
     qs "^6.6.0"
 
-"@storybook/source-loader@5.2.7":
-  version "5.2.7"
-  resolved "https://registry.yarnpkg.com/@storybook/source-loader/-/source-loader-5.2.7.tgz#680e610d4682a0c427a86297d5edea42b8fb62f9"
-  integrity sha512-N/nvrCFwjU3s6uXO78TZVrmMEMk1OfnXwl0OFA1Dl115KDtNFDxYPOqSewy5JF+3GnaRfMow29pYeOwJaiUb8A==
+"@storybook/source-loader@5.2.8":
+  version "5.2.8"
+  resolved "https://registry.yarnpkg.com/@storybook/source-loader/-/source-loader-5.2.8.tgz#f8fb5c090e386749b058686f52ec5dedea538185"
+  integrity sha512-4PHR6IO4VkOof/59wPsKkQah1s+fyeccNPetBlxGKfhis+T7HNQEh9Tn7yFkhQ44DY1UhKDBRaAmNEjEKkFpQA==
   dependencies:
-    "@storybook/addons" "5.2.7"
-    "@storybook/router" "5.2.7"
+    "@storybook/addons" "5.2.8"
+    "@storybook/client-logger" "5.2.8"
+    "@storybook/router" "5.2.8"
     core-js "^3.0.1"
     estraverse "^4.2.0"
     global "^4.3.2"
@@ -9368,12 +9369,7 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@^1.16.4:
-  version "1.18.2"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.18.2.tgz#6823e7c5900017b4bd3acf46fe9ac4b4d7bda9ea"
-  integrity sha512-OeHeMc0JhFE9idD4ZdtNibzY0+TPHSpSSb9h8FqtP+YnoZZ1sl8Vc9b1sasjfymH3SonAF4QcA2+mzHPhMvIiw==
-
-prettier@^1.19.1:
+prettier@^1.16.4, prettier@^1.19.1:
   version "1.19.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.19.1.tgz#f7d7f5ff8a9cd872a7be4ca142095956a60797cb"
   integrity sha512-s7PoyDv/II1ObgQunCbB9PdLmUcBZcnWOcxDh7O0N/UwDEsHyqkW+Qh28jW+mVuCdx7gLB0BotYI1Y6uI9iyew==
