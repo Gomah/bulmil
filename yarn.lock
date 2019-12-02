@@ -1318,18 +1318,18 @@
     react-lifecycles-compat "^3.0.4"
     react-select "^3.0.0"
 
-"@storybook/addon-notes@^5.2.7":
-  version "5.2.7"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-notes/-/addon-notes-5.2.7.tgz#0ba055c83a8208f346685e51caa313dca94ed460"
-  integrity sha512-v6NuGEN1qr7bgObrp2fY3GYsmDqwyT6tB1hz1+/O+HqiLGGx91fqmTJTrMhXIt0b6uPW7W+kLL4cNcDuWE3xEQ==
+"@storybook/addon-notes@^5.2.8":
+  version "5.2.8"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-notes/-/addon-notes-5.2.8.tgz#9a4c90696aae64626e892b1a0f647ae79bab56a7"
+  integrity sha512-6we9WUD4cQzGhy9yej7ob+5SWk5OZ2BC1PWEcZOR/GcgYSWNk8cNNnpqAlFqB+DAQk5yawZ41MhQom0NT6LWOw==
   dependencies:
-    "@storybook/addons" "5.2.7"
-    "@storybook/api" "5.2.7"
-    "@storybook/client-logger" "5.2.7"
-    "@storybook/components" "5.2.7"
-    "@storybook/core-events" "5.2.7"
-    "@storybook/router" "5.2.7"
-    "@storybook/theming" "5.2.7"
+    "@storybook/addons" "5.2.8"
+    "@storybook/api" "5.2.8"
+    "@storybook/client-logger" "5.2.8"
+    "@storybook/components" "5.2.8"
+    "@storybook/core-events" "5.2.8"
+    "@storybook/router" "5.2.8"
+    "@storybook/theming" "5.2.8"
     core-js "^3.0.1"
     global "^4.3.2"
     markdown-to-jsx "^6.10.3"
@@ -1742,7 +1742,7 @@
     prop-types "^15.7.2"
     regenerator-runtime "^0.12.1"
 
-"@storybook/theming@5.2.7", "@storybook/theming@^5.2.7":
+"@storybook/theming@5.2.7":
   version "5.2.7"
   resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-5.2.7.tgz#8db0f7e1b2c4c17befbf4bcd7c60f75ff4369105"
   integrity sha512-MroOG2lUB8dPZu8ZKwAuP8NV4ozG/8FpkWHZ/1HtBAAtGCvVNrXuSKIvI/pabfJaJvms+1uh95K7riY8t7CUWw==
@@ -1760,7 +1760,7 @@
     prop-types "^15.7.2"
     resolve-from "^5.0.0"
 
-"@storybook/theming@5.2.8":
+"@storybook/theming@5.2.8", "@storybook/theming@^5.2.7":
   version "5.2.8"
   resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-5.2.8.tgz#a4c9e0e9a5789c1aa71e4fcb7a8ee86efe3dadcf"
   integrity sha512-rGb66GkXb0jNJMH8UQ3Ru4FL+m1x0+UdxM8a8HSE/qb1GMv2qOwjVETfAL6nVL9u6ZmrtbhHoero4f6xDwZdRg==
