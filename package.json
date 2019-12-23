@@ -115,7 +115,7 @@
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-prettier": "^1.1.2",
     "stylelint-scss": "^3.13.0",
-    "webpack": "^4.41.3",
+    "webpack": "^4.41.4",
     "workbox-build": "^4.3.1"
   },
   "dependencies": {
