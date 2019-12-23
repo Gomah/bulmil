@@ -65,7 +65,7 @@
     "test": "yarn run test:lint:ts && yarn run test:lint:scss && yarn run test:stencil"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.4",
+    "@babel/core": "^7.7.7",
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
     "@stencil/angular-output-target": "^0.0.1",
