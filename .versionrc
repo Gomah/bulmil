@@ -7,6 +7,6 @@
     { "type": "style", "section": "Styling" },
     { "type": "refactor", "section": "Internal" },
     { "type": "perf", "section": "Internal" },
-    { "type": "test", "section": "Internal"}
+    { "type": "test", "section": "Internal" }
   ]
 }

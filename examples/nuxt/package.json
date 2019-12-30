@@ -12,13 +12,13 @@
     "test": "jest"
   },
   "dependencies": {
-    "bulmil": "../..",
-    "nuxt": "^2.10.2",
+    "bulmil": "latest",
+    "nuxt": "^2.11.0",
     "nuxt-stencil": "^0.1.1"
   },
   "devDependencies": {
-    "eslint-config-prettier": "^6.7.0",
-    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-prettier": "^3.1.2",
     "prettier": "^1.19.1"
   }
 }
