@@ -2,6 +2,66 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.12](https://github.com/gomah/bulmil/compare/v0.0.11...v0.0.12) (2019-12-30)
+
+
+### Internal
+
+* **deps:** lock @types/puppeteer to 1.20.3 ([72a042e](https://github.com/gomah/bulmil/commit/72a042e731fcb8a787700475ec5ba0f5836852ff))
+
+
+### Chore
+
+* **deps:** [security] bump handlebars from 4.1.2 to 4.5.3 ([48a72e5](https://github.com/gomah/bulmil/commit/48a72e5958f0106a454a55fcbc3a682b79cc21d0))
+* **deps:** upgrade dependencies ([d06f2ec](https://github.com/gomah/bulmil/commit/d06f2ec87f7155aa2752b3cf543c8793ac1ff408))
+* **deps:** upgrade dependencies ([2b456b8](https://github.com/gomah/bulmil/commit/2b456b8d73eb5745abe8f5efa38d27e0d0bf8e28))
+* **deps-dev:** bump @babel/core from 7.7.2 to 7.7.4 ([08aac96](https://github.com/gomah/bulmil/commit/08aac9675b6c6731755f2abf66e4115f4b6b6d32))
+* **deps-dev:** bump @babel/core from 7.7.4 to 7.7.7 ([73988b1](https://github.com/gomah/bulmil/commit/73988b10c2619a1d0957ea958bc2d2605fcaf4af))
+* **deps-dev:** bump @stencil/angular-output-target from 0.0.1 to 0.0.2 ([bbae245](https://github.com/gomah/bulmil/commit/bbae2456147d1fbccc541ae3171c165839eb1824))
+* **deps-dev:** bump @stencil/core from 1.8.1 to 1.8.2 ([53e89f0](https://github.com/gomah/bulmil/commit/53e89f02de1e996247b061c71709192aafd7febb))
+* **deps-dev:** bump @stencil/core from 1.8.2 to 1.8.3 ([1ee4ebb](https://github.com/gomah/bulmil/commit/1ee4ebbaff63f3a796f1ee27f9b098e31dceac87))
+* **deps-dev:** bump @storybook/addon-a11y from 5.2.7 to 5.2.8 ([1227414](https://github.com/gomah/bulmil/commit/12274145334979e4a6ab61cda2165d48c52741ff))
+* **deps-dev:** bump @storybook/addon-actions from 5.2.7 to 5.2.8 ([08e019a](https://github.com/gomah/bulmil/commit/08e019a395d2b7252f24d15a8a3c464b66508182))
+* **deps-dev:** bump @storybook/addon-centered from 5.2.7 to 5.2.8 ([c8e74d0](https://github.com/gomah/bulmil/commit/c8e74d08c7a0c38562c0773444e888346dde72eb))
+* **deps-dev:** bump @storybook/addon-knobs from 5.2.7 to 5.2.8 ([dd4fe1a](https://github.com/gomah/bulmil/commit/dd4fe1aa28223f808fd44769169cecc25482384c))
+* **deps-dev:** bump @storybook/addon-notes from 5.2.7 to 5.2.8 ([c1eb8b0](https://github.com/gomah/bulmil/commit/c1eb8b08462acc3805042eb58986e8db29b6908c))
+* **deps-dev:** bump @storybook/addon-storysource from 5.2.7 to 5.2.8 ([604a294](https://github.com/gomah/bulmil/commit/604a2942aa855628aadbf0047ddad71306b6fbb9))
+* **deps-dev:** bump @storybook/addon-viewport from 5.2.7 to 5.2.8 ([8aba77d](https://github.com/gomah/bulmil/commit/8aba77d8c8f97bc138752b32f28286ffa134cc57))
+* **deps-dev:** bump @storybook/html from 5.2.7 to 5.2.8 ([8f8a1d8](https://github.com/gomah/bulmil/commit/8f8a1d8e9ad4c27ca874acca5dec71be7a48e40d))
+* **deps-dev:** bump @types/jest from 24.0.23 to 24.0.24 ([a233097](https://github.com/gomah/bulmil/commit/a23309729790665a8c8bfc91ae15a081f3885743))
+* **deps-dev:** bump @types/node from 12.12.14 to 12.12.15 ([5e97c00](https://github.com/gomah/bulmil/commit/5e97c008ddf30e861cc4e7c6cf834098b371d2bc))
+* **deps-dev:** bump @types/node from 12.12.15 to 12.12.18 ([2b868db](https://github.com/gomah/bulmil/commit/2b868dbbce2026919e181de1379246773d9182ac))
+* **deps-dev:** bump @types/node from 12.12.18 to 13.1.0 ([5622f66](https://github.com/gomah/bulmil/commit/5622f66fa93a6d0eacb09eb3b0140130ed566307))
+* **deps-dev:** bump @types/node from 12.12.9 to 12.12.12 ([4aa797e](https://github.com/gomah/bulmil/commit/4aa797ece9778f7915c2a6d09b150ba0dd1b5ba8))
+* **deps-dev:** bump @types/node from 13.1.1 to 13.1.2 ([c1fbfb3](https://github.com/gomah/bulmil/commit/c1fbfb3c8d17643ed6e3260014da6242eece91c2))
+* **deps-dev:** bump @types/puppeteer from 1.20.2 to 2.0.0 ([3c116c1](https://github.com/gomah/bulmil/commit/3c116c15eb8e4e81eb7d3d48b540c029a47ca862))
+* **deps-dev:** bump @typescript-eslint/eslint-plugin ([bfd329c](https://github.com/gomah/bulmil/commit/bfd329c3f50d619c83751895f281adae24a64865))
+* **deps-dev:** bump @typescript-eslint/eslint-plugin ([13d4cfe](https://github.com/gomah/bulmil/commit/13d4cfec258979c075ce230194ca4594d2761443))
+* **deps-dev:** bump @typescript-eslint/eslint-plugin ([35930b7](https://github.com/gomah/bulmil/commit/35930b70c989348ec7b01ad5ffe6cb3e4180e7f6))
+* **deps-dev:** bump @typescript-eslint/eslint-plugin ([de8b534](https://github.com/gomah/bulmil/commit/de8b5343a6d1e6e9d3bedded1601990fe4debb91))
+* **deps-dev:** bump @typescript-eslint/eslint-plugin ([ddc6ba4](https://github.com/gomah/bulmil/commit/ddc6ba42586e29550b0480344afc9032297e7af1))
+* **deps-dev:** bump @typescript-eslint/eslint-plugin ([9b85791](https://github.com/gomah/bulmil/commit/9b85791da1a73e2d7b319736b7d777064db71250))
+* **deps-dev:** bump @typescript-eslint/parser from 2.10.0 to 2.11.0 ([674fabb](https://github.com/gomah/bulmil/commit/674fabbf673ab43549b0c06a56646b57a06594ca))
+* **deps-dev:** bump @typescript-eslint/parser from 2.11.0 to 2.12.0 ([f14387d](https://github.com/gomah/bulmil/commit/f14387d95932b304cfce537488594219e457567f))
+* **deps-dev:** bump @typescript-eslint/parser from 2.12.0 to 2.13.0 ([9ed3699](https://github.com/gomah/bulmil/commit/9ed36993543949e06b1389a58a8e55993a94fc98))
+* **deps-dev:** bump @typescript-eslint/parser from 2.13.0 to 2.14.0 ([e9f0414](https://github.com/gomah/bulmil/commit/e9f0414c1b0a5e38248b28cdaeb67cb018f749d7))
+* **deps-dev:** bump @typescript-eslint/parser from 2.8.0 to 2.9.0 ([54695a9](https://github.com/gomah/bulmil/commit/54695a92fa369ea62f01ade3023d7fb2fd9af134))
+* **deps-dev:** bump @typescript-eslint/parser from 2.9.0 to 2.10.0 ([8790732](https://github.com/gomah/bulmil/commit/879073247a9f3e645488901cf17d443106a525b7))
+* **deps-dev:** bump css-loader from 3.2.0 to 3.2.1 ([2981119](https://github.com/gomah/bulmil/commit/2981119bfa2b30a60d480373bbe600fdd09d8b1e))
+* **deps-dev:** bump css-loader from 3.2.1 to 3.3.0 ([c754952](https://github.com/gomah/bulmil/commit/c754952067391c18aef37b70a286d31ead9ad918))
+* **deps-dev:** bump css-loader from 3.3.0 to 3.3.2 ([3e596d9](https://github.com/gomah/bulmil/commit/3e596d9fba09f9b8dc09909d49ca4472e2d07d02))
+* **deps-dev:** bump css-loader from 3.3.2 to 3.4.0 ([90c6997](https://github.com/gomah/bulmil/commit/90c6997ac982b0526b283ff20284bc62998b96a0))
+* **deps-dev:** bump eslint from 6.6.0 to 6.7.1 ([cbd056a](https://github.com/gomah/bulmil/commit/cbd056a800e4dda21823573cb224a8887b77455d))
+* **deps-dev:** bump eslint from 6.7.2 to 6.8.0 ([0562249](https://github.com/gomah/bulmil/commit/0562249a9c34ad940588f11c29aa5f33c510db86))
+* **deps-dev:** bump eslint-plugin-prettier from 3.1.1 to 3.1.2 ([c4a963c](https://github.com/gomah/bulmil/commit/c4a963c0d96954a3702711d85538cda6a14e9417))
+* **deps-dev:** bump style-loader from 1.0.1 to 1.1.1 ([d0f2bf6](https://github.com/gomah/bulmil/commit/d0f2bf6ebe64c798c2a2d15d182c2b28cdbddfa8))
+* **deps-dev:** bump stylelint-prettier from 1.1.1 to 1.1.2 ([1c96352](https://github.com/gomah/bulmil/commit/1c96352b807cc6e05a268442b857a347f087385e))
+* **deps-dev:** bump stylelint-scss from 3.12.1 to 3.13.0 ([e9dea4c](https://github.com/gomah/bulmil/commit/e9dea4cdd2e104dd8f2ec1229d2e7dc72f5365a2))
+* **deps-dev:** bump webpack from 4.41.2 to 4.41.3 ([5759161](https://github.com/gomah/bulmil/commit/57591611c9a57732603f07edeca4727b4bf2b34f))
+* **deps-dev:** bump webpack from 4.41.3 to 4.41.4 ([9ed824f](https://github.com/gomah/bulmil/commit/9ed824f5b7dad4e9b1495651ab666c33781679a4))
+* **examples:** use local bulmil ([061e7a9](https://github.com/gomah/bulmil/commit/061e7a91e5ea5a3b7cab975087236bcd5b775b60))
+* **stylelint:** extend stylelint-a11y config ([5387f26](https://github.com/gomah/bulmil/commit/5387f26835cd7cc6aa1ae6cf0cde5508697af603))
+
 ### [0.0.11](https://github.com/gomah/bulmil/compare/v0.0.10...v0.0.11) (2019-11-19)
 
 
