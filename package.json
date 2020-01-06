@@ -93,7 +93,7 @@
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.0.6",
     "clean-css-cli": "^4.3.0",
-    "css-loader": "^3.4.0",
+    "css-loader": "^3.4.1",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-prettier": "^3.1.2",
