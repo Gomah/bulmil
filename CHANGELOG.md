@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.13](https://github.com/gomah/bulmil/compare/v0.0.12...v0.0.13) (2020-01-07)
+
+
+### Chore
+
+* **deps-dev:** bump @commitlint/cli from 8.2.0 to 8.3.4 ([9faa9fc](https://github.com/gomah/bulmil/commit/9faa9fc75f44f359b8b158cfca5e1a9c2abc79c1))
+* **deps-dev:** bump @commitlint/config-conventional ([2fc5387](https://github.com/gomah/bulmil/commit/2fc5387e69a8363db6693b5cc1e121cee130fcaa))
+* **deps-dev:** bump @stencil/core from 1.8.3 to 1.8.4 ([d6dae20](https://github.com/gomah/bulmil/commit/d6dae20bec1f6afbd3cebbdd03aa3af618fc4e3e))
+* **deps-dev:** bump @types/node from 13.1.2 to 13.1.4 ([da2ab34](https://github.com/gomah/bulmil/commit/da2ab34007c98c3f31fea0bbcad550a64f6dfb9c))
+* **deps-dev:** bump @typescript-eslint/eslint-plugin ([a061390](https://github.com/gomah/bulmil/commit/a061390990f2d2452eeff8c4be71bd06fefe926b))
+* **deps-dev:** bump @typescript-eslint/parser from 2.14.0 to 2.15.0 ([f1e9eca](https://github.com/gomah/bulmil/commit/f1e9ecaeec42dfa36c838ff14fe6b435f8b418f7))
+* **deps-dev:** bump css-loader from 3.4.0 to 3.4.1 ([e209fa8](https://github.com/gomah/bulmil/commit/e209fa8a1a5ea667e1d09963f0f7fd3b64331ed6))
+
 ### [0.0.12](https://github.com/gomah/bulmil/compare/v0.0.11...v0.0.12) (2019-12-30)
 
 
