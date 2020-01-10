@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.14](https://github.com/gomah/bulmil/compare/v0.0.13...v0.0.14) (2020-01-10)
+
+
+### Chore
+
+* **deps:** bump @stencil/core ([c7c9c0a](https://github.com/gomah/bulmil/commit/c7c9c0ad4cff37fd37f91bb531502e208060c042))
+
 ### [0.0.13](https://github.com/gomah/bulmil/compare/v0.0.12...v0.0.13) (2020-01-07)
 
 

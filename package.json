@@ -1,6 +1,6 @@
 {
   "name": "bulmil",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "repository": "git@github.com:gomah/bulmil.git",
   "author": "Gomah <hi@gomah.fr>",
   "license": "MIT",
@@ -86,7 +86,7 @@
     "@types/autoprefixer": "^9.6.1",
     "@types/jest": "^24.0.25",
     "@types/node": "^13.1.6",
-    "@types/puppeteer": "2.0.0",
+    "@types/puppeteer": "1.20.3",
     "@typescript-eslint/eslint-plugin": "^2.15.0",
     "@typescript-eslint/parser": "^2.15.0",
     "autoprefixer": "^9.7.3",
