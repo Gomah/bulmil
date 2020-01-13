@@ -82,7 +82,7 @@
     "@storybook/addon-storysource": "^5.2.8",
     "@storybook/addon-viewport": "^5.2.8",
     "@storybook/html": "^5.2.8",
-    "@storybook/theming": "^5.2.8",
+    "@storybook/theming": "^5.3.2",
     "@types/autoprefixer": "^9.6.1",
     "@types/jest": "^24.0.25",
     "@types/node": "^13.1.6",
