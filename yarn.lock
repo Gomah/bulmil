@@ -1777,10 +1777,10 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
   integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
 
-"@types/puppeteer@2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@types/puppeteer/-/puppeteer-2.0.0.tgz#82c04f93367e2d3396e371a71be1167332148838"
-  integrity sha512-QPHXIcaPcijMbvizoM7PRL97Rm+aM8J2DmgTz2tt79b15PqbyeaCppYonvPLHQ/Q5ea92BUHDpv4bsqtiTy8kQ==
+"@types/puppeteer@1.20.3":
+  version "1.20.3"
+  resolved "https://registry.yarnpkg.com/@types/puppeteer/-/puppeteer-1.20.3.tgz#9cccd94b649237136c02a41c21f959d9db8e3b41"
+  integrity sha512-U1H7E4wHDsPe2s7wa2fpUD4kPYmu3n4hYRmlFK4WgKQxXE1ctY2h9Exely8GXs7743gLvrnzuX7aJuyG0SEMIQ==
   dependencies:
     "@types/node" "*"
 
@@ -6135,10 +6135,10 @@ https-proxy-agent@^2.2.1:
     agent-base "^4.3.0"
     debug "^3.1.0"
 
-husky@^4.0.5:
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/husky/-/husky-4.0.5.tgz#c089bc249585b7c6ba54542e13b570402bae8d6f"
-  integrity sha512-SU78iMkYCsGQh4+9LXfLr1cKPHl8kmZ/upMKcGIj2DinNf4PQtVfvauIP686FyUJBKWmGtL1zfFWdLwsdwrB/Q==
+husky@^4.0.7:
+  version "4.0.7"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-4.0.7.tgz#cee4301d1db1d731be9c2aa2ac72b46439d30c91"
+  integrity sha512-ULivTOe0k+nNjZKIojoHxXjybtEycaba0EDuk1G8iNGD8wZgo8Sr3YiN8bKitXNpI1RvVKTJwRnh2GLysLbxMQ==
   dependencies:
     chalk "^3.0.0"
     ci-info "^2.0.0"
