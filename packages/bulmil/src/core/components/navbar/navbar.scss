@@ -1,0 +1,15 @@
+@import 'bulma-scss/components/navbar';
+
+bm-navbar {
+  .navbar-item,
+  .navbar-link {
+    bm-icon {
+      &:only-child {
+        .icon {
+          margin-left: -0.25rem;
+          margin-right: -0.25rem;
+        }
+      }
+    }
+  }
+}

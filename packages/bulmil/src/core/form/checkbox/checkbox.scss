@@ -1,0 +1,11 @@
+@import 'bulma-scss/form/shared';
+@import 'bulma-scss/form/checkbox-radio';
+
+bm-checkbox {
+  &[disabled='true'] {
+    .checkbox {
+      color: $input-disabled-color;
+      cursor: not-allowed;
+    }
+  }
+}

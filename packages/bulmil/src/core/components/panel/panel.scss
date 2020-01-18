@@ -1,0 +1,9 @@
+$message-colors: $colors !default;
+
+@import 'bulma-scss/components/panel';
+
+bm-panel {
+  &:not(:last-child) {
+    margin-bottom: $panel-margin;
+  }
+}

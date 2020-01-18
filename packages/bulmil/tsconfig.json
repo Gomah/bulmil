@@ -17,6 +17,6 @@
     "noImplicitReturns": true,
     "skipLibCheck": true
   },
-  "include": ["packages/**/*.ts", "packages/**/*.tsx"],
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
   "exclude": ["node_modules"]
 }

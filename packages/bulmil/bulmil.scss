@@ -1,0 +1,19 @@
+// Import bulma utilities & customised variables
+@import './src/styles/main.scss';
+@import 'bulma-scss/utilities/animations';
+
+// Bulma base
+@import 'bulma-scss/base/_all';
+
+// Other components & elements not fitting in any components or not implemented yet.
+@import 'bulma-scss/components/level';
+@import 'bulma-scss/components/list';
+@import 'bulma-scss/components/media';
+@import 'bulma-scss/grid/tiles';
+@import 'bulma-scss/layout/hero';
+@import 'bulma-scss/elements/other';
+@import 'bulma-scss/elements/title';
+
+// As slot table won't render tr nor td
+// https://github.com/ionic-team/stencil/issues/1641
+@import 'bulma-scss/elements/table';

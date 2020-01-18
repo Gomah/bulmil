@@ -1,0 +1,11 @@
+@import 'bulma-scss/grid/columns';
+
+bm-columns {
+  &:last-child {
+    margin-bottom: -$column-gap;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: calc(1.5rem - #{$column-gap});
+  }
+}
