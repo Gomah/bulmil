@@ -25,9 +25,9 @@
   ],
   "devDependencies": {
     "@types/jest": "24.9.0",
-    "@types/node": "13.1.8",
-    "@types/react": "16.9.17",
-    "@types/react-dom": "16.9.4",
+    "@types/node": "13.5.1",
+    "@types/react": "16.9.19",
+    "@types/react-dom": "16.9.5",
     "jest": "^24.9.0",
     "jest-dom": "^4.0.0",
     "np": "^5.2.1",
