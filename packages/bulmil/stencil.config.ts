@@ -1,5 +1,6 @@
 import path from 'path';
 import { Config } from '@stencil/core';
+import { angularOutputTarget } from '@stencil/angular-output-target';
 import { sass } from '@stencil/sass';
 import { postcss } from '@stencil/postcss';
 import autoprefixer from 'autoprefixer';
@@ -26,6 +27,10 @@ export const config: Config = {
       componentCorePackage: 'bulmil',
       proxiesFile: '../bulmil-react/src/components.ts',
       loaderDir: 'dist/loader',
+    }),
+    angularOutputTarget({
+      componentCorePackage: 'bulmil',
+      directivesProxyFile: '../bulmil-angular/src/directives/proxies.ts',
     }),
     { type: 'dist' },
     {

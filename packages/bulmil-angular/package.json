@@ -1,0 +1,72 @@
+{
+  "name": "bulmil-angular",
+  "version": "0.0.16",
+  "author": "Gomah",
+  "license": "MIT",
+  "description": "Angular specific wrapper for bulmil",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gomah/bulmil.git"
+  },
+  "scripts": {
+    "build": "npm run build.ng",
+    "build.fesm": "rollup --config ./scripts/rollup.config.js",
+    "build.ng": "npm run build.es2015 && npm run build.es5",
+    "build.es2015": "ngc -p tsconfig.json && rollup --config ./scripts/rollup.config.js",
+    "build.es5": "ngc -p tsconfig.legacy.json && rollup --config ./scripts/rollup.config.legacy.js",
+    "lint": "npm run lint.ts",
+    "lint.ts": "tslint --project .",
+    "lint.fix": "tslint --project . --fix",
+    "prerelease": "npm run validate && np prerelease --yolo --any-branch --tag next",
+    "test": "echo 'angular no tests yet'",
+    "tsc": "tsc -p .",
+    "validate": "npm i && npm run lint && npm run test && npm run build"
+  },
+  "module": "dist/fesm5.js",
+  "main": "dist/fesm5.js",
+  "types": "dist/core.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "dependencies": {
+    "bulmil": "0.0.16",
+    "tslib": "^1.10.0"
+  },
+  "peerDependencies": {
+    "@angular-devkit/core": "^8.3.24",
+    "@angular-devkit/schematics": "^8.3.24",
+    "@angular/core": "^8.2.14",
+    "@angular/common": "^8.2.14",
+    "@angular/forms": "^8.2.14",
+    "@angular/router": "^8.2.14",
+    "@angular/compiler": "^8.2.14",
+    "@angular/compiler-cli": "^8.2.14",
+    "@angular/platform-browser": "^8.2.14",
+    "@angular/platform-browser-dynamic": "^8.2.14",
+    "rxjs": ">=6.5.4",
+    "zone.js": "^0.10.2"
+  },
+  "devDependencies": {
+    "@angular-devkit/core": "^8.3.24",
+    "@angular-devkit/schematics": "^8.3.24",
+    "@angular/common": "^8.2.14",
+    "@angular/compiler": "^8.2.14",
+    "@angular/compiler-cli": "^8.2.14",
+    "@angular/core": "^8.2.14",
+    "@angular/forms": "^8.2.14",
+    "@angular/platform-browser": "^8.2.14",
+    "@angular/platform-browser-dynamic": "^8.2.14",
+    "@angular/router": "^8.2.14",
+    "@types/node": "~13.7.0",
+    "fs-extra": "^8.1.0",
+    "glob": "^7.1.6",
+    "rollup": "^1.31.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rxjs": "^6.5.4",
+    "tsickle": "^0.38.0",
+    "tslint": "^6.0.0",
+    "tslint-ionic-rules": "0.0.21",
+    "typescript": "3.5.3",
+    "zone.js": "^0.10.2"
+  }
+}

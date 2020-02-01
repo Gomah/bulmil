@@ -70,7 +70,7 @@
     "@stencil/sass": "^1.1.1",
     "@types/autoprefixer": "^9.6.1",
     "@types/jest": "24.0.25",
-    "@types/node": "^13.5.1",
+    "@types/node": "^13.7.0",
     "@types/puppeteer": "1.20.3",
     "@typescript-eslint/eslint-plugin": "^2.18.0",
     "@typescript-eslint/parser": "^2.18.0",
@@ -96,7 +96,7 @@
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-prettier": "^1.1.2",
     "stylelint-scss": "^3.14.2",
-    "workbox-build": "^4.3.1"
+    "workbox-build": "^5.0.0"
   },
   "dependencies": {
     "bulma-divider": "^0.2.0",
