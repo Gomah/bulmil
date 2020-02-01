@@ -4,11 +4,6 @@
   "repository": "git@github.com:gomah/bulmil.git",
   "author": "Gomah <hi@gomah.fr>",
   "license": "MIT",
-  "files": [
-    "bulmil.scss",
-    "src/styles/",
-    "dist/"
-  ],
   "private": true,
   "workspaces": [
     "packages/*"
@@ -30,19 +25,6 @@
     "webcomponents",
     "web-components"
   ],
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "es2015": "dist/esm/index.mjs.js",
-  "es2017": "dist/esm/index.mjs.js",
-  "jsnext:main": "dist/esm/index.mjs",
-  "types": "dist/types/index.d.ts",
-  "collection": "dist/collection/collection-manifest.json",
-  "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/bulmil/bulmil.js",
-  "style": "dist/css/bulmil.min.css",
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
     "build": "lerna run build --stream",
     "build:storybook": "build-storybook -c .storybook -s packages/bulmil/www -o storybook/",
@@ -69,9 +51,7 @@
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.0.6",
     "husky": "^4.2.1",
-    "npm-run-all": "^4.1.5",
-    "prettier": "^1.19.1",
-    "standard-version": "^7.1.0"
+    "npm-run-all": "^4.1.5"
   },
   "dependencies": {
     "lerna": "^3.20.2"

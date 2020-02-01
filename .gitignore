@@ -74,3 +74,6 @@ dist
 
 # Stencil www build
 www
+
+# Proxies build
+*/bulmil-angular/build
