@@ -67,7 +67,7 @@
     "tsickle": "^0.38.0",
     "tslint": "^6.0.0",
     "tslint-ionic-rules": "0.0.21",
-    "typescript": "3.5.3",
+    "typescript": "3.7.5",
     "zone.js": "^0.10.2"
   }
 }
