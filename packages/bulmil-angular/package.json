@@ -1,6 +1,6 @@
 {
   "name": "bulmil-angular",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "author": "Gomah",
   "license": "MIT",
   "description": "Angular specific wrapper for bulmil",
@@ -29,7 +29,7 @@
     "dist/"
   ],
   "dependencies": {
-    "bulmil": "0.0.16",
+    "bulmil": "^0.0.17",
     "tslib": "^1.10.0"
   },
   "peerDependencies": {
@@ -67,7 +67,7 @@
     "tsickle": "^0.38.0",
     "tslint": "^6.0.0",
     "tslint-ionic-rules": "0.0.21",
-    "typescript": "3.7.5",
+    "typescript": "3.5.3",
     "zone.js": "^0.10.2"
   }
 }
