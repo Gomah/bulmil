@@ -16,7 +16,7 @@
 | `isHorizontal`       | `is-horizontal`        | Horizontal field      | `boolean`                                                | `false`     |
 | `label`              | `label`                | Label                 | `string`                                                 | `undefined` |
 | `message`            | `message`              | Help or error message | `string`                                                 | `undefined` |
-| `size`               | `size`                 | Field size            | `"is-large" \| "is-medium" \| "is-normal" \| "is-small"` | `undefined` |
+| `size`               | `size`                 | Field size            | `"is-large" or "is-medium" or "is-normal" or "is-small"` | `undefined` |
 
 
 ----------------------------------------------

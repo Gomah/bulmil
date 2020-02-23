@@ -11,7 +11,7 @@
 | ------------- | ------------- | ----------- | ---------------------------------- | ----------------- |
 | `class`       | `class`       | CSS Classes | `string`                           | `''`              |
 | `content`     | `content`     | CSS Classes | `string`                           | `''`              |
-| `orientation` | `orientation` | Orientation | `"is-horizontal" \| "is-vertical"` | `'is-horizontal'` |
+| `orientation` | `orientation` | Orientation | `"is-horizontal" or "is-vertical"` | `'is-horizontal'` |
 
 
 ----------------------------------------------

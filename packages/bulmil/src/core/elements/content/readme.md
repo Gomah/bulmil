@@ -10,7 +10,7 @@
 | Property | Attribute | Description  | Type                                      | Default     |
 | -------- | --------- | ------------ | ----------------------------------------- | ----------- |
 | `class`  | `class`   | CSS Classes  | `string`                                  | `''`        |
-| `size`   | `size`    | Content size | `"is-large" \| "is-medium" \| "is-small"` | `undefined` |
+| `size`   | `size`    | Content size | `"is-large" or "is-medium" or "is-small"` | `undefined` |
 
 
 ----------------------------------------------

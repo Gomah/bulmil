@@ -30,7 +30,7 @@
   ],
   "dependencies": {
     "bulmil": "0.0.18",
-    "tslib": "^1.10.0"
+    "tslib": "^1.11.0"
   },
   "peerDependencies": {
     "@angular-devkit/core": "^8.3.24",
@@ -61,7 +61,7 @@
     "fs-extra": "^8.1.0",
     "glob": "^7.1.6",
     "rimraf": "^3.0.2",
-    "rollup": "^1.31.0",
+    "rollup": "^1.31.1",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rxjs": "^6.5.4",
     "tsickle": "^0.38.0",

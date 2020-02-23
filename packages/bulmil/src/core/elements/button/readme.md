@@ -10,7 +10,7 @@
 | Property      | Attribute      | Description                      | Type                                                                                                                                                        | Default     |
 | ------------- | -------------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
 | `class`       | `class`        | CSS classes                      | `string`                                                                                                                                                    | `undefined` |
-| `color`       | `color`        | Color                            | `"is-black" \| "is-danger" \| "is-dark" \| "is-info" \| "is-light" \| "is-link" \| "is-primary" \| "is-success" \| "is-text" \| "is-warning" \| "is-white"` | `undefined` |
+| `color`       | `color`        | Color                            | `"is-black" or "is-danger" or "is-dark" or "is-info" or "is-light" or "is-link" or "is-primary" or "is-success" or "is-text" or "is-warning" or "is-white"` | `undefined` |
 | `disabled`    | `disabled`     | Is disabled?                     | `boolean`                                                                                                                                                   | `false`     |
 | `isActive`    | `is-active`    | Active state                     | `boolean`                                                                                                                                                   | `false`     |
 | `isFocused`   | `is-focused`   | Focused state                    | `boolean`                                                                                                                                                   | `false`     |
@@ -21,7 +21,7 @@
 | `isOutlined`  | `is-outlined`  | Is outlined                      | `boolean`                                                                                                                                                   | `false`     |
 | `isRounded`   | `is-rounded`   | Rounded button                   | `boolean`                                                                                                                                                   | `false`     |
 | `isStatic`    | `is-static`    | Static                           | `boolean`                                                                                                                                                   | `false`     |
-| `size`        | `size`         | Size                             | `"is-large" \| "is-medium" \| "is-normal" \| "is-small"`                                                                                                    | `undefined` |
+| `size`        | `size`         | Size                             | `"is-large" or "is-medium" or "is-normal" or "is-small"`                                                                                                    | `undefined` |
 
 
 ----------------------------------------------

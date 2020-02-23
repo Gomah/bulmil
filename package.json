@@ -47,7 +47,7 @@
     "@storybook/addon-viewport": "^5.3.13",
     "@storybook/html": "^5.3.13",
     "@storybook/theming": "^5.3.13",
-    "@types/node": "^13.7.1",
+    "@types/node": "^13.7.4",
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.0.6",
     "husky": "^4.2.3",

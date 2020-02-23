@@ -10,7 +10,7 @@
 | Property | Attribute | Description | Type                                                                                    | Default     |
 | -------- | --------- | ----------- | --------------------------------------------------------------------------------------- | ----------- |
 | `class`  | `class`   | CSS Classes | `string`                                                                                | `''`        |
-| `color`  | `color`   | Panel color | `"is-danger" \| "is-info" \| "is-link" \| "is-primary" \| "is-success" \| "is-warning"` | `undefined` |
+| `color`  | `color`   | Panel color | `"is-danger" or "is-info" or "is-link" or "is-primary" or "is-success" or "is-warning"` | `undefined` |
 
 
 ----------------------------------------------

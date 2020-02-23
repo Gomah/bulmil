@@ -10,8 +10,8 @@
 | Property        | Attribute        | Description    | Type                                                                                                                                           | Default     |
 | --------------- | ---------------- | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
 | `class`         | `class`          | CSS Classes    | `string`                                                                                                                                       | `''`        |
-| `color`         | `color`          | Color          | `"is-black" \| "is-danger" \| "is-dark" \| "is-info" \| "is-light" \| "is-link" \| "is-primary" \| "is-success" \| "is-warning" \| "is-white"` | `undefined` |
-| `fixedPosition` | `fixed-position` | Fixed position | `"is-fixed-bottom" \| "is-fixed-top"`                                                                                                          | `undefined` |
+| `color`         | `color`          | Color          | `"is-black" or "is-danger" or "is-dark" or "is-info" or "is-light" or "is-link" or "is-primary" or "is-success" or "is-warning" or "is-white"` | `undefined` |
+| `fixedPosition` | `fixed-position` | Fixed position | `"is-fixed-bottom" or "is-fixed-top"`                                                                                                          | `undefined` |
 | `isSpaced`      | `is-spaced`      | Spaced         | `boolean`                                                                                                                                      | `false`     |
 | `isTransparent` | `is-transparent` | Transparent    | `boolean`                                                                                                                                      | `false`     |
 
