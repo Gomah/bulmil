@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.19](https://github.com/gomah/bulmil/compare/v0.0.16...v0.0.19) (2020-02-23)
+
+
+### Features
+
+* **angular:** prepare angular proxies ([49a3ee2](https://github.com/gomah/bulmil/commit/49a3ee2268f3ede07d432d0616fd8627ac7ec474))
+
+
+### Chore
+
+* **angular:** remove build folder ([eb7bfe1](https://github.com/gomah/bulmil/commit/eb7bfe176435f685a798772baaa107430ecaf204))
+* **build:** cleanup package.json ([b3dc0c9](https://github.com/gomah/bulmil/commit/b3dc0c9f82dbfe0473a35b795829be9677928e90))
+* **deps:** bump @stencil/core to 1.8.8 ([f5cd5fc](https://github.com/gomah/bulmil/commit/f5cd5fc4543013ff8e233cfee51455bec9ad218c))
+* **deps:** upgrade dependencies ([9c38865](https://github.com/gomah/bulmil/commit/9c3886523718cdd1d02804b221c186d44a41429d))
+* **deps:** use @stencil/core@next ([2892015](https://github.com/gomah/bulmil/commit/28920154026516a6096933c37cebb5d07397a82a))
+* **release:** 0.0.16 ([f2d0f0a](https://github.com/gomah/bulmil/commit/f2d0f0aee57735621b0d044d63c516f9d6ced566))
+* **release:** 0.0.18 ([408ebd7](https://github.com/gomah/bulmil/commit/408ebd7144aef5457e21ea62ff2079a4ef49803c))
+
 ### [0.0.18](https://github.com/gomah/bulmil/compare/v0.0.16...v0.0.18) (2020-02-12)
 
 
