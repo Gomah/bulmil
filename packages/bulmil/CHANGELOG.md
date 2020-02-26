@@ -1,3 +1,23 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# 0.1.0 (2020-02-26)
+
+
+
+## 0.0.19 (2020-02-23)
+
+
+### Features
+
+* **angular:** prepare angular proxies ([49a3ee2](https://github.com/gomah/bulmil/commit/49a3ee2268f3ede07d432d0616fd8627ac7ec474))
+
+
+
+
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
