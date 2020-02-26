@@ -1,5 +1,5 @@
 module.exports = {
-  stories: [`${__dirname}/../packages/bulmil/src/*.stories.*`],
+  stories: [`${__dirname}/../packages/bulmil/src/**/*.stories.*`],
   presets: ['@storybook/addon-docs/preset'],
   addons: [
     '@storybook/addon-a11y/register',
