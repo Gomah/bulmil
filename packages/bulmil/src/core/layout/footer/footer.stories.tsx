@@ -1,17 +1,13 @@
-import centered from '@storybook/addon-centered/html';
-import notes from './readme.md';
-import { storiesOf } from '@storybook/html';
+import { html, TemplateResult } from 'lit-html';
 
-storiesOf('Layout|Footer', module)
-  .addDecorator(centered)
-  .addParameters({
-    notes: {
-      markdown: notes,
-    },
-  })
+export default {
+  title: 'Layout|Footer',
+  component: 'bm-footer',
+};
 
-  .add('Example', () => {
-    return `
+export const Example = (): TemplateResult => {
+  return html`
+    <main class="story-center">
       <bm-footer>
         <div class="content has-text-centered">
           <p>
@@ -22,5 +18,6 @@ storiesOf('Layout|Footer', module)
           </p>
         </div>
       </bm-footer>
-    `;
-  });
+    </main>
+  `;
+};

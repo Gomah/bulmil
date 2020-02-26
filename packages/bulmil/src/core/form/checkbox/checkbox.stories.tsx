@@ -1,41 +1,27 @@
-import centered from '@storybook/addon-centered/html';
-import { storiesOf } from '@storybook/html';
 import { boolean } from '@storybook/addon-knobs';
-import notes from './readme.md';
+import { html, TemplateResult } from 'lit-html';
 
-storiesOf('Form|Checkbox', module)
-  .addDecorator(centered)
-  .addParameters({
-    notes: {
-      markdown: notes,
-    },
-  })
+export default {
+  title: 'Form|Checkbox',
+  component: 'bm-checkbox',
+};
 
-  .add('Example', () => {
-    return `
-      <bm-section>
-        <bm-container>
-          <bm-checkbox
-            checked="${boolean('Checked', false)}"
-            disabled="${boolean('Disabled', false)}"
-          >
-            Remember me
-          </bm-checkbox>
-        </bm-container>
-      </bm-section>
-    `;
-  })
-  .add('With links', () => {
-    return `
-      <bm-section>
-        <bm-container>
-          <bm-checkbox
-          checked="${boolean('Checked', false)}"
-            disabled="${boolean('Disabled', false)}"
-            >
-            I agree to the <a href="#">terms and conditions</a>
-          </bm-checkbox>
-        </bm-container>
-      </bm-section>
-    `;
-  });
+export const Example = (): TemplateResult => {
+  return html`
+    <bm-section class="story-center">
+      <bm-checkbox checked="${boolean('Checked', false)}" disabled="${boolean('Disabled', false)}">
+        Remember me
+      </bm-checkbox>
+    </bm-section>
+  `;
+};
+
+export const WithLinks = (): TemplateResult => {
+  return html`
+    <bm-section class="story-center">
+      <bm-checkbox checked="${boolean('Checked', false)}" disabled="${boolean('Disabled', false)}">
+        I agree to the <a href="#">terms and conditions</a>
+      </bm-checkbox>
+    </bm-section>
+  `;
+};

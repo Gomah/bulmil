@@ -1,31 +1,25 @@
-import centered from '@storybook/addon-centered/html';
-import notes from './readme.md';
-import { storiesOf } from '@storybook/html';
 import { boolean, select } from '@storybook/addon-knobs';
-import { Container } from './container';
+import { html, TemplateResult } from 'lit-html';
 
-const breakpoints: { [key: string]: Container['breakpoint'] } = {
+export default {
+  title: 'Layout|Container',
+  component: 'bm-container',
+};
+
+const breakpoints = {
   widescreen: 'is-widescreen',
   fullhd: 'is-fullhd',
   none: null,
 };
 
-storiesOf('Layout|Container', module)
-  .addDecorator(centered)
-  .addParameters({
-    notes: {
-      markdown: notes,
-    },
-  })
-
-  .add('Example', () => {
-    return `
-      <bm-container is-fluid=${boolean('Fluid', false)} breakpoint=${select(
-      'Breakpoint',
-      breakpoints,
-      null
-    )}>
-        Hello Container 👋
-      </bm-container>
-    `;
-  });
+export const Example = (): TemplateResult => {
+  return html`
+    <bm-container
+      class="story-center"
+      is-fluid=${boolean('Fluid', false)}
+      breakpoint=${select('Breakpoint', breakpoints, null)}
+    >
+      Hello Container 👋
+    </bm-container>
+  `;
+};

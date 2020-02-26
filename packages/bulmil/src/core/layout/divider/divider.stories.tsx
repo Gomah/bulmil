@@ -1,30 +1,26 @@
-import notes from './readme.md';
-import { storiesOf } from '@storybook/html';
 import { select, text } from '@storybook/addon-knobs';
+import { html, TemplateResult } from 'lit-html';
 
-const orientations = {
-  'horizontal': 'is-horizontal',
-  'vertical': 'is-vertical',
+export default {
+  title: 'Layout|Divider',
+  component: 'bm-divider',
 };
 
+const orientations = {
+  horizontal: 'is-horizontal',
+  vertical: 'is-vertical',
+};
 
-storiesOf('Layout|Divider', module)
-  .addParameters({
-    notes: {
-      markdown: notes,
-    },
-  })
-
-  .add('Example', () => {
-    return `
-      <bm-section>
-        <bm-container>
-          <bm-divider
-            orientation="${select('Orientation', orientations, 'is-horizontal')}"
-            content="${text('Content', '')}"
-          >
-          </bm-divider>
-        </bm-container>
-      </bm-section>
-    `;
-  });
+export const Example = (): TemplateResult => {
+  return html`
+    <bm-section>
+      <bm-container>
+        <bm-divider
+          orientation="${select('Orientation', orientations, 'is-horizontal')}"
+          content="${text('Content', '')}"
+        >
+        </bm-divider>
+      </bm-container>
+    </bm-section>
+  `;
+};

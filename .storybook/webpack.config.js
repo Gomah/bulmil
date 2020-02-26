@@ -1,22 +1,13 @@
-const path = require('path');
-const webpack = require('webpack');
-
-module.exports = ({ config, mode }) => {
+module.exports = ({ config }) => {
   config.module.rules.push(
     {
       test: /\.tsx$/,
-      loader: ['awesome-typescript-loader'],
-    },
-    {
-      test: /\.stories\.tsx?$/,
-      loaders: [
+      use: [
         {
-          loader: require.resolve('@storybook/addon-storysource/loader'),
-          options: { parser: 'typescript' },
+          loader: require.resolve('ts-loader'),
         },
       ],
-      enforce: 'pre',
-    }
+    },
   );
 
   return config;

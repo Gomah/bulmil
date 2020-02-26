@@ -1,10 +1,11 @@
 import path from 'path';
 import { Config } from '@stencil/core';
 import { angularOutputTarget } from '@stencil/angular-output-target';
+import { reactOutputTarget } from '@stencil/react-output-target';
 import { sass } from '@stencil/sass';
 import { postcss } from '@stencil/postcss';
 import autoprefixer from 'autoprefixer';
-import { reactOutputTarget } from '@stencil/react-output-target';
+import { generateJsonDocs } from './src/customElementDocGenerator';
 
 export const config: Config = {
   namespace: 'Bulmil',
@@ -38,6 +39,11 @@ export const config: Config = {
       dir: 'dist/hydrate',
     },
     { type: 'docs-readme', strict: true },
+    {
+      type: 'custom',
+      generator: generateJsonDocs,
+      name: 'custom-element-docs',
+    },
     {
       type: 'www',
       serviceWorker: null, // disable service workers

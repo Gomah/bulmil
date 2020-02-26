@@ -1,17 +1,13 @@
-import centered from '@storybook/addon-centered/html';
-import { storiesOf } from '@storybook/html';
-import notes from './readme.md';
+import { html, TemplateResult } from 'lit-html';
 
-storiesOf('Elements|Table', module)
-  .addDecorator(centered)
-  .addParameters({
-    notes: {
-      markdown: notes,
-    },
-  })
+export default {
+  title: 'Elements|Table',
+  component: 'bm-table',
+};
 
-  .add('Example', () => {
-    return `
+export const Example = (): TemplateResult => {
+  return html`
+    <bm-section class="story-center">
       <table class="table">
         <thead>
           <tr>
@@ -470,5 +466,6 @@ storiesOf('Elements|Table', module)
           </tr>
         </tbody>
       </table>
-    `;
-  });
+    </bm-section>
+  `;
+};

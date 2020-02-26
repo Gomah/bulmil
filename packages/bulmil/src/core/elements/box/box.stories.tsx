@@ -1,55 +1,50 @@
-import centered from '@storybook/addon-centered/html';
-import { storiesOf } from '@storybook/html';
-import notes from './readme.md';
+import { html, TemplateResult } from 'lit-html';
 
-storiesOf('Elements|Box', module)
-  .addDecorator(centered)
-  .addParameters({
-    notes: {
-      markdown: notes,
-    },
-  })
+export default {
+  title: 'Elements|Box',
+  component: 'bm-box',
+};
 
-  .add('Example', () => {
-    return `
-      <bm-box>
-        <article class="media">
-          <div class="media-left">
-            <figure class="image is-64x64">
-              <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image" />
-            </figure>
+export const Example = (): TemplateResult => {
+  return html`
+    <bm-box class="story-center">
+      <article class="media">
+        <div class="media-left">
+          <figure class="image is-64x64">
+            <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image" />
+          </figure>
+        </div>
+
+        <div class="media-content">
+          <div class="content">
+            <p>
+              <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+              <br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet
+              massa fringilla egestas. Nullam condimentum luctus turpis.
+            </p>
           </div>
-
-          <div class="media-content">
-            <div class="content">
-              <p>
-                <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
-                <br />
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet
-                massa fringilla egestas. Nullam condimentum luctus turpis.
-              </p>
+          <nav class="level is-mobile">
+            <div class="level-left">
+              <a class="level-item" aria-label="reply">
+                <span class="icon is-small">
+                  <i class="fas fa-reply" aria-hidden="true"></i>
+                </span>
+              </a>
+              <a class="level-item" aria-label="retweet">
+                <span class="icon is-small">
+                  <i class="fas fa-retweet" aria-hidden="true"></i>
+                </span>
+              </a>
+              <a class="level-item" aria-label="like">
+                <span class="icon is-small">
+                  <i class="fas fa-heart" aria-hidden="true"></i>
+                </span>
+              </a>
             </div>
-            <nav class="level is-mobile">
-              <div class="level-left">
-                <a class="level-item" aria-label="reply">
-                  <span class="icon is-small">
-                    <i class="fas fa-reply" aria-hidden="true"></i>
-                  </span>
-                </a>
-                <a class="level-item" aria-label="retweet">
-                  <span class="icon is-small">
-                    <i class="fas fa-retweet" aria-hidden="true"></i>
-                  </span>
-                </a>
-                <a class="level-item" aria-label="like">
-                  <span class="icon is-small">
-                    <i class="fas fa-heart" aria-hidden="true"></i>
-                  </span>
-                </a>
-              </div>
-            </nav>
-          </div>
-        </article>
-      </bm-box>
-    `;
-  });
+          </nav>
+        </div>
+      </article>
+    </bm-box>
+  `;
+};

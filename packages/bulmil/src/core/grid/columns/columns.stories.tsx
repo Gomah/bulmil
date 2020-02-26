@@ -1,17 +1,13 @@
-import centered from '@storybook/addon-centered/html';
-import notes from './readme.md';
-import { storiesOf } from '@storybook/html';
+import { html, TemplateResult } from 'lit-html';
 
-storiesOf('Grid|Columns', module)
-  .addDecorator(centered)
-  .addParameters({
-    notes: {
-      markdown: notes,
-    },
-  })
+export default {
+  title: 'Grid|Columns',
+  component: 'bm-columns',
+};
 
-  .add('Basics', () => {
-    return `
+export const Basics = (): TemplateResult => {
+  return html`
+    <bm-container class="story-center">
       <bm-columns>
         <bm-column>
           First column
@@ -26,5 +22,6 @@ storiesOf('Grid|Columns', module)
           Fourth column
         </bm-column>
       </bm-columns>
-    `;
-  });
+    </bm-container>
+  `;
+};

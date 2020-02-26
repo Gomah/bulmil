@@ -1,6 +1,10 @@
-import { storiesOf } from '@storybook/html';
-import notes from './readme.md';
 import { boolean, select } from '@storybook/addon-knobs';
+import { html, TemplateResult } from 'lit-html';
+
+export default {
+  title: 'Elements|Notification',
+  component: 'bm-notification',
+};
 
 const colors = {
   'is-primary': 'is-primary',
@@ -12,24 +16,17 @@ const colors = {
   none: null,
 };
 
-storiesOf('Elements|Notification', module)
-  .addParameters({
-    notes: {
-      markdown: notes,
-    },
-  })
-
-  .add('Example', () => {
-    return `
-      <bm-section>
-        <bm-container>
-          <bm-notification
-            color=${select('Color', colors, null)}
-            dismissable="${boolean('Dismissable', false)}"
-          >
-            <h2 class="subtitle">Notification</h2>
-          </bm-notification>
-        </bm-container>
-      </bm-section>
-    `;
-  });
+export const Example = (): TemplateResult => {
+  return html`
+    <bm-section class="story-center">
+      <bm-container>
+        <bm-notification
+          color=${select('Color', colors, null)}
+          dismissable="${boolean('Dismissable', false)}"
+        >
+          <h2 class="subtitle">Notification</h2>
+        </bm-notification>
+      </bm-container>
+    </bm-section>
+  `;
+};

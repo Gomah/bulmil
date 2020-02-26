@@ -1,26 +1,21 @@
-import centered from '@storybook/addon-centered/html';
-import notes from './readme.md';
-import { storiesOf } from '@storybook/html';
 import { select } from '@storybook/addon-knobs';
-import { Content } from './content';
+import { html, TemplateResult } from 'lit-html';
 
-const sizes: { [key: string]: Content['size'] } = {
+export default {
+  title: 'Elements|Content',
+  component: 'bm-content',
+};
+
+const sizes = {
   small: 'is-small',
   medium: 'is-medium',
   large: 'is-large',
   none: null,
 };
 
-storiesOf('Elements|Content', module)
-  .addDecorator(centered)
-  .addParameters({
-    notes: {
-      markdown: notes,
-    },
-  })
-
-  .add('Sizes', () => {
-    return `
+export const Sizes = (): TemplateResult => {
+  return html`
+    <bm-section class="story-center">
       <bm-content size="${select('Size', sizes, null)}">
         <h1>Hello World</h1>
         <p>
@@ -42,5 +37,6 @@ storiesOf('Elements|Content', module)
           <li>Ut non enim metus.</li>
         </ul>
       </bm-content>
-    `;
-  });
+    </bm-section>
+  `;
+};

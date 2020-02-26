@@ -1,10 +1,13 @@
-import centered from '@storybook/addon-centered/html';
-import notes from './readme.md';
-import { storiesOf } from '@storybook/html';
 import { select, boolean } from '@storybook/addon-knobs';
-import { Button } from './button';
+import { html, TemplateResult } from 'lit-html';
 
-const sizes: { [key: string]: Button['size'] } = {
+export default {
+  title: 'Elements|Button',
+  component: 'bm-button',
+};
+
+// Knobs
+const sizes = {
   small: 'is-small',
   normal: 'is-normal',
   medium: 'is-medium',
@@ -12,7 +15,7 @@ const sizes: { [key: string]: Button['size'] } = {
   none: null,
 };
 
-const colors: { [key: string]: Button['color'] } = {
+const colors = {
   primary: 'is-primary',
   link: 'is-link',
   info: 'is-info',
@@ -27,22 +30,16 @@ const colors: { [key: string]: Button['color'] } = {
   none: null,
 };
 
-storiesOf('Elements|Button', module)
-  .addDecorator(centered)
-  .addParameters({
-    notes: {
-      markdown: notes,
-    },
-  })
-
-  .add('Example', () => {
-    return `
+export const Example = (): TemplateResult => {
+  return html`
+    <bm-section class="story-center">
       <bm-button
         size=${select('Size', sizes, null)}
         color=${select('Color', colors, null)}
         disabled=${boolean('Disabled', false)}
       >
         Button
-      </bm-button>
-    `;
-  });
+      </bm-button></bm-section
+    >
+  `;
+};

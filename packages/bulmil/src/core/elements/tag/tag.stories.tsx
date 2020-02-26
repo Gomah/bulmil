@@ -1,7 +1,10 @@
-import centered from '@storybook/addon-centered/html';
-import { storiesOf } from '@storybook/html';
 import { select, text } from '@storybook/addon-knobs';
-import notes from './readme.md';
+import { html, TemplateResult } from 'lit-html';
+
+export default {
+  title: 'Elements|Tag',
+  component: 'bm-tag',
+};
 
 const colors = {
   'is-black': 'is-black',
@@ -30,16 +33,9 @@ const modifiers = {
   none: null,
 };
 
-storiesOf('Elements|Tag', module)
-  .addDecorator(centered)
-  .addParameters({
-    notes: {
-      markdown: notes,
-    },
-  })
-
-  .add('Example', () => {
-    return `
+export const Example = (): TemplateResult => {
+  return html`
+    <bm-section class="story-center">
       <bm-tag
         color="${select('Color', colors, 'is-primary')}"
         size="${select('Size', sizes, null)}"
@@ -48,66 +44,52 @@ storiesOf('Elements|Tag', module)
       >
         Tag
       </bm-tag>
-    `;
-  })
-  .add('Colors', () => {
-    return `
+    </bm-section>
+  `;
+};
+
+export const Colors = (): TemplateResult => {
+  return html`
+    <bm-section class="story-center">
       <bm-tags>
-        <bm-tag
-          color="is-black"
-        >
+        <bm-tag color="is-black">
           Black
         </bm-tag>
-        <bm-tag
-          color="is-dark"
-        >
+        <bm-tag color="is-dark">
           Dark
         </bm-tag>
-        <bm-tag
-          color="is-light"
-        >
+        <bm-tag color="is-light">
           Light
         </bm-tag>
-        <bm-tag
-          color="is-white"
-        >
+        <bm-tag color="is-white">
           White
         </bm-tag>
-        <bm-tag
-          color="is-primary"
-        >
+        <bm-tag color="is-primary">
           Primary
         </bm-tag>
-        <bm-tag
-          color="is-link"
-        >
+        <bm-tag color="is-link">
           Link
         </bm-tag>
-        <bm-tag
-          color="is-info"
-        >
+        <bm-tag color="is-info">
           Info
         </bm-tag>
-        <bm-tag
-          color="is-success"
-        >
+        <bm-tag color="is-success">
           Success
         </bm-tag>
-        <bm-tag
-          color="is-warning"
-        >
+        <bm-tag color="is-warning">
           Warning
         </bm-tag>
-        <bm-tag
-          color="is-danger"
-        >
+        <bm-tag color="is-danger">
           Danger
         </bm-tag>
       </bm-tags>
-    `;
-  })
-  .add('Sizes', () => {
-    return `
+    </bm-section>
+  `;
+};
+
+export const Sizes = (): TemplateResult => {
+  return html`
+    <bm-section class="story-center">
       <bm-tags>
         <bm-tag color="is-link" size="is-normal">
           Normal
@@ -115,12 +97,10 @@ storiesOf('Elements|Tag', module)
         <bm-tag color="is-primary" size="is-medium">
           Medium
         </bm-tag>
-        <bm-tag
-          color="is-info"
-          size="is-large"
-        >
+        <bm-tag color="is-info" size="is-large">
           Large
         </bm-tag>
       </bm-tags>
-    `;
-  });
+    </bm-section>
+  `;
+};
