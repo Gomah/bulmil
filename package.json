@@ -28,7 +28,7 @@
   "scripts": {
     "build": "lerna run build --stream",
     "build:storybook": "build-storybook -c .storybook -s packages/bulmil/www -o storybook/",
-    "release": "lerna bootstrap && yarn run test && lerna publish --conventional-commits --no-verify",
+    "release": "lerna bootstrap && yarn run test && lerna publish --conventional-commits --no-commit-hooks",
     "watch": "node --max_old_space_size=4096 ./node_modules/.bin/stencil build --watch --recursive --serve --config ./packages/bulmil/stencil.config.ts",
     "storybook.run": "start-storybook -p 9006 -s packages/bulmil/www",
     "storybook": "npm-run-all --parallel watch storybook.run",

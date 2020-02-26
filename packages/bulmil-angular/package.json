@@ -17,6 +17,7 @@
     "lint": "npm run lint.ts",
     "lint.ts": "tslint --project .",
     "lint.fix": "tslint --project . --fix",
+    "prepublishOnly": "yarn build",
     "prerelease": "npm run validate && np prerelease --yolo --any-branch --tag next",
     "test": "echo 'angular no tests yet'",
     "tsc": "tsc -p .",
