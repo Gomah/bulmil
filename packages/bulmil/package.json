@@ -50,7 +50,6 @@
     "start": "node --max_old_space_size=1024 ./node_modules/.bin/stencil build --dev --watch --serve",
     "release": "yarn run test && standard-version && git push --follow-tags && npm publish",
     "watch": "node --max_old_space_size=4096 ./node_modules/.bin/stencil build --watch --recursive --serve",
-    "prepublishOnly": "yarn build",
     "test:lint:ts": "eslint --ext .ts,.tsx --ignore-path .gitignore --ignore-path .eslintignore src/core/",
     "test:lint:scss": "stylelint 'src/**/*.scss' --syntax scss",
     "test:stencil:e2e": "node --max_old_space_size=1024 ./node_modules/.bin/stencil test --e2e",
