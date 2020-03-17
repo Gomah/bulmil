@@ -10,7 +10,7 @@
 | Property | Attribute | Description | Type                                                                                               | Default     |
 | -------- | --------- | ----------- | -------------------------------------------------------------------------------------------------- | ----------- |
 | `class`  | `class`   | CSS Classes | `string`                                                                                           | `''`        |
-| `size`   | `size`    | Size        | `"is-128x128" or "is-16x16" or "is-24x24" or "is-32x32" or "is-48x48" or "is-64x64" or "is-96x96"` | `undefined` |
+| `size`   | `size`    | Size        | `"is-128x128" \| "is-16x16" \| "is-24x24" \| "is-32x32" \| "is-48x48" \| "is-64x64" \| "is-96x96"` | `undefined` |
 
 
 ----------------------------------------------

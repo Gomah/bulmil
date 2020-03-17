@@ -10,8 +10,8 @@
 | Property | Attribute | Description | Type                                                                                                 | Default     |
 | -------- | --------- | ----------- | ---------------------------------------------------------------------------------------------------- | ----------- |
 | `class`  | `class`   | CSS Classes | `string`                                                                                             | `''`        |
-| `color`  | `color`   | Color       | `"is-danger" or "is-dark" or "is-info" or "is-link" or "is-primary" or "is-success" or "is-warning"` | `undefined` |
-| `size`   | `size`    | Size        | `"is-large" or "is-medium" or "is-small"`                                                            | `undefined` |
+| `color`  | `color`   | Color       | `"is-danger" \| "is-dark" \| "is-info" \| "is-link" \| "is-primary" \| "is-success" \| "is-warning"` | `undefined` |
+| `size`   | `size`    | Size        | `"is-large" \| "is-medium" \| "is-small"`                                                            | `undefined` |
 
 
 ----------------------------------------------
