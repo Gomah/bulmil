@@ -10,7 +10,6 @@ import { generateJsonDocs } from './src/customElementDocGenerator';
 export const config: Config = {
   namespace: 'Bulmil',
   globalStyle: 'bulmil.scss',
-  excludeSrc: ['**/*.stories.tsx'],
   plugins: [
     sass({
       includePaths: [
