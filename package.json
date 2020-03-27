@@ -25,6 +25,10 @@
     "webcomponents",
     "web-components"
   ],
+  "resolutions": {
+    "@types/react": "16.9.26",
+    "@types/react-dom": "16.9.5"
+  },
   "scripts": {
     "build": "lerna run build --stream",
     "build:storybook": "build-storybook -c .storybook -s packages/bulmil/www -o storybook/",
@@ -47,12 +51,12 @@
     "@storybook/html": "^5.3.17",
     "@storybook/theming": "^5.3.17",
     "@storybook/web-components": "^5.3.17",
-    "@types/node": "^13.9.2",
-    "babel-loader": "^8.0.6",
+    "@types/node": "^12.12.31",
+    "babel-loader": "^8.1.0",
     "husky": "^4.2.3",
-    "lit-html": "^1.2.0",
+    "lit-html": "^1.2.1",
     "npm-run-all": "^4.1.5",
-    "ts-loader": "^6.2.1"
+    "ts-loader": "^6.2.2"
   },
   "dependencies": {
     "lerna": "^3.20.2"
