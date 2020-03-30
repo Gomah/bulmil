@@ -33,7 +33,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "typescript": "3.8.3",
-    "vfile-message": "^2.0.3"
+    "vfile-message": "^2.0.4"
   },
   "dependencies": {
     "bulmil": "^0.1.4"
