@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.7](https://github.com/gomah/bulmil/compare/bulmil@0.1.6...bulmil@0.1.7) (2020-04-05)
+
+
+### Bug Fixes
+
+* @types/jest dep for @stencil/core ([73ef458](https://github.com/gomah/bulmil/commit/73ef458c3434e3aa9c6a8c7a4deaf68ec1f38cde))
+
+
+
+
+
 ## [0.1.6](https://github.com/gomah/bulmil/compare/bulmil@0.1.5...bulmil@0.1.6) (2020-04-04)
 
 **Note:** Version bump only for package bulmil

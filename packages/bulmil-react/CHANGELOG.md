@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.7](https://github.com/gomah/bulmil/compare/bulmil-react@0.1.6...bulmil-react@0.1.7) (2020-04-05)
+
+**Note:** Version bump only for package bulmil-react
+
+
+
+
+
 ## [0.1.6](https://github.com/gomah/bulmil/compare/bulmil-react@0.1.5...bulmil-react@0.1.6) (2020-04-04)
 
 **Note:** Version bump only for package bulmil-react
