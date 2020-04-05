@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/gomah/bulmil/compare/bulmil-react@0.1.7...bulmil-react@0.2.0) (2020-04-05)
+
+
+### Features
+
+* add bm-slider ([8b98f01](https://github.com/gomah/bulmil/commit/8b98f01fe1abb5da7a9576a5579e038a0bf27cd6))
+
+
+
+
+
 ## [0.1.7](https://github.com/gomah/bulmil/compare/bulmil-react@0.1.6...bulmil-react@0.1.7) (2020-04-05)
 
 **Note:** Version bump only for package bulmil-react
