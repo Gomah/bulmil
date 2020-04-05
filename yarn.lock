@@ -2899,10 +2899,10 @@
   resolved "https://registry.yarnpkg.com/@stencil/angular-output-target/-/angular-output-target-0.0.2.tgz#e534c736d204f9cc7c95f72c9c4d56739beba836"
   integrity sha512-GyQ/VTipzzweuNYbs+FrK1q3FSEG4LZkzg+keuMQNRDX77aCy5hsYivspMRMwOXIwUXh9wSIzqQR3JuLiFHzcw==
 
-"@stencil/core@^1.12.1":
-  version "1.12.1"
-  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-1.12.1.tgz#520997317417eeccd162eed00986f82f5aad5593"
-  integrity sha512-TRmFF+Axq7vaivO85zBE8dLV2CEbTZPTl8kuypROjlaDfu846uuytjriU1Qba2msCcuRtBZrkf74pMLZOiXa3A==
+"@stencil/core@^1.12.2":
+  version "1.12.2"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-1.12.2.tgz#e8cb749efe3e50ae23a62501249e382d3213aa06"
+  integrity sha512-lB8N0IBBT2u3ahg7R1+WZnJ/NsdgSJi3cq3E1m3dE143OCSn/l7G0JOrqyg4FSNO+9QM/ywkWp0g2eGEABF3Sg==
   dependencies:
     typescript "3.8.3"
 
@@ -14970,10 +14970,10 @@ rollup@^1.31.1:
     "@types/node" "*"
     acorn "^7.1.0"
 
-rollup@^2.3.2:
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.3.2.tgz#afa68e4f3325bcef4e150d082056bef450bcac60"
-  integrity sha512-p66+fbfaUUOGE84sHXAOgfeaYQMslgAazoQMp//nlR519R61213EPFgrMZa48j31jNacJwexSAR1Q8V/BwGKBA==
+rollup@^2.3.3:
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.3.3.tgz#5982df700d7aae8907075ba68122bb57d98e9cd0"
+  integrity sha512-uJ9VNWk80mb4wDCSfd1AyHoSc9TrWbkZtnO6wbsMTp9muSWkT26Dvc99MX1yGCOTvUN1Skw/KpFzKdUDuZKTXA==
   optionalDependencies:
     fsevents "~2.1.2"
 
