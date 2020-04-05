@@ -616,6 +616,44 @@ export namespace Components {
          */
         "value": string | number;
     }
+    interface BmSlider {
+        /**
+          * CSS Classes
+         */
+        "class": string;
+        /**
+          * Color
+         */
+        "color": "is-success" | "is-warning" | "is-danger" | "is-info";
+        /**
+          * Disabled
+         */
+        "disabled": boolean;
+        /**
+          * Circle
+         */
+        "isCircle": boolean;
+        /**
+          * CSS Classes
+         */
+        "max": number;
+        /**
+          * Min
+         */
+        "min": number;
+        /**
+          * Size
+         */
+        "size": "is-small" | "is-medium" | "is-large";
+        /**
+          * Step
+         */
+        "step": number;
+        /**
+          * Value
+         */
+        "value": number;
+    }
     interface BmSwitch {
         /**
           * Checked
@@ -988,6 +1026,12 @@ declare global {
         prototype: HTMLBmSelectElement;
         new (): HTMLBmSelectElement;
     };
+    interface HTMLBmSliderElement extends Components.BmSlider, HTMLStencilElement {
+    }
+    var HTMLBmSliderElement: {
+        prototype: HTMLBmSliderElement;
+        new (): HTMLBmSliderElement;
+    };
     interface HTMLBmSwitchElement extends Components.BmSwitch, HTMLStencilElement {
     }
     var HTMLBmSwitchElement: {
@@ -1058,6 +1102,7 @@ declare global {
         "bm-radio": HTMLBmRadioElement;
         "bm-section": HTMLBmSectionElement;
         "bm-select": HTMLBmSelectElement;
+        "bm-slider": HTMLBmSliderElement;
         "bm-switch": HTMLBmSwitchElement;
         "bm-table": HTMLBmTableElement;
         "bm-tabs": HTMLBmTabsElement;
@@ -1677,6 +1722,44 @@ declare namespace LocalJSX {
          */
         "value"?: string | number;
     }
+    interface BmSlider {
+        /**
+          * CSS Classes
+         */
+        "class"?: string;
+        /**
+          * Color
+         */
+        "color"?: "is-success" | "is-warning" | "is-danger" | "is-info";
+        /**
+          * Disabled
+         */
+        "disabled"?: boolean;
+        /**
+          * Circle
+         */
+        "isCircle"?: boolean;
+        /**
+          * CSS Classes
+         */
+        "max"?: number;
+        /**
+          * Min
+         */
+        "min"?: number;
+        /**
+          * Size
+         */
+        "size"?: "is-small" | "is-medium" | "is-large";
+        /**
+          * Step
+         */
+        "step"?: number;
+        /**
+          * Value
+         */
+        "value"?: number;
+    }
     interface BmSwitch {
         /**
           * Checked
@@ -1883,6 +1966,7 @@ declare namespace LocalJSX {
         "bm-radio": BmRadio;
         "bm-section": BmSection;
         "bm-select": BmSelect;
+        "bm-slider": BmSlider;
         "bm-switch": BmSwitch;
         "bm-table": BmTable;
         "bm-tabs": BmTabs;
@@ -1928,6 +2012,7 @@ declare module "@stencil/core" {
             "bm-radio": LocalJSX.BmRadio & JSXBase.HTMLAttributes<HTMLBmRadioElement>;
             "bm-section": LocalJSX.BmSection & JSXBase.HTMLAttributes<HTMLBmSectionElement>;
             "bm-select": LocalJSX.BmSelect & JSXBase.HTMLAttributes<HTMLBmSelectElement>;
+            "bm-slider": LocalJSX.BmSlider & JSXBase.HTMLAttributes<HTMLBmSliderElement>;
             "bm-switch": LocalJSX.BmSwitch & JSXBase.HTMLAttributes<HTMLBmSwitchElement>;
             "bm-table": LocalJSX.BmTable & JSXBase.HTMLAttributes<HTMLBmTableElement>;
             "bm-tabs": LocalJSX.BmTabs & JSXBase.HTMLAttributes<HTMLBmTabsElement>;

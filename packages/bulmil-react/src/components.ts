@@ -41,6 +41,7 @@ export const BmProgress = /*@__PURE__*/createReactComponent<JSX.BmProgress, HTML
 export const BmRadio = /*@__PURE__*/createReactComponent<JSX.BmRadio, HTMLBmRadioElement>('bm-radio');
 export const BmSection = /*@__PURE__*/createReactComponent<JSX.BmSection, HTMLBmSectionElement>('bm-section');
 export const BmSelect = /*@__PURE__*/createReactComponent<JSX.BmSelect, HTMLBmSelectElement>('bm-select');
+export const BmSlider = /*@__PURE__*/createReactComponent<JSX.BmSlider, HTMLBmSliderElement>('bm-slider');
 export const BmSwitch = /*@__PURE__*/createReactComponent<JSX.BmSwitch, HTMLBmSwitchElement>('bm-switch');
 export const BmTable = /*@__PURE__*/createReactComponent<JSX.BmTable, HTMLBmTableElement>('bm-table');
 export const BmTabs = /*@__PURE__*/createReactComponent<JSX.BmTabs, HTMLBmTabsElement>('bm-tabs');

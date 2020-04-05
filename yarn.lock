@@ -5263,6 +5263,11 @@ bulma-scss@^0.8.1:
   resolved "https://registry.yarnpkg.com/bulma-scss/-/bulma-scss-0.8.1.tgz#595eb21f3351143c53465deb4c00570475cb2c98"
   integrity sha512-i1Mwbz37efyu7FprHi72jUJeGiNL3zaiZhYOnikcU3+xTsxqLqfe09OJgITo3jPLhkNxIA8hYmJysyXObFXCPQ==
 
+bulma-slider@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/bulma-slider/-/bulma-slider-2.0.0.tgz#0be9b016228b62b8189891e67eafbf5aba846699"
+  integrity sha512-lXKMA/U43Fi1UnMkVYdNuEu0cGLo4JSWFUcnEyzNXkdpmDFic+d8H9oiaRoLbPiuGTC5SNoHMCP24T5544gnlQ==
+
 bulma-switch@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/bulma-switch/-/bulma-switch-2.0.0.tgz#7a187cd1bb8073e9a542478d936b89315f1ffcd8"

@@ -406,6 +406,17 @@ export class BmSelect {
   }
 }
 
+export declare interface BmSlider extends Components.BmSlider {}
+@ProxyCmp({inputs: ['class', 'color', 'disabled', 'isCircle', 'max', 'min', 'size', 'step', 'value']})
+@Component({ selector: 'bm-slider', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class', 'color', 'disabled', 'isCircle', 'max', 'min', 'size', 'step', 'value'] })
+export class BmSlider {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
 export declare interface BmSwitch extends Components.BmSwitch {}
 @ProxyCmp({inputs: ['checked', 'class', 'color', 'disabled', 'isOutlined', 'isRounded', 'isThin', 'size']})
 @Component({ selector: 'bm-switch', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['checked', 'class', 'color', 'disabled', 'isOutlined', 'isRounded', 'isThin', 'size'] })
