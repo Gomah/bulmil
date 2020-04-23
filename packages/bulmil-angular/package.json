@@ -61,7 +61,7 @@
     "fs-extra": "^9.0.0",
     "glob": "^7.1.6",
     "rimraf": "^3.0.2",
-    "rollup": "^2.6.1",
+    "rollup": "2.7.2",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rxjs": "^6.5.5",
     "tsickle": "^0.38.1",
