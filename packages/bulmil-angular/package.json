@@ -61,11 +61,11 @@
     "fs-extra": "^9.0.0",
     "glob": "^7.1.6",
     "rimraf": "^3.0.2",
-    "rollup": "2.7.2",
+    "rollup": "2.7.3",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rxjs": "^6.5.5",
     "tsickle": "^0.38.1",
-    "tslint": "^6.1.1",
+    "tslint": "^6.1.2",
     "tslint-ionic-rules": "0.0.21",
     "typescript": "3.5.3",
     "zone.js": "^0.10.3"
