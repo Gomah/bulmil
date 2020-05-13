@@ -26,8 +26,8 @@
     "web-components"
   ],
   "resolutions": {
-    "@types/react": "16.9.32",
-    "@types/react-dom": "16.9.6"
+    "@types/react": "16.9.35",
+    "@types/react-dom": "16.9.8"
   },
   "scripts": {
     "build": "lerna run build --stream",
@@ -51,12 +51,12 @@
     "@storybook/html": "^5.3.18",
     "@storybook/theming": "^5.3.18",
     "@storybook/web-components": "^5.3.18",
-    "@types/node": "^13.13.5",
+    "@types/node": "^14.0.1",
     "babel-loader": "^8.1.0",
     "husky": "^4.2.5",
     "lit-html": "^1.2.1",
     "npm-run-all": "^4.1.5",
-    "ts-loader": "^7.0.2"
+    "ts-loader": "^7.0.4"
   },
   "dependencies": {
     "lerna": "^3.20.2"
