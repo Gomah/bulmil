@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/gomah/bulmil/compare/bulmil@0.2.7...bulmil@0.3.0) (2020-06-09)
+
+
+### Features
+
+* **bulmil:** add Bulma helpers ([8dd3b5f](https://github.com/gomah/bulmil/commit/8dd3b5fa802f49bd571482dd66e14e74d125849a))
+
+
+
+
+
 ## [0.2.7](https://github.com/gomah/bulmil/compare/bulmil@0.2.6...bulmil@0.2.7) (2020-06-09)
 
 **Note:** Version bump only for package bulmil
