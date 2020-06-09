@@ -1,4 +1,4 @@
-# bm-message
+# bm-modal
 
 
 

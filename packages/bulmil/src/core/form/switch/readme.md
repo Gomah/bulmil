@@ -1,4 +1,4 @@
-# bm-tabs
+# bm-switch
 
 
 

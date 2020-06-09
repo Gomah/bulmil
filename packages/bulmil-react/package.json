@@ -24,15 +24,15 @@
   ],
   "devDependencies": {
     "@types/jest": "25.2.3",
-    "@types/node": "14.0.5",
+    "@types/node": "14.0.12",
     "@types/react": "16.9.35",
     "@types/react-dom": "16.9.8",
     "jest": "^26.0.1",
     "jest-dom": "^4.0.0",
-    "np": "^6.2.3",
+    "np": "^6.2.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "typescript": "3.9.3",
+    "typescript": "3.9.5",
     "vfile-message": "^2.0.4"
   },
   "dependencies": {

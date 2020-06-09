@@ -51,7 +51,7 @@
     "@storybook/html": "^5.3.19",
     "@storybook/theming": "^5.3.19",
     "@storybook/web-components": "^5.3.19",
-    "@types/node": "^14.0.5",
+    "@types/node": "^14.0.12",
     "babel-loader": "^8.1.0",
     "husky": "^4.2.5",
     "lit-html": "^1.2.1",
@@ -59,6 +59,6 @@
     "ts-loader": "^7.0.5"
   },
   "dependencies": {
-    "lerna": "^3.22.0"
+    "lerna": "^3.22.1"
   }
 }

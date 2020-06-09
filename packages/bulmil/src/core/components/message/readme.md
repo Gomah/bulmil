@@ -1,4 +1,4 @@
-# bm-menu
+# bm-message
 
 
 

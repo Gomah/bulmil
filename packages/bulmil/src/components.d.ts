@@ -16,7 +16,7 @@ export namespace Components {
         /**
           * Breadcrumb alignment
          */
-        "alignment": "is-centered" | "is-right";
+        "alignment": 'is-centered' | 'is-right';
         /**
           * CSS Classes
          */
@@ -24,11 +24,14 @@ export namespace Components {
         /**
           * Separator
          */
-        "separator": "has-arrow-separator" | "has-bullet-separator" | "has-dot-separator" | "has-succeeds-separator";
+        "separator": | 'has-arrow-separator'
+    | 'has-bullet-separator'
+    | 'has-dot-separator'
+    | 'has-succeeds-separator';
         /**
           * Size
          */
-        "size": "is-small" | "is-medium" | "is-large";
+        "size": 'is-small' | 'is-medium' | 'is-large';
     }
     interface BmButton {
         /**
@@ -38,7 +41,17 @@ export namespace Components {
         /**
           * Color
          */
-        "color": "is-primary" | "is-link" | "is-info" | "is-success" | "is-danger" | "is-warning" | "is-white" | "is-light" | "is-dark" | "is-black" | "is-text";
+        "color": | 'is-primary'
+    | 'is-link'
+    | 'is-info'
+    | 'is-success'
+    | 'is-danger'
+    | 'is-warning'
+    | 'is-white'
+    | 'is-light'
+    | 'is-dark'
+    | 'is-black'
+    | 'is-text';
         /**
           * Is disabled?
          */
@@ -82,7 +95,7 @@ export namespace Components {
         /**
           * Size
          */
-        "size": "is-small" | "is-medium" | "is-large" | "is-normal";
+        "size": 'is-small' | 'is-medium' | 'is-large' | 'is-normal';
     }
     interface BmButtons {
         /**
@@ -92,7 +105,7 @@ export namespace Components {
         /**
           * Buttons size
          */
-        "size": "are-small" | "are-medium" | "are-large";
+        "size": 'are-small' | 'are-medium' | 'are-large';
     }
     interface BmCard {
         /**
@@ -194,7 +207,7 @@ export namespace Components {
         /**
           * Container breakpoint
          */
-        "breakpoint": "is-widescreen" | "is-fullhd";
+        "breakpoint": 'is-widescreen' | 'is-fullhd';
         /**
           * CSS Classes
          */
@@ -212,7 +225,7 @@ export namespace Components {
         /**
           * Content size
          */
-        "size": "is-small" | "is-medium" | "is-large";
+        "size": 'is-small' | 'is-medium' | 'is-large';
     }
     interface BmDivider {
         /**
@@ -226,7 +239,7 @@ export namespace Components {
         /**
           * Orientation
          */
-        "orientation": "is-horizontal" | "is-vertical";
+        "orientation": 'is-horizontal' | 'is-vertical';
     }
     interface BmDropdown {
         /**
@@ -282,13 +295,13 @@ export namespace Components {
         /**
           * Field size
          */
-        "size": "is-small" | "is-normal" | "is-medium" | "is-large";
+        "size": 'is-small' | 'is-normal' | 'is-medium' | 'is-large';
     }
     interface BmFile {
         /**
           * Alignment
          */
-        "alignment": "is-centered" | "is-right";
+        "alignment": 'is-centered' | 'is-right';
         /**
           * CSS Classes
          */
@@ -296,7 +309,16 @@ export namespace Components {
         /**
           * Color
          */
-        "color": "is-white" | "is-black" | "is-light" | "is-dark" | "is-primary" | "is-link" | "is-info" | "is-success" | "is-warning" | "is-danger";
+        "color": | 'is-white'
+    | 'is-black'
+    | 'is-light'
+    | 'is-dark'
+    | 'is-primary'
+    | 'is-link'
+    | 'is-info'
+    | 'is-success'
+    | 'is-warning'
+    | 'is-danger';
         /**
           * File
          */
@@ -328,7 +350,7 @@ export namespace Components {
         /**
           * Size
          */
-        "size": "is-small" | "is-medium" | "is-large";
+        "size": 'is-small' | 'is-medium' | 'is-large';
     }
     interface BmFooter {
         /**
@@ -344,11 +366,11 @@ export namespace Components {
         /**
           * Color
          */
-        "color": "has-text-info" | "has-text-success" | "has-text-warning" | "has-text-danger";
+        "color": 'has-text-info' | 'has-text-success' | 'has-text-warning' | 'has-text-danger';
         /**
           * Size
          */
-        "size": "is-small" | "is-medium" | "is-large";
+        "size": 'is-small' | 'is-medium' | 'is-large';
     }
     interface BmImage {
         /**
@@ -358,7 +380,13 @@ export namespace Components {
         /**
           * Size
          */
-        "size": "is-16x16" | "is-24x24" | "is-32x32" | "is-48x48" | "is-64x64" | "is-96x96" | "is-128x128";
+        "size": | 'is-16x16'
+    | 'is-24x24'
+    | 'is-32x32'
+    | 'is-48x48'
+    | 'is-64x64'
+    | 'is-96x96'
+    | 'is-128x128';
     }
     interface BmInput {
         /**
@@ -368,7 +396,7 @@ export namespace Components {
         /**
           * Color
          */
-        "color": "is-primary" | "is-info" | "is-success" | "is-warning" | "is-danger";
+        "color": 'is-primary' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
         /**
           * Control Classes
          */
@@ -408,15 +436,15 @@ export namespace Components {
         /**
           * Size
          */
-        "size": "is-small" | "is-normal" | "is-medium" | "is-large";
+        "size": 'is-small' | 'is-normal' | 'is-medium' | 'is-large';
         /**
           * State
          */
-        "state": "is-hovered" | "is-focused";
+        "state": 'is-hovered' | 'is-focused';
         /**
           * Type
          */
-        "type": "text" | "number" | "email" | "password";
+        "type": 'text' | 'number' | 'email' | 'password';
         /**
           * Value
          */
@@ -436,11 +464,17 @@ export namespace Components {
         /**
           * Color
          */
-        "color": "is-dark" | "is-primary" | "is-link" | "is-info" | "is-success" | "is-warning" | "is-danger";
+        "color": | 'is-dark'
+    | 'is-primary'
+    | 'is-link'
+    | 'is-info'
+    | 'is-success'
+    | 'is-warning'
+    | 'is-danger';
         /**
           * Size
          */
-        "size": "is-small" | "is-medium" | "is-large";
+        "size": 'is-small' | 'is-medium' | 'is-large';
     }
     interface BmModal {
         /**
@@ -464,11 +498,20 @@ export namespace Components {
         /**
           * Color
          */
-        "color": "is-black" | "is-dark" | "is-light" | "is-white" | "is-primary" | "is-link" | "is-info" | "is-success" | "is-warning" | "is-danger";
+        "color": | 'is-black'
+    | 'is-dark'
+    | 'is-light'
+    | 'is-white'
+    | 'is-primary'
+    | 'is-link'
+    | 'is-info'
+    | 'is-success'
+    | 'is-warning'
+    | 'is-danger';
         /**
           * Fixed position
          */
-        "fixedPosition": "is-fixed-top" | "is-fixed-bottom";
+        "fixedPosition": 'is-fixed-top' | 'is-fixed-bottom';
         /**
           * Spaced
          */
@@ -486,7 +529,7 @@ export namespace Components {
         /**
           * Color
          */
-        "color": "is-primary" | "is-link" | "is-info" | "is-success" | "is-warning" | "is-danger";
+        "color": 'is-primary' | 'is-link' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
         /**
           * Dismissable
          */
@@ -496,7 +539,7 @@ export namespace Components {
         /**
           * Alignment
          */
-        "alignment": "is-centered" | "is-right";
+        "alignment": 'is-centered' | 'is-right';
         /**
           * CSS Classes
          */
@@ -508,7 +551,7 @@ export namespace Components {
         /**
           * Pagination size
          */
-        "size": "is-small" | "is-medium" | "is-large";
+        "size": 'is-small' | 'is-medium' | 'is-large';
     }
     interface BmPanel {
         /**
@@ -518,7 +561,7 @@ export namespace Components {
         /**
           * Panel color
          */
-        "color": "is-primary" | "is-link" | "is-info" | "is-success" | "is-danger" | "is-warning";
+        "color": 'is-primary' | 'is-link' | 'is-info' | 'is-success' | 'is-danger' | 'is-warning';
     }
     interface BmProgress {
         /**
@@ -528,7 +571,7 @@ export namespace Components {
         /**
           * Color
          */
-        "color": "is-primary" | "is-link" | "is-info" | "is-success" | "is-warning" | "is-danger";
+        "color": 'is-primary' | 'is-link' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
         /**
           * Maximum value
          */
@@ -536,7 +579,7 @@ export namespace Components {
         /**
           * Size
          */
-        "size": "is-small" | "is-medium" | "is-large";
+        "size": 'is-small' | 'is-medium' | 'is-large';
         /**
           * Value
          */
@@ -572,7 +615,7 @@ export namespace Components {
         /**
           * Section size
          */
-        "size": "is-medium" | "is-large";
+        "size": 'is-medium' | 'is-large';
     }
     interface BmSelect {
         /**
@@ -582,7 +625,7 @@ export namespace Components {
         /**
           * Color
          */
-        "color": "is-primary" | "is-info" | "is-success" | "is-warning" | "is-danger";
+        "color": 'is-primary' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
         /**
           * Control classes
          */
@@ -606,11 +649,11 @@ export namespace Components {
         /**
           * Size
          */
-        "size": "is-small" | "is-normal" | "is-medium" | "is-large";
+        "size": 'is-small' | 'is-normal' | 'is-medium' | 'is-large';
         /**
           * State
          */
-        "state": "is-hovered" | "is-focused";
+        "state": 'is-hovered' | 'is-focused';
         /**
           * Value
          */
@@ -624,7 +667,7 @@ export namespace Components {
         /**
           * Color
          */
-        "color": "is-success" | "is-warning" | "is-danger" | "is-info";
+        "color": 'is-success' | 'is-warning' | 'is-danger' | 'is-info';
         /**
           * Disabled
          */
@@ -644,7 +687,7 @@ export namespace Components {
         /**
           * Size
          */
-        "size": "is-small" | "is-medium" | "is-large";
+        "size": 'is-small' | 'is-medium' | 'is-large';
         /**
           * Step
          */
@@ -666,7 +709,7 @@ export namespace Components {
         /**
           * Color
          */
-        "color": "is-success" | "is-warning" | "is-danger" | "is-info";
+        "color": 'is-success' | 'is-warning' | 'is-danger' | 'is-info';
         /**
           * Disabled
          */
@@ -686,7 +729,7 @@ export namespace Components {
         /**
           * Size
          */
-        "size": "is-small" | "is-medium" | "is-large";
+        "size": 'is-small' | 'is-medium' | 'is-large';
     }
     interface BmTable {
         /**
@@ -722,7 +765,7 @@ export namespace Components {
         /**
           * Alignment
          */
-        "alignment": "is-centered" | "is-right";
+        "alignment": 'is-centered' | 'is-right';
         /**
           * CSS Classes
          */
@@ -738,11 +781,11 @@ export namespace Components {
         /**
           * Pagination size
          */
-        "size": "is-small" | "is-medium" | "is-large";
+        "size": 'is-small' | 'is-medium' | 'is-large';
         /**
           * Style
          */
-        "tabStyle": "is-boxed" | "is-toggle";
+        "tabStyle": 'is-boxed' | 'is-toggle';
     }
     interface BmTag {
         /**
@@ -752,15 +795,24 @@ export namespace Components {
         /**
           * Color
          */
-        "color": "is-black" | "is-dark" | "is-light" | "is-white" | "is-primary" | "is-link" | "is-info" | "is-success" | "is-warning" | "is-danger";
+        "color": | 'is-black'
+    | 'is-dark'
+    | 'is-light'
+    | 'is-white'
+    | 'is-primary'
+    | 'is-link'
+    | 'is-info'
+    | 'is-success'
+    | 'is-warning'
+    | 'is-danger';
         /**
           * Modifier
          */
-        "modifier": "is-rounded" | "is-delete";
+        "modifier": 'is-rounded' | 'is-delete';
         /**
           * Size
          */
-        "size": "is-normal" | "is-medium" | "is-large";
+        "size": 'is-normal' | 'is-medium' | 'is-large';
         /**
           * Tag
          */
@@ -778,7 +830,7 @@ export namespace Components {
         /**
           * Size
          */
-        "size": "are-medium" | "are-large";
+        "size": 'are-medium' | 'are-large';
     }
     interface BmTextarea {
         /**
@@ -788,7 +840,7 @@ export namespace Components {
         /**
           * Color
          */
-        "color": "is-primary" | "is-info" | "is-success" | "is-warning" | "is-danger";
+        "color": 'is-primary' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
         /**
           * Control class
          */
@@ -816,11 +868,11 @@ export namespace Components {
         /**
           * Size
          */
-        "size": "is-small" | "is-normal" | "is-medium" | "is-large";
+        "size": 'is-small' | 'is-normal' | 'is-medium' | 'is-large';
         /**
           * State
          */
-        "state": "is-hovered" | "is-focused";
+        "state": 'is-hovered' | 'is-focused';
         /**
           * Value
          */
@@ -1122,7 +1174,7 @@ declare namespace LocalJSX {
         /**
           * Breadcrumb alignment
          */
-        "alignment"?: "is-centered" | "is-right";
+        "alignment"?: 'is-centered' | 'is-right';
         /**
           * CSS Classes
          */
@@ -1130,11 +1182,14 @@ declare namespace LocalJSX {
         /**
           * Separator
          */
-        "separator"?: "has-arrow-separator" | "has-bullet-separator" | "has-dot-separator" | "has-succeeds-separator";
+        "separator"?: | 'has-arrow-separator'
+    | 'has-bullet-separator'
+    | 'has-dot-separator'
+    | 'has-succeeds-separator';
         /**
           * Size
          */
-        "size"?: "is-small" | "is-medium" | "is-large";
+        "size"?: 'is-small' | 'is-medium' | 'is-large';
     }
     interface BmButton {
         /**
@@ -1144,7 +1199,17 @@ declare namespace LocalJSX {
         /**
           * Color
          */
-        "color"?: "is-primary" | "is-link" | "is-info" | "is-success" | "is-danger" | "is-warning" | "is-white" | "is-light" | "is-dark" | "is-black" | "is-text";
+        "color"?: | 'is-primary'
+    | 'is-link'
+    | 'is-info'
+    | 'is-success'
+    | 'is-danger'
+    | 'is-warning'
+    | 'is-white'
+    | 'is-light'
+    | 'is-dark'
+    | 'is-black'
+    | 'is-text';
         /**
           * Is disabled?
          */
@@ -1188,7 +1253,7 @@ declare namespace LocalJSX {
         /**
           * Size
          */
-        "size"?: "is-small" | "is-medium" | "is-large" | "is-normal";
+        "size"?: 'is-small' | 'is-medium' | 'is-large' | 'is-normal';
     }
     interface BmButtons {
         /**
@@ -1198,7 +1263,7 @@ declare namespace LocalJSX {
         /**
           * Buttons size
          */
-        "size"?: "are-small" | "are-medium" | "are-large";
+        "size"?: 'are-small' | 'are-medium' | 'are-large';
     }
     interface BmCard {
         /**
@@ -1300,7 +1365,7 @@ declare namespace LocalJSX {
         /**
           * Container breakpoint
          */
-        "breakpoint"?: "is-widescreen" | "is-fullhd";
+        "breakpoint"?: 'is-widescreen' | 'is-fullhd';
         /**
           * CSS Classes
          */
@@ -1318,7 +1383,7 @@ declare namespace LocalJSX {
         /**
           * Content size
          */
-        "size"?: "is-small" | "is-medium" | "is-large";
+        "size"?: 'is-small' | 'is-medium' | 'is-large';
     }
     interface BmDivider {
         /**
@@ -1332,7 +1397,7 @@ declare namespace LocalJSX {
         /**
           * Orientation
          */
-        "orientation"?: "is-horizontal" | "is-vertical";
+        "orientation"?: 'is-horizontal' | 'is-vertical';
     }
     interface BmDropdown {
         /**
@@ -1388,13 +1453,13 @@ declare namespace LocalJSX {
         /**
           * Field size
          */
-        "size"?: "is-small" | "is-normal" | "is-medium" | "is-large";
+        "size"?: 'is-small' | 'is-normal' | 'is-medium' | 'is-large';
     }
     interface BmFile {
         /**
           * Alignment
          */
-        "alignment"?: "is-centered" | "is-right";
+        "alignment"?: 'is-centered' | 'is-right';
         /**
           * CSS Classes
          */
@@ -1402,7 +1467,16 @@ declare namespace LocalJSX {
         /**
           * Color
          */
-        "color"?: "is-white" | "is-black" | "is-light" | "is-dark" | "is-primary" | "is-link" | "is-info" | "is-success" | "is-warning" | "is-danger";
+        "color"?: | 'is-white'
+    | 'is-black'
+    | 'is-light'
+    | 'is-dark'
+    | 'is-primary'
+    | 'is-link'
+    | 'is-info'
+    | 'is-success'
+    | 'is-warning'
+    | 'is-danger';
         /**
           * File
          */
@@ -1434,7 +1508,7 @@ declare namespace LocalJSX {
         /**
           * Size
          */
-        "size"?: "is-small" | "is-medium" | "is-large";
+        "size"?: 'is-small' | 'is-medium' | 'is-large';
     }
     interface BmFooter {
         /**
@@ -1450,11 +1524,11 @@ declare namespace LocalJSX {
         /**
           * Color
          */
-        "color"?: "has-text-info" | "has-text-success" | "has-text-warning" | "has-text-danger";
+        "color"?: 'has-text-info' | 'has-text-success' | 'has-text-warning' | 'has-text-danger';
         /**
           * Size
          */
-        "size"?: "is-small" | "is-medium" | "is-large";
+        "size"?: 'is-small' | 'is-medium' | 'is-large';
     }
     interface BmImage {
         /**
@@ -1464,7 +1538,13 @@ declare namespace LocalJSX {
         /**
           * Size
          */
-        "size"?: "is-16x16" | "is-24x24" | "is-32x32" | "is-48x48" | "is-64x64" | "is-96x96" | "is-128x128";
+        "size"?: | 'is-16x16'
+    | 'is-24x24'
+    | 'is-32x32'
+    | 'is-48x48'
+    | 'is-64x64'
+    | 'is-96x96'
+    | 'is-128x128';
     }
     interface BmInput {
         /**
@@ -1474,7 +1554,7 @@ declare namespace LocalJSX {
         /**
           * Color
          */
-        "color"?: "is-primary" | "is-info" | "is-success" | "is-warning" | "is-danger";
+        "color"?: 'is-primary' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
         /**
           * Control Classes
          */
@@ -1514,15 +1594,15 @@ declare namespace LocalJSX {
         /**
           * Size
          */
-        "size"?: "is-small" | "is-normal" | "is-medium" | "is-large";
+        "size"?: 'is-small' | 'is-normal' | 'is-medium' | 'is-large';
         /**
           * State
          */
-        "state"?: "is-hovered" | "is-focused";
+        "state"?: 'is-hovered' | 'is-focused';
         /**
           * Type
          */
-        "type"?: "text" | "number" | "email" | "password";
+        "type"?: 'text' | 'number' | 'email' | 'password';
         /**
           * Value
          */
@@ -1542,11 +1622,17 @@ declare namespace LocalJSX {
         /**
           * Color
          */
-        "color"?: "is-dark" | "is-primary" | "is-link" | "is-info" | "is-success" | "is-warning" | "is-danger";
+        "color"?: | 'is-dark'
+    | 'is-primary'
+    | 'is-link'
+    | 'is-info'
+    | 'is-success'
+    | 'is-warning'
+    | 'is-danger';
         /**
           * Size
          */
-        "size"?: "is-small" | "is-medium" | "is-large";
+        "size"?: 'is-small' | 'is-medium' | 'is-large';
     }
     interface BmModal {
         /**
@@ -1570,11 +1656,20 @@ declare namespace LocalJSX {
         /**
           * Color
          */
-        "color"?: "is-black" | "is-dark" | "is-light" | "is-white" | "is-primary" | "is-link" | "is-info" | "is-success" | "is-warning" | "is-danger";
+        "color"?: | 'is-black'
+    | 'is-dark'
+    | 'is-light'
+    | 'is-white'
+    | 'is-primary'
+    | 'is-link'
+    | 'is-info'
+    | 'is-success'
+    | 'is-warning'
+    | 'is-danger';
         /**
           * Fixed position
          */
-        "fixedPosition"?: "is-fixed-top" | "is-fixed-bottom";
+        "fixedPosition"?: 'is-fixed-top' | 'is-fixed-bottom';
         /**
           * Spaced
          */
@@ -1592,7 +1687,7 @@ declare namespace LocalJSX {
         /**
           * Color
          */
-        "color"?: "is-primary" | "is-link" | "is-info" | "is-success" | "is-warning" | "is-danger";
+        "color"?: 'is-primary' | 'is-link' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
         /**
           * Dismissable
          */
@@ -1602,7 +1697,7 @@ declare namespace LocalJSX {
         /**
           * Alignment
          */
-        "alignment"?: "is-centered" | "is-right";
+        "alignment"?: 'is-centered' | 'is-right';
         /**
           * CSS Classes
          */
@@ -1614,7 +1709,7 @@ declare namespace LocalJSX {
         /**
           * Pagination size
          */
-        "size"?: "is-small" | "is-medium" | "is-large";
+        "size"?: 'is-small' | 'is-medium' | 'is-large';
     }
     interface BmPanel {
         /**
@@ -1624,7 +1719,7 @@ declare namespace LocalJSX {
         /**
           * Panel color
          */
-        "color"?: "is-primary" | "is-link" | "is-info" | "is-success" | "is-danger" | "is-warning";
+        "color"?: 'is-primary' | 'is-link' | 'is-info' | 'is-success' | 'is-danger' | 'is-warning';
     }
     interface BmProgress {
         /**
@@ -1634,7 +1729,7 @@ declare namespace LocalJSX {
         /**
           * Color
          */
-        "color"?: "is-primary" | "is-link" | "is-info" | "is-success" | "is-warning" | "is-danger";
+        "color"?: 'is-primary' | 'is-link' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
         /**
           * Maximum value
          */
@@ -1642,7 +1737,7 @@ declare namespace LocalJSX {
         /**
           * Size
          */
-        "size"?: "is-small" | "is-medium" | "is-large";
+        "size"?: 'is-small' | 'is-medium' | 'is-large';
         /**
           * Value
          */
@@ -1678,7 +1773,7 @@ declare namespace LocalJSX {
         /**
           * Section size
          */
-        "size"?: "is-medium" | "is-large";
+        "size"?: 'is-medium' | 'is-large';
     }
     interface BmSelect {
         /**
@@ -1688,7 +1783,7 @@ declare namespace LocalJSX {
         /**
           * Color
          */
-        "color"?: "is-primary" | "is-info" | "is-success" | "is-warning" | "is-danger";
+        "color"?: 'is-primary' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
         /**
           * Control classes
          */
@@ -1712,11 +1807,11 @@ declare namespace LocalJSX {
         /**
           * Size
          */
-        "size"?: "is-small" | "is-normal" | "is-medium" | "is-large";
+        "size"?: 'is-small' | 'is-normal' | 'is-medium' | 'is-large';
         /**
           * State
          */
-        "state"?: "is-hovered" | "is-focused";
+        "state"?: 'is-hovered' | 'is-focused';
         /**
           * Value
          */
@@ -1730,7 +1825,7 @@ declare namespace LocalJSX {
         /**
           * Color
          */
-        "color"?: "is-success" | "is-warning" | "is-danger" | "is-info";
+        "color"?: 'is-success' | 'is-warning' | 'is-danger' | 'is-info';
         /**
           * Disabled
          */
@@ -1750,7 +1845,7 @@ declare namespace LocalJSX {
         /**
           * Size
          */
-        "size"?: "is-small" | "is-medium" | "is-large";
+        "size"?: 'is-small' | 'is-medium' | 'is-large';
         /**
           * Step
          */
@@ -1772,7 +1867,7 @@ declare namespace LocalJSX {
         /**
           * Color
          */
-        "color"?: "is-success" | "is-warning" | "is-danger" | "is-info";
+        "color"?: 'is-success' | 'is-warning' | 'is-danger' | 'is-info';
         /**
           * Disabled
          */
@@ -1792,7 +1887,7 @@ declare namespace LocalJSX {
         /**
           * Size
          */
-        "size"?: "is-small" | "is-medium" | "is-large";
+        "size"?: 'is-small' | 'is-medium' | 'is-large';
     }
     interface BmTable {
         /**
@@ -1828,7 +1923,7 @@ declare namespace LocalJSX {
         /**
           * Alignment
          */
-        "alignment"?: "is-centered" | "is-right";
+        "alignment"?: 'is-centered' | 'is-right';
         /**
           * CSS Classes
          */
@@ -1844,11 +1939,11 @@ declare namespace LocalJSX {
         /**
           * Pagination size
          */
-        "size"?: "is-small" | "is-medium" | "is-large";
+        "size"?: 'is-small' | 'is-medium' | 'is-large';
         /**
           * Style
          */
-        "tabStyle"?: "is-boxed" | "is-toggle";
+        "tabStyle"?: 'is-boxed' | 'is-toggle';
     }
     interface BmTag {
         /**
@@ -1858,15 +1953,24 @@ declare namespace LocalJSX {
         /**
           * Color
          */
-        "color"?: "is-black" | "is-dark" | "is-light" | "is-white" | "is-primary" | "is-link" | "is-info" | "is-success" | "is-warning" | "is-danger";
+        "color"?: | 'is-black'
+    | 'is-dark'
+    | 'is-light'
+    | 'is-white'
+    | 'is-primary'
+    | 'is-link'
+    | 'is-info'
+    | 'is-success'
+    | 'is-warning'
+    | 'is-danger';
         /**
           * Modifier
          */
-        "modifier"?: "is-rounded" | "is-delete";
+        "modifier"?: 'is-rounded' | 'is-delete';
         /**
           * Size
          */
-        "size"?: "is-normal" | "is-medium" | "is-large";
+        "size"?: 'is-normal' | 'is-medium' | 'is-large';
         /**
           * Tag
          */
@@ -1884,7 +1988,7 @@ declare namespace LocalJSX {
         /**
           * Size
          */
-        "size"?: "are-medium" | "are-large";
+        "size"?: 'are-medium' | 'are-large';
     }
     interface BmTextarea {
         /**
@@ -1894,7 +1998,7 @@ declare namespace LocalJSX {
         /**
           * Color
          */
-        "color"?: "is-primary" | "is-info" | "is-success" | "is-warning" | "is-danger";
+        "color"?: 'is-primary' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
         /**
           * Control class
          */
@@ -1922,11 +2026,11 @@ declare namespace LocalJSX {
         /**
           * Size
          */
-        "size"?: "is-small" | "is-normal" | "is-medium" | "is-large";
+        "size"?: 'is-small' | 'is-normal' | 'is-medium' | 'is-large';
         /**
           * State
          */
-        "state"?: "is-hovered" | "is-focused";
+        "state"?: 'is-hovered' | 'is-focused';
         /**
           * Value
          */

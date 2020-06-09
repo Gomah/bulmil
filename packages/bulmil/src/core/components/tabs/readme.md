@@ -1,4 +1,4 @@
-# bm-pagination
+# bm-tabs
 
 
 
