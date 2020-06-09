@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.7](https://github.com/gomah/bulmil/compare/bulmil-angular@0.2.6...bulmil-angular@0.2.7) (2020-06-09)
+
+**Note:** Version bump only for package bulmil-angular
+
+
+
+
+
 ## [0.2.6](https://github.com/gomah/bulmil/compare/bulmil-angular@0.2.5...bulmil-angular@0.2.6) (2020-05-13)
 
 **Note:** Version bump only for package bulmil-angular
