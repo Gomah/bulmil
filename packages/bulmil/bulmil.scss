@@ -2,8 +2,16 @@
 @import './src/styles/main.scss';
 @import 'bulma-scss/utilities/animations';
 
-// Bulma base
+// Bulma base & helpers
 @import 'bulma-scss/base/_all';
+@import 'bulma-scss/helpers/color';
+@import 'bulma-scss/helpers/float';
+@import 'bulma-scss/helpers/other';
+@import 'bulma-scss/helpers/overflow';
+@import 'bulma-scss/helpers/position';
+@import 'bulma-scss/helpers/spacing';
+@import 'bulma-scss/helpers/typography';
+@import 'bulma-scss/helpers/visibility';
 
 // Other components & elements not fitting in any components or not implemented yet.
 @import 'bulma-scss/components/level';
