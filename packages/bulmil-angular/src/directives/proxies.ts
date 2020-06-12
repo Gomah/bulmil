@@ -66,8 +66,8 @@ export class BmBreadcrumb {
 }
 
 export declare interface BmButton extends Components.BmButton {}
-@ProxyCmp({inputs: ['class', 'color', 'disabled', 'isActive', 'isFocused', 'isFullwidth', 'isHovered', 'isInverted', 'isLoading', 'isOutlined', 'isRounded', 'isStatic', 'size']})
-@Component({ selector: 'bm-button', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class', 'color', 'disabled', 'isActive', 'isFocused', 'isFullwidth', 'isHovered', 'isInverted', 'isLoading', 'isOutlined', 'isRounded', 'isStatic', 'size'] })
+@ProxyCmp({inputs: ['class', 'color', 'disabled', 'isActive', 'isFocused', 'isFullwidth', 'isHovered', 'isInverted', 'isLight', 'isLoading', 'isOutlined', 'isRounded', 'isStatic', 'size']})
+@Component({ selector: 'bm-button', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class', 'color', 'disabled', 'isActive', 'isFocused', 'isFullwidth', 'isHovered', 'isInverted', 'isLight', 'isLoading', 'isOutlined', 'isRounded', 'isStatic', 'size'] })
 export class BmButton {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {

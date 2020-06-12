@@ -36,6 +36,8 @@ export const Example = (): TemplateResult => {
       <bm-button
         size=${select('Size', sizes, null)}
         color=${select('Color', colors, null)}
+        is-light=${boolean('Is light', false)}
+        is-outlined=${boolean('Is outlined', false)}
         disabled=${boolean('Disabled', false)}
       >
         Button

@@ -77,6 +77,10 @@ export namespace Components {
          */
         "isInverted": boolean;
         /**
+          * Is light
+         */
+        "isLight": boolean;
+        /**
           * Loading state
          */
         "isLoading": boolean;
@@ -1234,6 +1238,10 @@ declare namespace LocalJSX {
           * Is inverted
          */
         "isInverted"?: boolean;
+        /**
+          * Is light
+         */
+        "isLight"?: boolean;
         /**
           * Loading state
          */

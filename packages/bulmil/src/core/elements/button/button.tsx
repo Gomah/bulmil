@@ -47,6 +47,11 @@ export class Button implements ComponentInterface {
   @Prop() isOutlined = false;
 
   /**
+   * Is light
+   */
+  @Prop() isLight = false;
+
+  /**
    * Is inverted
    */
   @Prop() isInverted = false;
@@ -90,6 +95,7 @@ export class Button implements ComponentInterface {
           [this.size]: Boolean(this.size),
           'is-fullwidth': this.isFullwidth,
           'is-active': this.isActive,
+          'is-light': this.isLight,
           'is-focused': this.isFocused,
           'is-static': this.isStatic,
           'is-hovered': this.isHovered,
