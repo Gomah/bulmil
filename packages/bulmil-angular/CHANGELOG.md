@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/gomah/bulmil/compare/bulmil-angular@0.3.0...bulmil-angular@0.4.0) (2020-06-12)
+
+
+### Features
+
+* **bulmil:** Add is-light to button component ([ad36417](https://github.com/gomah/bulmil/commit/ad3641738733f32d3895aa03b8f996673f95a8d2))
+
+
+
+
+
 # [0.3.0](https://github.com/gomah/bulmil/compare/bulmil-angular@0.2.7...bulmil-angular@0.3.0) (2020-06-09)
 
 
