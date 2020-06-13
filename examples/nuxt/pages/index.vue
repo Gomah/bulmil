@@ -1,6 +1,12 @@
 <template>
   <div class="container">
-    <bm-button :color="color" :size="size" @click="changeMe">
+    <bm-button
+      :color="color"
+      :size="size"
+      :is-light="light"
+      :is-outlined="outlined"
+      @click="changeMe"
+    >
       Click Me!
     </bm-button>
   </div>
@@ -12,6 +18,8 @@ export default {
     text: 'Click Me!',
     size: null,
     color: 'is-primary',
+    outlined: false,
+    light: false,
     colors: [
       'is-primary',
       'is-link',
@@ -33,6 +41,8 @@ export default {
     changeMe() {
       const sizes = this.sizes.filter(s => s !== this.size)
       const colors = this.colors.filter(c => c !== this.color)
+      this.outlined = Math.floor(Math.random() * 10) >= 5
+      this.light = Math.floor(Math.random() * 10) >= 5
       this.color = colors[Math.floor(Math.random() * colors.length)]
       this.size = sizes[Math.floor(Math.random() * sizes.length)]
     }

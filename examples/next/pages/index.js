@@ -7,6 +7,8 @@ class Home extends React.Component {
     this.state = {
       color: 'is-primary',
       size: null,
+      light: false,
+      outlined: false,
     };
 
     this.colors = [
@@ -27,20 +29,28 @@ class Home extends React.Component {
     this.sizes = ['is-large', 'is-medium', 'is-small', null];
   }
 
-  handleButtonClick = e => {
-    const sizes = this.sizes.filter(s => s !== this.state.size);
-    const colors = this.colors.filter(c => c !== this.state.color);
+  handleButtonClick = (e) => {
+    const sizes = this.sizes.filter((s) => s !== this.state.size);
+    const colors = this.colors.filter((c) => c !== this.state.color);
 
     this.setState({
       color: colors[Math.floor(Math.random() * this.colors.length)],
       size: sizes[Math.floor(Math.random() * this.sizes.length)],
+      outlined: Math.floor(Math.random() * 10) >= 5,
+      light: Math.floor(Math.random() * 10) >= 5,
     });
   };
 
   render() {
     return (
       <div className="container">
-        <bm-button size={this.state.size} color={this.state.color} onClick={this.handleButtonClick}>
+        <bm-button
+          is-outlined={this.state.outlined}
+          is-light={this.state.light}
+          size={this.state.size}
+          color={this.state.color}
+          onClick={this.handleButtonClick}
+        >
           Click Me!
         </bm-button>
 

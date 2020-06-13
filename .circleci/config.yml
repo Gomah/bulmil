@@ -20,6 +20,6 @@ workflows:
   build:
     jobs:
       - build
-  # test:
-  #   jobs:
-  #     - test
+  test:
+    jobs:
+      - test
