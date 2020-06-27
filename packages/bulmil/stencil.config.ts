@@ -2,6 +2,7 @@ import path from 'path';
 import { Config } from '@stencil/core';
 import { angularOutputTarget } from '@stencil/angular-output-target';
 import { reactOutputTarget } from '@stencil/react-output-target';
+import { vueOutputTarget } from '@stencil/vue-output-target';
 import { sass } from '@stencil/sass';
 import { postcss } from '@stencil/postcss';
 import autoprefixer from 'autoprefixer';
@@ -31,6 +32,10 @@ export const config: Config = {
     angularOutputTarget({
       componentCorePackage: 'bulmil',
       directivesProxyFile: '../bulmil-angular/src/directives/proxies.ts',
+    }),
+    vueOutputTarget({
+      componentCorePackage: 'bulmil',
+      proxiesFile: '../bulmil-vue/src/components.ts',
     }),
     { type: 'dist' },
     {

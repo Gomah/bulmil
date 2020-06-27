@@ -67,6 +67,7 @@
     "@stencil/postcss": "^1.0.1",
     "@stencil/react-output-target": "^0.0.6",
     "@stencil/sass": "^1.3.2",
+    "@stencil/vue-output-target": "^0.0.1",
     "@types/autoprefixer": "^9.7.2",
     "@types/jest": "26.0.3",
     "@types/node": "^14.0.14",
