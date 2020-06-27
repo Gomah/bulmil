@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/gomah/bulmil/compare/bulmil-angular@0.4.3...bulmil-angular@0.5.0) (2020-06-27)
+
+
+### Bug Fixes
+
+* **bulmil:** remove reserved class prop ([cd12346](https://github.com/gomah/bulmil/commit/cd123460685053d59b407fed8c55f1b436e2d3d8))
+
+
+
+
+
 ## [0.4.3](https://github.com/gomah/bulmil/compare/bulmil-angular@0.4.2...bulmil-angular@0.4.3) (2020-06-26)
 
 **Note:** Version bump only for package bulmil-angular

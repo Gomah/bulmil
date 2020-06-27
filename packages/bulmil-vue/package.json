@@ -1,7 +1,7 @@
 {
   "name": "bulmil-vue",
   "sideEffects": false,
-  "version": "0.4.3",
+  "version": "0.5.0",
   "author": "Gomah",
   "license": "MIT",
   "description": "Vue specific wrapper for bulmil",
@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "@vue/test-utils": "^1.0.3",
-    "bulmil": "^0.4.3",
+    "bulmil": "^0.5.0",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
     "vue-jest": "^3.0.5",
