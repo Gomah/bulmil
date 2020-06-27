@@ -6,11 +6,6 @@ import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 })
 export class Field implements ComponentInterface {
   /**
-   * CSS Classes
-   */
-  @Prop() class = '';
-
-  /**
    * Label
    */
   @Prop() label: string;
@@ -52,7 +47,6 @@ export class Field implements ComponentInterface {
       'is-horizontal': this.isHorizontal,
       'is-grouped': this.isGrouped,
       'is-grouped-multiline': this.isGroupedMultiline,
-      [this.class]: Boolean(this.class),
     };
     if (this.isHorizontal) {
       return (

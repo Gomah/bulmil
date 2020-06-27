@@ -6,9 +6,9 @@ import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 })
 export class Radio implements ComponentInterface {
   /**
-   * CSS Classes
+   * Input class
    */
-  @Prop() class = '';
+  @Prop() inputClass = '';
 
   /**
    * Label Classes
@@ -40,7 +40,7 @@ export class Radio implements ComponentInterface {
       >
         <input
           class={{
-            [this.class]: Boolean(this.class),
+            [this.inputClass]: Boolean(this.inputClass),
           }}
           type="radio"
           name={this.name}

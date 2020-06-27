@@ -9,7 +9,6 @@
 
 | Property       | Attribute        | Description | Type      | Default |
 | -------------- | ---------------- | ----------- | --------- | ------- |
-| `class`        | `class`          | CSS Classes | `string`  | `''`    |
 | `hasModalCard` | `has-modal-card` | Modal Card  | `boolean` | `false` |
 | `isActive`     | `is-active`      | Is Active   | `boolean` | `false` |
 

@@ -6,11 +6,6 @@ import { Component, Prop, h, JSX, ComponentInterface, Host } from '@stencil/core
 })
 export class Pagination implements ComponentInterface {
   /**
-   * CSS Classes
-   */
-  @Prop() class = '';
-
-  /**
    * Pagination size
    */
   @Prop() size: 'is-small' | 'is-medium' | 'is-large';
@@ -34,7 +29,6 @@ export class Pagination implements ComponentInterface {
             [this.size]: Boolean(this.size),
             [this.alignment]: Boolean(this.alignment),
             'is-rounded': this.isRounded,
-            [this.class]: Boolean(this.class),
           }}
           role="navigation"
           aria-label="pagination"

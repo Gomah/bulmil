@@ -6,11 +6,6 @@ import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 })
 export class Breadcrumb implements ComponentInterface {
   /**
-   * CSS Classes
-   */
-  @Prop() class = '';
-
-  /**
    * Breadcrumb alignment
    */
   @Prop() alignment: 'is-centered' | 'is-right';
@@ -37,7 +32,6 @@ export class Breadcrumb implements ComponentInterface {
           [this.size]: Boolean(this.size),
           [this.separator]: Boolean(this.separator),
           [this.alignment]: Boolean(this.alignment),
-          [this.class]: Boolean(this.class),
         }}
         aria-label="breadcrumbs"
       >

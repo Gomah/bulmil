@@ -6,11 +6,6 @@ import { Component, Prop, h, JSX, ComponentInterface, Host } from '@stencil/core
 })
 export class Content implements ComponentInterface {
   /**
-   * CSS Classes
-   */
-  @Prop() class = '';
-
-  /**
    * Content size
    */
   @Prop() size: 'is-small' | 'is-medium' | 'is-large';
@@ -22,7 +17,6 @@ export class Content implements ComponentInterface {
           class={{
             content: true,
             [this.size]: Boolean(this.size),
-            [this.class]: Boolean(this.class),
           }}
         >
           <slot />

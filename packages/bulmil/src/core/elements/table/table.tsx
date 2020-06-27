@@ -5,11 +5,6 @@ import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 })
 export class Table implements ComponentInterface {
   /**
-   * CSS Classes
-   */
-  @Prop() class: string;
-
-  /**
    * Bordered
    */
   @Prop() isBordered = false;
@@ -44,7 +39,6 @@ export class Table implements ComponentInterface {
       <table
         class={{
           table: true,
-          [this.class]: Boolean(this.class),
           'is-bordered': this.isBordered,
           'is-striped': this.isStriped,
           'is-narrow': this.isNarrow,

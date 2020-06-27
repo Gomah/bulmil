@@ -10,8 +10,8 @@
 | Property     | Attribute     | Description   | Type      | Default |
 | ------------ | ------------- | ------------- | --------- | ------- |
 | `checked`    | `checked`     | Checked       | `boolean` | `false` |
-| `class`      | `class`       | CSS Classes   | `string`  | `''`    |
 | `disabled`   | `disabled`    | Disabled      | `boolean` | `false` |
+| `inputClass` | `input-class` | Input classes | `string`  | `''`    |
 | `labelClass` | `label-class` | Label classes | `string`  | `''`    |
 
 

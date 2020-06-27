@@ -44,8 +44,8 @@ export function ProxyCmp(opts: { inputs?: any; methods?: any }) {
 import { Components } from 'bulmil'
 
 export declare interface BmBox extends Components.BmBox {}
-@ProxyCmp({inputs: ['class']})
-@Component({ selector: 'bm-box', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class'] })
+
+@Component({ selector: 'bm-box', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>' })
 export class BmBox {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -55,8 +55,8 @@ export class BmBox {
 }
 
 export declare interface BmBreadcrumb extends Components.BmBreadcrumb {}
-@ProxyCmp({inputs: ['alignment', 'class', 'separator', 'size']})
-@Component({ selector: 'bm-breadcrumb', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['alignment', 'class', 'separator', 'size'] })
+@ProxyCmp({inputs: ['alignment', 'separator', 'size']})
+@Component({ selector: 'bm-breadcrumb', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['alignment', 'separator', 'size'] })
 export class BmBreadcrumb {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -66,8 +66,8 @@ export class BmBreadcrumb {
 }
 
 export declare interface BmButton extends Components.BmButton {}
-@ProxyCmp({inputs: ['class', 'color', 'disabled', 'isActive', 'isFocused', 'isFullwidth', 'isHovered', 'isInverted', 'isLight', 'isLoading', 'isOutlined', 'isRounded', 'isStatic', 'size']})
-@Component({ selector: 'bm-button', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class', 'color', 'disabled', 'isActive', 'isFocused', 'isFullwidth', 'isHovered', 'isInverted', 'isLight', 'isLoading', 'isOutlined', 'isRounded', 'isStatic', 'size'] })
+@ProxyCmp({inputs: ['color', 'disabled', 'isActive', 'isFocused', 'isFullwidth', 'isHovered', 'isInverted', 'isLight', 'isLoading', 'isOutlined', 'isRounded', 'isStatic', 'size']})
+@Component({ selector: 'bm-button', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['color', 'disabled', 'isActive', 'isFocused', 'isFullwidth', 'isHovered', 'isInverted', 'isLight', 'isLoading', 'isOutlined', 'isRounded', 'isStatic', 'size'] })
 export class BmButton {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -77,8 +77,8 @@ export class BmButton {
 }
 
 export declare interface BmButtons extends Components.BmButtons {}
-@ProxyCmp({inputs: ['class', 'size']})
-@Component({ selector: 'bm-buttons', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class', 'size'] })
+@ProxyCmp({inputs: ['size']})
+@Component({ selector: 'bm-buttons', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['size'] })
 export class BmButtons {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -88,8 +88,8 @@ export class BmButtons {
 }
 
 export declare interface BmCard extends Components.BmCard {}
-@ProxyCmp({inputs: ['class']})
-@Component({ selector: 'bm-card', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class'] })
+
+@Component({ selector: 'bm-card', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>' })
 export class BmCard {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -99,8 +99,8 @@ export class BmCard {
 }
 
 export declare interface BmCardContent extends Components.BmCardContent {}
-@ProxyCmp({inputs: ['class']})
-@Component({ selector: 'bm-card-content', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class'] })
+
+@Component({ selector: 'bm-card-content', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>' })
 export class BmCardContent {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -110,8 +110,8 @@ export class BmCardContent {
 }
 
 export declare interface BmCardFooter extends Components.BmCardFooter {}
-@ProxyCmp({inputs: ['class']})
-@Component({ selector: 'bm-card-footer', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class'] })
+
+@Component({ selector: 'bm-card-footer', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>' })
 export class BmCardFooter {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -121,8 +121,8 @@ export class BmCardFooter {
 }
 
 export declare interface BmCardHeader extends Components.BmCardHeader {}
-@ProxyCmp({inputs: ['class']})
-@Component({ selector: 'bm-card-header', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class'] })
+
+@Component({ selector: 'bm-card-header', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>' })
 export class BmCardHeader {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -132,8 +132,8 @@ export class BmCardHeader {
 }
 
 export declare interface BmCardImage extends Components.BmCardImage {}
-@ProxyCmp({inputs: ['class']})
-@Component({ selector: 'bm-card-image', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class'] })
+
+@Component({ selector: 'bm-card-image', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>' })
 export class BmCardImage {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -143,8 +143,8 @@ export class BmCardImage {
 }
 
 export declare interface BmCheckbox extends Components.BmCheckbox {}
-@ProxyCmp({inputs: ['checked', 'class', 'disabled', 'labelClass']})
-@Component({ selector: 'bm-checkbox', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['checked', 'class', 'disabled', 'labelClass'] })
+@ProxyCmp({inputs: ['checked', 'disabled', 'inputClass', 'labelClass']})
+@Component({ selector: 'bm-checkbox', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['checked', 'disabled', 'inputClass', 'labelClass'] })
 export class BmCheckbox {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -154,8 +154,8 @@ export class BmCheckbox {
 }
 
 export declare interface BmColumn extends Components.BmColumn {}
-@ProxyCmp({inputs: ['class', 'isNarrow', 'sizes']})
-@Component({ selector: 'bm-column', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class', 'isNarrow', 'sizes'] })
+@ProxyCmp({inputs: ['isNarrow', 'sizes']})
+@Component({ selector: 'bm-column', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['isNarrow', 'sizes'] })
 export class BmColumn {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -165,8 +165,8 @@ export class BmColumn {
 }
 
 export declare interface BmColumns extends Components.BmColumns {}
-@ProxyCmp({inputs: ['class', 'gaps', 'isCentered', 'isDesktop', 'isGapless', 'isMobile', 'isMultiline', 'isVcentered']})
-@Component({ selector: 'bm-columns', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class', 'gaps', 'isCentered', 'isDesktop', 'isGapless', 'isMobile', 'isMultiline', 'isVcentered'] })
+@ProxyCmp({inputs: ['gaps', 'isCentered', 'isDesktop', 'isGapless', 'isMobile', 'isMultiline', 'isVcentered']})
+@Component({ selector: 'bm-columns', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['gaps', 'isCentered', 'isDesktop', 'isGapless', 'isMobile', 'isMultiline', 'isVcentered'] })
 export class BmColumns {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -176,8 +176,8 @@ export class BmColumns {
 }
 
 export declare interface BmContainer extends Components.BmContainer {}
-@ProxyCmp({inputs: ['breakpoint', 'class', 'isFluid']})
-@Component({ selector: 'bm-container', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['breakpoint', 'class', 'isFluid'] })
+@ProxyCmp({inputs: ['breakpoint', 'isFluid']})
+@Component({ selector: 'bm-container', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['breakpoint', 'isFluid'] })
 export class BmContainer {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -187,8 +187,8 @@ export class BmContainer {
 }
 
 export declare interface BmContent extends Components.BmContent {}
-@ProxyCmp({inputs: ['class', 'size']})
-@Component({ selector: 'bm-content', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class', 'size'] })
+@ProxyCmp({inputs: ['size']})
+@Component({ selector: 'bm-content', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['size'] })
 export class BmContent {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -198,8 +198,8 @@ export class BmContent {
 }
 
 export declare interface BmDivider extends Components.BmDivider {}
-@ProxyCmp({inputs: ['class', 'content', 'orientation']})
-@Component({ selector: 'bm-divider', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class', 'content', 'orientation'] })
+@ProxyCmp({inputs: ['content', 'orientation']})
+@Component({ selector: 'bm-divider', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['content', 'orientation'] })
 export class BmDivider {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -209,8 +209,8 @@ export class BmDivider {
 }
 
 export declare interface BmDropdown extends Components.BmDropdown {}
-@ProxyCmp({inputs: ['class', 'isActive', 'isHoverable', 'isRight', 'isUp']})
-@Component({ selector: 'bm-dropdown', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class', 'isActive', 'isHoverable', 'isRight', 'isUp'] })
+@ProxyCmp({inputs: ['isActive', 'isHoverable', 'isRight', 'isUp']})
+@Component({ selector: 'bm-dropdown', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['isActive', 'isHoverable', 'isRight', 'isUp'] })
 export class BmDropdown {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -220,8 +220,8 @@ export class BmDropdown {
 }
 
 export declare interface BmField extends Components.BmField {}
-@ProxyCmp({inputs: ['class', 'hasAddons', 'isGrouped', 'isGroupedMultiline', 'isHorizontal', 'label', 'message', 'size']})
-@Component({ selector: 'bm-field', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class', 'hasAddons', 'isGrouped', 'isGroupedMultiline', 'isHorizontal', 'label', 'message', 'size'] })
+@ProxyCmp({inputs: ['hasAddons', 'isGrouped', 'isGroupedMultiline', 'isHorizontal', 'label', 'message', 'size']})
+@Component({ selector: 'bm-field', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['hasAddons', 'isGrouped', 'isGroupedMultiline', 'isHorizontal', 'label', 'message', 'size'] })
 export class BmField {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -231,8 +231,8 @@ export class BmField {
 }
 
 export declare interface BmFile extends Components.BmFile {}
-@ProxyCmp({inputs: ['alignment', 'class', 'color', 'file', 'hasName', 'isBoxed', 'isFullwidth', 'isRight', 'name', 'placeholder', 'size']})
-@Component({ selector: 'bm-file', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['alignment', 'class', 'color', 'file', 'hasName', 'isBoxed', 'isFullwidth', 'isRight', 'name', 'placeholder', 'size'] })
+@ProxyCmp({inputs: ['alignment', 'color', 'file', 'hasName', 'isBoxed', 'isFullwidth', 'isRight', 'name', 'placeholder', 'size']})
+@Component({ selector: 'bm-file', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['alignment', 'color', 'file', 'hasName', 'isBoxed', 'isFullwidth', 'isRight', 'name', 'placeholder', 'size'] })
 export class BmFile {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -242,8 +242,8 @@ export class BmFile {
 }
 
 export declare interface BmFooter extends Components.BmFooter {}
-@ProxyCmp({inputs: ['class']})
-@Component({ selector: 'bm-footer', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class'] })
+
+@Component({ selector: 'bm-footer', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>' })
 export class BmFooter {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -253,8 +253,8 @@ export class BmFooter {
 }
 
 export declare interface BmIcon extends Components.BmIcon {}
-@ProxyCmp({inputs: ['class', 'color', 'size']})
-@Component({ selector: 'bm-icon', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class', 'color', 'size'] })
+@ProxyCmp({inputs: ['color', 'size']})
+@Component({ selector: 'bm-icon', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['color', 'size'] })
 export class BmIcon {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -264,8 +264,8 @@ export class BmIcon {
 }
 
 export declare interface BmImage extends Components.BmImage {}
-@ProxyCmp({inputs: ['class', 'size']})
-@Component({ selector: 'bm-image', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class', 'size'] })
+@ProxyCmp({inputs: ['size']})
+@Component({ selector: 'bm-image', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['size'] })
 export class BmImage {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -275,8 +275,8 @@ export class BmImage {
 }
 
 export declare interface BmInput extends Components.BmInput {}
-@ProxyCmp({inputs: ['class', 'color', 'controlClass', 'disabled', 'isLoading', 'isRounded', 'isStatic', 'name', 'placeholder', 'readonly', 'required', 'size', 'state', 'type', 'value']})
-@Component({ selector: 'bm-input', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class', 'color', 'controlClass', 'disabled', 'isLoading', 'isRounded', 'isStatic', 'name', 'placeholder', 'readonly', 'required', 'size', 'state', 'type', 'value'] })
+@ProxyCmp({inputs: ['color', 'controlClass', 'disabled', 'isLoading', 'isRounded', 'isStatic', 'name', 'placeholder', 'readonly', 'required', 'size', 'state', 'type', 'value']})
+@Component({ selector: 'bm-input', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['color', 'controlClass', 'disabled', 'isLoading', 'isRounded', 'isStatic', 'name', 'placeholder', 'readonly', 'required', 'size', 'state', 'type', 'value'] })
 export class BmInput {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -286,8 +286,8 @@ export class BmInput {
 }
 
 export declare interface BmMenu extends Components.BmMenu {}
-@ProxyCmp({inputs: ['class']})
-@Component({ selector: 'bm-menu', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class'] })
+
+@Component({ selector: 'bm-menu', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>' })
 export class BmMenu {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -297,8 +297,8 @@ export class BmMenu {
 }
 
 export declare interface BmMessage extends Components.BmMessage {}
-@ProxyCmp({inputs: ['class', 'color', 'size']})
-@Component({ selector: 'bm-message', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class', 'color', 'size'] })
+@ProxyCmp({inputs: ['color', 'size']})
+@Component({ selector: 'bm-message', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['color', 'size'] })
 export class BmMessage {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -308,8 +308,8 @@ export class BmMessage {
 }
 
 export declare interface BmModal extends Components.BmModal {}
-@ProxyCmp({inputs: ['class', 'hasModalCard', 'isActive']})
-@Component({ selector: 'bm-modal', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class', 'hasModalCard', 'isActive'] })
+@ProxyCmp({inputs: ['hasModalCard', 'isActive']})
+@Component({ selector: 'bm-modal', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['hasModalCard', 'isActive'] })
 export class BmModal {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -319,8 +319,8 @@ export class BmModal {
 }
 
 export declare interface BmNavbar extends Components.BmNavbar {}
-@ProxyCmp({inputs: ['class', 'color', 'fixedPosition', 'isSpaced', 'isTransparent']})
-@Component({ selector: 'bm-navbar', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class', 'color', 'fixedPosition', 'isSpaced', 'isTransparent'] })
+@ProxyCmp({inputs: ['color', 'fixedPosition', 'isSpaced', 'isTransparent']})
+@Component({ selector: 'bm-navbar', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['color', 'fixedPosition', 'isSpaced', 'isTransparent'] })
 export class BmNavbar {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -330,8 +330,8 @@ export class BmNavbar {
 }
 
 export declare interface BmNotification extends Components.BmNotification {}
-@ProxyCmp({inputs: ['class', 'color', 'dismissable']})
-@Component({ selector: 'bm-notification', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class', 'color', 'dismissable'] })
+@ProxyCmp({inputs: ['color', 'dismissable']})
+@Component({ selector: 'bm-notification', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['color', 'dismissable'] })
 export class BmNotification {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -341,8 +341,8 @@ export class BmNotification {
 }
 
 export declare interface BmPagination extends Components.BmPagination {}
-@ProxyCmp({inputs: ['alignment', 'class', 'isRounded', 'size']})
-@Component({ selector: 'bm-pagination', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['alignment', 'class', 'isRounded', 'size'] })
+@ProxyCmp({inputs: ['alignment', 'isRounded', 'size']})
+@Component({ selector: 'bm-pagination', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['alignment', 'isRounded', 'size'] })
 export class BmPagination {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -352,8 +352,8 @@ export class BmPagination {
 }
 
 export declare interface BmPanel extends Components.BmPanel {}
-@ProxyCmp({inputs: ['class', 'color']})
-@Component({ selector: 'bm-panel', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class', 'color'] })
+@ProxyCmp({inputs: ['color']})
+@Component({ selector: 'bm-panel', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['color'] })
 export class BmPanel {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -363,8 +363,8 @@ export class BmPanel {
 }
 
 export declare interface BmProgress extends Components.BmProgress {}
-@ProxyCmp({inputs: ['class', 'color', 'max', 'size', 'value']})
-@Component({ selector: 'bm-progress', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class', 'color', 'max', 'size', 'value'] })
+@ProxyCmp({inputs: ['color', 'max', 'size', 'value']})
+@Component({ selector: 'bm-progress', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['color', 'max', 'size', 'value'] })
 export class BmProgress {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -374,8 +374,8 @@ export class BmProgress {
 }
 
 export declare interface BmRadio extends Components.BmRadio {}
-@ProxyCmp({inputs: ['checked', 'class', 'disabled', 'labelClass', 'name']})
-@Component({ selector: 'bm-radio', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['checked', 'class', 'disabled', 'labelClass', 'name'] })
+@ProxyCmp({inputs: ['checked', 'disabled', 'inputClass', 'labelClass', 'name']})
+@Component({ selector: 'bm-radio', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['checked', 'disabled', 'inputClass', 'labelClass', 'name'] })
 export class BmRadio {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -385,8 +385,8 @@ export class BmRadio {
 }
 
 export declare interface BmSection extends Components.BmSection {}
-@ProxyCmp({inputs: ['class', 'size']})
-@Component({ selector: 'bm-section', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class', 'size'] })
+@ProxyCmp({inputs: ['size']})
+@Component({ selector: 'bm-section', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['size'] })
 export class BmSection {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -396,8 +396,8 @@ export class BmSection {
 }
 
 export declare interface BmSelect extends Components.BmSelect {}
-@ProxyCmp({inputs: ['class', 'color', 'controlClass', 'icon', 'isLoading', 'isMultiple', 'isRounded', 'size', 'state', 'value']})
-@Component({ selector: 'bm-select', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class', 'color', 'controlClass', 'icon', 'isLoading', 'isMultiple', 'isRounded', 'size', 'state', 'value'] })
+@ProxyCmp({inputs: ['color', 'controlClass', 'icon', 'isLoading', 'isMultiple', 'isRounded', 'size', 'state', 'value']})
+@Component({ selector: 'bm-select', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['color', 'controlClass', 'icon', 'isLoading', 'isMultiple', 'isRounded', 'size', 'state', 'value'] })
 export class BmSelect {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -429,8 +429,8 @@ export class BmSwitch {
 }
 
 export declare interface BmTable extends Components.BmTable {}
-@ProxyCmp({inputs: ['class', 'isBordered', 'isFullwidth', 'isHoverable', 'isNarrow', 'isScrollable', 'isStriped']})
-@Component({ selector: 'bm-table', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class', 'isBordered', 'isFullwidth', 'isHoverable', 'isNarrow', 'isScrollable', 'isStriped'] })
+@ProxyCmp({inputs: ['isBordered', 'isFullwidth', 'isHoverable', 'isNarrow', 'isScrollable', 'isStriped']})
+@Component({ selector: 'bm-table', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['isBordered', 'isFullwidth', 'isHoverable', 'isNarrow', 'isScrollable', 'isStriped'] })
 export class BmTable {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -440,8 +440,8 @@ export class BmTable {
 }
 
 export declare interface BmTabs extends Components.BmTabs {}
-@ProxyCmp({inputs: ['alignment', 'class', 'isFullwidth', 'isRounded', 'size', 'tabStyle']})
-@Component({ selector: 'bm-tabs', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['alignment', 'class', 'isFullwidth', 'isRounded', 'size', 'tabStyle'] })
+@ProxyCmp({inputs: ['alignment', 'isFullwidth', 'isRounded', 'size', 'tabStyle']})
+@Component({ selector: 'bm-tabs', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['alignment', 'isFullwidth', 'isRounded', 'size', 'tabStyle'] })
 export class BmTabs {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -451,8 +451,8 @@ export class BmTabs {
 }
 
 export declare interface BmTag extends Components.BmTag {}
-@ProxyCmp({inputs: ['class', 'color', 'modifier', 'size', 'tag']})
-@Component({ selector: 'bm-tag', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class', 'color', 'modifier', 'size', 'tag'] })
+@ProxyCmp({inputs: ['color', 'modifier', 'size', 'tag']})
+@Component({ selector: 'bm-tag', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['color', 'modifier', 'size', 'tag'] })
 export class BmTag {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -462,8 +462,8 @@ export class BmTag {
 }
 
 export declare interface BmTags extends Components.BmTags {}
-@ProxyCmp({inputs: ['class', 'hasAddons', 'size']})
-@Component({ selector: 'bm-tags', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class', 'hasAddons', 'size'] })
+@ProxyCmp({inputs: ['hasAddons', 'size']})
+@Component({ selector: 'bm-tags', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['hasAddons', 'size'] })
 export class BmTags {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -473,8 +473,8 @@ export class BmTags {
 }
 
 export declare interface BmTextarea extends Components.BmTextarea {}
-@ProxyCmp({inputs: ['class', 'color', 'controlClass', 'disabled', 'hasFixedSize', 'isLoading', 'readonly', 'rows', 'size', 'state', 'value']})
-@Component({ selector: 'bm-textarea', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['class', 'color', 'controlClass', 'disabled', 'hasFixedSize', 'isLoading', 'readonly', 'rows', 'size', 'state', 'value'] })
+@ProxyCmp({inputs: ['color', 'controlClass', 'disabled', 'hasFixedSize', 'isLoading', 'readonly', 'rows', 'size', 'state', 'value']})
+@Component({ selector: 'bm-textarea', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['color', 'controlClass', 'disabled', 'hasFixedSize', 'isLoading', 'readonly', 'rows', 'size', 'state', 'value'] })
 export class BmTextarea {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {

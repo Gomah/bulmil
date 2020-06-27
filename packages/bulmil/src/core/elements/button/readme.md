@@ -9,7 +9,6 @@
 
 | Property      | Attribute      | Description                      | Type                                                                                                                                                        | Default     |
 | ------------- | -------------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| `class`       | `class`        | CSS classes                      | `string`                                                                                                                                                    | `undefined` |
 | `color`       | `color`        | Color                            | `"is-black" \| "is-danger" \| "is-dark" \| "is-info" \| "is-light" \| "is-link" \| "is-primary" \| "is-success" \| "is-text" \| "is-warning" \| "is-white"` | `undefined` |
 | `disabled`    | `disabled`     | Is disabled?                     | `boolean`                                                                                                                                                   | `false`     |
 | `isActive`    | `is-active`    | Active state                     | `boolean`                                                                                                                                                   | `false`     |

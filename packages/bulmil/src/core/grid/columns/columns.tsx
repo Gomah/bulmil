@@ -6,11 +6,6 @@ import { Component, Prop, h, JSX, ComponentInterface, Host } from '@stencil/core
 })
 export class Columns implements ComponentInterface {
   /**
-   * CSS Classes
-   */
-  @Prop() class = '';
-
-  /**
    * Centered
    */
   @Prop() isCentered = false;
@@ -58,7 +53,6 @@ export class Columns implements ComponentInterface {
           'is-vcentered': this.isVcentered,
           'is-variable': Boolean(this.gaps),
           [this.gaps]: Boolean(this.gaps),
-          [this.class]: Boolean(this.class),
         }}
       />
     );

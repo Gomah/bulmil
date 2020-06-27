@@ -6,11 +6,6 @@ import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 })
 export class Select implements ComponentInterface {
   /**
-   * CSS Classes
-   */
-  @Prop() class = '';
-
-  /**
    * Control classes
    */
   @Prop() controlClass = '';
@@ -69,7 +64,6 @@ export class Select implements ComponentInterface {
             select: true,
             [this.color]: Boolean(this.color),
             [this.size]: Boolean(this.size),
-            [this.class]: Boolean(this.class),
             'is-multiple': this.isMultiple,
             'is-rounded': this.isRounded,
             'is-loading': this.isLoading,

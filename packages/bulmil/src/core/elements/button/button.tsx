@@ -11,11 +11,6 @@ export class Button implements ComponentInterface {
   @Prop() disabled = false;
 
   /**
-   * CSS classes
-   */
-  @Prop() class: string;
-
-  /**
    * Color
    */
   @Prop() color:
@@ -103,7 +98,6 @@ export class Button implements ComponentInterface {
           'is-rounded': this.isRounded,
           'is-loading': this.isLoading,
           'is-outlined': this.isOutlined,
-          [this.class]: Boolean(this.class),
         }}
         disabled={this.disabled}
         aria-disabled={this.disabled ? 'true' : null}

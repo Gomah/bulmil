@@ -9,7 +9,6 @@
 
 | Property             | Attribute              | Description           | Type                                                     | Default     |
 | -------------------- | ---------------------- | --------------------- | -------------------------------------------------------- | ----------- |
-| `class`              | `class`                | CSS Classes           | `string`                                                 | `''`        |
 | `hasAddons`          | `has-addons`           | Has addons            | `boolean`                                                | `false`     |
 | `isGrouped`          | `is-grouped`           | Grouped field         | `boolean`                                                | `false`     |
 | `isGroupedMultiline` | `is-grouped-multiline` | Grouped, on multiline | `boolean`                                                | `false`     |

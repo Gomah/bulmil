@@ -5,11 +5,6 @@ import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 })
 export class Tag implements ComponentInterface {
   /**
-   * CSS Classes
-   */
-  @Prop() class: string;
-
-  /**
    * Tag
    */
   @Prop() tag = 'span';
@@ -49,7 +44,6 @@ export class Tag implements ComponentInterface {
           [this.color]: Boolean(this.color),
           [this.size]: Boolean(this.size),
           [this.modifier]: Boolean(this.modifier),
-          [this.class]: Boolean(this.class),
         }}
       >
         {this.modifier !== 'is-delete' && <slot />}

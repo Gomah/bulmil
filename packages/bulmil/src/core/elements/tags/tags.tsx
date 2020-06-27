@@ -6,11 +6,6 @@ import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 })
 export class Tags implements ComponentInterface {
   /**
-   * CSS Classes
-   */
-  @Prop() class: string;
-
-  /**
    * Size
    */
   @Prop() size: 'are-medium' | 'are-large';
@@ -27,7 +22,6 @@ export class Tags implements ComponentInterface {
           tags: true,
           'has-addons': this.hasAddons,
           [this.size]: Boolean(this.size),
-          [this.class]: Boolean(this.class),
         }}
       >
         <slot />

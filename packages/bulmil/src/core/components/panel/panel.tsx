@@ -6,11 +6,6 @@ import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 })
 export class Panel implements ComponentInterface {
   /**
-   * CSS Classes
-   */
-  @Prop() class = '';
-
-  /**
    * Panel color
    */
   @Prop() color: 'is-primary' | 'is-link' | 'is-info' | 'is-success' | 'is-danger' | 'is-warning';

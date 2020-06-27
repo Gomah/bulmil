@@ -6,11 +6,6 @@ import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 })
 export class Icon implements ComponentInterface {
   /**
-   * CSS Classes
-   */
-  @Prop() class = '';
-
-  /**
    * Color
    */
   @Prop() color: 'has-text-info' | 'has-text-success' | 'has-text-warning' | 'has-text-danger';
@@ -27,7 +22,6 @@ export class Icon implements ComponentInterface {
           icon: true,
           [this.color]: Boolean(this.color),
           [this.size]: Boolean(this.size),
-          [this.class]: Boolean(this.class),
         }}
       >
         <slot />

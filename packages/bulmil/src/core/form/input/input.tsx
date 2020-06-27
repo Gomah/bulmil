@@ -6,11 +6,6 @@ import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 })
 export class Input implements ComponentInterface {
   /**
-   * CSS Classes
-   */
-  @Prop() class = '';
-
-  /**
    * Control Classes
    */
   @Prop() controlClass = '';
@@ -97,7 +92,6 @@ export class Input implements ComponentInterface {
             [this.state]: Boolean(this.state),
             'is-rounded': this.isRounded,
             'is-static': this.isStatic,
-            [this.class]: Boolean(this.class),
           }}
           placeholder={this.placeholder}
           required={this.required}

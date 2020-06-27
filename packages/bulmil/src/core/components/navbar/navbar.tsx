@@ -6,11 +6,6 @@ import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 })
 export class Navbar implements ComponentInterface {
   /**
-   * CSS Classes
-   */
-  @Prop() class = '';
-
-  /**
    * Transparent
    */
   @Prop() isTransparent = false;
@@ -49,7 +44,6 @@ export class Navbar implements ComponentInterface {
           'is-transparent': this.isTransparent,
           [this.color]: Boolean(this.color),
           [this.fixedPosition]: Boolean(this.fixedPosition),
-          [this.class]: Boolean(this.class),
         }}
         role="navigation"
         aria-label="main navigation"

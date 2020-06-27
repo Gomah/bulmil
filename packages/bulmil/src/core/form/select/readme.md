@@ -9,7 +9,6 @@
 
 | Property       | Attribute       | Description               | Type                                                                       | Default     |
 | -------------- | --------------- | ------------------------- | -------------------------------------------------------------------------- | ----------- |
-| `class`        | `class`         | CSS Classes               | `string`                                                                   | `''`        |
 | `color`        | `color`         | Color                     | `"is-danger" \| "is-info" \| "is-primary" \| "is-success" \| "is-warning"` | `undefined` |
 | `controlClass` | `control-class` | Control classes           | `string`                                                                   | `''`        |
 | `icon`         | `icon`          | Icon                      | `string`                                                                   | `undefined` |

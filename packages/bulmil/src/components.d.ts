@@ -7,20 +7,12 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface BmBox {
-        /**
-          * CSS classes
-         */
-        "class": string;
     }
     interface BmBreadcrumb {
         /**
           * Breadcrumb alignment
          */
         "alignment": 'is-centered' | 'is-right';
-        /**
-          * CSS Classes
-         */
-        "class": string;
         /**
           * Separator
          */
@@ -34,10 +26,6 @@ export namespace Components {
         "size": 'is-small' | 'is-medium' | 'is-large';
     }
     interface BmButton {
-        /**
-          * CSS classes
-         */
-        "class": string;
         /**
           * Color
          */
@@ -103,43 +91,19 @@ export namespace Components {
     }
     interface BmButtons {
         /**
-          * CSS classes
-         */
-        "class": string;
-        /**
           * Buttons size
          */
         "size": 'are-small' | 'are-medium' | 'are-large';
     }
     interface BmCard {
-        /**
-          * CSS Classes
-         */
-        "class": string;
     }
     interface BmCardContent {
-        /**
-          * CSS Classes
-         */
-        "class": string;
     }
     interface BmCardFooter {
-        /**
-          * CSS Classes
-         */
-        "class": string;
     }
     interface BmCardHeader {
-        /**
-          * CSS Classes
-         */
-        "class": string;
     }
     interface BmCardImage {
-        /**
-          * CSS Classes
-         */
-        "class": string;
     }
     interface BmCheckbox {
         /**
@@ -147,23 +111,19 @@ export namespace Components {
          */
         "checked": boolean;
         /**
-          * CSS Classes
-         */
-        "class": string;
-        /**
           * Disabled
          */
         "disabled": boolean;
+        /**
+          * Input classes
+         */
+        "inputClass": string;
         /**
           * Label classes
          */
         "labelClass": string;
     }
     interface BmColumn {
-        /**
-          * CSS Classes
-         */
-        "class": string;
         /**
           * Narrow column
          */
@@ -174,10 +134,6 @@ export namespace Components {
         "sizes": string;
     }
     interface BmColumns {
-        /**
-          * CSS Classes
-         */
-        "class": string;
         /**
           * Columns gaps
          */
@@ -213,29 +169,17 @@ export namespace Components {
          */
         "breakpoint": 'is-widescreen' | 'is-fullhd';
         /**
-          * CSS Classes
-         */
-        "class": string;
-        /**
           * Fluid container
          */
         "isFluid": boolean;
     }
     interface BmContent {
         /**
-          * CSS Classes
-         */
-        "class": string;
-        /**
           * Content size
          */
         "size": 'is-small' | 'is-medium' | 'is-large';
     }
     interface BmDivider {
-        /**
-          * CSS Classes
-         */
-        "class": string;
         /**
           * CSS Classes
          */
@@ -246,10 +190,6 @@ export namespace Components {
         "orientation": 'is-horizontal' | 'is-vertical';
     }
     interface BmDropdown {
-        /**
-          * CSS Classes
-         */
-        "class": string;
         /**
           * The dropdown visibility
          */
@@ -268,10 +208,6 @@ export namespace Components {
         "isUp": boolean;
     }
     interface BmField {
-        /**
-          * CSS Classes
-         */
-        "class": string;
         /**
           * Has addons
          */
@@ -306,10 +242,6 @@ export namespace Components {
           * Alignment
          */
         "alignment": 'is-centered' | 'is-right';
-        /**
-          * CSS Classes
-         */
-        "class": string;
         /**
           * Color
          */
@@ -357,16 +289,8 @@ export namespace Components {
         "size": 'is-small' | 'is-medium' | 'is-large';
     }
     interface BmFooter {
-        /**
-          * CSS Classes
-         */
-        "class": string;
     }
     interface BmIcon {
-        /**
-          * CSS Classes
-         */
-        "class": string;
         /**
           * Color
          */
@@ -377,10 +301,6 @@ export namespace Components {
         "size": 'is-small' | 'is-medium' | 'is-large';
     }
     interface BmImage {
-        /**
-          * CSS Classes
-         */
-        "class": string;
         /**
           * Size
          */
@@ -393,10 +313,6 @@ export namespace Components {
     | 'is-128x128';
     }
     interface BmInput {
-        /**
-          * CSS Classes
-         */
-        "class": string;
         /**
           * Color
          */
@@ -455,16 +371,8 @@ export namespace Components {
         "value": string | number;
     }
     interface BmMenu {
-        /**
-          * CSS Classes
-         */
-        "class": string;
     }
     interface BmMessage {
-        /**
-          * CSS Classes
-         */
-        "class": string;
         /**
           * Color
          */
@@ -482,10 +390,6 @@ export namespace Components {
     }
     interface BmModal {
         /**
-          * CSS Classes
-         */
-        "class": string;
-        /**
           * Modal Card
          */
         "hasModalCard": boolean;
@@ -495,10 +399,6 @@ export namespace Components {
         "isActive": boolean;
     }
     interface BmNavbar {
-        /**
-          * CSS Classes
-         */
-        "class": string;
         /**
           * Color
          */
@@ -527,10 +427,6 @@ export namespace Components {
     }
     interface BmNotification {
         /**
-          * CSS Classes
-         */
-        "class": string;
-        /**
           * Color
          */
         "color": 'is-primary' | 'is-link' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
@@ -545,10 +441,6 @@ export namespace Components {
          */
         "alignment": 'is-centered' | 'is-right';
         /**
-          * CSS Classes
-         */
-        "class": string;
-        /**
           * Rounded
          */
         "isRounded": boolean;
@@ -559,19 +451,11 @@ export namespace Components {
     }
     interface BmPanel {
         /**
-          * CSS Classes
-         */
-        "class": string;
-        /**
           * Panel color
          */
         "color": 'is-primary' | 'is-link' | 'is-info' | 'is-success' | 'is-danger' | 'is-warning';
     }
     interface BmProgress {
-        /**
-          * CSS Classes
-         */
-        "class": string;
         /**
           * Color
          */
@@ -595,13 +479,13 @@ export namespace Components {
          */
         "checked": boolean;
         /**
-          * CSS Classes
-         */
-        "class": string;
-        /**
           * Disabled
          */
         "disabled": boolean;
+        /**
+          * Input class
+         */
+        "inputClass": string;
         /**
           * Label Classes
          */
@@ -613,19 +497,11 @@ export namespace Components {
     }
     interface BmSection {
         /**
-          * CSS Classes
-         */
-        "class": string;
-        /**
           * Section size
          */
         "size": 'is-medium' | 'is-large';
     }
     interface BmSelect {
-        /**
-          * CSS Classes
-         */
-        "class": string;
         /**
           * Color
          */
@@ -737,10 +613,6 @@ export namespace Components {
     }
     interface BmTable {
         /**
-          * CSS Classes
-         */
-        "class": string;
-        /**
           * Bordered
          */
         "isBordered": boolean;
@@ -771,10 +643,6 @@ export namespace Components {
          */
         "alignment": 'is-centered' | 'is-right';
         /**
-          * CSS Classes
-         */
-        "class": string;
-        /**
           * Full width
          */
         "isFullwidth": boolean;
@@ -792,10 +660,6 @@ export namespace Components {
         "tabStyle": 'is-boxed' | 'is-toggle';
     }
     interface BmTag {
-        /**
-          * CSS Classes
-         */
-        "class": string;
         /**
           * Color
          */
@@ -824,10 +688,6 @@ export namespace Components {
     }
     interface BmTags {
         /**
-          * CSS Classes
-         */
-        "class": string;
-        /**
           * Has addons
          */
         "hasAddons": boolean;
@@ -837,10 +697,6 @@ export namespace Components {
         "size": 'are-medium' | 'are-large';
     }
     interface BmTextarea {
-        /**
-          * CSS Classes
-         */
-        "class": string;
         /**
           * Color
          */
@@ -1169,20 +1025,12 @@ declare global {
 }
 declare namespace LocalJSX {
     interface BmBox {
-        /**
-          * CSS classes
-         */
-        "class"?: string;
     }
     interface BmBreadcrumb {
         /**
           * Breadcrumb alignment
          */
         "alignment"?: 'is-centered' | 'is-right';
-        /**
-          * CSS Classes
-         */
-        "class"?: string;
         /**
           * Separator
          */
@@ -1196,10 +1044,6 @@ declare namespace LocalJSX {
         "size"?: 'is-small' | 'is-medium' | 'is-large';
     }
     interface BmButton {
-        /**
-          * CSS classes
-         */
-        "class"?: string;
         /**
           * Color
          */
@@ -1265,43 +1109,19 @@ declare namespace LocalJSX {
     }
     interface BmButtons {
         /**
-          * CSS classes
-         */
-        "class"?: string;
-        /**
           * Buttons size
          */
         "size"?: 'are-small' | 'are-medium' | 'are-large';
     }
     interface BmCard {
-        /**
-          * CSS Classes
-         */
-        "class"?: string;
     }
     interface BmCardContent {
-        /**
-          * CSS Classes
-         */
-        "class"?: string;
     }
     interface BmCardFooter {
-        /**
-          * CSS Classes
-         */
-        "class"?: string;
     }
     interface BmCardHeader {
-        /**
-          * CSS Classes
-         */
-        "class"?: string;
     }
     interface BmCardImage {
-        /**
-          * CSS Classes
-         */
-        "class"?: string;
     }
     interface BmCheckbox {
         /**
@@ -1309,23 +1129,19 @@ declare namespace LocalJSX {
          */
         "checked"?: boolean;
         /**
-          * CSS Classes
-         */
-        "class"?: string;
-        /**
           * Disabled
          */
         "disabled"?: boolean;
+        /**
+          * Input classes
+         */
+        "inputClass"?: string;
         /**
           * Label classes
          */
         "labelClass"?: string;
     }
     interface BmColumn {
-        /**
-          * CSS Classes
-         */
-        "class"?: string;
         /**
           * Narrow column
          */
@@ -1336,10 +1152,6 @@ declare namespace LocalJSX {
         "sizes"?: string;
     }
     interface BmColumns {
-        /**
-          * CSS Classes
-         */
-        "class"?: string;
         /**
           * Columns gaps
          */
@@ -1375,29 +1187,17 @@ declare namespace LocalJSX {
          */
         "breakpoint"?: 'is-widescreen' | 'is-fullhd';
         /**
-          * CSS Classes
-         */
-        "class"?: string;
-        /**
           * Fluid container
          */
         "isFluid"?: boolean;
     }
     interface BmContent {
         /**
-          * CSS Classes
-         */
-        "class"?: string;
-        /**
           * Content size
          */
         "size"?: 'is-small' | 'is-medium' | 'is-large';
     }
     interface BmDivider {
-        /**
-          * CSS Classes
-         */
-        "class"?: string;
         /**
           * CSS Classes
          */
@@ -1408,10 +1208,6 @@ declare namespace LocalJSX {
         "orientation"?: 'is-horizontal' | 'is-vertical';
     }
     interface BmDropdown {
-        /**
-          * CSS Classes
-         */
-        "class"?: string;
         /**
           * The dropdown visibility
          */
@@ -1430,10 +1226,6 @@ declare namespace LocalJSX {
         "isUp"?: boolean;
     }
     interface BmField {
-        /**
-          * CSS Classes
-         */
-        "class"?: string;
         /**
           * Has addons
          */
@@ -1468,10 +1260,6 @@ declare namespace LocalJSX {
           * Alignment
          */
         "alignment"?: 'is-centered' | 'is-right';
-        /**
-          * CSS Classes
-         */
-        "class"?: string;
         /**
           * Color
          */
@@ -1519,16 +1307,8 @@ declare namespace LocalJSX {
         "size"?: 'is-small' | 'is-medium' | 'is-large';
     }
     interface BmFooter {
-        /**
-          * CSS Classes
-         */
-        "class"?: string;
     }
     interface BmIcon {
-        /**
-          * CSS Classes
-         */
-        "class"?: string;
         /**
           * Color
          */
@@ -1539,10 +1319,6 @@ declare namespace LocalJSX {
         "size"?: 'is-small' | 'is-medium' | 'is-large';
     }
     interface BmImage {
-        /**
-          * CSS Classes
-         */
-        "class"?: string;
         /**
           * Size
          */
@@ -1555,10 +1331,6 @@ declare namespace LocalJSX {
     | 'is-128x128';
     }
     interface BmInput {
-        /**
-          * CSS Classes
-         */
-        "class"?: string;
         /**
           * Color
          */
@@ -1617,16 +1389,8 @@ declare namespace LocalJSX {
         "value"?: string | number;
     }
     interface BmMenu {
-        /**
-          * CSS Classes
-         */
-        "class"?: string;
     }
     interface BmMessage {
-        /**
-          * CSS Classes
-         */
-        "class"?: string;
         /**
           * Color
          */
@@ -1644,10 +1408,6 @@ declare namespace LocalJSX {
     }
     interface BmModal {
         /**
-          * CSS Classes
-         */
-        "class"?: string;
-        /**
           * Modal Card
          */
         "hasModalCard"?: boolean;
@@ -1657,10 +1417,6 @@ declare namespace LocalJSX {
         "isActive"?: boolean;
     }
     interface BmNavbar {
-        /**
-          * CSS Classes
-         */
-        "class"?: string;
         /**
           * Color
          */
@@ -1689,10 +1445,6 @@ declare namespace LocalJSX {
     }
     interface BmNotification {
         /**
-          * CSS Classes
-         */
-        "class"?: string;
-        /**
           * Color
          */
         "color"?: 'is-primary' | 'is-link' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
@@ -1707,10 +1459,6 @@ declare namespace LocalJSX {
          */
         "alignment"?: 'is-centered' | 'is-right';
         /**
-          * CSS Classes
-         */
-        "class"?: string;
-        /**
           * Rounded
          */
         "isRounded"?: boolean;
@@ -1721,19 +1469,11 @@ declare namespace LocalJSX {
     }
     interface BmPanel {
         /**
-          * CSS Classes
-         */
-        "class"?: string;
-        /**
           * Panel color
          */
         "color"?: 'is-primary' | 'is-link' | 'is-info' | 'is-success' | 'is-danger' | 'is-warning';
     }
     interface BmProgress {
-        /**
-          * CSS Classes
-         */
-        "class"?: string;
         /**
           * Color
          */
@@ -1757,13 +1497,13 @@ declare namespace LocalJSX {
          */
         "checked"?: boolean;
         /**
-          * CSS Classes
-         */
-        "class"?: string;
-        /**
           * Disabled
          */
         "disabled"?: boolean;
+        /**
+          * Input class
+         */
+        "inputClass"?: string;
         /**
           * Label Classes
          */
@@ -1775,19 +1515,11 @@ declare namespace LocalJSX {
     }
     interface BmSection {
         /**
-          * CSS Classes
-         */
-        "class"?: string;
-        /**
           * Section size
          */
         "size"?: 'is-medium' | 'is-large';
     }
     interface BmSelect {
-        /**
-          * CSS Classes
-         */
-        "class"?: string;
         /**
           * Color
          */
@@ -1899,10 +1631,6 @@ declare namespace LocalJSX {
     }
     interface BmTable {
         /**
-          * CSS Classes
-         */
-        "class"?: string;
-        /**
           * Bordered
          */
         "isBordered"?: boolean;
@@ -1933,10 +1661,6 @@ declare namespace LocalJSX {
          */
         "alignment"?: 'is-centered' | 'is-right';
         /**
-          * CSS Classes
-         */
-        "class"?: string;
-        /**
           * Full width
          */
         "isFullwidth"?: boolean;
@@ -1954,10 +1678,6 @@ declare namespace LocalJSX {
         "tabStyle"?: 'is-boxed' | 'is-toggle';
     }
     interface BmTag {
-        /**
-          * CSS Classes
-         */
-        "class"?: string;
         /**
           * Color
          */
@@ -1986,10 +1706,6 @@ declare namespace LocalJSX {
     }
     interface BmTags {
         /**
-          * CSS Classes
-         */
-        "class"?: string;
-        /**
           * Has addons
          */
         "hasAddons"?: boolean;
@@ -1999,10 +1715,6 @@ declare namespace LocalJSX {
         "size"?: 'are-medium' | 'are-large';
     }
     interface BmTextarea {
-        /**
-          * CSS Classes
-         */
-        "class"?: string;
         /**
           * Color
          */

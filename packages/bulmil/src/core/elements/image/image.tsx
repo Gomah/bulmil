@@ -6,11 +6,6 @@ import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 })
 export class Image implements ComponentInterface {
   /**
-   * CSS Classes
-   */
-  @Prop() class = '';
-
-  /**
    * Size
    */
   @Prop() size:
@@ -28,7 +23,6 @@ export class Image implements ComponentInterface {
         class={{
           image: true,
           [this.size]: Boolean(this.size),
-          [this.class]: Boolean(this.class),
         }}
       >
         <slot />

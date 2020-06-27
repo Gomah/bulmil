@@ -6,9 +6,9 @@ import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 })
 export class Checkbox implements ComponentInterface {
   /**
-   * CSS Classes
+   * Input classes
    */
-  @Prop() class = '';
+  @Prop() inputClass = '';
 
   /**
    * Label classes
@@ -36,7 +36,7 @@ export class Checkbox implements ComponentInterface {
         <input
           type="checkbox"
           class={{
-            [this.class]: Boolean(this.class),
+            [this.inputClass]: Boolean(this.inputClass),
           }}
           disabled={this.disabled}
           checked={this.checked}

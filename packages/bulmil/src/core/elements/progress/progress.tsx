@@ -6,11 +6,6 @@ import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 })
 export class Progress implements ComponentInterface {
   /**
-   * CSS Classes
-   */
-  @Prop() class: string;
-
-  /**
    * Value
    */
   @Prop() value: number;
@@ -37,7 +32,6 @@ export class Progress implements ComponentInterface {
           progress: true,
           [this.color]: Boolean(this.color),
           [this.size]: Boolean(this.size),
-          [this.class]: Boolean(this.class),
         }}
         value={this.value}
         max={this.max}

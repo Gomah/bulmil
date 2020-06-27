@@ -6,11 +6,6 @@ import { Component, Prop, h, JSX, ComponentInterface, Host } from '@stencil/core
 })
 export class Tabs implements ComponentInterface {
   /**
-   * CSS Classes
-   */
-  @Prop() class = '';
-
-  /**
    * Pagination size
    */
   @Prop() size: 'is-small' | 'is-medium' | 'is-large';
@@ -46,7 +41,6 @@ export class Tabs implements ComponentInterface {
             [this.tabStyle]: Boolean(this.tabStyle),
             'is-fullwidth': this.isFullwidth,
             'is-toggle-rounded': this.isRounded && this.tabStyle === 'is-toggle',
-            [this.class]: Boolean(this.class),
           }}
         >
           <slot />

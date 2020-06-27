@@ -8,11 +8,6 @@ export class Divider implements ComponentInterface {
   /**
    * CSS Classes
    */
-  @Prop() class = '';
-
-  /**
-   * CSS Classes
-   */
   @Prop() content = '';
 
   /**
@@ -24,7 +19,6 @@ export class Divider implements ComponentInterface {
     return (
       <Host
         class={{
-          [this.class]: Boolean(this.class),
           'is-divider': this.orientation === 'is-horizontal',
           'is-divider-vertical': this.orientation === 'is-vertical',
         }}

@@ -6,11 +6,6 @@ import { Component, Prop, h, JSX, ComponentInterface, Host } from '@stencil/core
 })
 export class Container implements ComponentInterface {
   /**
-   * CSS Classes
-   */
-  @Prop() class = '';
-
-  /**
    * Container breakpoint
    */
   @Prop() breakpoint: 'is-widescreen' | 'is-fullhd';
@@ -27,7 +22,6 @@ export class Container implements ComponentInterface {
           container: true,
           'is-fluid': this.isFluid,
           [this.breakpoint]: Boolean(this.breakpoint),
-          [this.class]: Boolean(this.class),
         }}
       />
     );

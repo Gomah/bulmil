@@ -5,11 +5,6 @@ import { Component, Prop, h, JSX, ComponentInterface, Host } from '@stencil/core
 })
 export class Column implements ComponentInterface {
   /**
-   * CSS Classes
-   */
-  @Prop() class = '';
-
-  /**
    * Sizes
    */
   @Prop() sizes: string;
@@ -26,7 +21,6 @@ export class Column implements ComponentInterface {
           column: true,
           'is-narrow': this.isNarrow && typeof this.isNarrow === 'boolean',
           [this.sizes]: Boolean(this.sizes),
-          [this.class]: Boolean(this.class),
         }}
       />
     );

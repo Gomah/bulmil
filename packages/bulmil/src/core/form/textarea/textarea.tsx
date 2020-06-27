@@ -6,11 +6,6 @@ import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 })
 export class Textarea implements ComponentInterface {
   /**
-   * CSS Classes
-   */
-  @Prop() class = '';
-
-  /**
    * Control class
    */
   @Prop() controlClass = '';
@@ -76,7 +71,6 @@ export class Textarea implements ComponentInterface {
             [this.color]: Boolean(this.color),
             [this.size]: Boolean(this.size),
             [this.state]: Boolean(this.state),
-            [this.class]: Boolean(this.class),
           }}
           disabled={this.disabled}
           readonly={this.readonly}

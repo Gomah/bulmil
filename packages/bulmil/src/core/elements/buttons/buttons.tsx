@@ -6,11 +6,6 @@ import { Component, ComponentInterface, Prop, Host, h, JSX } from '@stencil/core
 })
 export class Buttons implements ComponentInterface {
   /**
-   * CSS classes
-   */
-  @Prop() class = '';
-
-  /**
    * Buttons size
    */
   @Prop() public size: 'are-small' | 'are-medium' | 'are-large';
@@ -22,7 +17,6 @@ export class Buttons implements ComponentInterface {
           class={{
             buttons: true,
             [this.size]: Boolean(this.size),
-            [this.class]: Boolean(this.class),
           }}
         >
           <slot />

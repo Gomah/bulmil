@@ -6,11 +6,6 @@ import { Component, Prop, h, JSX, ComponentInterface, Host } from '@stencil/core
 })
 export class Section implements ComponentInterface {
   /**
-   * CSS Classes
-   */
-  @Prop() class = '';
-
-  /**
    * Section size
    */
   @Prop() size: 'is-medium' | 'is-large';
@@ -21,7 +16,6 @@ export class Section implements ComponentInterface {
         class={{
           section: true,
           [this.size]: Boolean(this.size),
-          [this.class]: Boolean(this.class),
         }}
       />
     );

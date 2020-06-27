@@ -5,11 +5,6 @@ import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 })
 export class Notification implements ComponentInterface {
   /**
-   * CSS Classes
-   */
-  @Prop() class = '';
-
-  /**
    * Color
    */
   @Prop() color: 'is-primary' | 'is-link' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
@@ -25,7 +20,6 @@ export class Notification implements ComponentInterface {
         class={{
           notification: true,
           [this.color]: Boolean(this.color),
-          [this.class]: Boolean(this.class),
         }}
       >
         {this.dismissable && <button class="delete"></button>}

@@ -6,11 +6,6 @@ import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 })
 export class FileInput implements ComponentInterface {
   /**
-   * CSS Classes
-   */
-  @Prop() class = '';
-
-  /**
    * Name
    */
   @Prop() name = '';
@@ -94,7 +89,6 @@ export class FileInput implements ComponentInterface {
           'is-right': this.isRight,
           'is-fullwidth': this.isFullwidth,
           'is-boxed': this.isBoxed,
-          [this.class]: Boolean(this.class),
         }}
       >
         <label class="file-label">

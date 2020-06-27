@@ -9,7 +9,6 @@
 
 | Property   | Attribute   | Description   | Type      | Default     |
 | ---------- | ----------- | ------------- | --------- | ----------- |
-| `class`    | `class`     | CSS Classes   | `string`  | `''`        |
 | `isNarrow` | `is-narrow` | Narrow column | `boolean` | `undefined` |
 | `sizes`    | `sizes`     | Sizes         | `string`  | `undefined` |
 
