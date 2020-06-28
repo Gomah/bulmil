@@ -5,9 +5,8 @@ import { createReactComponent } from './react-component-lib';
 
 import { JSX } from 'bulmil';
 
-import { defineCustomElements, applyPolyfills } from 'bulmil/dist/loader';
 
-applyPolyfills().then(() => defineCustomElements());
+
 export const BmBox = /*@__PURE__*/createReactComponent<JSX.BmBox, HTMLBmBoxElement>('bm-box');
 export const BmBreadcrumb = /*@__PURE__*/createReactComponent<JSX.BmBreadcrumb, HTMLBmBreadcrumbElement>('bm-breadcrumb');
 export const BmButton = /*@__PURE__*/createReactComponent<JSX.BmButton, HTMLBmButtonElement>('bm-button');
