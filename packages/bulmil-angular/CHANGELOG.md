@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/gomah/bulmil/compare/v0.0.19...v0.6.0) (2020-07-01)
+
+
+### Bug Fixes
+
+* **bulmil:** remove reserved class prop ([cd12346](https://github.com/gomah/bulmil/commit/cd123460685053d59b407fed8c55f1b436e2d3d8))
+* **deps:** regenerate yarn.lock ([fa798a7](https://github.com/gomah/bulmil/commit/fa798a78d54c7f5ef86a3044ca0324d3974b229f))
+
+
+### Features
+
+* **bulmil:** add Bulma helpers ([8dd3b5f](https://github.com/gomah/bulmil/commit/8dd3b5fa802f49bd571482dd66e14e74d125849a))
+* **bulmil:** Add is-light to button component ([ad36417](https://github.com/gomah/bulmil/commit/ad3641738733f32d3895aa03b8f996673f95a8d2))
+* add bm-slider ([8b98f01](https://github.com/gomah/bulmil/commit/8b98f01fe1abb5da7a9576a5579e038a0bf27cd6))
+
+
+
+
+
 ## [0.5.1](https://github.com/gomah/bulmil/compare/bulmil-angular@0.5.0...bulmil-angular@0.5.1) (2020-06-28)
 
 **Note:** Version bump only for package bulmil-angular

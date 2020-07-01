@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/gomah/bulmil/compare/v0.0.19...v0.6.0) (2020-07-01)
+
+
+### Bug Fixes
+
+* **bulmil-react:** fix main & module pkg ([2053ffa](https://github.com/gomah/bulmil/commit/2053ffafd0e8bafb59d57f3127fe7238c7b4a372))
+* **deps:** regenerate yarn.lock ([fa798a7](https://github.com/gomah/bulmil/commit/fa798a78d54c7f5ef86a3044ca0324d3974b229f))
+
+
+### Features
+
+* add bm-slider ([8b98f01](https://github.com/gomah/bulmil/commit/8b98f01fe1abb5da7a9576a5579e038a0bf27cd6))
+
+
+
+
+
 ## [0.5.1](https://github.com/gomah/bulmil/compare/bulmil-react@0.5.0...bulmil-react@0.5.1) (2020-06-28)
 
 **Note:** Version bump only for package bulmil-react

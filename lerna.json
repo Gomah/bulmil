@@ -1,6 +1,8 @@
 {
-  "version": "0.5.1",
-  "packages": ["packages/*"],
+  "version": "0.6.0",
+  "packages": [
+    "packages/*"
+  ],
   "useWorkspaces": true,
   "npmClient": "yarn",
   "conventionalCommits": true,
