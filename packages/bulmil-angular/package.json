@@ -63,7 +63,7 @@
     "rimraf": "^3.0.2",
     "rollup": "2.23.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "rxjs": "^6.6.0",
+    "rxjs": "^6.6.2",
     "tsickle": "^0.39.1",
     "tslint": "^6.1.2",
     "tslint-ionic-rules": "0.0.21",
