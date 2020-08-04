@@ -15,6 +15,4 @@ it('Should render properly', async (): Promise<void> => {
       </button>
     </bm-badge>
   `);
-
-  expect(page.root.disabled).toBe(false);
 });
