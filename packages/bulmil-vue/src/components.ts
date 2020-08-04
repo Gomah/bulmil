@@ -10,6 +10,7 @@ import { Components } from 'bulmil';
 
 
 const customElementTags: string[] = [
+ 'bm-badge',
  'bm-box',
  'bm-breadcrumb',
  'bm-button',
@@ -52,6 +53,20 @@ const customElementTags: string[] = [
  'bm-textarea',
 ];
 Vue.config.ignoredElements = [...Vue.config.ignoredElements, ...customElementTags];
+
+
+export const BmBadge = /*@__PURE__*/ Vue.extend({
+
+  props: {
+    color: {} as PropOptions<Components.BmBadge['color']>,
+    position: {} as PropOptions<Components.BmBadge['position']>,
+    isOutlined: {} as PropOptions<Components.BmBadge['isOutlined']>,
+    isLight: {} as PropOptions<Components.BmBadge['isLight']>,
+  },
+
+
+  render: createCommonRender('bm-badge', []),
+});
 
 
 export const BmBox = /*@__PURE__*/ Vue.extend({
@@ -481,7 +496,6 @@ export const BmSlider = /*@__PURE__*/ Vue.extend({
     min: {} as PropOptions<Components.BmSlider['min']>,
     max: {} as PropOptions<Components.BmSlider['max']>,
     value: {} as PropOptions<Components.BmSlider['value']>,
-    class: {} as PropOptions<Components.BmSlider['class']>,
     color: {} as PropOptions<Components.BmSlider['color']>,
     size: {} as PropOptions<Components.BmSlider['size']>,
     isCircle: {} as PropOptions<Components.BmSlider['isCircle']>,
@@ -496,7 +510,6 @@ export const BmSlider = /*@__PURE__*/ Vue.extend({
 export const BmSwitch = /*@__PURE__*/ Vue.extend({
 
   props: {
-    class: {} as PropOptions<Components.BmSwitch['class']>,
     color: {} as PropOptions<Components.BmSwitch['color']>,
     size: {} as PropOptions<Components.BmSwitch['size']>,
     isThin: {} as PropOptions<Components.BmSwitch['isThin']>,

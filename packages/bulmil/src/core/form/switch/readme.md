@@ -10,7 +10,6 @@
 | Property     | Attribute     | Description | Type                                                       | Default     |
 | ------------ | ------------- | ----------- | ---------------------------------------------------------- | ----------- |
 | `checked`    | `checked`     | Checked     | `boolean`                                                  | `false`     |
-| `class`      | `class`       | CSS Classes | `string`                                                   | `''`        |
 | `color`      | `color`       | Color       | `"is-danger" \| "is-info" \| "is-success" \| "is-warning"` | `undefined` |
 | `disabled`   | `disabled`    | Disabled    | `boolean`                                                  | `false`     |
 | `isOutlined` | `is-outlined` | Outlined    | `boolean`                                                  | `false`     |

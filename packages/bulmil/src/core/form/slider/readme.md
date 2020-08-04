@@ -9,7 +9,6 @@
 
 | Property   | Attribute   | Description | Type                                                       | Default     |
 | ---------- | ----------- | ----------- | ---------------------------------------------------------- | ----------- |
-| `class`    | `class`     | CSS Classes | `string`                                                   | `''`        |
 | `color`    | `color`     | Color       | `"is-danger" \| "is-info" \| "is-success" \| "is-warning"` | `undefined` |
 | `disabled` | `disabled`  | Disabled    | `boolean`                                                  | `false`     |
 | `isCircle` | `is-circle` | Circle      | `boolean`                                                  | `false`     |

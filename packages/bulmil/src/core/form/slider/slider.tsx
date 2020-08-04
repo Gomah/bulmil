@@ -26,11 +26,6 @@ export class Slider implements ComponentInterface {
   @Prop({ reflect: true }) value: number;
 
   /**
-   * CSS Classes
-   */
-  @Prop() class = '';
-
-  /**
    * Color
    */
   @Prop() color: 'is-success' | 'is-warning' | 'is-danger' | 'is-info';

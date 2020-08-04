@@ -7,6 +7,7 @@ import { JSX } from 'bulmil';
 
 
 
+export const BmBadge = /*@__PURE__*/createReactComponent<JSX.BmBadge, HTMLBmBadgeElement>('bm-badge');
 export const BmBox = /*@__PURE__*/createReactComponent<JSX.BmBox, HTMLBmBoxElement>('bm-box');
 export const BmBreadcrumb = /*@__PURE__*/createReactComponent<JSX.BmBreadcrumb, HTMLBmBreadcrumbElement>('bm-breadcrumb');
 export const BmButton = /*@__PURE__*/createReactComponent<JSX.BmButton, HTMLBmButtonElement>('bm-button');

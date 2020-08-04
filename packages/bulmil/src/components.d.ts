@@ -6,6 +6,38 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface BmBadge {
+        /**
+          * Color
+         */
+        "color": | 'is-primary'
+    | 'is-info'
+    | 'is-success'
+    | 'is-danger'
+    | 'is-warning'
+    | 'is-white'
+    | 'is-dark'
+    | 'is-black';
+        /**
+          * Is light
+         */
+        "isLight": boolean;
+        /**
+          * Is outlined
+         */
+        "isOutlined": boolean;
+        /**
+          * Position
+         */
+        "position": | 'is-top-left'
+    | 'is-top'
+    | 'is-top-right'
+    | 'is-right'
+    | 'is-bottom-right'
+    | 'is-bottom'
+    | 'is-bottom-left'
+    | 'is-left';
+    }
     interface BmBox {
     }
     interface BmBreadcrumb {
@@ -541,10 +573,6 @@ export namespace Components {
     }
     interface BmSlider {
         /**
-          * CSS Classes
-         */
-        "class": string;
-        /**
           * Color
          */
         "color": 'is-success' | 'is-warning' | 'is-danger' | 'is-info';
@@ -582,10 +610,6 @@ export namespace Components {
           * Checked
          */
         "checked": boolean;
-        /**
-          * CSS Classes
-         */
-        "class": string;
         /**
           * Color
          */
@@ -740,6 +764,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLBmBadgeElement extends Components.BmBadge, HTMLStencilElement {
+    }
+    var HTMLBmBadgeElement: {
+        prototype: HTMLBmBadgeElement;
+        new (): HTMLBmBadgeElement;
+    };
     interface HTMLBmBoxElement extends Components.BmBox, HTMLStencilElement {
     }
     var HTMLBmBoxElement: {
@@ -981,6 +1011,7 @@ declare global {
         new (): HTMLBmTextareaElement;
     };
     interface HTMLElementTagNameMap {
+        "bm-badge": HTMLBmBadgeElement;
         "bm-box": HTMLBmBoxElement;
         "bm-breadcrumb": HTMLBmBreadcrumbElement;
         "bm-button": HTMLBmButtonElement;
@@ -1024,6 +1055,38 @@ declare global {
     }
 }
 declare namespace LocalJSX {
+    interface BmBadge {
+        /**
+          * Color
+         */
+        "color"?: | 'is-primary'
+    | 'is-info'
+    | 'is-success'
+    | 'is-danger'
+    | 'is-warning'
+    | 'is-white'
+    | 'is-dark'
+    | 'is-black';
+        /**
+          * Is light
+         */
+        "isLight"?: boolean;
+        /**
+          * Is outlined
+         */
+        "isOutlined"?: boolean;
+        /**
+          * Position
+         */
+        "position"?: | 'is-top-left'
+    | 'is-top'
+    | 'is-top-right'
+    | 'is-right'
+    | 'is-bottom-right'
+    | 'is-bottom'
+    | 'is-bottom-left'
+    | 'is-left';
+    }
     interface BmBox {
     }
     interface BmBreadcrumb {
@@ -1559,10 +1622,6 @@ declare namespace LocalJSX {
     }
     interface BmSlider {
         /**
-          * CSS Classes
-         */
-        "class"?: string;
-        /**
           * Color
          */
         "color"?: 'is-success' | 'is-warning' | 'is-danger' | 'is-info';
@@ -1600,10 +1659,6 @@ declare namespace LocalJSX {
           * Checked
          */
         "checked"?: boolean;
-        /**
-          * CSS Classes
-         */
-        "class"?: string;
         /**
           * Color
          */
@@ -1757,6 +1812,7 @@ declare namespace LocalJSX {
         "value"?: string | number;
     }
     interface IntrinsicElements {
+        "bm-badge": BmBadge;
         "bm-box": BmBox;
         "bm-breadcrumb": BmBreadcrumb;
         "bm-button": BmButton;
@@ -1803,6 +1859,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "bm-badge": LocalJSX.BmBadge & JSXBase.HTMLAttributes<HTMLBmBadgeElement>;
             "bm-box": LocalJSX.BmBox & JSXBase.HTMLAttributes<HTMLBmBoxElement>;
             "bm-breadcrumb": LocalJSX.BmBreadcrumb & JSXBase.HTMLAttributes<HTMLBmBreadcrumbElement>;
             "bm-button": LocalJSX.BmButton & JSXBase.HTMLAttributes<HTMLBmButtonElement>;
