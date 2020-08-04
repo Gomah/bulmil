@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/Gomah/bulmil/compare/v0.6.7...v0.7.0) (2020-08-04)
+
+
+### Features
+
+* **bulmil:** Add badge element ([d5eaad2](https://github.com/Gomah/bulmil/commit/d5eaad2ecf2d0b66f120fe347cb15791c894db28))
+
+
+
+
+
 ## [0.6.7](https://github.com/Gomah/bulmil/compare/v0.6.6...v0.6.7) (2020-08-01)
 
 **Note:** Version bump only for package bulmil
