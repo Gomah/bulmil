@@ -24,8 +24,8 @@
   ],
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.2",
-    "@types/jest": "^26.0.7",
-    "jest": "^26.2.1",
+    "@types/jest": "^26.0.8",
+    "jest": "^26.2.2",
     "rollup": "^2.23.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "ts-jest": "^26.1.4",
