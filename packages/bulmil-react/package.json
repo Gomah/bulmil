@@ -1,7 +1,7 @@
 {
   "name": "bulmil-react",
   "sideEffects": false,
-  "version": "0.7.0",
+  "version": "0.7.1",
   "author": "Gomah",
   "license": "MIT",
   "description": "React specific wrapper for bulmil",
@@ -40,7 +40,7 @@
     "typescript": "3.9.7"
   },
   "dependencies": {
-    "bulmil": "0.7.0"
+    "bulmil": "0.7.1"
   },
   "peerDependencies": {
     "react": "^16.12.0",
