@@ -3,7 +3,7 @@
 /* auto-generated react proxies */
 import { createReactComponent } from './react-component-lib';
 
-import { JSX } from 'bulmil';
+import type { JSX } from 'bulmil';
 
 
 

@@ -4,7 +4,7 @@
 import Vue, { PropOptions } from 'vue';
 import { createCommonRender, createCommonMethod } from './vue-component-lib/utils';
 
-import { Components } from 'bulmil';
+import type { Components } from 'bulmil';
 
 
 
