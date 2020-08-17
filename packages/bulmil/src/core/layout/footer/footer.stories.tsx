@@ -1,7 +1,7 @@
 import { html, TemplateResult } from 'lit-html';
 
 export default {
-  title: 'Layout|Footer',
+  title: 'Layout/Footer',
   component: 'bm-footer',
 };
 

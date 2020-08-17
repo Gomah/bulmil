@@ -1,7 +1,7 @@
 import { html, TemplateResult } from 'lit-html';
 
 export default {
-  title: 'Elements|Box',
+  title: 'Elements/Box',
   component: 'bm-box',
 };
 

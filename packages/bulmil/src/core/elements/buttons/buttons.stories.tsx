@@ -2,7 +2,7 @@ import { select } from '@storybook/addon-knobs';
 import { html, TemplateResult } from 'lit-html';
 
 export default {
-  title: 'Elements|Buttons',
+  title: 'Elements/Buttons',
   component: 'bm-buttons',
 };
 

@@ -2,7 +2,7 @@ import { select, text } from '@storybook/addon-knobs';
 import { html, TemplateResult } from 'lit-html';
 
 export default {
-  title: 'Layout|Divider',
+  title: 'Layout/Divider',
   component: 'bm-divider',
 };
 

@@ -2,7 +2,7 @@ import { html, TemplateResult } from 'lit-html';
 import { select } from '@storybook/addon-knobs';
 
 export default {
-  title: 'Components|Panel',
+  title: 'Components/Panel',
   component: 'bm-panel',
 };
 

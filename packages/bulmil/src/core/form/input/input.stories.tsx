@@ -1,7 +1,7 @@
 import { html, TemplateResult } from 'lit-html';
 
 export default {
-  title: 'Form|Input',
+  title: 'Form/Input',
   component: 'bm-input',
 };
 

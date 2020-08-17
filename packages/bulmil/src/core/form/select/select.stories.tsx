@@ -2,7 +2,7 @@ import { boolean, text, select } from '@storybook/addon-knobs';
 import { html, TemplateResult } from 'lit-html';
 
 export default {
-  title: 'Form|Select',
+  title: 'Form/Select',
   component: 'bm-select',
 };
 

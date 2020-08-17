@@ -1,7 +1,7 @@
 import { html, TemplateResult } from 'lit-html';
 
 export default {
-  title: 'Grid|Columns',
+  title: 'Grid/Columns',
   component: 'bm-columns',
 };
 

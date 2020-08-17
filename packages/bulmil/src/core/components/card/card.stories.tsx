@@ -1,7 +1,7 @@
 import { html, TemplateResult } from 'lit-html';
 
 export default {
-  title: 'Components|Card',
+  title: 'Components/Card',
   component: 'bm-card',
 };
 

@@ -2,7 +2,7 @@ import { boolean } from '@storybook/addon-knobs';
 import { html, TemplateResult } from 'lit-html';
 
 export default {
-  title: 'Form|Radio',
+  title: 'Form/Radio',
   component: 'bm-radio',
 };
 

@@ -2,7 +2,7 @@ import { boolean } from '@storybook/addon-knobs';
 import { html, TemplateResult } from 'lit-html';
 
 export default {
-  title: 'Components|Modal',
+  title: 'Components/Modal',
   component: 'bm-modal',
 };
 

@@ -2,7 +2,7 @@ import { select, number } from '@storybook/addon-knobs';
 import { html, TemplateResult } from 'lit-html';
 
 export default {
-  title: 'Elements|Progress',
+  title: 'Elements/Progress',
   component: 'bm-progress',
 };
 

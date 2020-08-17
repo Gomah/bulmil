@@ -2,7 +2,7 @@ import { select, boolean } from '@storybook/addon-knobs';
 import { html, TemplateResult } from 'lit-html';
 
 export default {
-  title: 'Elements|Badge',
+  title: 'Elements/Badge',
   component: 'bm-badge',
 };
 

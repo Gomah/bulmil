@@ -2,7 +2,7 @@ import { boolean, select } from '@storybook/addon-knobs';
 import { html, TemplateResult } from 'lit-html';
 
 export default {
-  title: 'Elements|Tags',
+  title: 'Elements/Tags',
   component: 'bm-tags',
 };
 

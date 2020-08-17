@@ -1,7 +1,7 @@
 import { html, TemplateResult } from 'lit-html';
 
 export default {
-  title: 'Elements|Table',
+  title: 'Elements/Table',
   component: 'bm-table',
 };
 

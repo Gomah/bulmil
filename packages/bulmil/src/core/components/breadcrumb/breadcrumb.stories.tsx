@@ -2,7 +2,7 @@ import { html, TemplateResult } from 'lit-html';
 import { boolean, select } from '@storybook/addon-knobs';
 
 export default {
-  title: 'Components|Breadcrumb',
+  title: 'Components/Breadcrumb',
   component: 'bm-breadcrumb',
 };
 

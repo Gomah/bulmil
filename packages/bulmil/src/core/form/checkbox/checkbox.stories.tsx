@@ -2,7 +2,7 @@ import { boolean } from '@storybook/addon-knobs';
 import { html, TemplateResult } from 'lit-html';
 
 export default {
-  title: 'Form|Checkbox',
+  title: 'Form/Checkbox',
   component: 'bm-checkbox',
 };
 

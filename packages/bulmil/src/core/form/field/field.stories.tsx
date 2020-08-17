@@ -1,7 +1,7 @@
 import { html, TemplateResult } from 'lit-html';
 
 export default {
-  title: 'Form|Field',
+  title: 'Form/Field',
   component: 'bm-field',
 };
 

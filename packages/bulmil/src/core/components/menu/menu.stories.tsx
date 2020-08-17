@@ -1,7 +1,7 @@
 import { html, TemplateResult } from 'lit-html';
 
 export default {
-  title: 'Components|Menu',
+  title: 'Components/Menu',
   component: 'bm-menu',
 };
 
