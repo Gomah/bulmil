@@ -9,6 +9,15 @@ import autoprefixer from 'autoprefixer';
 import { generateJsonDocs } from './src/customElementDocGenerator';
 
 export const config: Config = {
+  // Stencil 1 defaults:
+  buildEs5: 'prod',
+  extras: {
+    cssVarsShim: true,
+    dynamicImportShim: true,
+    safari10: true,
+    shadowDomShim: true,
+  },
+
   namespace: 'Bulmil',
   globalStyle: 'bulmil.scss',
   plugins: [

@@ -3462,12 +3462,10 @@
   resolved "https://registry.yarnpkg.com/@stencil/angular-output-target/-/angular-output-target-0.0.5.tgz#63e6981211291f80804361283386074bb9412749"
   integrity sha512-00iVf0pMH5NrVc/dUDy6AOEYEwTZ816bXggzNf4gxbhLpX1RAsC+MjC0gs/sJS2gal4gpE4cTVlPCGNy+mtFXg==
 
-"@stencil/core@^1.17.3":
-  version "1.17.3"
-  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-1.17.3.tgz#db19f4c707b749beef5cf113916c5252ad5c99de"
-  integrity sha512-q5joOYUPHTNa/5hEThMT/QEJ/suN8bpcYbV/LrSNsgsgHN+RJ05jCpU8VAShdUPT6WzoyF2iGgYc/EI2xeqFzw==
-  dependencies:
-    typescript "3.9.7"
+"@stencil/core@^2.0.0-4":
+  version "2.0.0-4"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.0.0-4.tgz#40608c0c129bdbfe413abc3ad44a4684764f2e2a"
+  integrity sha512-WQw/BtyqPDH4GmHEcAYHDdqXkOeZw5hp/q+5KMv6OfCOLDujeBC4G02LNbaAYy6hn1ZCaMbDfyVgEshd40Wqnw==
 
 "@stencil/eslint-plugin@^0.3.1":
   version "0.3.1"
@@ -17464,11 +17462,6 @@ typescript@3.5.3:
   version "3.5.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.5.3.tgz#c830f657f93f1ea846819e929092f5fe5983e977"
   integrity sha512-ACzBtm/PhXBDId6a6sDJfroT2pOWt/oOnk4/dElG5G33ZL776N3Y6/6bKZJBFpd+b05F3Ct9qDjMeJmRWtE2/g==
-
-typescript@3.9.7:
-  version "3.9.7"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.7.tgz#98d600a5ebdc38f40cb277522f12dc800e9e25fa"
-  integrity sha512-BLbiRkiBzAwsjut4x/dsibSTB6yWpwT5qWmC2OfuCg3GgVQCSgMs4vEctYPhsaGtd0AeuuHMkjZ2h2WG8MSzRw==
 
 typescript@4.0.2, typescript@^4.0.2:
   version "4.0.2"
