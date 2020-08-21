@@ -1,6 +1,6 @@
 {
   "name": "bulmil-angular",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "author": "Gomah",
   "license": "MIT",
   "description": "Angular specific wrapper for bulmil",
@@ -29,7 +29,7 @@
     "dist/"
   ],
   "dependencies": {
-    "bulmil": "0.7.2",
+    "bulmil": "0.7.3",
     "tslib": "^2.0.1"
   },
   "peerDependencies": {
