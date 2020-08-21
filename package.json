@@ -10,8 +10,8 @@
   "scripts": {
     "build": "lerna run build --stream",
     "build:storybook": "build-storybook -c .storybook -s packages/bulmil/www -o storybook/",
-    "release": "lerna bootstrap && yarn build && yarn run test && lerna publish --no-commit-hooks --npm-tag latest",
-    "alpha": "lerna bootstrap && yarn build && yarn run test && lerna publish prepatch --no-commit-hooks --npm-tag next",
+    "release": "lerna bootstrap && yarn build && yarn run test && lerna publish --no-commit-hooks --dist-tag latest",
+    "alpha": "lerna bootstrap && yarn build && yarn run test && lerna publish prepatch --no-commit-hooks --dist-tag next",
     "watch": "node --max_old_space_size=4096 ./node_modules/.bin/stencil build --watch --recursive --serve --config ./packages/bulmil/stencil.config.ts",
     "storybook.run": "start-storybook -p 9006 -s packages/bulmil/www",
     "storybook": "npm-run-all --parallel watch storybook.run",
