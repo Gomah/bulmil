@@ -2,6 +2,7 @@ import path from 'path';
 import { Config } from '@stencil/core';
 import { angularOutputTarget } from '@stencil/angular-output-target';
 import { reactOutputTarget } from '@stencil/react-output-target';
+import { svelteOutputTarget } from '@stencil/svelte-output-target';
 import { vueOutputTarget } from '@stencil/vue-output-target';
 import { sass } from '@stencil/sass';
 import { postcss } from '@stencil/postcss';
@@ -38,14 +39,23 @@ export const config: Config = {
       proxiesFile: '../bulmil-react/src/components.ts',
       loaderDir: 'dist/loader',
     }),
+
     angularOutputTarget({
       componentCorePackage: 'bulmil',
       directivesProxyFile: '../bulmil-angular/src/directives/proxies.ts',
     }),
+
     vueOutputTarget({
       componentCorePackage: 'bulmil',
       proxiesFile: '../bulmil-vue/src/components.ts',
     }),
+
+    svelteOutputTarget({
+      accessors: true,
+      componentCorePackage: 'bulmil',
+      proxiesFile: '../bulmil-svelte/src/proxies.ts',
+    }),
+
     { type: 'dist' },
     {
       type: 'dist-hydrate-script',

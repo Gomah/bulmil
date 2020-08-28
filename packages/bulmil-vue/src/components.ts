@@ -233,8 +233,10 @@ export const BmContent = /*@__PURE__*/ Vue.extend({
 export const BmDivider = /*@__PURE__*/ Vue.extend({
 
   props: {
-    content: {} as PropOptions<Components.BmDivider['content']>,
-    orientation: {} as PropOptions<Components.BmDivider['orientation']>,
+    alignment: {} as PropOptions<Components.BmDivider['alignment']>,
+    color: {} as PropOptions<Components.BmDivider['color']>,
+    isLight: {} as PropOptions<Components.BmDivider['isLight']>,
+    isVertical: {} as PropOptions<Components.BmDivider['isVertical']>,
   },
 
 

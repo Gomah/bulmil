@@ -1,0 +1,32 @@
+{
+  "name": "bulmil-svelte",
+  "sideEffects": false,
+  "version": "0.7.4-alpha.0",
+  "description": "Svelte specific wrapper for bulmil",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "svelte": "src/svelte/index.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "src/",
+    "dist/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gomah/bulmil.git"
+  },
+  "scripts": {
+    "build": "npm run clean && npm run build:cjs && npm run build:esm",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "build:esm": "tsc --module es6 --outDir dist/esm",
+    "clean": "rm -rf dist",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "dependencies": {
+    "bulmil": "0.7.4-alpha.0"
+  },
+  "devDependencies": {
+    "@testing-library/svelte": "^3.0.0",
+    "svelte": "^3.24.1"
+  }
+}

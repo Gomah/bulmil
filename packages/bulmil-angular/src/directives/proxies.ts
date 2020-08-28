@@ -275,13 +275,13 @@ export class BmContent {
 
 export declare interface BmDivider extends Components.BmDivider {}
 @ProxyCmp({
-  inputs: ['content', 'orientation']
+  inputs: ['alignment', 'color', 'isLight', 'isVertical']
 })
 @Component({
   selector: 'bm-divider',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: '<ng-content></ng-content>',
-  inputs: ['content', 'orientation']
+  inputs: ['alignment', 'color', 'isLight', 'isVertical']
 })
 export class BmDivider {
   protected el: HTMLElement;

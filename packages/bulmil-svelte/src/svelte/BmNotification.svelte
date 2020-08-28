@@ -1,0 +1,37 @@
+
+<script>
+import { createEventDispatcher, onMount } from 'svelte';
+
+let __ref;
+let __mounted = false;
+
+const dispatch = createEventDispatcher();
+
+export let color = undefined;
+export let dismissable = undefined;
+
+
+
+export const getWebComponent = () => __ref;
+
+onMount(() => { __mounted = true; });
+
+const setProp = (prop, value) => { if (__ref) __ref[prop] = value; };
+
+
+
+const onEvent = (e) => {
+  e.stopPropagation();
+  dispatch(e.type, e.detail);
+};
+</script>
+
+<bm-notification 
+  color={color}
+  dismissable={dismissable}
+  
+  bind:this={__ref}
+>
+  <slot></slot>
+</bm-notification>
+  
