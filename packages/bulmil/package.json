@@ -101,7 +101,7 @@
   },
   "dependencies": {
     "@creativebulma/bulma-badge": "^1.0.1",
-    "bulma-divider": "^0.2.0",
+    "@creativebulma/bulma-divider": "^1.1.0",
     "bulma-scss": "^0.9.0",
     "bulma-slider": "^2.0.4",
     "bulma-switch": "^2.0.0"

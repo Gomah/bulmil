@@ -213,13 +213,21 @@ export namespace Components {
     }
     interface BmDivider {
         /**
-          * CSS Classes
+          * Alignment
          */
-        "content": string;
+        "alignment": 'is-left' | 'is-right';
         /**
-          * Orientation
+          * Color
          */
-        "orientation": 'is-horizontal' | 'is-vertical';
+        "color": 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
+        /**
+          * IsLight
+         */
+        "isLight": boolean;
+        /**
+          * IsVertical
+         */
+        "isVertical": boolean;
     }
     interface BmDropdown {
         /**
@@ -1262,13 +1270,21 @@ declare namespace LocalJSX {
     }
     interface BmDivider {
         /**
-          * CSS Classes
+          * Alignment
          */
-        "content"?: string;
+        "alignment"?: 'is-left' | 'is-right';
         /**
-          * Orientation
+          * Color
          */
-        "orientation"?: 'is-horizontal' | 'is-vertical';
+        "color"?: 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
+        /**
+          * IsLight
+         */
+        "isLight"?: boolean;
+        /**
+          * IsVertical
+         */
+        "isVertical"?: boolean;
     }
     interface BmDropdown {
         /**

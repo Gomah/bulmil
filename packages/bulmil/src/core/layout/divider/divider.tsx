@@ -6,24 +6,40 @@ import { Component, Prop, h, JSX, ComponentInterface, Host } from '@stencil/core
 })
 export class Divider implements ComponentInterface {
   /**
-   * CSS Classes
+   *
+   * Alignment
    */
-  @Prop() content = '';
+  @Prop() alignment: 'is-left' | 'is-right';
 
   /**
-   * Orientation
+   *
+   * Color
    */
-  @Prop() orientation: 'is-horizontal' | 'is-vertical' = 'is-horizontal';
+  @Prop() color: 'is-info' | 'is-success' | 'is-warning' | 'is-danger';
+
+  /**
+   * IsLight
+   */
+  @Prop() isLight = false;
+
+  /**
+   * IsVertical
+   */
+  @Prop() isVertical = false;
 
   render(): JSX.Element {
     return (
       <Host
         class={{
-          'is-divider': this.orientation === 'is-horizontal',
-          'is-divider-vertical': this.orientation === 'is-vertical',
+          divider: true,
+          'is-vertical': this.isVertical,
+          'is-light': this.isLight,
+          [this.color]: Boolean(this.color),
+          [this.alignment]: Boolean(this.alignment),
         }}
-        data-content={this.content}
-      />
+      >
+        <slot />
+      </Host>
     );
   }
 }
