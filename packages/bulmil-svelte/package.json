@@ -1,7 +1,7 @@
 {
   "name": "bulmil-svelte",
   "sideEffects": false,
-  "version": "0.7.4-alpha.0",
+  "version": "0.7.5-alpha.0",
   "description": "Svelte specific wrapper for bulmil",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -23,7 +23,7 @@
     "test": "echo \"No tests specified\" && exit 0"
   },
   "dependencies": {
-    "bulmil": "0.7.4-alpha.0"
+    "bulmil": "0.7.5-alpha.0"
   },
   "devDependencies": {
     "@testing-library/svelte": "^3.0.0",

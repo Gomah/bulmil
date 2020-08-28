@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.5-alpha.0](https://github.com/gomah/bulmil/compare/v0.7.4-alpha.0...v0.7.5-alpha.0) (2020-08-28)
+
+
+### Features
+
+* **bulmil:** add bulmil-svelte ([846d001](https://github.com/gomah/bulmil/commit/846d001717ba57f53416003547f3950c17cc2a46))
+* **divider:** use updated divider dependency ([c2859d2](https://github.com/gomah/bulmil/commit/c2859d22be52be93c1435b2535a4d25fd6334822))
+
+
+
+
+
 ## [0.7.4-alpha.0](https://github.com/gomah/bulmil/compare/v0.7.3...v0.7.4-alpha.0) (2020-08-21)
 
 **Note:** Version bump only for package bulmil
