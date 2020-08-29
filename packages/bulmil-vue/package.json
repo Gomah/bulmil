@@ -11,33 +11,37 @@
   },
   "scripts": {
     "test": "jest __tests__/",
-    "build": "npm run clean && npm run compile",
-    "clean": "rm -rf dist",
-    "compile": "npm run tsc",
-    "tsc": "tsc -p ."
+    "build": "npm run clean && npm run build:cjs && npm run build:esm",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "build:esm": "tsc --module es6 --outDir dist/esm",
+    "clean": "rimraf dist"
   },
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
   "files": [
     "dist/"
   ],
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@types/jest": "^26.0.10",
+    "@vue/test-utils": "^1.0.4",
     "jest": "^26.4.2",
-    "rollup": "^2.26.6",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.26.7",
     "rollup-plugin-node-resolve": "^5.2.0",
     "ts-jest": "^26.3.0",
-    "typescript": "^4.0.2"
-  },
-  "dependencies": {
-    "@vue/test-utils": "^1.0.4",
-    "bulmil": "0.7.5-alpha.0",
+    "typescript": "^4.0.2",
     "vue": "^2.6.12",
     "vue-class-component": "^7.2.5",
     "vue-jest": "^3.0.6",
     "vue-template-compiler": "^2.6.12"
+  },
+  "dependencies": {
+    "bulmil": "0.7.5-alpha.0"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.12"
   },
   "jest": {
     "preset": "ts-jest",

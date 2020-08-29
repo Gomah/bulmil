@@ -1,4 +1,7 @@
-// import { defineCustomElements } from 'bulmil/loader';
-
+import { defineCustomElements } from 'bulmil/dist/loader';
 
 export * from './proxies';
+
+if (typeof window !== 'undefined') {
+  defineCustomElements(window);
+}

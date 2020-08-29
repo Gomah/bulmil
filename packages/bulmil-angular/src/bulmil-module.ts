@@ -4,6 +4,7 @@ import { defineCustomElements } from 'bulmil/dist/loader';
 import * as Components from './directives/proxies';
 
 const BmComponents = [
+  Components.BmBadge,
   Components.BmBox,
   Components.BmBreadcrumb,
   Components.BmButton,
@@ -37,6 +38,7 @@ const BmComponents = [
   Components.BmRadio,
   Components.BmSection,
   Components.BmSelect,
+  Components.BmSlider,
   Components.BmSwitch,
   Components.BmTable,
   Components.BmTabs,

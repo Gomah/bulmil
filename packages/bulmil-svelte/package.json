@@ -5,8 +5,8 @@
   "description": "Svelte specific wrapper for bulmil",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "svelte": "src/svelte/index.js",
   "types": "dist/types/index.d.ts",
+  "svelte": "src/svelte/index.js",
   "files": [
     "src/",
     "dist/"
@@ -19,14 +19,19 @@
     "build": "npm run clean && npm run build:cjs && npm run build:esm",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "build:esm": "tsc --module es6 --outDir dist/esm",
-    "clean": "rm -rf dist",
+    "clean": "rimraf dist",
     "test": "echo \"No tests specified\" && exit 0"
+  },
+  "peerDependencies": {
+    "svelte": "^3.0.0"
   },
   "dependencies": {
     "bulmil": "0.7.5-alpha.0"
   },
   "devDependencies": {
     "@testing-library/svelte": "^3.0.0",
-    "svelte": "^3.24.1"
+    "rimraf": "^3.0.2",
+    "svelte": "^3.24.1",
+    "typescript": "^4.0.2"
   }
 }
