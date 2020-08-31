@@ -62,7 +62,7 @@
   },
   "devDependencies": {
     "@stencil/angular-output-target": "^0.0.5",
-    "@stencil/core": "^2.0.0-8",
+    "@stencil/core": "^2.0.0",
     "@stencil/eslint-plugin": "^0.3.1",
     "@stencil/postcss": "^1.0.1",
     "@stencil/react-output-target": "^0.0.9",
@@ -93,7 +93,7 @@
     "sass-loader": "^10.0.1",
     "standard-version": "^9.0.0",
     "style-loader": "^1.2.1",
-    "stylelint": "^13.6.1",
+    "stylelint": "^13.7.0",
     "stylelint-a11y": "^1.2.3",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-prettier": "^1.1.2",
