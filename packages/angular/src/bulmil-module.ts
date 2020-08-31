@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { defineCustomElements } from 'bulmil/dist/loader';
+import { defineCustomElements } from '@bulmil/core/dist/loader';
 
 import * as Components from './directives/proxies';
 

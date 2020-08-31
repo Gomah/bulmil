@@ -1,7 +1,7 @@
 /* eslint-disable */
 /* tslint:disable */
 // @ts-nocheck
-import 'bulmil/dist/loader';
+import '@bulmil/core/dist/loader';
 
 import BmBadge from './components/BmBadge';
 import BmBox from './components/BmBox';

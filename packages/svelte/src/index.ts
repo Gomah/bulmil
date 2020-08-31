@@ -1,4 +1,4 @@
-import { defineCustomElements } from 'bulmil/dist/loader';
+import { defineCustomElements } from '@bulmil/core/dist/loader';
 
 export * from './proxies';
 

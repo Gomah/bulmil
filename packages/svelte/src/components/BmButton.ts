@@ -1,7 +1,7 @@
 /* eslint-disable */
 /* tslint:disable */
 // @ts-nocheck
-import { Components, JSX } from 'bulmil';
+import { Components, JSX } from '@bulmil/core';
 
 
 interface BmButtonProps {

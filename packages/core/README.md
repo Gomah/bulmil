@@ -133,7 +133,7 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-import { applyPolyfills, defineCustomElements } from 'bulmil/dist/loader';
+import { applyPolyfills, defineCustomElements } from '@bulmil/core/dist/loader';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
@@ -161,7 +161,7 @@ Assuming you’ve run `npm install --save bulmil` beforehand, and that `bulmil` 
 import Vue from 'vue';
 import App from './App.vue';
 
-import { applyPolyfills, defineCustomElements } from 'bulmil/dist/loader';
+import { applyPolyfills, defineCustomElements } from '@bulmil/core/dist/loader';
 
 Vue.config.productionTip = false;
 
@@ -175,7 +175,7 @@ applyPolyfills().then(() => {
 });
 
 new Vue({
-  render: h => h(App),
+  render: (h) => h(App),
 }).$mount('#app');
 ```
 
@@ -186,7 +186,7 @@ Create a plugin, (e.g bulmil.ts):
 ```ts
 import Vue from 'vue';
 
-import { applyPolyfills, defineCustomElements } from 'bulmil/dist/loader';
+import { applyPolyfills, defineCustomElements } from '@bulmil/core/dist/loader';
 
 Vue.config.productionTip = false;
 Vue.config.ignoredElements = [/bm-\w*/];
@@ -262,7 +262,7 @@ import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
 // Note: loader import location set using "esmLoaderPath" within the output target confg
-import { defineCustomElements } from 'bulmil/dist/loader';
+import { defineCustomElements } from '@bulmil/core/dist/loader';
 
 if (environment.production) {
   enableProdMode();
@@ -270,7 +270,7 @@ if (environment.production) {
 
 platformBrowserDynamic()
   .bootstrapModule(AppModule)
-  .catch(err => console.log(err));
+  .catch((err) => console.log(err));
 defineCustomElements(window);
 ```
 
@@ -279,7 +279,7 @@ defineCustomElements(window);
 If you want your custom elements to be able to work on older browser, you should add the `applyPolyfills()` that surrond the `defineCustomElements()` function.
 
 ```tsx
-import { applyPolyfills, defineCustomElements } from 'bulmil/dist/loader';
+import { applyPolyfills, defineCustomElements } from '@bulmil/core/dist/loader';
 ...
 applyPolyfills().then(() => {
   defineCustomElements(window)
@@ -294,13 +294,11 @@ Once included, components could be referenced in your code using `ViewChild` and
 ```tsx
 import { Component, ElementRef, ViewChild } from '@angular/core';
 
-import 'bulmil/dist';
+import '@bulmil/core/dist';
 
 @Component({
   selector: 'app-home',
-  template: `
-    <bm-button #button></bm-button>
-  `,
+  template: ` <bm-button #button></bm-button> `,
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {

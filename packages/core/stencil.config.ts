@@ -35,25 +35,25 @@ export const config: Config = {
   ],
   outputTargets: [
     reactOutputTarget({
-      componentCorePackage: 'bulmil',
-      proxiesFile: '../bulmil-react/src/components.ts',
+      componentCorePackage: '@bulmil/core',
+      proxiesFile: '../react/src/components.ts',
       loaderDir: 'dist/loader',
     }),
 
     angularOutputTarget({
-      componentCorePackage: 'bulmil',
-      directivesProxyFile: '../bulmil-angular/src/directives/proxies.ts',
+      componentCorePackage: '@bulmil/core',
+      directivesProxyFile: '../angular/src/directives/proxies.ts',
     }),
 
     vueOutputTarget({
-      componentCorePackage: 'bulmil',
-      proxiesFile: '../bulmil-vue/src/components.ts',
+      componentCorePackage: '@bulmil/core',
+      proxiesFile: '../vue/src/components.ts',
     }),
 
     svelteOutputTarget({
       accessors: true,
-      componentCorePackage: 'bulmil',
-      proxiesFile: '../bulmil-svelte/src/proxies.ts',
+      componentCorePackage: '@bulmil/core',
+      proxiesFile: '../svelte/src/proxies.ts',
     }),
 
     { type: 'dist' },

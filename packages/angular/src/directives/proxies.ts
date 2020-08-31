@@ -3,7 +3,7 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, NgZone } from '@angular/core';
 import { ProxyCmp, proxyOutputs } from './angular-component-lib/utils';
 
-import { Components } from 'bulmil';
+import { Components } from '@bulmil/core';
 
 
 export declare interface BmBadge extends Components.BmBadge {}
