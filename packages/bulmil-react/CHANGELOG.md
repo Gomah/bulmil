@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.6-alpha.0](https://github.com/gomah/bulmil/compare/v0.7.5-alpha.0...v0.7.6-alpha.0) (2020-08-31)
+
+
+### Features
+
+* **stencil:** bump @stencil/core to 2.0.0.8 ([4aa1993](https://github.com/gomah/bulmil/commit/4aa199328bb8a82732f994e312999cac75240ea2))
+
+
+
+
+
 ## [0.7.5-alpha.0](https://github.com/gomah/bulmil/compare/v0.7.4-alpha.0...v0.7.5-alpha.0) (2020-08-28)
 
 
