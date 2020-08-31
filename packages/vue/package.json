@@ -9,6 +9,9 @@
     "type": "git",
     "url": "https://github.com/gomah/bulmil.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "jest __tests__/",
     "build": "npm run clean && npm run build:cjs && npm run build:esm",

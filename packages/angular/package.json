@@ -8,6 +8,9 @@
     "type": "git",
     "url": "https://github.com/gomah/bulmil.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "rimraf dist && npm run build:ng",
     "build:ng": "ng-packagr -p package.json",
