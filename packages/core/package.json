@@ -1,5 +1,5 @@
 {
-  "name": "bulmil",
+  "name": "@bulmil/core",
   "version": "0.7.6-alpha.0",
   "repository": "git@github.com:gomah/bulmil.git",
   "author": "Gomah <hi@gomah.fr>",

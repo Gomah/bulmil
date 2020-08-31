@@ -6,7 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "bulmil": "latest",
+    "@bulmil/core": "latest",
     "next": "^9.4.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"

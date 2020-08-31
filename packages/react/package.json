@@ -1,5 +1,5 @@
 {
-  "name": "bulmil-react",
+  "name": "@bulmi/react",
   "sideEffects": false,
   "version": "0.7.6-alpha.0",
   "author": "Gomah",
@@ -38,7 +38,7 @@
     "typescript": "4.0.2"
   },
   "dependencies": {
-    "bulmil": "0.7.6-alpha.0"
+    "@bulmil/core": "0.7.6-alpha.0"
   },
   "peerDependencies": {
     "react": "^16.12.0",

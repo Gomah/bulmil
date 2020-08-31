@@ -1,5 +1,5 @@
 {
-  "name": "bulmil-nuxt",
+  "name": "bulmil-example-nuxt",
   "version": "1.0.0",
   "description": "My terrific Nuxt.js project",
   "author": "Gomah",
@@ -12,7 +12,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "bulmil": "latest",
+    "@bulmil/core": "latest",
     "nuxt": "^2.12.2",
     "nuxt-stencil": "^0.1.1"
   },

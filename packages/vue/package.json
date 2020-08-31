@@ -1,5 +1,5 @@
 {
-  "name": "bulmil-vue",
+  "name": "@bulmil/vue",
   "sideEffects": false,
   "version": "0.7.6-alpha.0",
   "author": "Gomah",
@@ -38,7 +38,7 @@
     "vue-template-compiler": "^2.6.12"
   },
   "dependencies": {
-    "bulmil": "0.7.6-alpha.0"
+    "@bulmil/core": "0.7.6-alpha.0"
   },
   "peerDependencies": {
     "vue": "^2.6.12"

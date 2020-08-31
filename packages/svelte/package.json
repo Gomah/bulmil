@@ -1,5 +1,5 @@
 {
-  "name": "bulmil-svelte",
+  "name": "@bulmil/svelte",
   "sideEffects": false,
   "version": "0.7.6-alpha.0",
   "description": "Svelte specific wrapper for bulmil",
@@ -26,7 +26,7 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
-    "bulmil": "0.7.6-alpha.0"
+    "@bulmil/core": "0.7.6-alpha.0"
   },
   "devDependencies": {
     "@testing-library/svelte": "^3.0.0",

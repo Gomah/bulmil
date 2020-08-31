@@ -1,5 +1,5 @@
 {
-  "name": "bulmil-angular",
+  "name": "@bulmil/angular",
   "version": "0.7.6-alpha.0",
   "author": "Gomah",
   "license": "MIT",
@@ -19,12 +19,12 @@
       "entryFile": "src/index.ts"
     },
     "whitelistedNonPeerDependencies": [
-      "bulmil"
+      "@bulmil/core"
     ]
   },
   "types": "dist/index.d.ts",
   "dependencies": {
-    "bulmil": "0.7.6-alpha.0",
+    "@bulmil/core": "0.7.6-alpha.0",
     "tslib": "^2.0.1"
   },
   "peerDependencies": {
