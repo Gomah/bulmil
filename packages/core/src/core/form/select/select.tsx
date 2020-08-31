@@ -11,11 +11,6 @@ export class Select implements ComponentInterface {
   @Prop() controlClass = '';
 
   /**
-   * Value
-   */
-  @Prop() value: string | number;
-
-  /**
    * Color
    */
   @Prop() color: 'is-primary' | 'is-info' | 'is-success' | 'is-warning' | 'is-danger';

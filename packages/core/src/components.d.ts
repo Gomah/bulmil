@@ -574,16 +574,12 @@ export namespace Components {
           * State
          */
         "state": 'is-hovered' | 'is-focused';
-        /**
-          * Value
-         */
-        "value": string | number;
     }
     interface BmSlider {
         /**
           * Color
          */
-        "color": 'is-success' | 'is-warning' | 'is-danger' | 'is-info';
+        "color": 'is-primary' | 'is-success' | 'is-warning' | 'is-danger' | 'is-info';
         /**
           * Disabled
          */
@@ -1631,16 +1627,12 @@ declare namespace LocalJSX {
           * State
          */
         "state"?: 'is-hovered' | 'is-focused';
-        /**
-          * Value
-         */
-        "value"?: string | number;
     }
     interface BmSlider {
         /**
           * Color
          */
-        "color"?: 'is-success' | 'is-warning' | 'is-danger' | 'is-info';
+        "color"?: 'is-primary' | 'is-success' | 'is-warning' | 'is-danger' | 'is-info';
         /**
           * Disabled
          */

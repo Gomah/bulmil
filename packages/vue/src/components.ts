@@ -476,7 +476,6 @@ export const BmSelect = /*@__PURE__*/ Vue.extend({
 
   props: {
     controlClass: {} as PropOptions<Components.BmSelect['controlClass']>,
-    value: {} as PropOptions<Components.BmSelect['value']>,
     color: {} as PropOptions<Components.BmSelect['color']>,
     size: {} as PropOptions<Components.BmSelect['size']>,
     state: {} as PropOptions<Components.BmSelect['state']>,

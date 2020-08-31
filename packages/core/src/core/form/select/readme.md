@@ -5,6 +5,23 @@
 <!-- Auto Generated Below -->
 
 
+## Usage
+
+### Html
+
+```html
+<form>
+  <bm-field label="Select">
+    <bm-select size="is-small" color="is-primary">
+      <option value="dropdown">Select dropdown</option>
+      <option value="options">With options</option>
+    </bm-select>
+  </bm-field>
+</form>
+```
+
+
+
 ## Properties
 
 | Property       | Attribute       | Description               | Type                                                                       | Default     |
@@ -17,7 +34,6 @@
 | `isRounded`    | `is-rounded`    | Rounded                   | `boolean`                                                                  | `false`     |
 | `size`         | `size`          | Size                      | `"is-large" \| "is-medium" \| "is-normal" \| "is-small"`                   | `undefined` |
 | `state`        | `state`         | State                     | `"is-focused" \| "is-hovered"`                                             | `undefined` |
-| `value`        | `value`         | Value                     | `number \| string`                                                         | `undefined` |
 
 
 ----------------------------------------------

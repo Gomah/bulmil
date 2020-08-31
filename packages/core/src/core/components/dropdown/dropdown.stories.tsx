@@ -17,22 +17,12 @@ export const Example = (): TemplateResult => {
       >
         <bm-button slot="trigger" color="is-primary" size="is-medium">Dropdown button</bm-button>
 
-        <a href="#" class="dropdown-item">
-          Dropdown item
-        </a>
-        <a class="dropdown-item">
-          Other dropdown item
-        </a>
-        <a href="#" class="dropdown-item is-active">
-          Active dropdown item
-        </a>
-        <a href="#" class="dropdown-item">
-          Other dropdown item
-        </a>
+        <a href="#" class="dropdown-item"> Dropdown item </a>
+        <a class="dropdown-item"> Other dropdown item </a>
+        <a href="#" class="dropdown-item is-active"> Active dropdown item </a>
+        <a href="#" class="dropdown-item"> Other dropdown item </a>
         <hr class="dropdown-divider" />
-        <a href="#" class="dropdown-item">
-          With a divider
-        </a>
+        <a href="#" class="dropdown-item"> With a divider </a>
       </bm-dropdown>
     </div>
   `;
@@ -57,9 +47,7 @@ export const ContentType = (): TemplateResult => {
           <p>You simply need to use a <code>&lt;div&gt;</code> instead.</p>
         </div>
         <hr class="dropdown-divider" />
-        <a href="#" class="dropdown-item">
-          This is a link
-        </a>
+        <a href="#" class="dropdown-item"> This is a link </a>
       </bm-dropdown>
     </div>
   `;

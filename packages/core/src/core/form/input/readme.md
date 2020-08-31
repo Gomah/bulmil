@@ -5,6 +5,20 @@
 <!-- Auto Generated Below -->
 
 
+## Usage
+
+### Html
+
+```html
+<form>
+  <bm-field label="Input">
+    <bm-input placeholder="Text input"></bm-input>
+  </bm-field>
+</form>
+```
+
+
+
 ## Properties
 
 | Property       | Attribute       | Description                                                                        | Type                                                                       | Default     |

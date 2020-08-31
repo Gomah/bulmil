@@ -5,6 +5,16 @@
 <!-- Auto Generated Below -->
 
 
+## Usage
+
+### Html
+
+```html
+<bm-container is-fluid="false" breakpoint="is-widescreen"> Hello Container 👋 </bm-container>
+```
+
+
+
 ## Properties
 
 | Property     | Attribute    | Description          | Type                             | Default     |

@@ -5,8 +5,8 @@ it('Should render properly', async (): Promise<void> => {
   const page = await newSpecPage({
     components: [Section],
     html: `<bm-section size="is-large">
-             <p>Hello, I'm in a section!</p>
-           </bm-sec>`,
+      <p>Hello, I'm in a section!</p>
+    </bm-section>`,
   });
 
   expect(page.root).toEqualHtml(`

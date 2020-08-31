@@ -5,6 +5,18 @@
 <!-- Auto Generated Below -->
 
 
+## Usage
+
+### Html
+
+```html
+<bm-container>
+  <bm-divider alignment="" color="is-primary" is-light="false" is-vertical="false"> OR </bm-divider>
+</bm-container>
+```
+
+
+
 ## Properties
 
 | Property     | Attribute     | Description | Type                                                       | Default     |

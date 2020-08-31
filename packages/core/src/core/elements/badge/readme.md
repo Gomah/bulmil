@@ -5,6 +5,19 @@
 <!-- Auto Generated Below -->
 
 
+## Usage
+
+### Html
+
+```html
+<bm-button size="is-large">
+  <bm-badge color="is-primary"> 3 </bm-badge>
+  Button
+</bm-button>
+```
+
+
+
 ## Properties
 
 | Property     | Attribute     | Description | Type                                                                                                                             | Default     |

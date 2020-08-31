@@ -5,6 +5,31 @@
 <!-- Auto Generated Below -->
 
 
+## Usage
+
+### Html
+
+```html
+<bm-tabs>
+  <ul>
+    <li class="is-active">
+      <a>Pictures</a>
+    </li>
+    <li>
+      <a>Music</a>
+    </li>
+    <li>
+      <a>Videos</a>
+    </li>
+    <li>
+      <a>Documents</a>
+    </li>
+  </ul>
+</bm-tabs>
+```
+
+
+
 ## Properties
 
 | Property      | Attribute      | Description     | Type                                      | Default     |

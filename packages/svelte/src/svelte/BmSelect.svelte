@@ -8,7 +8,6 @@ let __mounted = false;
 const dispatch = createEventDispatcher();
 
 export let controlClass = undefined;
-export let value = undefined;
 export let color = undefined;
 export let size = undefined;
 export let state = undefined;
@@ -35,7 +34,6 @@ const onEvent = (e) => {
 
 <bm-select 
   control-class={controlClass}
-  value={value}
   color={color}
   size={size}
   state={state}

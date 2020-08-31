@@ -5,6 +5,16 @@
 <!-- Auto Generated Below -->
 
 
+## Usage
+
+### Html
+
+```html
+<bm-progress color="is-primary" value="50" max="100"> </bm-progress>
+```
+
+
+
 ## Properties
 
 | Property | Attribute | Description   | Type                                                                                    | Default     |

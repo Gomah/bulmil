@@ -611,13 +611,13 @@ export class BmSection {
 
 export declare interface BmSelect extends Components.BmSelect {}
 @ProxyCmp({
-  inputs: ['color', 'controlClass', 'icon', 'isLoading', 'isMultiple', 'isRounded', 'size', 'state', 'value']
+  inputs: ['color', 'controlClass', 'icon', 'isLoading', 'isMultiple', 'isRounded', 'size', 'state']
 })
 @Component({
   selector: 'bm-select',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: '<ng-content></ng-content>',
-  inputs: ['color', 'controlClass', 'icon', 'isLoading', 'isMultiple', 'isRounded', 'size', 'state', 'value']
+  inputs: ['color', 'controlClass', 'icon', 'isLoading', 'isMultiple', 'isRounded', 'size', 'state']
 })
 export class BmSelect {
   protected el: HTMLElement;

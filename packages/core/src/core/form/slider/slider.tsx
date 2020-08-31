@@ -28,7 +28,7 @@ export class Slider implements ComponentInterface {
   /**
    * Color
    */
-  @Prop() color: 'is-success' | 'is-warning' | 'is-danger' | 'is-info';
+  @Prop() color: 'is-primary' | 'is-success' | 'is-warning' | 'is-danger' | 'is-info';
 
   /**
    * Size

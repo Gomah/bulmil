@@ -5,6 +5,16 @@
 <!-- Auto Generated Below -->
 
 
+## Usage
+
+### Html
+
+```html
+<bm-button>Button</bm-button>
+```
+
+
+
 ## Properties
 
 | Property      | Attribute      | Description                      | Type                                                                                                                                                        | Default     |

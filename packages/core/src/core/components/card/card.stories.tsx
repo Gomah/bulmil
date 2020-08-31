@@ -44,9 +44,7 @@ export const WithoutImage = (): TemplateResult => {
     <div class="story-center" style="max-width:480px;">
       <bm-card>
         <bm-card-header>
-          <p class="card-header-title">
-            Component
-          </p>
+          <p class="card-header-title">Component</p>
           <a href="#" class="card-header-icon" aria-label="more options">
             <span class="icon">
               <i class="fas fa-angle-down" aria-hidden="true"></i>
@@ -54,12 +52,12 @@ export const WithoutImage = (): TemplateResult => {
           </a>
         </bm-card-header>
         <bm-card-content>
-          <div class="content">
+          <bm-content>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
             <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
             <br />
             <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-          </div>
+          </bm-content>
         </bm-card-content>
 
         <bm-card-footer>
@@ -81,9 +79,7 @@ export const ContentAndFooter = (): TemplateResult => {
             “There are two hard things in computer science: cache invalidation, naming things, and
             off-by-one errors.”
           </p>
-          <p class="subtitle">
-            Jeff Atwood
-          </p>
+          <p class="subtitle">Jeff Atwood</p>
         </bm-card-content>
 
         <bm-card-footer>

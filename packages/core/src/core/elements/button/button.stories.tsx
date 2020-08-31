@@ -41,7 +41,7 @@ export const Example = (): TemplateResult => {
         disabled=${boolean('Disabled', false)}
       >
         Button
-      </bm-button></bm-section
-    >
+      </bm-button>
+    </bm-section>
   `;
 };

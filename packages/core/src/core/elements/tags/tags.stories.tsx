@@ -16,12 +16,8 @@ export const Example = (): TemplateResult => {
   return html`
     <bm-section class="story-center">
       <bm-tags size="${select('Size', sizes, null)}" has-addons="${boolean('Has addons', false)}">
-        <bm-tag color="is-primary">
-          Primary
-        </bm-tag>
-        <bm-tag color="is-dark">
-          Dark
-        </bm-tag>
+        <bm-tag color="is-primary"> Primary </bm-tag>
+        <bm-tag color="is-dark"> Dark </bm-tag>
       </bm-tags>
     </bm-section>
   `;

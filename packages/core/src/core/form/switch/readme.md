@@ -5,6 +5,20 @@
 <!-- Auto Generated Below -->
 
 
+## Usage
+
+### Html
+
+```html
+<form>
+  <bm-field label="Enable">
+    <bm-switch checked="true" color="is-primary">Example</bm-switch>
+  </bm-field>
+</form>
+```
+
+
+
 ## Properties
 
 | Property     | Attribute     | Description | Type                                                       | Default     |

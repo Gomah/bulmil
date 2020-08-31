@@ -25,7 +25,6 @@ export const Example = (): TemplateResult => {
     <bm-section>
       <bm-container>
         <bm-breadcrumb
-          is-centered=${boolean('Centered', false)}
           alignment=${select(
             'Alignment',
             { 'is-centered': 'is-centered', 'is-right': 'is-right', 'Not set': null },

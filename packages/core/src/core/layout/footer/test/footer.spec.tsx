@@ -6,7 +6,7 @@ it('Should render properly', async (): Promise<void> => {
     components: [Footer],
     html: `<bm-footer>
              <p>Hello, I'm in a footer!</p>
-           </bm-sec>`,
+           </bm-footer>`,
   });
 
   expect(page.root).toEqualHtml(`
