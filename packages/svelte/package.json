@@ -6,9 +6,8 @@
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/types/index.d.ts",
-  "svelte": "src/svelte/index.js",
   "files": [
-    "src/",
+    "src/svelte",
     "dist/"
   ],
   "publishConfig": {
