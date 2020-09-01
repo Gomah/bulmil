@@ -11,7 +11,7 @@ import { generateJsonDocs } from './src/customElementDocGenerator';
 
 export const config: Config = {
   // Stencil 1 defaults:
-  buildEs5: 'prod',
+  // buildEs5: 'prod',
   extras: {
     cssVarsShim: true,
     dynamicImportShim: true,
