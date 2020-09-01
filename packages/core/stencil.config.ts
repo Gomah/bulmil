@@ -10,17 +10,22 @@ import autoprefixer from 'autoprefixer';
 import { generateJsonDocs } from './src/customElementDocGenerator';
 
 export const config: Config = {
-  // Stencil 1 defaults:
-  // buildEs5: 'prod',
+  namespace: 'Bulmil',
+
+  taskQueue: 'async',
+
+  buildEs5: false,
+
   extras: {
-    cssVarsShim: true,
-    dynamicImportShim: true,
-    safari10: true,
-    shadowDomShim: true,
+    cssVarsShim: false,
+    dynamicImportShim: false,
+    safari10: false,
+    scriptDataOpts: false,
+    shadowDomShim: false,
   },
 
-  namespace: 'Bulmil',
   globalStyle: 'bulmil.scss',
+
   plugins: [
     sass({
       includePaths: [
