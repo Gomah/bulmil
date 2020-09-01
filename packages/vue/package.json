@@ -13,7 +13,7 @@
     "access": "public"
   },
   "scripts": {
-    "test": "jest __tests__/",
+    "test": "echo 'vue: no tests yet'",
     "build": "npm run clean && npm run build:cjs && npm run build:esm",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "build:esm": "tsc --module es6 --outDir dist/esm",
