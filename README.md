@@ -15,8 +15,8 @@
     <img src="https://img.shields.io/badge/code_style-stencil/stylelint/prettier-5851ff.svg?style=flat-square" alt="Code Style" />
   </a>
 
-  <a href="https://npmjs.com/package/bulmil">
-    <img src="https://img.shields.io/npm/v/bulmil/latest.svg?style=flat-square" alt="npm version" />
+  <a href="https://npmjs.com/package/@bulmil/core">
+    <img src="https://img.shields.io/npm/v/@bulmil/core/latest.svg?style=flat-square" alt="npm version" />
   </a>
 
   <a href="https://opensource.org/licenses/MIT">
@@ -33,16 +33,16 @@
     <img src="https://circleci.com/gh/Gomah/bulmil.svg?style=shield" alt="Circle CI" />
   </a>
 
-  <a href="https://npmjs.com/package/bulmil">
+  <a href="https://npmjs.com/package/@bulmil/core">
     <img src="https://img.shields.io/npm/dt/bulmil.svg?style=flat-square" alt="npm downloads" />
   </a>
 
-  <a href="https://packagephobia.now.sh/result?p=bulmil">
-    <img src="https://flat.badgen.net/packagephobia/install/bulmil" alt="Package Phobia" />
+  <a href="https://packagephobia.now.sh/result?p=@bulmil/core">
+    <img src="https://flat.badgen.net/packagephobia/install/@bulmil/core" alt="Package Phobia" />
   </a>
 
-  <a href="https://bundlephobia.com/result?p=bulmil">
-    <img src="https://flat.badgen.net/bundlephobia/minzip/bulmil" alt="Bundle Phobia" />
+  <a href="https://bundlephobia.com/result?p=@bulmil/core">
+    <img src="https://flat.badgen.net/bundlephobia/minzip/@bulmil/core" alt="Bundle Phobia" />
   </a>
 
 </p>
@@ -65,31 +65,26 @@ Stencil components are just Web Components, so they work in any major framework 
 
 ```bash
 # Using npm
-npm i bulmil
+npm i @bulmil/core
 
 # Using yarn
-yarn add bulmil
+yarn add @bulmil/core
 ```
 
 ---
 
-## Framework Integration
+## Usage
 
-Stencil's primary goal is to remove the need for components to be written using a specific framework's API. It accomplishes this by using standardized web platform APIs that work across all modern browsers. Using the low-level component model that is provided by the browser (which all frameworks are built on) allows Stencil components to work inside of a framework or without one.
+### Without a javascript framework
 
-Stencil's integration with different frameworks is currently a work in progress. As Stencil matures, the goal is to make it easy to write standard web components which will compile to various output targets. This allows developers to stay aligned with the latest web standards while using a common API. The generated components will also be more future-proof as frameworks continue to change.
-
-The following list contains the framework integrations that have been started. All of them are not yet completed.
-
-### Components without a Framework
-
-Integrating a component built with Stencil to a project without a JavaScript framework is straight forward. If you're using a simple HTML page, you can add your component via a script tag. For example, if we published a component to npm, we could load the component through unpkg like this:
+Integrating a component built with Stencil to a project without a JavaScript framework is straight forward. If you're using a simple HTML page, you can add your component via a script tag. For example, if we published a component to npm, we could load the component through a CDN like this:
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="https://unpkg.com/bulmil/latest/dist/bulmil.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@bulmil/core@latest/dist/css/bulmil.min.css" />
+    <script src="https://unpkg.com/@bulmil/core@latest/dist/bulmil/bulmil.js"></script>
   </head>
   <body>
     <bm-button>Button</bm-button>
@@ -103,11 +98,12 @@ Alternatively, if you wanted to take advantage of ES Modules, you could include 
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://unpkg.com/@bulmil/core@latest/dist/css/bulmil.min.css" />
     <script type="module">
       import {
         applyPolyfills,
         defineCustomElements,
-      } from 'https://unpkg.com/bulmil/latest/dist/esm/es2017/bulmil.define.js';
+      } from 'https://unpkg.com/@bulmil/core@latest/dist/loader/index.es2017.js';
       applyPolyfills().then(() => {
         defineCustomElements(window);
       });
@@ -119,69 +115,100 @@ Alternatively, if you wanted to take advantage of ES Modules, you could include 
 </html>
 ```
 
+[Try this example on Codesandbox](https://codesandbox.io/s/bulmil-es-module-i8ce8)
+
+---
+
+### Frameworks
+
+Unfortunately the experience of integrating web components into existing applications can be tricky at times. More about this can be read at [https://custom-elements-everywhere.com/](https://custom-elements-everywhere.com/). In order to accommodate the various issues the Stencil team has created new output target plugins to make the process simpler.
+
+The plugins add additional output targets for each framework binding that is included. This output target will emit a native angular/react/vue library, just like if your components were originally written using any of these frameworks.
+
+There are framework specific bindings for:
+
+- [React](#react)
+- [Vue / Nuxt](#vue)
+- [Svelte](#svelte)
+- [Angular](#angular)
+
+Keep in mind, that at its core Bulmil is still simply web components. Even if your framework is not mentioned in the list above, it most likely still supports Bulmil natively. You can check [here](https://custom-elements-everywhere.com/) if your framework has complete support for web components.
+
+There are also [examples](./examples) for loading and using Bulmil with:
+
+- [HTML](./examples/html)
+- [React](./examples/react)
+- [Next](./examples/next)
+- [Vue](./examples/vue)
+- [Nuxt](./examples/nuxt)
+- [Angular](./examples/angular)
+- [Svelte](./examples/svelte)
+
 ---
 
 ### React
 
-With an application built using the `create-react-app` script the easiest way to include the component library is to call `defineCustomElements(window)` from the `index.js` file.
-Note that in this scenario `applyPolyfills` is needed if you are targeting Edge or IE11.
+Unfortunately React has poor [web components support](https://custom-elements-everywhere.com/#react) ... but we have you covered with our `@bulmil/react` package, which wraps all the Bulmil web components inside React components so it feels natural to interact with, and it removes all the limitations of working with web components inside React.
+
+Let's first load the CSS for the application, the css file includes:
+
+- Bulma base
+- Bulma helpers
+- Other components & elements not fitting in any components or not implemented yet.
+
+Add the following to the root of your application:
 
 ```tsx
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
-
-import { applyPolyfills, defineCustomElements } from '@bulmil/core/dist/loader';
-
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
-
-applyPolyfills().then(() => {
-  defineCustomElements(window);
-});
+// Global CSS (includes base & helpers). ~50KB
+// We recommend to use purgecss to remove the unused css styles from your application.
+import '@bulmil/core/dist/css/bulmil.min.css';
 ```
 
-Following the steps above will enable your web components to be used in React, however there are some additional complexities that must also be considered. https://custom-elements-everywhere.com/ describes them well.
+Now let's install the `@bulmil/react` package by running the following in your terminal:
 
----
+```bash
+# Using npm
+npm i @bulmil/react
+
+# Using yarn
+yarn add @bulmil/react
+```
+
+And ... we're all done :tada:
 
 ### Vue
 
-In order to use the custom element library within the Vue app, the application must be modified to define the custom elements and to inform the Vue compiler which elements to ignore during compilation. This can all be done within the `main.js` file.
+You have two options with Vue due to it having perfect [web components support](https://custom-elements-everywhere.com/#vue). You can either follow the instructions [here](https://stenciljs.com/docs/vue) for loading the web components in their natural form, or you can use the Vue bindings from the `@bulmil/vue` package, which wraps all the web components inside Vue components so you can feel right at home. Some other advantages for using `@bulmil/vue` include typed + documented components, and additional helpers for extending Bulmil with custom components.
 
-Assuming you’ve run `npm install --save bulmil` beforehand, and that `bulmil` is the name of our made up Web Components that we have published to npm, you import the components into the 'main.js' file by
+Let's first load the CSS for the application, the css file includes:
 
-- importing the node module
-- telling Vue to ignore the custom element tags (see `https://vuejs.org/v2/api/#ignoredElements`)
-- binding the Stenciljs component code to the window object
+- Bulma base
+- Bulma helpers
+- Other components & elements not fitting in any components or not implemented yet.
+
+Add the following to the root of your application:
 
 ```tsx
-import Vue from 'vue';
-import App from './App.vue';
-
-import { applyPolyfills, defineCustomElements } from '@bulmil/core/dist/loader';
-
-Vue.config.productionTip = false;
-
-// Tell Vue to ignore all components defined in the bulmil package.
-//T he regex assumes all components names are prefixed with 'bm-'
-Vue.config.ignoredElements = [/bm-\w*/];
-
-// Bind the custom elements to the window object
-applyPolyfills().then(() => {
-  defineCustomElements(window);
-});
-
-new Vue({
-  render: (h) => h(App),
-}).$mount('#app');
+// Global CSS (includes base & helpers). ~50KB
+// We recommend to use purgecss to remove the unused css styles from your application.
+import '@bulmil/core/dist/css/bulmil.min.css';
 ```
 
-#### Using Nuxt
+Now let's install the `@bulmil/vue` package by running the following in your terminal:
 
-Create a plugin, (e.g bulmil.ts):
+```bash
+# Using npm
+npm i @bulmil/vue
+
+# Using yarn
+yarn add @bulmil/vue
+```
+
+And ... we're all done :tada:
+
+### Using Nuxt
+
+Create a plugin, (e.g plugins/bulmil.ts):
 
 ```ts
 import Vue from 'vue';
@@ -218,99 +245,65 @@ render() {
 }
 ```
 
-Vue provides several different ways to install and use the framework in an application. The above technique for integrating a Stencil custom element library has been tested on a Vue application that was created using the `vue-cli` with ES2015 and WebPack as primary options. A similar technique should work if the application was generated using other options.
-
 ### Angular
 
-Using a Stencil built web component collection within an Angular CLI project is a two-step process. We need to:
+You have two options with Angular due to it having perfect [web components support](https://custom-elements-everywhere.com/#angular). You can either follow the instructions here for loading the web components in their natural form, or you can use the Angular bindings from the `@bulmil/angular` package, which wraps all the web components inside Angular components so you can feel right at home. Some other advantages for using `@bulmil/angular` include typed + documented components, and additional helpers for extending Bulmil with custom components.
 
-1. Include the `CUSTOM_ELEMENTS_SCHEMA` in the modules that use the components.
-2. Call `defineCustomElements(window)` from `main.ts` (or some other appropriate place).
+Let's first load the CSS for the application, the css file includes:
 
-#### Including the Custom Elements Schema
+- Bulma base
+- Bulma helpers
+- Other components & elements not fitting in any components or not implemented yet.
 
-Including the `CUSTOM_ELEMENTS_SCHEMA` in the module allows the use of the web components in the HTML markup without the compiler producing errors this code should be added into the `AppModule` and in every other modules that use your custom elements.
-Here is an example of adding it to `AppModule`:
-
-```tsx
-import { BrowserModule } from '@angular/platform-browser';
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-
-import { AppComponent } from './app.component';
-
-@NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, FormsModule],
-  bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
-})
-export class AppModule {}
-```
-
-The `CUSTOM_ELEMENTS_SCHEMA` needs to be included in any module that uses custom elements.
-
-#### Calling defineCustomElements
-
-A component collection built with Stencil includes a main function that is used to load the components in the collection. That function is called `defineCustomElements()` and it needs to be called once during the bootstrapping of your application. One convenient place to do this is in `main.ts` as such:
+Add the following to the root of your application styles:
 
 ```tsx
-import { enableProdMode } from '@angular/core';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-
-import { AppModule } from './app/app.module';
-import { environment } from './environments/environment';
-
-// Note: loader import location set using "esmLoaderPath" within the output target confg
-import { defineCustomElements } from '@bulmil/core/dist/loader';
-
-if (environment.production) {
-  enableProdMode();
-}
-
-platformBrowserDynamic()
-  .bootstrapModule(AppModule)
-  .catch((err) => console.log(err));
-defineCustomElements(window);
+// Global CSS (includes base & helpers). ~50KB
+// We recommend to use purgecss to remove the unused css styles from your application.
+import '@bulmil/core/dist/css/bulmil.min.css';
 ```
 
-#### Edge and IE11 polyfills
+Now let's install the `@bulmil/angular` package by running the following in your terminal:
 
-If you want your custom elements to be able to work on older browser, you should add the `applyPolyfills()` that surrond the `defineCustomElements()` function.
+```bash
+# Using npm
+npm i @bulmil/angular
+
+# Using yarn
+yarn add @bulmil/angular
+```
+
+And ... we're all done :tada:
+
+### Svelte
+
+You have two options with Svelte due to it having perfect [web components support](https://custom-elements-everywhere.com/#svelte). You can either follow the instructions for loading it from the CDN and use the Bulmil web components in their natural form, or you can use the Svelte bindings from the `@bulmil/svelte` package, which wraps all the web components inside Svelte components so you can feel right at home. Some other advantages for using `@bulmil/svelte` include typed + documented components, and additional helpers for extending Bulmil with custom components.
+
+Let's first load the CSS for the application, the css file includes:
+
+- Bulma base
+- Bulma helpers
+- Other components & elements not fitting in any components or not implemented yet.
+
+Add the following to the `<head>` element of your HTML file:
 
 ```tsx
-import { applyPolyfills, defineCustomElements } from '@bulmil/core/dist/loader';
-...
-applyPolyfills().then(() => {
-  defineCustomElements(window)
-})
-
+// Global CSS (includes base & helpers). ~50KB
+// We recommend to use purgecss to remove the unused css styles from your application.
+import '@bulmil/core/dist/css/bulmil.min.css';
 ```
 
-#### Accessing components using ViewChild and ViewChildren
+Now let's install the `@bulmil/svelte` package by running the following in your terminal:
 
-Once included, components could be referenced in your code using `ViewChild` and `ViewChildren` as in the following example:
+```bash
+# Using npm
+npm i @bulmil/svelte
 
-```tsx
-import { Component, ElementRef, ViewChild } from '@angular/core';
-
-import '@bulmil/core/dist';
-
-@Component({
-  selector: 'app-home',
-  template: ` <bm-button #button></bm-button> `,
-  styleUrls: ['./home.component.scss'],
-})
-export class HomeComponent {
-  @ViewChild('button') buttonComponent: ElementRef<HTMLBulmilComponentElement>;
-
-  async onAction() {
-    await this.buttonComponent.nativeElement.componentMethod();
-  }
-}
+# Using yarn
+yarn add @bulmil/svelte
 ```
 
----
+And ... we're all done :tada:
 
 ### Ember
 
