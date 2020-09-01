@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>@bulmil/html-example</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <!-- Global css -->
+    <link rel="stylesheet" href="https://unpkg.com/@bulmil/core@latest/dist/css/bulmil.min.css" />
+
+    <!-- The library is lazy loaded so you have nothing to worry about, only what you use will be loaded. -->
+    <script
+      defer
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@bulmil/core@latest/dist/bulmil/bulmil.esm.js"
+    ></script>
+  </head>
+
+  <body>
+    <bm-section>
+      <bm-container>
+        <bm-button> Button </bm-button>
+      </bm-container>
+    </bm-section>
+
+    <style>
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </body>
+</html>

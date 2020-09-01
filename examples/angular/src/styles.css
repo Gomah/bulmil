@@ -1,0 +1,9 @@
+/* Default theme. */
+@import '~@bulmil/core/dist/css/bulmil.min.css';
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
