@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/gomah/bulmil/compare/v0.9.0...v0.10.0) (2020-09-01)
+
+
+### Features
+
+* **core:** new stencil config ([baaf75d](https://github.com/gomah/bulmil/commit/baaf75db549425da50b386bd890b40a9b0b32c9b))
+
+
+
+
+
 # [0.9.0](https://github.com/gomah/bulmil/compare/v0.8.0...v0.9.0) (2020-09-01)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/gomah/bulmil/compare/v0.9.0...v0.10.0) (2020-09-01)
+
+
+### Bug Fixes
+
+* **svelte:** defineCustomElements in plugin ([23cc609](https://github.com/gomah/bulmil/commit/23cc6094fba38d5e883c9b5f4e664f0cb2760b5e))
+
+
+
+
+
 # [0.9.0](https://github.com/gomah/bulmil/compare/v0.8.0...v0.9.0) (2020-09-01)
 
 **Note:** Version bump only for package @bulmil/svelte

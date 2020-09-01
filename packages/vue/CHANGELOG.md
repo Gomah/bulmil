@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/gomah/bulmil/compare/v0.9.0...v0.10.0) (2020-09-01)
+
+
+### Bug Fixes
+
+* **vue:** defineCustomElements in plugin ([f53c992](https://github.com/gomah/bulmil/commit/f53c9924cfc1dba1718cc1329378d7e73b6206e9))
+
+
+
+
+
 # [0.9.0](https://github.com/gomah/bulmil/compare/v0.8.0...v0.9.0) (2020-09-01)
 
 

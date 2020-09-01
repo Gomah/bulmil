@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/gomah/bulmil/compare/v0.9.0...v0.10.0) (2020-09-01)
+
+
+### Bug Fixes
+
+* **react:** defineCustomElements in plugin ([1645b70](https://github.com/gomah/bulmil/commit/1645b70a43d82d35950e9de68b32d03c228d6847))
+
+
+
+
+
 # [0.9.0](https://github.com/gomah/bulmil/compare/v0.8.0...v0.9.0) (2020-09-01)
 
 

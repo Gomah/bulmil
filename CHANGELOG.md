@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/Gomah/bulmil/compare/v0.9.0...v0.10.0) (2020-09-01)
+
+
+### Bug Fixes
+
+* **react:** defineCustomElements in plugin ([1645b70](https://github.com/Gomah/bulmil/commit/1645b70a43d82d35950e9de68b32d03c228d6847))
+* **svelte:** defineCustomElements in plugin ([23cc609](https://github.com/Gomah/bulmil/commit/23cc6094fba38d5e883c9b5f4e664f0cb2760b5e))
+* **vue:** defineCustomElements in plugin ([f53c992](https://github.com/Gomah/bulmil/commit/f53c9924cfc1dba1718cc1329378d7e73b6206e9))
+
+
+### Features
+
+* **core:** new stencil config ([baaf75d](https://github.com/Gomah/bulmil/commit/baaf75db549425da50b386bd890b40a9b0b32c9b))
+
+
+
+
+
 # [0.9.0](https://github.com/Gomah/bulmil/compare/v0.8.0...v0.9.0) (2020-09-01)
 
 
