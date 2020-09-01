@@ -18,10 +18,10 @@
     "@angular/router": "~10.0.12",
     "@bulmil/angular": "latest",
     "@bulmil/core": "latest",
-    "rxjs": "~6.5.5",
+    "rxjs": "~6.6.2",
     "sirv-cli": "^1.0.6",
     "tslib": "^2.0.1",
-    "zone.js": "~0.10.3"
+    "zone.js": "~0.11.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1000.7",
@@ -32,7 +32,7 @@
     "codelyzer": "^6.0.0",
     "jest-diff": "^26.4.2",
     "pretty-format": "^26.4.2",
-    "ts-node": "~8.3.0",
+    "ts-node": "~9.0.0",
     "typescript": "^3.9.2"
   }
 }

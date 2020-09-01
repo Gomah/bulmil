@@ -2,25 +2,10 @@
   import { BmSection, BmContainer, BmButton } from '@bulmil/svelte';
 </script>
 
-<style>
-  :global(html),
-  :global(body) {
-    width: 100%;
-    height: 100%;
-  }
-
-  :global(body) {
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-</style>
-
-<div>
+<div id="container">
   <BmSection>
     <BmContainer>
-      <BmButton>Hi!</BmButton>
+      <BmButton size="is-large">Large button</BmButton>
     </BmContainer>
   </BmSection>
 </div>
