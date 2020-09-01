@@ -9,7 +9,7 @@ import { withA11y } from '@storybook/addon-a11y';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import { bulmilTheme } from './bulmil-theme';
 
-import customElements from '../packages/bulmil/dist/docs/custom-elements.json';
+import customElements from '../packages/core/dist/docs/custom-elements.json';
 
 setCustomElements(customElements);
 
@@ -28,7 +28,7 @@ addParameters({
   },
 });
 
-const req = require.context('../packages/bulmil/src', true, /.stories.(tsx|mdx)$/);
+const req = require.context('../packages/core/src', true, /.stories.(tsx|mdx)$/);
 
 configure(req, module);
 if (module.hot) {

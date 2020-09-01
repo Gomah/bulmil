@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "alwaysStrict": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "lib": ["dom", "es2017"],
+    "moduleResolution": "node",
+    "module": "es6",
+    "target": "es2017",
+    "jsx": "react",
+
+    "strict": true,
+    "noImplicitAny": false,
+    "declaration": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "declarationDir": "dist/types",
+    "inlineSources": true
+  },
+  "include": ["src/**/*.ts"],
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "exclude": ["node_modules/**"]
+}

@@ -1,0 +1,48 @@
+{
+  "name": "@bulmil/angular",
+  "version": "0.10.0",
+  "author": "Gomah",
+  "license": "MIT",
+  "description": "Angular specific wrapper for bulmil",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gomah/bulmil.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "rimraf dist && npm run build:ng",
+    "build:ng": "ng-packagr -p package.json",
+    "prerelease": "npm run validate && np prerelease --yolo --any-branch --tag next",
+    "test": "echo 'angular no tests yet'"
+  },
+  "ngPackage": {
+    "lib": {
+      "entryFile": "src/index.ts"
+    },
+    "whitelistedNonPeerDependencies": [
+      "@bulmil/core"
+    ]
+  },
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "@bulmil/core": "0.10.0",
+    "tslib": "^2.0.1"
+  },
+  "peerDependencies": {
+    "@angular/common": "^10.0.9",
+    "@angular/core": "^10.0.9",
+    "rxjs": "^6.6.2"
+  },
+  "devDependencies": {
+    "@angular/common": "^10.0.12",
+    "@angular/compiler": "^10.0.12",
+    "@angular/compiler-cli": "^10.0.12",
+    "@angular/core": "^10.0.12",
+    "ng-packagr": "^10.0.4",
+    "rimraf": "^3.0.2",
+    "rxjs": "^6.6.2",
+    "typescript": "^3.9.2"
+  }
+}

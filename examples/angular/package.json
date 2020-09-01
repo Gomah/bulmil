@@ -1,0 +1,38 @@
+{
+  "name": "@bulmil/angular-example",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "build": "ng build",
+    "serve": "ng serve"
+  },
+  "dependencies": {
+    "@angular/animations": "~10.0.12",
+    "@angular/common": "~10.0.12",
+    "@angular/compiler": "~10.0.12",
+    "@angular/core": "~10.0.12",
+    "@angular/forms": "~10.0.12",
+    "@angular/platform-browser": "~10.0.12",
+    "@angular/platform-browser-dynamic": "~10.0.12",
+    "@angular/router": "~10.0.12",
+    "@bulmil/angular": "latest",
+    "@bulmil/core": "latest",
+    "rxjs": "~6.6.2",
+    "sirv-cli": "^1.0.6",
+    "tslib": "^2.0.1",
+    "zone.js": "~0.11.1"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.1000.7",
+    "@angular/cli": "~10.0.7",
+    "@angular/compiler-cli": "~10.0.12",
+    "@types/jest": "^26.0.10",
+    "@types/node": "^12.12.54",
+    "codelyzer": "^6.0.0",
+    "jest-diff": "^26.4.2",
+    "pretty-format": "^26.4.2",
+    "ts-node": "~9.0.0",
+    "typescript": "^3.9.2"
+  }
+}
