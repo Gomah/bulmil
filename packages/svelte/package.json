@@ -5,6 +5,7 @@
   "description": "Svelte specific wrapper for bulmil",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
+  "svelte": "src/svelte.js",
   "types": "dist/types/index.d.ts",
   "files": [
     "src/svelte",

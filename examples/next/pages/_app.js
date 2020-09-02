@@ -12,7 +12,7 @@ if (process.browser) {
   const { applyPolyfills, defineCustomElements } = require('@bulmil/core/dist/loader');
 
   applyPolyfills().then(() => {
-    defineCustomElements(window);
+    defineCustomElements();
   });
 }
 

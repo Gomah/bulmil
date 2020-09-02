@@ -47,7 +47,7 @@ const BmComponents = [
   Components.BmTextarea,
 ];
 
-defineCustomElements(window);
+defineCustomElements();
 
 const DECLARATIONS = [
   // proxies
