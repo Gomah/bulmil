@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://github.com/Gomah/bulmil/compare/v0.10.0...v0.11.0) (2020-09-02)
+
+
+### Features
+
+* **stencil:** bump @stencil/core to 2.0.2 ([a6f6adf](https://github.com/Gomah/bulmil/commit/a6f6adf7308bb95b8b489721692d3c233383befe))
+* remove window in defineCustomElements functions ([08cc2bc](https://github.com/Gomah/bulmil/commit/08cc2bcace9e3e76d67a4204e7596ea11a3bb6ba))
+
+
+
+
+
 # [0.10.0](https://github.com/Gomah/bulmil/compare/v0.9.0...v0.10.0) (2020-09-01)
 
 
