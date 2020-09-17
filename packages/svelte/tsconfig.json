@@ -17,6 +17,7 @@
     "strict": true,
     "noImplicitAny": false,
     "declaration": true,
+    "skipLibCheck": true,
     "removeComments": false,
     "sourceMap": true,
     "declarationDir": "dist/types",
