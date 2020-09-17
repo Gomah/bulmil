@@ -16,9 +16,9 @@
     "mini-css-extract-plugin": "^0.11.0",
     "serve": "^11.0.0",
     "style-loader": "^1.2.1",
-    "svelte": "^3.0.0",
+    "svelte": "^3.25.1",
     "svelte-loader": "2.13.6",
-    "svelte-preprocess": "^4.2.1",
+    "svelte-preprocess": "^4.3.0",
     "ts-loader": "^8.0.3",
     "typescript": "^4.0.2",
     "webpack": "^4.30.0",
@@ -26,8 +26,8 @@
     "webpack-dev-server": "^3.3.1"
   },
   "dependencies": {
-    "@bulmil/core": "0.10.0",
-    "@bulmil/svelte": "0.10.0",
+    "@bulmil/core": "0.12.0",
+    "@bulmil/svelte": "0.12.0",
     "sirv-cli": "^1.0.6"
   }
 }

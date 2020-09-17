@@ -1,6 +1,7 @@
 {
-  "name": "create-next-example-app",
+  "name": "@bulmil/next-example",
   "version": "0.0.0",
+  "private": true,
   "scripts": {
     "dev": "next",
     "build": "next build",
