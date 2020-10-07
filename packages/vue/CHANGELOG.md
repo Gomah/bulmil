@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.1](https://github.com/gomah/bulmil/compare/v0.12.0...v0.12.1) (2020-10-07)
+
+**Note:** Version bump only for package @bulmil/vue
+
+
+
+
+
 # [0.12.0](https://github.com/gomah/bulmil/compare/v0.11.0...v0.12.0) (2020-09-11)
 
 
