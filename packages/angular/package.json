@@ -28,7 +28,7 @@
   "types": "dist/index.d.ts",
   "dependencies": {
     "@bulmil/core": "0.12.0",
-    "tslib": "^2.0.1"
+    "tslib": "^2.0.2"
   },
   "peerDependencies": {
     "@angular/common": "^10.0.9",
@@ -36,11 +36,11 @@
     "rxjs": "^6.6.2"
   },
   "devDependencies": {
-    "@angular/common": "^10.1.2",
-    "@angular/compiler": "^10.1.2",
-    "@angular/compiler-cli": "^10.1.2",
-    "@angular/core": "^10.1.2",
-    "ng-packagr": "^10.0.4",
+    "@angular/common": "^10.1.4",
+    "@angular/compiler": "^10.1.4",
+    "@angular/compiler-cli": "^10.1.4",
+    "@angular/core": "^10.1.4",
+    "ng-packagr": "^10.1.2",
     "rimraf": "^3.0.2",
     "rxjs": "^6.6.3",
     "typescript": "^3.9.7"
