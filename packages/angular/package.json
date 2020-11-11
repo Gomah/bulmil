@@ -36,10 +36,10 @@
     "rxjs": "^6.6.2"
   },
   "devDependencies": {
-    "@angular/common": "^10.2.0",
-    "@angular/compiler": "^10.2.0",
-    "@angular/compiler-cli": "^10.2.0",
-    "@angular/core": "^10.2.0",
+    "@angular/common": "^10.2.3",
+    "@angular/compiler": "^10.2.3",
+    "@angular/compiler-cli": "^10.2.3",
+    "@angular/core": "^10.2.3",
     "ng-packagr": "^10.1.2",
     "rimraf": "^3.0.2",
     "rxjs": "^6.6.3",
