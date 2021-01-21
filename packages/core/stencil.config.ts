@@ -63,6 +63,14 @@ export const config: Config = {
 
     { type: 'dist' },
     {
+      type: 'dist-custom-elements-bundle',
+      dir: './dist/custom-elements-bundle',
+    },
+    {
+      type: 'docs-vscode',
+      file: './dist/custom-elements.json',
+    },
+    {
       type: 'dist-hydrate-script',
       dir: 'dist/hydrate',
     },
