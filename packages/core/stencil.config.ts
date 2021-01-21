@@ -32,7 +32,7 @@ export const config: Config = {
         path.join(__dirname, 'node_modules'),
         path.join(__dirname, '../../node_modules'),
       ],
-      injectGlobalPaths: [['src/styles/main.scss', '*']],
+      injectGlobalPaths: ['src/styles/main.scss'],
     }),
     postcss({
       plugins: [autoprefixer()],
