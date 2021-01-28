@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.13.0](https://github.com/gomah/bulmil/compare/v0.12.6...v0.13.0) (2021-01-28)
+
+
+### Bug Fixes
+
+* **core:** ensure components are tree-shakable ([9dd783c](https://github.com/gomah/bulmil/commit/9dd783c4ef537e2ca52a4afc40f3a5b01d06997a))
+
+
+### Features
+
+* **core:** bump stencil/core to 2.4.0 ([4fee242](https://github.com/gomah/bulmil/commit/4fee242426238aaa188e4ab5e6fc1f938ab647be))
+
+
+
+
+
 ## [0.12.6](https://github.com/gomah/bulmil/compare/v0.12.5...v0.12.6) (2021-01-21)
 
 **Note:** Version bump only for package @bulmil/core
