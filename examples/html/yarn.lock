@@ -49,10 +49,10 @@ semiver@^1.0.0:
   resolved "https://registry.yarnpkg.com/semiver/-/semiver-1.1.0.tgz#9c97fb02c21c7ce4fcf1b73e2c7a24324bdddd5f"
   integrity sha512-QNI2ChmuioGC1/xjyYwyZYADILWyW6AmS1UH6gDj/SFUUUS4MBAWs/7mxnkRPc/F4iHezDP+O8t0dO8WHiEOdg==
 
-sirv-cli@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/sirv-cli/-/sirv-cli-1.0.6.tgz#a4924254d965b23a518512f70010e710185de2f1"
-  integrity sha512-K/iY1OHG7hTw4GzLoqMhwzKCbgWmx5joYAAF2+CwyiamWCpVzAgNVWgAc0JmSA2Gf3wseov05il2QbFTGTZMVg==
+sirv-cli@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/sirv-cli/-/sirv-cli-1.0.10.tgz#9180272ab1710ecb7ad700ecd2d7391016e7c40e"
+  integrity sha512-8mLTRkvzpZXMyUZJ1whf84YHN/mm2r2+j5sU1ZYr5n2jA8VkFItNPk53oysOo+0QxBVp9aUjggkAsQp1d7L3OQ==
   dependencies:
     console-clear "^1.1.0"
     get-port "^3.2.0"
@@ -60,13 +60,13 @@ sirv-cli@^1.0.6:
     local-access "^1.0.1"
     sade "^1.6.0"
     semiver "^1.0.0"
-    sirv "^1.0.6"
+    sirv "^1.0.10"
     tinydate "^1.0.0"
 
-sirv@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/sirv/-/sirv-1.0.6.tgz#178c13bffccc0dea715a0e50894cf3a6c74a715e"
-  integrity sha512-LRGu7Op4Xl9hhigOy2kcB53zAYTjNDdpooey49dIU0cMdpOv9ithVf7nstk3jvs8EhMiT/VORoyazZYGgw4vnA==
+sirv@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/sirv/-/sirv-1.0.10.tgz#3e591f5a9ae2520f50d5830f5fae38d97e7be194"
+  integrity sha512-H5EZCoZaggEUQy8ocKsF7WAToGuZhjJlLvM3XOef46CbdIgbNeQ1p32N1PCuCjkVYwrAVOSMacN6CXXgIzuspg==
   dependencies:
     "@polka/url" "^1.0.0-next.9"
     mime "^2.3.1"
