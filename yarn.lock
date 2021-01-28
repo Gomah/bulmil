@@ -5671,10 +5671,10 @@ builtins@^1.0.3:
   resolved "https://registry.yarnpkg.com/builtins/-/builtins-1.0.3.tgz#cb94faeb61c8696451db36534e1422f94f0aee88"
   integrity sha1-y5T662HIaWRR2zZTThQi+U8K7og=
 
-bulma-scss@^0.9.1:
-  version "0.9.1"
-  resolved "https://registry.yarnpkg.com/bulma-scss/-/bulma-scss-0.9.1.tgz#7f76942275371c99b3c55b3dfd24dc99448e4e5e"
-  integrity sha512-3muOOy8G+2IWBbL2oHfxwTqvRCO0qjHDwtI/qkW5jlTRX0qcpI+pKx0s9LZWyuoM26t0niju1svzhYI5v3pJ1w==
+bulma-scss@^0.9.2:
+  version "0.9.2"
+  resolved "https://registry.yarnpkg.com/bulma-scss/-/bulma-scss-0.9.2.tgz#21c1af520faaa36450202018dc0a987b8eb97962"
+  integrity sha512-biyLa2oq5NMbYXMYDcboG0+fNc2TQrfwqtFtJVe9b5TVGo/LNFk/jYhEDct4VZSOkajHIkjCXw3Eq6VQ0q/rZA==
 
 bulma-slider@^2.0.4:
   version "2.0.4"

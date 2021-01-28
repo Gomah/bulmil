@@ -4,8 +4,4 @@ $primary: $purple;
 $link: $primary;
 
 // Bulma utilities
-@import 'bulma-scss/utilities/initial-variables';
-@import 'bulma-scss/utilities/functions';
-@import 'bulma-scss/utilities/derived-variables';
-@import 'bulma-scss/utilities/mixins';
-@import 'bulma-scss/utilities/controls';
+@import 'bulma-scss/utilities/all';
