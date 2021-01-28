@@ -3,6 +3,7 @@
   "version": "0.12.6",
   "repository": "git@github.com:gomah/bulmil.git",
   "author": "Gomah <hi@gomah.fr>",
+  "homepage": "https://bulmil.netlify.com/",
   "license": "MIT",
   "files": [
     "bulmil.scss",
@@ -27,18 +28,21 @@
     "web-components"
   ],
   "main": "dist/index.cjs.js",
-  "module": "dist/custom-elements-bundle/index.js",
-  "es2015": "dist/esm/index.js",
-  "es2017": "dist/esm/index.js",
-  "jsnext:main": "dist/esm/index.js",
-  "types": "dist/custom-elements-bundle/index.d.ts",
+  "module": "dist/custom-elements/index.js",
+  "es2015": "dist/custom-elements/index.js",
+  "es2017": "dist/custom-elements/index.js",
+  "jsnext:main": "dist/custom-elements/index.js",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
+  "types": "dist/custom-elements/index.d.ts",
   "unpkg": "dist/bulmil/bulmil.js",
   "style": "dist/css/bulmil.min.css",
   "sass": "bulmil.scss",
   "publishConfig": {
     "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/gomah/bulmil/issues"
   },
   "scripts": {
     "build": "yarn build:clean && yarn build:components && yarn build:scss && yarn build:autoprefix && yarn build:min",
@@ -63,7 +67,7 @@
   },
   "devDependencies": {
     "@stencil/angular-output-target": "^0.0.5",
-    "@stencil/core": "^2.3.0",
+    "@stencil/core": "^2.4.0",
     "@stencil/eslint-plugin": "^0.3.1",
     "@stencil/postcss": "^2.0.0",
     "@stencil/react-output-target": "^0.0.9",

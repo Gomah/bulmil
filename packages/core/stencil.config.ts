@@ -64,7 +64,6 @@ export const config: Config = {
     { type: 'dist' },
     {
       type: 'dist-custom-elements-bundle',
-      dir: './dist/custom-elements-bundle',
     },
     {
       type: 'docs-vscode',
