@@ -74,12 +74,12 @@
     "@stencil/sass": "^1.4.1",
     "@stencil/svelte-output-target": "^0.0.3",
     "@stencil/vue-output-target": "^0.0.3",
-    "@types/autoprefixer": "^9.7.2",
+    "@types/autoprefixer": "^10.2.0",
     "@types/jest": "26.0.20",
     "@types/node": "^14.14.22",
     "@types/puppeteer": "5.4.2",
-    "@typescript-eslint/eslint-plugin": "^4.14.0",
-    "@typescript-eslint/parser": "^4.14.0",
+    "@typescript-eslint/eslint-plugin": "^4.14.1",
+    "@typescript-eslint/parser": "^4.14.1",
     "babel-loader": "^8.2.2",
     "clean-css-cli": "^4.3.0",
     "css-loader": "^5.0.1",
@@ -103,7 +103,7 @@
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-prettier": "^1.1.2",
     "stylelint-scss": "^3.18.0",
-    "workbox-build": "^5.1.4"
+    "workbox-build": "^6.0.2"
   },
   "dependencies": {
     "@creativebulma/bulma-badge": "^1.0.1",

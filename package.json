@@ -4,8 +4,8 @@
     "packages/*"
   ],
   "resolutions": {
-    "@types/react": "16.9.53",
-    "@types/react-dom": "16.9.8"
+    "@types/react": "17.0.0",
+    "@types/react-dom": "17.0.0"
   },
   "scripts": {
     "build": "lerna run build --stream",
@@ -21,15 +21,15 @@
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
-    "@storybook/addon-a11y": "^6.1.14",
-    "@storybook/addon-actions": "^6.1.14",
+    "@storybook/addon-a11y": "^6.1.15",
+    "@storybook/addon-actions": "^6.1.15",
     "@storybook/addon-centered": "^5.3.21",
-    "@storybook/addon-docs": "^6.1.14",
-    "@storybook/addon-knobs": "^6.1.14",
-    "@storybook/addon-viewport": "^6.1.14",
-    "@storybook/html": "^6.1.14",
-    "@storybook/theming": "^6.1.14",
-    "@storybook/web-components": "^6.1.14",
+    "@storybook/addon-docs": "^6.1.15",
+    "@storybook/addon-knobs": "^6.1.15",
+    "@storybook/addon-viewport": "^6.1.15",
+    "@storybook/html": "^6.1.15",
+    "@storybook/theming": "^6.1.15",
+    "@storybook/web-components": "^6.1.15",
     "@types/node": "^14.14.22",
     "babel-loader": "^8.2.2",
     "husky": "^4.3.8",
