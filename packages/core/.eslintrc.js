@@ -19,7 +19,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
     'plugin:@stencil/recommended',
-    'prettier/@typescript-eslint',
+    'prettier',
   ],
   plugins: ['@typescript-eslint'],
   rules: {

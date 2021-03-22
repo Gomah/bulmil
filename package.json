@@ -19,26 +19,26 @@
     "prepublishOnly": "yarn build"
   },
   "devDependencies": {
-    "@commitlint/cli": "^11.0.0",
-    "@commitlint/config-conventional": "^11.0.0",
-    "@storybook/addon-a11y": "^6.1.16",
-    "@storybook/addon-actions": "^6.1.16",
+    "@commitlint/cli": "^12.0.1",
+    "@commitlint/config-conventional": "^12.0.1",
+    "@storybook/addon-a11y": "^6.1.21",
+    "@storybook/addon-actions": "^6.1.21",
     "@storybook/addon-centered": "^5.3.21",
-    "@storybook/addon-docs": "^6.1.16",
-    "@storybook/addon-knobs": "^6.1.16",
-    "@storybook/addon-viewport": "^6.1.16",
-    "@storybook/html": "^6.1.16",
-    "@storybook/theming": "^6.1.16",
-    "@storybook/web-components": "^6.1.16",
-    "@types/node": "^14.14.22",
+    "@storybook/addon-docs": "^6.1.21",
+    "@storybook/addon-knobs": "^6.1.21",
+    "@storybook/addon-viewport": "^6.1.21",
+    "@storybook/html": "^6.1.21",
+    "@storybook/theming": "^6.1.21",
+    "@storybook/web-components": "^6.1.21",
+    "@types/node": "^14.14.35",
     "babel-loader": "^8.2.2",
     "husky": "^4.3.8",
     "lit-html": "^1.3.0",
     "npm-run-all": "^4.1.5",
-    "ts-loader": "^8.0.14",
-    "typescript": "^4.1.3"
+    "ts-loader": "^8.0.18",
+    "typescript": "^4.2.3"
   },
   "dependencies": {
-    "lerna": "^3.22.1"
+    "lerna": "^4.0.0"
   }
 }

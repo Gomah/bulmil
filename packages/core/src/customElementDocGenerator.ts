@@ -19,7 +19,7 @@ export async function generateJsonDocs(config, compilerCtx, _buildCtx, docsData)
   const { components, ...docsDataWithoutComponents } = docsData;
   const json = {
     ...docsDataWithoutComponents,
-    tags: components.map(cmp => ({
+    tags: components.map((cmp) => ({
       filePath: cmp.filePath,
       encapsulation: cmp.encapsulation,
       tag: cmp.tag,
@@ -28,17 +28,17 @@ export async function generateJsonDocs(config, compilerCtx, _buildCtx, docsData)
       description: cmp.docs,
       docsTags: cmp.docsTags,
       usage: cmp.usage,
-      properties: cmp.props.map(prop => ({
+      properties: cmp.props.map((prop) => ({
         ...prop,
         description: prop.docs,
       })),
-      attributes: cmp.props.map(prop => ({
+      attributes: cmp.props.map((prop) => ({
         ...prop,
         name: prop.attr,
         description: prop.docs,
       })),
       methods: cmp.methods,
-      events: cmp.events.map(e => ({
+      events: cmp.events.map((e) => ({
         ...e,
         name: e.event,
         description: e.docs,
