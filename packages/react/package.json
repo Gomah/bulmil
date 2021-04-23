@@ -26,19 +26,19 @@
     "dist/"
   ],
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.11.10",
-    "@testing-library/react": "^11.2.5",
-    "@types/jest": "26.0.21",
-    "@types/node": "14.14.35",
-    "@types/react": "17.0.0",
-    "@types/react-dom": "17.0.0",
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.6",
+    "@types/jest": "26.0.22",
+    "@types/node": "14.14.41",
+    "@types/react": "17.0.3",
+    "@types/react-dom": "17.0.3",
     "jest": "^26.6.3",
     "jest-dom": "^4.0.0",
-    "np": "^7.2.0",
+    "np": "^7.4.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rimraf": "^3.0.2",
-    "typescript": "4.2.3"
+    "typescript": "4.2.4"
   },
   "dependencies": {
     "@bulmil/core": "0.14.0"
