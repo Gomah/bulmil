@@ -339,6 +339,10 @@ export namespace Components {
           * Size
          */
         "size": 'is-small' | 'is-medium' | 'is-large';
+        /**
+          * Icon text
+         */
+        "withText": boolean;
     }
     interface BmImage {
         /**
@@ -1392,6 +1396,10 @@ declare namespace LocalJSX {
           * Size
          */
         "size"?: 'is-small' | 'is-medium' | 'is-large';
+        /**
+          * Icon text
+         */
+        "withText"?: boolean;
     }
     interface BmImage {
         /**

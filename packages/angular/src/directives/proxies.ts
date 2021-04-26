@@ -367,13 +367,13 @@ export class BmFooter {
 
 export declare interface BmIcon extends Components.BmIcon {}
 @ProxyCmp({
-  inputs: ['color', 'size']
+  inputs: ['color', 'size', 'withText']
 })
 @Component({
   selector: 'bm-icon',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: '<ng-content></ng-content>',
-  inputs: ['color', 'size']
+  inputs: ['color', 'size', 'withText']
 })
 export class BmIcon {
   protected el: HTMLElement;

@@ -9,6 +9,7 @@ const dispatch = createEventDispatcher();
 
 export let color = undefined;
 export let size = undefined;
+export let withText = undefined;
 
 
 
@@ -29,6 +30,7 @@ const onEvent = (e) => {
 <bm-icon 
   color={color}
   size={size}
+  with-text={withText}
   
   bind:this={__ref}
 >

@@ -15,13 +15,19 @@ export class Icon implements ComponentInterface {
    */
   @Prop() size: 'is-small' | 'is-medium' | 'is-large';
 
+  /**
+   * Icon text
+   */
+  @Prop() withText = false;
+
   render(): JSX.Element {
     return (
       <span
         class={{
-          icon: true,
+          icon: !this.withText,
           [this.color]: Boolean(this.color),
           [this.size]: Boolean(this.size),
+          'icon-text': this.withText,
         }}
       >
         <slot />

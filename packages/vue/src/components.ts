@@ -308,6 +308,7 @@ export const BmIcon = /*@__PURE__*/ Vue.extend({
   props: {
     color: {} as PropOptions<Components.BmIcon['color']>,
     size: {} as PropOptions<Components.BmIcon['size']>,
+    withText: {} as PropOptions<Components.BmIcon['withText']>,
   },
 
 

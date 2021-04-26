@@ -11,6 +11,9 @@ interface BmIconProps {
   
   /** Size */
   size?: Components.BmIcon["size"]
+  
+  /** Icon text */
+  withText?: Components.BmIcon["withText"]
 }
 
 interface BmIconEvents {
@@ -43,8 +46,8 @@ import { createEventDispatcher, onMount } from "svelte";
 function create_fragment(ctx) {
 	let bm_icon;
 	let current;
-	const default_slot_template = /*#slots*/ ctx[5].default;
-	const default_slot = create_slot(default_slot_template, ctx, /*$$scope*/ ctx[4], null);
+	const default_slot_template = /*#slots*/ ctx[6].default;
+	const default_slot = create_slot(default_slot_template, ctx, /*$$scope*/ ctx[5], null);
 
 	return {
 		c() {
@@ -52,6 +55,7 @@ function create_fragment(ctx) {
 			if (default_slot) default_slot.c();
 			set_custom_element_data(bm_icon, "color", /*color*/ ctx[0]);
 			set_custom_element_data(bm_icon, "size", /*size*/ ctx[1]);
+			set_custom_element_data(bm_icon, "with-text", /*withText*/ ctx[2]);
 		},
 		m(target, anchor) {
 			insert(target, bm_icon, anchor);
@@ -60,13 +64,13 @@ function create_fragment(ctx) {
 				default_slot.m(bm_icon, null);
 			}
 
-			/*bm_icon_binding*/ ctx[6](bm_icon);
+			/*bm_icon_binding*/ ctx[7](bm_icon);
 			current = true;
 		},
 		p(ctx, [dirty]) {
 			if (default_slot) {
-				if (default_slot.p && dirty & /*$$scope*/ 16) {
-					update_slot(default_slot, default_slot_template, ctx, /*$$scope*/ ctx[4], dirty, null, null);
+				if (default_slot.p && dirty & /*$$scope*/ 32) {
+					update_slot(default_slot, default_slot_template, ctx, /*$$scope*/ ctx[5], dirty, null, null);
 				}
 			}
 
@@ -76,6 +80,10 @@ function create_fragment(ctx) {
 
 			if (!current || dirty & /*size*/ 2) {
 				set_custom_element_data(bm_icon, "size", /*size*/ ctx[1]);
+			}
+
+			if (!current || dirty & /*withText*/ 4) {
+				set_custom_element_data(bm_icon, "with-text", /*withText*/ ctx[2]);
 			}
 		},
 		i(local) {
@@ -90,7 +98,7 @@ function create_fragment(ctx) {
 		d(detaching) {
 			if (detaching) detach(bm_icon);
 			if (default_slot) default_slot.d(detaching);
-			/*bm_icon_binding*/ ctx[6](null);
+			/*bm_icon_binding*/ ctx[7](null);
 		}
 	};
 }
@@ -102,6 +110,7 @@ function instance($$self, $$props, $$invalidate) {
 	const dispatch = createEventDispatcher();
 	let { color = undefined } = $$props;
 	let { size = undefined } = $$props;
+	let { withText = undefined } = $$props;
 	const getWebComponent = () => __ref;
 
 	onMount(() => {
@@ -109,7 +118,7 @@ function instance($$self, $$props, $$invalidate) {
 	});
 
 	const setProp = (prop, value) => {
-		if (__ref) $$invalidate(2, __ref[prop] = value, __ref);
+		if (__ref) $$invalidate(3, __ref[prop] = value, __ref);
 	};
 
 	const onEvent = e => {
@@ -120,17 +129,18 @@ function instance($$self, $$props, $$invalidate) {
 	function bm_icon_binding($$value) {
 		binding_callbacks[$$value ? "unshift" : "push"](() => {
 			__ref = $$value;
-			$$invalidate(2, __ref);
+			$$invalidate(3, __ref);
 		});
 	}
 
 	$$self.$$set = $$props => {
 		if ("color" in $$props) $$invalidate(0, color = $$props.color);
 		if ("size" in $$props) $$invalidate(1, size = $$props.size);
-		if ("$$scope" in $$props) $$invalidate(4, $$scope = $$props.$$scope);
+		if ("withText" in $$props) $$invalidate(2, withText = $$props.withText);
+		if ("$$scope" in $$props) $$invalidate(5, $$scope = $$props.$$scope);
 	};
 
-	return [color, size, __ref, getWebComponent, $$scope, slots, bm_icon_binding];
+	return [color, size, withText, __ref, getWebComponent, $$scope, slots, bm_icon_binding];
 }
 
 class BmIcon extends SvelteComponent {
@@ -148,7 +158,13 @@ class BmIcon extends SvelteComponent {
 
 	constructor(options) {
 		super();
-		init(this, options, instance, create_fragment, safe_not_equal, { color: 0, size: 1, getWebComponent: 3 });
+
+		init(this, options, instance, create_fragment, safe_not_equal, {
+			color: 0,
+			size: 1,
+			withText: 2,
+			getWebComponent: 4
+		});
 	}
 
 	get color() {
@@ -169,8 +185,17 @@ class BmIcon extends SvelteComponent {
 		flush();
 	}
 
+	get withText() {
+		return this.$$.ctx[2];
+	}
+
+	set withText(withText) {
+		this.$set({ withText });
+		flush();
+	}
+
 	get getWebComponent(): HTMLBmIconElement | undefined {
-		return this.$$.ctx[3];
+		return this.$$.ctx[4];
 	}
 }
 
