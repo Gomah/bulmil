@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.15.0](https://github.com/gomah/bulmil/compare/v0.14.1...v0.15.0) (2021-04-26)
+
+
+### Features
+
+* **icon:** add icon-text bulma class ([d7f0ae1](https://github.com/gomah/bulmil/commit/d7f0ae116cc9e231f9bd7d31853bda2298485e54))
+
+
+
+
+
 ## [0.14.1](https://github.com/gomah/bulmil/compare/v0.14.0...v0.14.1) (2021-04-23)
 
 **Note:** Version bump only for package @bulmil/vue
