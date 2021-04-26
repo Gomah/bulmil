@@ -1,4 +1,7 @@
 module.exports = {
+  core: {
+    builder: 'webpack5',
+  },
   stories: [`${__dirname}/../packages/core/src/**/*.stories.*`],
   presets: ['@storybook/addon-docs/preset'],
   addons: [
