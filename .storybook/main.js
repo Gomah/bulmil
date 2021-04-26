@@ -9,5 +9,13 @@ module.exports = {
     '@storybook/addon-knobs/register',
     '@storybook/addon-viewport/register',
     '@storybook/addon-actions/register',
+    'storybook-addon-turbo-build',
+    {
+      name: 'storybook-addon-turbo-build',
+      options: {
+        // Please refer below tables for available options
+        optimizationLevel: 2,
+      },
+    },
   ],
 };
