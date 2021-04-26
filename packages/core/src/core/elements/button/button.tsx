@@ -24,7 +24,8 @@ export class Button implements ComponentInterface {
     | 'is-light'
     | 'is-dark'
     | 'is-black'
-    | 'is-text';
+    | 'is-text'
+    | 'is-ghost';
 
   /**
    * Size

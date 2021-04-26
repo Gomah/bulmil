@@ -71,7 +71,8 @@ export namespace Components {
     | 'is-light'
     | 'is-dark'
     | 'is-black'
-    | 'is-text';
+    | 'is-text'
+    | 'is-ghost';
         /**
           * Is disabled?
          */
@@ -1128,7 +1129,8 @@ declare namespace LocalJSX {
     | 'is-light'
     | 'is-dark'
     | 'is-black'
-    | 'is-text';
+    | 'is-text'
+    | 'is-ghost';
         /**
           * Is disabled?
          */

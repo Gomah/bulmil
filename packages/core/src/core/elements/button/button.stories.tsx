@@ -27,6 +27,7 @@ const colors = {
   dark: 'is-dark',
   black: 'is-black',
   text: 'is-text',
+  ghost: 'is-ghost',
   none: null,
 };
 
