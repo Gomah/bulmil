@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.16.0](https://github.com/gomah/bulmil/compare/v0.15.0...v0.16.0) (2021-06-19)
+
+
+### Features
+
+* **stencil:** update to stencil 2.6.0 ([55dde64](https://github.com/gomah/bulmil/commit/55dde640ff5695677c15059fe5f1765965955e7b))
+
+
+
+
+
 # [0.15.0](https://github.com/gomah/bulmil/compare/v0.14.1...v0.15.0) (2021-04-26)
 
 
