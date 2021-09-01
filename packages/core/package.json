@@ -70,7 +70,7 @@
     "@stencil/core": "^2.8.0",
     "@stencil/eslint-plugin": "^0.3.1",
     "@stencil/postcss": "^2.0.0",
-    "@stencil/react-output-target": "^0.0.9",
+    "@stencil/react-output-target": "^0.0.12",
     "@stencil/sass": "^1.4.1",
     "@stencil/svelte-output-target": "^0.0.3",
     "@stencil/vue-output-target": "^0.0.3",
