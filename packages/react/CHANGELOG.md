@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.18.0](https://github.com/gomah/bulmil/compare/v0.17.1...v0.18.0) (2021-09-01)
+
+
+### Features
+
+* **react:** bump @stencil/react-output-target ([9a67ec6](https://github.com/gomah/bulmil/commit/9a67ec62042ffc6954adec40d31d20de11f95bce))
+
+
+
+
+
 ## [0.17.1](https://github.com/gomah/bulmil/compare/v0.17.0...v0.17.1) (2021-08-25)
 
 **Note:** Version bump only for package @bulmil/react
