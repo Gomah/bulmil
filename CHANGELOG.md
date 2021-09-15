@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.19.0](https://github.com/gomah/bulmil/compare/v0.18.0...v0.19.0) (2021-09-15)
+
+
+### Features
+
+* **react:** bump react output target, support for custom elements build ([c34df90](https://github.com/gomah/bulmil/commit/c34df90ca01457f122f4dc8ce1adde66076aa8dc))
+
+
+
+
+
 # [0.18.0](https://github.com/gomah/bulmil/compare/v0.17.1...v0.18.0) (2021-09-01)
 
 
