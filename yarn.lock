@@ -3510,10 +3510,10 @@
   resolved "https://registry.yarnpkg.com/@stencil/angular-output-target/-/angular-output-target-0.0.7.tgz#48a115cc5e0764a8481d9feb6e3e73f0e2ee77ff"
   integrity sha512-GM+Sx0KL1cuQ4ysf20iojKBw/Yvuyx3mFWBaqSb3lDxfg4Kg5OHADoaN6L4rMZu3P3G3e2HT5Ut35BuFKIyT+Q==
 
-"@stencil/core@^2.8.0":
-  version "2.8.0"
-  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.8.0.tgz#87d950fbbf050dce1566f32ca48c98007239472b"
-  integrity sha512-WazFGUMnbumg8ePNvej8cIOEcxvuZ0ugKQkkE1xFbDYcl7DgJd62MiG+bIqCcQlIdLEfhjAdoixxlFdJgrgjyA==
+"@stencil/core@^2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.8.1.tgz#21b15c115d9a5e2f56379774fcbd9bc947bf336f"
+  integrity sha512-iv9J6oLO/lv7/aO45M05yw3pp1J7olY400vlOZgdMVs3s5zHfalY1ZPYM0KyqU4+7DZuadKYbd0aQZ/g2PInZw==
 
 "@stencil/eslint-plugin@^0.3.1":
   version "0.3.1"
