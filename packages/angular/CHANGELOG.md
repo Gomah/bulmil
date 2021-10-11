@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.20.0](https://github.com/gomah/bulmil/compare/v0.19.2...v0.20.0) (2021-10-11)
+
+
+### Features
+
+* **angular:** bump @stencil/angular-output-target to 0.2.0 ([63040c1](https://github.com/gomah/bulmil/commit/63040c1d4e909ef2f389305f15eb83868ce36311))
+
+
+
+
+
 ## [0.19.2](https://github.com/gomah/bulmil/compare/v0.19.1...v0.19.2) (2021-09-22)
 
 **Note:** Version bump only for package @bulmil/angular
