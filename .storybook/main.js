@@ -5,10 +5,10 @@ module.exports = {
   stories: [`${__dirname}/../packages/core/src/**/*.stories.*`],
   presets: ['@storybook/addon-docs/preset'],
   addons: [
-    '@storybook/addon-a11y/register',
-    '@storybook/addon-knobs/register',
-    '@storybook/addon-viewport/register',
-    '@storybook/addon-actions/register',
+    '@storybook/addon-a11y',
+    '@storybook/addon-knobs',
+    '@storybook/addon-viewport',
+    '@storybook/addon-actions',
     'storybook-addon-turbo-build',
     {
       name: 'storybook-addon-turbo-build',
