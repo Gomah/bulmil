@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.21.0](https://github.com/gomah/bulmil/compare/v0.20.0...v0.21.0) (2021-10-12)
+
+
+### Bug Fixes
+
+* storybook addons ([7044e5e](https://github.com/gomah/bulmil/commit/7044e5e4e88238087e520b2771f62e91b1ac3657))
+
+
+### Features
+
+* **core:** bump @stencil/core to 2.9.0 ([dcf3e6c](https://github.com/gomah/bulmil/commit/dcf3e6c3d88a568b0e4370807192e953649cb562))
+
+
+
+
+
 # [0.20.0](https://github.com/gomah/bulmil/compare/v0.19.2...v0.20.0) (2021-10-11)
 
 
