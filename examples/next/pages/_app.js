@@ -8,12 +8,12 @@ class MyApp extends App {
   }
 }
 
-if (process.browser) {
-  const { applyPolyfills, defineCustomElements } = require('@bulmil/core/dist/loader');
+// if (process.browser) {
+//   const { applyPolyfills, defineCustomElements } = require('@bulmil/core/dist/loader');
 
-  applyPolyfills().then(() => {
-    defineCustomElements();
-  });
-}
+//   applyPolyfills().then(() => {
+//     defineCustomElements();
+//   });
+// }
 
 export default MyApp;

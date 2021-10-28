@@ -1,4 +1,5 @@
 import React from 'react';
+import { BmSection, BmContainer, BmButton } from '@bulmil/react';
 
 class Home extends React.Component {
   constructor(props) {
@@ -43,28 +44,19 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div className="container">
-        <bm-button
-          is-outlined={this.state.outlined}
-          is-light={this.state.light}
-          size={this.state.size}
-          color={this.state.color}
-          onClick={this.handleButtonClick}
-        >
-          Click Me!
-        </bm-button>
-
-        <style jsx>{`
-          .container {
-            margin: 0 auto;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-          }
-        `}</style>
-      </div>
+      <BmSection>
+        <BmContainer>
+          <BmButton
+            is-outlined={this.state.outlined}
+            is-light={this.state.light}
+            size={this.state.size}
+            color={this.state.color}
+            onClick={this.handleButtonClick}
+          >
+            Button
+          </BmButton>
+        </BmContainer>
+      </BmSection>
     );
   }
 }
