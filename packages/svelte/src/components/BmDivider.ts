@@ -6,10 +6,12 @@ import { Components, JSX } from '@bulmil/core';
 
 interface BmDividerProps {
   
-  /** Alignment */
+  /** 
+Alignment */
   alignment?: Components.BmDivider["alignment"]
   
-  /** Color */
+  /** 
+Color */
   color?: Components.BmDivider["color"]
   
   /** IsLight */
