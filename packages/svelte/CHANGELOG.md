@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.22.0](https://github.com/gomah/bulmil/compare/v0.21.0...v0.22.0) (2021-11-02)
+
+
+### Features
+
+* **core:** bump @stencil/core to 2.10.0 ([45ca505](https://github.com/gomah/bulmil/commit/45ca505a1b620467f9dac71b1c2a3c0c5c30b68d))
+
+
+
+
+
 # [0.21.0](https://github.com/gomah/bulmil/compare/v0.20.0...v0.21.0) (2021-10-12)
 
 **Note:** Version bump only for package @bulmil/svelte
