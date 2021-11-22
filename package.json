@@ -17,17 +17,17 @@
   "devDependencies": {
     "@commitlint/cli": "^13.2.1",
     "@commitlint/config-conventional": "^13.2.0",
-    "@storybook/addon-a11y": "^6.3.10",
-    "@storybook/addon-actions": "^6.3.10",
+    "@storybook/addon-a11y": "^6.3.12",
+    "@storybook/addon-actions": "^6.3.12",
     "@storybook/addon-centered": "^5.3.21",
-    "@storybook/addon-docs": "^6.3.10",
+    "@storybook/addon-docs": "^6.3.12",
     "@storybook/addon-knobs": "^6.3.1",
-    "@storybook/addon-viewport": "^6.3.10",
-    "@storybook/builder-webpack5": "^6.3.10",
-    "@storybook/html": "^6.3.10",
-    "@storybook/manager-webpack5": "^6.3.10",
-    "@storybook/theming": "^6.3.10",
-    "@storybook/web-components": "^6.3.10",
+    "@storybook/addon-viewport": "^6.3.12",
+    "@storybook/builder-webpack5": "^6.3.12",
+    "@storybook/html": "^6.3.12",
+    "@storybook/manager-webpack5": "^6.3.12",
+    "@storybook/theming": "^6.3.12",
+    "@storybook/web-components": "^6.3.12",
     "@types/node": "^14.14.41",
     "babel-loader": "^8.2.2",
     "husky": "^4.3.8",
@@ -37,7 +37,7 @@
     "storybook-addon-turbo-build": "^1.0.1",
     "ts-loader": "^9.2.6",
     "typescript": "^4.4.3",
-    "webpack": "^5.58.1"
+    "webpack": "^5.64.2"
   },
   "dependencies": {
     "lerna": "^4.0.0"
