@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.23.0](https://github.com/gomah/bulmil/compare/v0.22.0...v0.23.0) (2021-11-22)
+
+
+### Bug Fixes
+
+* **angular:** regenerate utils & proxies ([e6486bd](https://github.com/gomah/bulmil/commit/e6486bdddb15071a371815c7d351ab8fe91c433c))
+
+
+
+
+
 # [0.22.0](https://github.com/gomah/bulmil/compare/v0.21.0...v0.22.0) (2021-11-02)
 
 
