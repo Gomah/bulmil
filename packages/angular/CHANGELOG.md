@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.24.0](https://github.com/gomah/bulmil/compare/v0.23.0...v0.24.0) (2021-12-28)
+
+**Note:** Version bump only for package @bulmil/angular
+
+
+
+
+
 # [0.23.0](https://github.com/gomah/bulmil/compare/v0.22.0...v0.23.0) (2021-11-22)
 
 
