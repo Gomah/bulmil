@@ -31,8 +31,8 @@
   "scripts": {
     "build": "turbo run build --stream",
     "build:storybook": "build-storybook -c .storybook -s packages/core/www -o storybook/",
-    "release": "yarn build && yarn run test && lerna publish --no-commit-hooks --dist-tag latest",
-    "alpha": "yarn build && yarn run test && lerna publish prepatch --no-commit-hooks --dist-tag next",
+    "release:stable": "yarn build && yarn run test && lerna publish --no-commit-hooks --dist-tag latest",
+    "release:next": "yarn build && yarn run test && lerna publish prepatch --no-commit-hooks --dist-tag next",
     "watch": "node --max_old_space_size=4096 ./node_modules/.bin/stencil build --watch --recursive --serve --config ./packages/core/stencil.config.ts",
     "storybook.run": "start-storybook -p 9006 -s packages/core/www",
     "storybook": "npm-run-all --parallel watch storybook.run",
