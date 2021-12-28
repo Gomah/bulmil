@@ -3,15 +3,40 @@
   "workspaces": [
     "packages/*"
   ],
+  "turbo": {
+    "baseBranch": "origin/master",
+    "pipeline": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "outputs": [
+          "dist/**"
+        ]
+      },
+      "test": {
+        "dependsOn": [
+          "^build"
+        ],
+        "outputs": []
+      },
+      "lint": {
+        "outputs": []
+      },
+      "dev": {
+        "cache": false
+      }
+    }
+  },
   "scripts": {
-    "build": "lerna run build --stream",
+    "build": "turbo run build --stream",
     "build:storybook": "build-storybook -c .storybook -s packages/core/www -o storybook/",
-    "release": "lerna bootstrap && yarn build && yarn run test && lerna publish --no-commit-hooks --dist-tag latest",
-    "alpha": "lerna bootstrap && yarn build && yarn run test && lerna publish prepatch --no-commit-hooks --dist-tag next",
+    "release": "yarn build && yarn run test && lerna publish --no-commit-hooks --dist-tag latest",
+    "alpha": "yarn build && yarn run test && lerna publish prepatch --no-commit-hooks --dist-tag next",
     "watch": "node --max_old_space_size=4096 ./node_modules/.bin/stencil build --watch --recursive --serve --config ./packages/core/stencil.config.ts",
     "storybook.run": "start-storybook -p 9006 -s packages/core/www",
     "storybook": "npm-run-all --parallel watch storybook.run",
-    "test": "lerna run test --stream",
+    "test": "turbo run test --stream",
     "prepublishOnly": "yarn build"
   },
   "devDependencies": {
@@ -36,6 +61,7 @@
     "npm-run-all": "^4.1.5",
     "storybook-addon-turbo-build": "^1.0.1",
     "ts-loader": "^9.2.6",
+    "turbo": "^1.0.23",
     "typescript": "^4.5.2",
     "webpack": "^5.64.2"
   },
