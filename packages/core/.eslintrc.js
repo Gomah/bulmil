@@ -25,6 +25,8 @@ module.exports = {
   rules: {
     'prettier/prettier': ['error', { singleQuote: true, trailingComma: 'es5', printWidth: 100 }],
     '@typescript-eslint/no-unused-vars': 0,
+    // TODO: Remove me once @stencil eslint is updated
+    '@stencil/decorators-context': 0,
   },
   settings: {
     'import/core-modules': ['@stencil/core/testing'],
