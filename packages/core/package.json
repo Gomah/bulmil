@@ -108,10 +108,10 @@
     "workbox-build": "^6.4.2"
   },
   "dependencies": {
-    "@creativebulma/bulma-badge": "^1.0.1",
-    "@creativebulma/bulma-divider": "^1.1.0",
-    "bulma-scss": "^0.9.3",
-    "bulma-slider": "^2.0.4",
-    "bulma-switch": "^2.0.0"
+    "@creativebulma/bulma-badge": "1.0.1",
+    "@creativebulma/bulma-divider": "1.1.0",
+    "bulma-scss": "0.9.3",
+    "bulma-slider": "2.0.4",
+    "bulma-switch": "2.0.4"
   }
 }
