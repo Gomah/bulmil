@@ -66,7 +66,7 @@
     "test": "yarn run test:lint:ts && yarn run test:lint:scss && yarn run test:stencil"
   },
   "devDependencies": {
-    "@stencil/angular-output-target": "^0.3.0",
+    "@stencil/angular-output-target": "^0.4.0",
     "@stencil/core": "^2.13.0",
     "@stencil/eslint-plugin": "^0.3.1",
     "@stencil/postcss": "^2.1.0",

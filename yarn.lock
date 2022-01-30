@@ -1876,10 +1876,10 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@stencil/angular-output-target@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@stencil/angular-output-target/-/angular-output-target-0.3.0.tgz#41e3130621870f3d1b9786a4c73ec328950f7c6b"
-  integrity sha512-b3+VN9cmQScZqFdK2dlwYTZxwA74Suqf/7Ff05ywUKIAGjic+ZUhJJrdSmsT8bnZGY5hj7OG2CwOB/XeZDlrpg==
+"@stencil/angular-output-target@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@stencil/angular-output-target/-/angular-output-target-0.4.0.tgz#6724ed805d50e802f58212d74a71caf442e0b569"
+  integrity sha512-zauaj0za46IWoPgv2IanDp3tiljwDRDNk4jB7WII6KeL66dkk7ffeqYZ0CgySTU5W2FjnKR6JEKbAnwUxjGIsA==
 
 "@stencil/core@^2.13.0":
   version "2.13.0"

@@ -11,8 +11,7 @@ import { Components } from '@bulmil/core';
 export declare interface BmBadge extends Components.BmBadge {}
 
 @ProxyCmp({
-  tagName: 'bm-badge',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['color', 'isLight', 'isOutlined', 'position']
 })
 @Component({
@@ -33,8 +32,7 @@ export class BmBadge {
 export declare interface BmBox extends Components.BmBox {}
 
 @ProxyCmp({
-  tagName: 'bm-box',
-  customElement: undefined
+  defineCustomElementFn: undefined
 })
 @Component({
   selector: 'bm-box',
@@ -53,8 +51,7 @@ export class BmBox {
 export declare interface BmBreadcrumb extends Components.BmBreadcrumb {}
 
 @ProxyCmp({
-  tagName: 'bm-breadcrumb',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['alignment', 'separator', 'size']
 })
 @Component({
@@ -75,8 +72,7 @@ export class BmBreadcrumb {
 export declare interface BmButton extends Components.BmButton {}
 
 @ProxyCmp({
-  tagName: 'bm-button',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['color', 'disabled', 'isActive', 'isFocused', 'isFullwidth', 'isHovered', 'isInverted', 'isLight', 'isLoading', 'isOutlined', 'isRounded', 'isStatic', 'size']
 })
 @Component({
@@ -97,8 +93,7 @@ export class BmButton {
 export declare interface BmButtons extends Components.BmButtons {}
 
 @ProxyCmp({
-  tagName: 'bm-buttons',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['size']
 })
 @Component({
@@ -119,8 +114,7 @@ export class BmButtons {
 export declare interface BmCard extends Components.BmCard {}
 
 @ProxyCmp({
-  tagName: 'bm-card',
-  customElement: undefined
+  defineCustomElementFn: undefined
 })
 @Component({
   selector: 'bm-card',
@@ -139,8 +133,7 @@ export class BmCard {
 export declare interface BmCardContent extends Components.BmCardContent {}
 
 @ProxyCmp({
-  tagName: 'bm-card-content',
-  customElement: undefined
+  defineCustomElementFn: undefined
 })
 @Component({
   selector: 'bm-card-content',
@@ -159,8 +152,7 @@ export class BmCardContent {
 export declare interface BmCardFooter extends Components.BmCardFooter {}
 
 @ProxyCmp({
-  tagName: 'bm-card-footer',
-  customElement: undefined
+  defineCustomElementFn: undefined
 })
 @Component({
   selector: 'bm-card-footer',
@@ -179,8 +171,7 @@ export class BmCardFooter {
 export declare interface BmCardHeader extends Components.BmCardHeader {}
 
 @ProxyCmp({
-  tagName: 'bm-card-header',
-  customElement: undefined
+  defineCustomElementFn: undefined
 })
 @Component({
   selector: 'bm-card-header',
@@ -199,8 +190,7 @@ export class BmCardHeader {
 export declare interface BmCardImage extends Components.BmCardImage {}
 
 @ProxyCmp({
-  tagName: 'bm-card-image',
-  customElement: undefined
+  defineCustomElementFn: undefined
 })
 @Component({
   selector: 'bm-card-image',
@@ -219,8 +209,7 @@ export class BmCardImage {
 export declare interface BmCheckbox extends Components.BmCheckbox {}
 
 @ProxyCmp({
-  tagName: 'bm-checkbox',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['checked', 'disabled', 'inputClass', 'labelClass']
 })
 @Component({
@@ -241,8 +230,7 @@ export class BmCheckbox {
 export declare interface BmColumn extends Components.BmColumn {}
 
 @ProxyCmp({
-  tagName: 'bm-column',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['isNarrow', 'sizes']
 })
 @Component({
@@ -263,8 +251,7 @@ export class BmColumn {
 export declare interface BmColumns extends Components.BmColumns {}
 
 @ProxyCmp({
-  tagName: 'bm-columns',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['gaps', 'isCentered', 'isDesktop', 'isGapless', 'isMobile', 'isMultiline', 'isVcentered']
 })
 @Component({
@@ -285,8 +272,7 @@ export class BmColumns {
 export declare interface BmContainer extends Components.BmContainer {}
 
 @ProxyCmp({
-  tagName: 'bm-container',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['breakpoint', 'isFluid']
 })
 @Component({
@@ -307,8 +293,7 @@ export class BmContainer {
 export declare interface BmContent extends Components.BmContent {}
 
 @ProxyCmp({
-  tagName: 'bm-content',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['size']
 })
 @Component({
@@ -329,8 +314,7 @@ export class BmContent {
 export declare interface BmDivider extends Components.BmDivider {}
 
 @ProxyCmp({
-  tagName: 'bm-divider',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['alignment', 'color', 'isLight', 'isVertical']
 })
 @Component({
@@ -351,8 +335,7 @@ export class BmDivider {
 export declare interface BmDropdown extends Components.BmDropdown {}
 
 @ProxyCmp({
-  tagName: 'bm-dropdown',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['isActive', 'isHoverable', 'isRight', 'isUp']
 })
 @Component({
@@ -373,8 +356,7 @@ export class BmDropdown {
 export declare interface BmField extends Components.BmField {}
 
 @ProxyCmp({
-  tagName: 'bm-field',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['hasAddons', 'isGrouped', 'isGroupedMultiline', 'isHorizontal', 'label', 'message', 'size']
 })
 @Component({
@@ -395,8 +377,7 @@ export class BmField {
 export declare interface BmFile extends Components.BmFile {}
 
 @ProxyCmp({
-  tagName: 'bm-file',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['alignment', 'color', 'file', 'hasName', 'isBoxed', 'isFullwidth', 'isRight', 'name', 'placeholder', 'size']
 })
 @Component({
@@ -417,8 +398,7 @@ export class BmFile {
 export declare interface BmFooter extends Components.BmFooter {}
 
 @ProxyCmp({
-  tagName: 'bm-footer',
-  customElement: undefined
+  defineCustomElementFn: undefined
 })
 @Component({
   selector: 'bm-footer',
@@ -437,8 +417,7 @@ export class BmFooter {
 export declare interface BmIcon extends Components.BmIcon {}
 
 @ProxyCmp({
-  tagName: 'bm-icon',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['color', 'size', 'withText']
 })
 @Component({
@@ -459,8 +438,7 @@ export class BmIcon {
 export declare interface BmImage extends Components.BmImage {}
 
 @ProxyCmp({
-  tagName: 'bm-image',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['size']
 })
 @Component({
@@ -481,8 +459,7 @@ export class BmImage {
 export declare interface BmInput extends Components.BmInput {}
 
 @ProxyCmp({
-  tagName: 'bm-input',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['color', 'controlClass', 'disabled', 'isLoading', 'isRounded', 'isStatic', 'name', 'placeholder', 'readonly', 'required', 'size', 'state', 'type', 'value']
 })
 @Component({
@@ -503,8 +480,7 @@ export class BmInput {
 export declare interface BmMenu extends Components.BmMenu {}
 
 @ProxyCmp({
-  tagName: 'bm-menu',
-  customElement: undefined
+  defineCustomElementFn: undefined
 })
 @Component({
   selector: 'bm-menu',
@@ -523,8 +499,7 @@ export class BmMenu {
 export declare interface BmMessage extends Components.BmMessage {}
 
 @ProxyCmp({
-  tagName: 'bm-message',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['color', 'size']
 })
 @Component({
@@ -545,8 +520,7 @@ export class BmMessage {
 export declare interface BmModal extends Components.BmModal {}
 
 @ProxyCmp({
-  tagName: 'bm-modal',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['hasModalCard', 'isActive']
 })
 @Component({
@@ -567,8 +541,7 @@ export class BmModal {
 export declare interface BmNavbar extends Components.BmNavbar {}
 
 @ProxyCmp({
-  tagName: 'bm-navbar',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['color', 'fixedPosition', 'isSpaced', 'isTransparent']
 })
 @Component({
@@ -589,8 +562,7 @@ export class BmNavbar {
 export declare interface BmNotification extends Components.BmNotification {}
 
 @ProxyCmp({
-  tagName: 'bm-notification',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['color', 'dismissable']
 })
 @Component({
@@ -611,8 +583,7 @@ export class BmNotification {
 export declare interface BmPagination extends Components.BmPagination {}
 
 @ProxyCmp({
-  tagName: 'bm-pagination',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['alignment', 'isRounded', 'size']
 })
 @Component({
@@ -633,8 +604,7 @@ export class BmPagination {
 export declare interface BmPanel extends Components.BmPanel {}
 
 @ProxyCmp({
-  tagName: 'bm-panel',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['color']
 })
 @Component({
@@ -655,8 +625,7 @@ export class BmPanel {
 export declare interface BmProgress extends Components.BmProgress {}
 
 @ProxyCmp({
-  tagName: 'bm-progress',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['color', 'max', 'size', 'value']
 })
 @Component({
@@ -677,8 +646,7 @@ export class BmProgress {
 export declare interface BmRadio extends Components.BmRadio {}
 
 @ProxyCmp({
-  tagName: 'bm-radio',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['checked', 'disabled', 'inputClass', 'labelClass', 'name']
 })
 @Component({
@@ -699,8 +667,7 @@ export class BmRadio {
 export declare interface BmSection extends Components.BmSection {}
 
 @ProxyCmp({
-  tagName: 'bm-section',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['size']
 })
 @Component({
@@ -721,8 +688,7 @@ export class BmSection {
 export declare interface BmSelect extends Components.BmSelect {}
 
 @ProxyCmp({
-  tagName: 'bm-select',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['color', 'controlClass', 'icon', 'isLoading', 'isMultiple', 'isRounded', 'size', 'state']
 })
 @Component({
@@ -743,8 +709,7 @@ export class BmSelect {
 export declare interface BmSlider extends Components.BmSlider {}
 
 @ProxyCmp({
-  tagName: 'bm-slider',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['color', 'disabled', 'isCircle', 'max', 'min', 'size', 'step', 'value']
 })
 @Component({
@@ -765,8 +730,7 @@ export class BmSlider {
 export declare interface BmSwitch extends Components.BmSwitch {}
 
 @ProxyCmp({
-  tagName: 'bm-switch',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['checked', 'color', 'disabled', 'isOutlined', 'isRounded', 'isThin', 'size']
 })
 @Component({
@@ -787,8 +751,7 @@ export class BmSwitch {
 export declare interface BmTable extends Components.BmTable {}
 
 @ProxyCmp({
-  tagName: 'bm-table',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['isBordered', 'isFullwidth', 'isHoverable', 'isNarrow', 'isScrollable', 'isStriped']
 })
 @Component({
@@ -809,8 +772,7 @@ export class BmTable {
 export declare interface BmTabs extends Components.BmTabs {}
 
 @ProxyCmp({
-  tagName: 'bm-tabs',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['alignment', 'isFullwidth', 'isRounded', 'size', 'tabStyle']
 })
 @Component({
@@ -831,8 +793,7 @@ export class BmTabs {
 export declare interface BmTag extends Components.BmTag {}
 
 @ProxyCmp({
-  tagName: 'bm-tag',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['color', 'modifier', 'size', 'tag']
 })
 @Component({
@@ -853,8 +814,7 @@ export class BmTag {
 export declare interface BmTags extends Components.BmTags {}
 
 @ProxyCmp({
-  tagName: 'bm-tags',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['hasAddons', 'size']
 })
 @Component({
@@ -875,8 +835,7 @@ export class BmTags {
 export declare interface BmTextarea extends Components.BmTextarea {}
 
 @ProxyCmp({
-  tagName: 'bm-textarea',
-  customElement: undefined,
+  defineCustomElementFn: undefined,
   inputs: ['color', 'controlClass', 'disabled', 'hasFixedSize', 'isLoading', 'readonly', 'rows', 'size', 'state', 'value']
 })
 @Component({
