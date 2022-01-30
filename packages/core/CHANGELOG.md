@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.26.0](https://github.com/gomah/bulmil/compare/v0.25.1...v0.26.0) (2022-01-30)
+
+
+### Bug Fixes
+
+* **core:** update package.json to use dist-custom-elements ([7ba3370](https://github.com/gomah/bulmil/commit/7ba337005e53b4ef026220f0a68975da7a4fcc29))
+
+
+### Features
+
+* **core:** bump angular-output-target ([f6cccac](https://github.com/gomah/bulmil/commit/f6cccac359c9d2a9ae3a5d964268d487fdcfb538))
+
+
+
+
+
 ## [0.25.1](https://github.com/gomah/bulmil/compare/v0.25.0...v0.25.1) (2022-01-24)
 
 **Note:** Version bump only for package @bulmil/core
