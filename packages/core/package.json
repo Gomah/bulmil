@@ -67,10 +67,10 @@
   },
   "devDependencies": {
     "@stencil/angular-output-target": "^0.4.0",
-    "@stencil/core": "^2.13.0",
+    "@stencil/core": "^2.14.0",
     "@stencil/eslint-plugin": "^0.3.1",
     "@stencil/postcss": "^2.1.0",
-    "@stencil/react-output-target": "^0.2.1",
+    "@stencil/react-output-target": "^0.3.1",
     "@stencil/sass": "^1.5.2",
     "@stencil/svelte-output-target": "^0.0.3",
     "@stencil/vue-output-target": "^0.0.3",
