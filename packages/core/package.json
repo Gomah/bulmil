@@ -67,7 +67,7 @@
   },
   "devDependencies": {
     "@stencil/angular-output-target": "^0.4.0",
-    "@stencil/core": "^2.15.0",
+    "@stencil/core": "^2.16.1",
     "@stencil/eslint-plugin": "^0.3.1",
     "@stencil/postcss": "^2.1.0",
     "@stencil/react-output-target": "^0.3.1",
@@ -110,7 +110,7 @@
   "dependencies": {
     "@creativebulma/bulma-badge": "1.0.1",
     "@creativebulma/bulma-divider": "1.1.0",
-    "bulma-scss": "0.9.3",
+    "bulma-scss": "0.9.4",
     "bulma-slider": "2.0.4",
     "bulma-switch": "2.0.4"
   }
