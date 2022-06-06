@@ -1,7 +1,7 @@
 {
   "name": "@bulmil/vue",
   "sideEffects": false,
-  "version": "0.26.3",
+  "version": "0.26.4",
   "author": "Gomah",
   "license": "MIT",
   "description": "Vue specific wrapper for bulmil",
@@ -44,7 +44,7 @@
     "vue-template-compiler": "^2.6.14"
   },
   "dependencies": {
-    "@bulmil/core": "0.26.3"
+    "@bulmil/core": "0.26.4"
   },
   "peerDependencies": {
     "vue": "^2.6.12"
