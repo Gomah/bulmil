@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.27.0](https://github.com/gomah/bulmil/compare/v0.26.4...v0.27.0) (2022-06-22)
+
+
+### Features
+
+* **deps:** bump @stencil/core to 2.17.0 ([a8af884](https://github.com/gomah/bulmil/commit/a8af88438700c53647fd171fe78cae2b790129ee))
+
+
+
+
+
 ## [0.26.4](https://github.com/gomah/bulmil/compare/v0.26.3...v0.26.4) (2022-06-06)
 
 **Note:** Version bump only for package @bulmil/core
