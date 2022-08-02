@@ -13,12 +13,12 @@
   },
   "dependencies": {
     "@bulmil/core": "0.21.0",
-    "nuxt": "^2.15.8",
-    "nuxt-stencil": "^0.1.1"
+    "nuxt": "2.15.8",
+    "nuxt-stencil": "0.1.1"
   },
   "devDependencies": {
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.4.1"
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "prettier": "2.4.1"
   }
 }
