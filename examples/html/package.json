@@ -6,6 +6,6 @@
     "serve": "sirv --dev --port 4444"
   },
   "dependencies": {
-    "sirv-cli": "1.0.14"
+    "sirv-cli": "2.0.2"
   }
 }

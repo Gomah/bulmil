@@ -1,10 +1,11 @@
 {
   "private": true,
   "workspaces": [
+    "examples/*",
     "packages/*"
   ],
   "scripts": {
-    "build": "turbo run build",
+    "build": "turbo run build --filter=@bulmil/core --filter=@bulmil/angular --filter=@bulmil/react --filter=@bulmil/svelte --filter=@bulmil/vue",
     "build:storybook": "build-storybook -c .storybook -s packages/core/www -o storybook/",
     "release:stable": "yarn build && yarn run test && lerna publish --no-commit-hooks --dist-tag latest",
     "release:next": "yarn build && yarn run test && lerna publish prepatch --no-commit-hooks --dist-tag next",
