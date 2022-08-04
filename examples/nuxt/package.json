@@ -1,6 +1,6 @@
 {
   "name": "@bulmil/nuxt-example",
-  "version": "0.0.0",
+  "version": "0.28.2",
   "description": "My terrific Nuxt.js project",
   "author": "Gomah",
   "private": true,
@@ -12,7 +12,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@bulmil/core": "0.28.1",
+    "@bulmil/core": "0.28.2",
     "nuxt": "2.15.8",
     "nuxt-stencil": "0.1.1"
   },

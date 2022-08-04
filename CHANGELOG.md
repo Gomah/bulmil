@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.28.2](https://github.com/gomah/bulmil/compare/v0.28.1...v0.28.2) (2022-08-04)
+
+
+### Bug Fixes
+
+* **config:** add 'main' to allowBranch ([0199e8e](https://github.com/gomah/bulmil/commit/0199e8e866a07df23e00f98836b577d2d8cf90fe))
+
+
+
+
+
 ## [0.28.1](https://github.com/gomah/bulmil/compare/v0.28.0...v0.28.1) (2022-08-02)
 
 **Note:** Version bump only for package bulmil
