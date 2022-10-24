@@ -1,8 +1,6 @@
 {
-  "version": "0.29.1",
-  "packages": [
-    "packages/*"
-  ],
+  "version": "0.30.0",
+  "packages": ["packages/*"],
   "useWorkspaces": true,
   "npmClient": "yarn",
   "conventionalCommits": true,
@@ -10,10 +8,7 @@
   "command": {
     "publish": {
       "npmClient": "npm",
-      "allowBranch": [
-        "main",
-        "next"
-      ],
+      "allowBranch": ["main", "next"],
       "registry": "https://registry.npmjs.org/"
     },
     "version": {
