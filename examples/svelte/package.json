@@ -1,6 +1,6 @@
 {
   "name": "@bulmil/svelte-example",
-  "version": "0.31.1",
+  "version": "0.31.2",
   "private": true,
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack",
@@ -26,8 +26,8 @@
     "webpack-dev-server": "4.11.1"
   },
   "dependencies": {
-    "@bulmil/core": "0.31.1",
-    "@bulmil/svelte": "0.31.1",
+    "@bulmil/core": "0.31.2",
+    "@bulmil/svelte": "0.31.2",
     "sirv-cli": "2.0.2"
   }
 }
