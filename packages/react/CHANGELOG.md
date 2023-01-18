@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.34.0](https://github.com/gomah/bulmil/compare/v0.33.0...v0.34.0) (2023-01-18)
+
+### Features
+
+- **deps:** bump @stencil/core to 2.22.1 ([57667ff](https://github.com/gomah/bulmil/commit/57667ffe4a37ca0363edf0c9fac2acd78ede952f))
+
 # [0.33.0](https://github.com/gomah/bulmil/compare/v0.32.1...v0.33.0) (2023-01-05)
 
 **Note:** Version bump only for package @bulmil/react
