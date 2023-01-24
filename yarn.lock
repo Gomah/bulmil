@@ -2019,8 +2019,8 @@ __metadata:
     "@angular/platform-browser": 14.2.8
     "@angular/platform-browser-dynamic": 14.2.8
     "@angular/router": 14.2.8
-    "@bulmil/angular": 0.33.0
-    "@bulmil/core": 0.33.0
+    "@bulmil/angular": 0.34.0
+    "@bulmil/core": 0.34.0
     "@types/jest": 27.0.3
     "@types/node": 18.6.3
     codelyzer: 6.0.2
@@ -2034,7 +2034,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bulmil/angular@0.33.0, @bulmil/angular@workspace:packages/angular":
+"@bulmil/angular@0.34.0, @bulmil/angular@workspace:packages/angular":
   version: 0.0.0-use.local
   resolution: "@bulmil/angular@workspace:packages/angular"
   dependencies:
@@ -2042,7 +2042,7 @@ __metadata:
     "@angular/compiler": 14.2.8
     "@angular/compiler-cli": 14.2.8
     "@angular/core": 14.2.8
-    "@bulmil/core": 0.33.0
+    "@bulmil/core": 0.34.0
     ng-packagr: 14.2.2
     rimraf: 3.0.2
     rxjs: 7.5.7
@@ -2055,14 +2055,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bulmil/core@0.33.0, @bulmil/core@workspace:packages/core":
+"@bulmil/core@0.34.0, @bulmil/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@bulmil/core@workspace:packages/core"
   dependencies:
     "@creativebulma/bulma-badge": 1.0.1
     "@creativebulma/bulma-divider": 1.1.0
     "@stencil/angular-output-target": 0.5.0
-    "@stencil/core": 2.22.1
+    "@stencil/core": 2.22.2
     "@stencil/eslint-plugin": 0.4.0
     "@stencil/postcss": 2.1.0
     "@stencil/react-output-target": 0.4.0
@@ -2119,8 +2119,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bulmil/next-example@workspace:examples/next"
   dependencies:
-    "@bulmil/core": 0.33.0
-    "@bulmil/react": 0.33.0
+    "@bulmil/core": 0.34.0
+    "@bulmil/react": 0.34.0
     next: 12.3.1
     react: 18.2.0
     react-dom: 18.2.0
@@ -2131,7 +2131,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bulmil/nuxt-example@workspace:examples/nuxt"
   dependencies:
-    "@bulmil/core": 0.33.0
+    "@bulmil/core": 0.34.0
     eslint-config-prettier: 8.5.0
     eslint-plugin-prettier: 4.2.1
     nuxt: 2.15.8
@@ -2144,8 +2144,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bulmil/react-example@workspace:examples/react"
   dependencies:
-    "@bulmil/core": 0.33.0
-    "@bulmil/react": 0.33.0
+    "@bulmil/core": 0.34.0
+    "@bulmil/react": 0.34.0
     react: 17.0.2
     react-dom: 17.0.2
     react-scripts: 4.0.3
@@ -2153,11 +2153,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bulmil/react@0.33.0, @bulmil/react@workspace:packages/react":
+"@bulmil/react@0.34.0, @bulmil/react@workspace:packages/react":
   version: 0.0.0-use.local
   resolution: "@bulmil/react@workspace:packages/react"
   dependencies:
-    "@bulmil/core": 0.33.0
+    "@bulmil/core": 0.34.0
     "@testing-library/jest-dom": 5.16.5
     "@testing-library/react": 13.4.0
     "@types/jest": 27.0.3
@@ -2181,8 +2181,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bulmil/svelte-example@workspace:examples/svelte"
   dependencies:
-    "@bulmil/core": 0.33.0
-    "@bulmil/svelte": 0.33.0
+    "@bulmil/core": 0.34.0
+    "@bulmil/svelte": 0.34.0
     "@tsconfig/svelte": 3.0.0
     cross-env: 7.0.3
     css-loader: 6.7.1
@@ -2201,11 +2201,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bulmil/svelte@0.33.0, @bulmil/svelte@workspace:packages/svelte":
+"@bulmil/svelte@0.34.0, @bulmil/svelte@workspace:packages/svelte":
   version: 0.0.0-use.local
   resolution: "@bulmil/svelte@workspace:packages/svelte"
   dependencies:
-    "@bulmil/core": 0.33.0
+    "@bulmil/core": 0.34.0
     "@testing-library/svelte": 3.2.2
     "@types/node": 18.6.3
     rimraf: 3.0.2
@@ -2220,8 +2220,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bulmil/vue-example@workspace:examples/vue"
   dependencies:
-    "@bulmil/core": 0.33.0
-    "@bulmil/vue": 0.33.0
+    "@bulmil/core": 0.34.0
+    "@bulmil/vue": 0.34.0
     "@vue/cli-plugin-typescript": 5.0.8
     "@vue/cli-service": 5.0.8
     sirv-cli: 2.0.2
@@ -2234,11 +2234,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bulmil/vue@0.33.0, @bulmil/vue@workspace:packages/vue":
+"@bulmil/vue@0.34.0, @bulmil/vue@workspace:packages/vue":
   version: 0.0.0-use.local
   resolution: "@bulmil/vue@workspace:packages/vue"
   dependencies:
-    "@bulmil/core": 0.33.0
+    "@bulmil/core": 0.34.0
     "@testing-library/jest-dom": 5.16.5
     "@types/jest": 27.0.3
     "@types/tapable": 2.2.2
@@ -5550,12 +5550,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stencil/core@npm:2.22.1":
-  version: 2.22.1
-  resolution: "@stencil/core@npm:2.22.1"
+"@stencil/core@npm:2.22.2":
+  version: 2.22.2
+  resolution: "@stencil/core@npm:2.22.2"
   bin:
     stencil: bin/stencil
-  checksum: 039ae1d48d4dae1ae4775f1c9a754da7ec613b3ad569f4b2eb0a0898fed8f8498dffdc021fd5ec89cce990bb11743b4d07db43feae0aed53ff39e9378fe9058b
+  checksum: 139a7b63b81c7eaa5026e76e1c947a402f58d0a6d1d353a34883995ea7e480fa6991e71c0c3d812f7046d395b99d0f7f7b11af9277f04a3c62aba96cda18dd5d
   languageName: node
   linkType: hard
 
