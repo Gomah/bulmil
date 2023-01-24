@@ -1,6 +1,6 @@
 {
   "name": "@bulmil/html-example",
-  "version": "0.34.0",
+  "version": "0.35.0",
   "private": true,
   "scripts": {
     "serve": "sirv --dev --port 4444"
