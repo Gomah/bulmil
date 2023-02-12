@@ -1,6 +1,6 @@
 {
   "name": "@bulmil/next-example",
-  "version": "0.35.0",
+  "version": "0.36.0",
   "private": true,
   "scripts": {
     "dev": "next",
@@ -8,8 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
-    "@bulmil/core": "*",
-    "@bulmil/react": "*",
+    "@bulmil/core": "0.36.0",
+    "@bulmil/react": "0.36.0",
     "next": "12.3.4",
     "react": "18.2.0",
     "react-dom": "18.2.0"

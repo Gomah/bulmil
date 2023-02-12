@@ -1,7 +1,7 @@
 {
   "name": "@bulmil/angular-example",
   "private": true,
-  "version": "0.35.0",
+  "version": "0.36.0",
   "scripts": {
     "ng": "ng",
     "build": "ng build",
@@ -16,8 +16,8 @@
     "@angular/platform-browser": "15.1.4",
     "@angular/platform-browser-dynamic": "15.1.4",
     "@angular/router": "15.1.4",
-    "@bulmil/angular": "*",
-    "@bulmil/core": "*",
+    "@bulmil/angular": "0.36.0",
+    "@bulmil/core": "0.36.0",
     "rxjs": "7.8.0",
     "tslib": "2.5.0",
     "zone.js": "0.12.0"
