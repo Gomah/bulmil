@@ -30,7 +30,7 @@
     "@types/jest": "27.0.3",
     "@types/tapable": "2.2.2",
     "@types/webpack": "5.28.0",
-    "@vue/test-utils": "1.3.0",
+    "@vue/test-utils": "2.2.10",
     "jest": "27.0.3",
     "rimraf": "3.0.2",
     "rollup": "2.79.1",
@@ -38,9 +38,9 @@
     "tapable": "2.2.1",
     "ts-jest": "28.0.8",
     "typescript": "4.8.4",
-    "vue": "2.7.13",
+    "vue": "3.2.47",
     "vue-class-component": "7.2.6",
-    "vue-template-compiler": "2.7.13"
+    "vue-template-compiler": "2.7.14"
   },
   "dependencies": {
     "@bulmil/core": "0.35.0"

@@ -16,12 +16,10 @@ export const config: Config = {
 
   buildEs5: false,
 
+  sourceMap: false,
+
   extras: {
-    cssVarsShim: false,
-    dynamicImportShim: false,
-    safari10: false,
     scriptDataOpts: false,
-    shadowDomShim: false,
   },
 
   globalStyle: 'bulmil.scss',
@@ -42,12 +40,13 @@ export const config: Config = {
     reactOutputTarget({
       componentCorePackage: '@bulmil/core',
       proxiesFile: '../react/src/components.ts',
-      loaderDir: 'dist/loader',
+      // loaderDir: 'dist/loader',
     }),
 
     angularOutputTarget({
       componentCorePackage: '@bulmil/core',
       directivesProxyFile: '../angular/src/directives/proxies.ts',
+      // includeImportCustomElements: true,
     }),
 
     vueOutputTarget({
@@ -55,13 +54,9 @@ export const config: Config = {
       proxiesFile: '../vue/src/components.ts',
     }),
 
-    svelteOutputTarget({
-      accessors: true,
-      componentCorePackage: '@bulmil/core',
-      proxiesFile: '../svelte/src/proxies.ts',
-    }),
-
-    { type: 'dist' },
+    {
+      type: 'dist',
+    },
     {
       type: 'dist-custom-elements',
     },
