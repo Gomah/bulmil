@@ -7,10 +7,10 @@
     "serve": "vue-cli-service serve"
   },
   "dependencies": {
-    "@bulmil/core": "0.35.0",
-    "@bulmil/vue": "0.35.0",
+    "@bulmil/core": "*",
+    "@bulmil/vue": "*",
     "sirv-cli": "2.0.2",
-    "tslib": "2.4.0",
+    "tslib": "2.5.0",
     "vue": "3.2.47",
     "vue-class-component": "7.2.6",
     "vue-property-decorator": "9.1.2"
@@ -18,7 +18,7 @@
   "devDependencies": {
     "@vue/cli-plugin-typescript": "5.0.8",
     "@vue/cli-service": "5.0.8",
-    "typescript": "4.8.4",
+    "typescript": "4.9.5",
     "vue-template-compiler": "2.7.14"
   },
   "browserslist": [

@@ -3,12 +3,12 @@
   "version": "0.35.0",
   "private": true,
   "dependencies": {
-    "@bulmil/core": "0.35.0",
-    "@bulmil/react": "0.35.0",
+    "@bulmil/core": "*",
+    "@bulmil/react": "*",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-scripts": "4.0.3",
-    "typescript": "4.8.4"
+    "typescript": "4.9.5"
   },
   "scripts": {
     "build": "react-scripts build",

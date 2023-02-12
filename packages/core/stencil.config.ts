@@ -40,7 +40,7 @@ export const config: Config = {
     reactOutputTarget({
       componentCorePackage: '@bulmil/core',
       proxiesFile: '../react/src/components.ts',
-      // loaderDir: 'dist/loader',
+      loaderDir: 'dist/loader',
     }),
 
     angularOutputTarget({

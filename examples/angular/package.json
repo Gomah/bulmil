@@ -8,30 +8,30 @@
     "serve": "ng serve"
   },
   "dependencies": {
-    "@angular/animations": "14.2.8",
-    "@angular/common": "14.2.8",
-    "@angular/compiler": "14.2.8",
-    "@angular/core": "14.2.8",
-    "@angular/forms": "14.2.8",
-    "@angular/platform-browser": "14.2.8",
-    "@angular/platform-browser-dynamic": "14.2.8",
-    "@angular/router": "14.2.8",
-    "@bulmil/angular": "0.35.0",
-    "@bulmil/core": "0.35.0",
-    "rxjs": "7.5.7",
-    "tslib": "2.4.0",
-    "zone.js": "0.11.8"
+    "@angular/animations": "15.1.4",
+    "@angular/common": "15.1.4",
+    "@angular/compiler": "15.1.4",
+    "@angular/core": "15.1.4",
+    "@angular/forms": "15.1.4",
+    "@angular/platform-browser": "15.1.4",
+    "@angular/platform-browser-dynamic": "15.1.4",
+    "@angular/router": "15.1.4",
+    "@bulmil/angular": "*",
+    "@bulmil/core": "*",
+    "rxjs": "7.8.0",
+    "tslib": "2.5.0",
+    "zone.js": "0.12.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "14.2.7",
-    "@angular/cli": "14.2.7",
-    "@angular/compiler-cli": "14.2.8",
-    "@types/jest": "27.0.3",
-    "@types/node": "18.6.3",
+    "@angular-devkit/build-angular": "15.1.5",
+    "@angular/cli": "15.1.5",
+    "@angular/compiler-cli": "15.1.4",
+    "@types/jest": "27.5.2",
+    "@types/node": "18.13.0",
     "codelyzer": "6.0.2",
     "jest-diff": "28.1.3",
-    "pretty-format": "29.2.1",
+    "pretty-format": "29.4.2",
     "ts-node": "10.9.1",
-    "typescript": "4.6.2"
+    "typescript": "4.8.2"
   }
 }

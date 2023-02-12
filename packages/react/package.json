@@ -28,17 +28,17 @@
   "devDependencies": {
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "13.4.0",
-    "@types/jest": "27.0.3",
-    "@types/node": "18.6.3",
-    "@types/react": "18.0.15",
-    "@types/react-dom": "18.0.6",
-    "jest": "27.0.3",
+    "@types/jest": "27.5.2",
+    "@types/node": "18.13.0",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.10",
+    "jest": "27.5.1",
     "jest-dom": "4.0.0",
-    "np": "7.6.2",
+    "np": "7.6.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "rimraf": "3.0.2",
-    "typescript": "4.8.4"
+    "rimraf": "4.1.2",
+    "typescript": "4.9.5"
   },
   "dependencies": {
     "@bulmil/core": "0.35.0"
