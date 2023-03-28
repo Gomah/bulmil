@@ -2091,14 +2091,14 @@ __metadata:
   dependencies:
     "@creativebulma/bulma-badge": 1.0.1
     "@creativebulma/bulma-divider": 1.1.0
-    "@stencil/angular-output-target": 0.5.0
+    "@stencil/angular-output-target": 0.6.0
     "@stencil/core": 3.2.0
     "@stencil/eslint-plugin": 0.4.0
     "@stencil/postcss": 2.1.0
-    "@stencil/react-output-target": 0.4.0
+    "@stencil/react-output-target": 0.5.0
     "@stencil/sass": 3.0.0
     "@stencil/svelte-output-target": 0.0.3
-    "@stencil/vue-output-target": 0.7.0
+    "@stencil/vue-output-target": 0.8.0
     "@types/autoprefixer": 10.2.0
     "@types/jest": 27.5.2
     "@types/node": 18.14.2
@@ -5193,12 +5193,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stencil/angular-output-target@npm:0.5.0":
-  version: 0.5.0
-  resolution: "@stencil/angular-output-target@npm:0.5.0"
+"@stencil/angular-output-target@npm:0.6.0":
+  version: 0.6.0
+  resolution: "@stencil/angular-output-target@npm:0.6.0"
   peerDependencies:
-    "@stencil/core": ^2.9.0 || ^3.0.0-beta.0
-  checksum: f5e5dca13a64fdf9085b99614401336c80aeedc78580dff8ec99c88cc31659a878efa39b755611469c4927827527f34c911bac1130ed165e86bfc37782fb2724
+    "@stencil/core": ^2.9.0 || ^3.0.0
+  checksum: 0d5aba8ef1ecfa980f992bc4a35efd7264c1167cade9acde98c101ffdb8a11ba81bedfa653304cc502ef80a9b404aaf000df4d78fd997855a5d5ddf11d95f3bb
   languageName: node
   linkType: hard
 
@@ -5239,12 +5239,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stencil/react-output-target@npm:0.4.0":
-  version: 0.4.0
-  resolution: "@stencil/react-output-target@npm:0.4.0"
+"@stencil/react-output-target@npm:0.5.0":
+  version: 0.5.0
+  resolution: "@stencil/react-output-target@npm:0.5.0"
   peerDependencies:
-    "@stencil/core": ^2.9.0 || ^3.0.0-beta.0
-  checksum: a88a53f4d8f41c0b0a665f59dddd88986be095b6ed3d9fbbab30f5376cd1247c7d04711fe6ac0530777ddb67d5b79bbc2c6660d49409449e39fb2bf186f76ccd
+    "@stencil/core": ^2.9.0 || ^3.0.0
+  checksum: 9e81878c23c0fae3cc299da261426f213e06e68506ddc8a6f98276d7311fb02588b30d2631fe815c111b1b13d1f35b57af01383c83f908f99299b0bc08400f07
   languageName: node
   linkType: hard
 
@@ -5266,12 +5266,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stencil/vue-output-target@npm:0.7.0":
-  version: 0.7.0
-  resolution: "@stencil/vue-output-target@npm:0.7.0"
+"@stencil/vue-output-target@npm:0.8.0":
+  version: 0.8.0
+  resolution: "@stencil/vue-output-target@npm:0.8.0"
   peerDependencies:
-    "@stencil/core": ^2.9.0 || ^3.0.0-beta.0
-  checksum: 3f6ea5961bb47269548289ffdd77c8d3303b49c78ec97a788d734dca4ac3b12960406192e19091027dd347ec617ed0ff7157e58a53833dd7c49e91b68b71b8f8
+    "@stencil/core": ^2.9.0 || ^3.0.0
+  checksum: b384915a33e5cc78af6f657ba2976093b895502b370f24847602a7c36df7fdea650db0e7bfdf859cc0388d5840d05a227e3ca1e62c63953be90a1e1a2023d1b8
   languageName: node
   linkType: hard
 
