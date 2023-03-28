@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0](https://github.com/gomah/bulmil/compare/v0.38.0...v0.39.0) (2023-03-28)
+
+
+### Features
+
+* bump frameworks output target ([c9fdbe1](https://github.com/gomah/bulmil/commit/c9fdbe1f1b24028934df3be66061c1076ffb7387))
+* **core:** bump @stencil/core to 3.2.0 ([2af3c29](https://github.com/gomah/bulmil/commit/2af3c291ecdd276c9981851f3a3c4de1cbda7edc))
+
+
+
+
+
 # [0.38.0](https://github.com/gomah/bulmil/compare/v0.37.1...v0.38.0) (2023-03-01)
 
 
