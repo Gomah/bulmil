@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.39.1](https://github.com/gomah/bulmil/compare/v0.39.0...v0.39.1) (2023-03-31)
+
+
+### Bug Fixes
+
+* **vue:** bump @stencil/vue-output-target to 0.8.1 ([e85994d](https://github.com/gomah/bulmil/commit/e85994de1d03703798f4630ba0cd0d6e0e073dda))
+
+
+
+
+
 # [0.39.0](https://github.com/gomah/bulmil/compare/v0.38.0...v0.39.0) (2023-03-28)
 
 
