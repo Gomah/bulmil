@@ -2049,8 +2049,8 @@ __metadata:
     "@angular/platform-browser": 15.2.0
     "@angular/platform-browser-dynamic": 15.2.0
     "@angular/router": 15.2.0
-    "@bulmil/angular": 0.39.2
-    "@bulmil/core": 0.39.2
+    "@bulmil/angular": 0.39.3
+    "@bulmil/core": 0.39.3
     "@types/jest": 27.5.2
     "@types/node": 18.14.2
     codelyzer: 6.0.2
@@ -2064,7 +2064,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bulmil/angular@0.39.2, @bulmil/angular@workspace:packages/angular":
+"@bulmil/angular@0.39.3, @bulmil/angular@workspace:packages/angular":
   version: 0.0.0-use.local
   resolution: "@bulmil/angular@workspace:packages/angular"
   dependencies:
@@ -2072,7 +2072,7 @@ __metadata:
     "@angular/compiler": 15.2.0
     "@angular/compiler-cli": 15.2.0
     "@angular/core": 15.2.0
-    "@bulmil/core": 0.39.2
+    "@bulmil/core": 0.39.3
     ng-packagr: 15.2.2
     rimraf: 4.1.2
     rxjs: 7.8.0
@@ -2085,14 +2085,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bulmil/core@0.39.2, @bulmil/core@workspace:packages/core":
+"@bulmil/core@0.39.3, @bulmil/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@bulmil/core@workspace:packages/core"
   dependencies:
     "@creativebulma/bulma-badge": 1.0.1
     "@creativebulma/bulma-divider": 1.1.0
     "@stencil/angular-output-target": 0.6.0
-    "@stencil/core": 3.2.1
+    "@stencil/core": 3.2.2
     "@stencil/eslint-plugin": 0.4.0
     "@stencil/postcss": 2.1.0
     "@stencil/react-output-target": 0.5.0
@@ -2149,8 +2149,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bulmil/next-example@workspace:examples/next"
   dependencies:
-    "@bulmil/core": 0.39.2
-    "@bulmil/react": 0.39.2
+    "@bulmil/core": 0.39.3
+    "@bulmil/react": 0.39.3
     next: 12.3.4
     react: 18.2.0
     react-dom: 18.2.0
@@ -2161,7 +2161,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bulmil/nuxt-example@workspace:examples/nuxt"
   dependencies:
-    "@bulmil/core": 0.39.2
+    "@bulmil/core": 0.39.3
     eslint-config-prettier: 8.6.0
     eslint-plugin-prettier: 4.2.1
     nuxt: 2.16.1
@@ -2174,8 +2174,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bulmil/react-example@workspace:examples/react"
   dependencies:
-    "@bulmil/core": 0.39.2
-    "@bulmil/react": 0.39.2
+    "@bulmil/core": 0.39.3
+    "@bulmil/react": 0.39.3
     react: 17.0.2
     react-dom: 17.0.2
     react-scripts: 4.0.3
@@ -2183,11 +2183,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bulmil/react@0.39.2, @bulmil/react@workspace:packages/react":
+"@bulmil/react@0.39.3, @bulmil/react@workspace:packages/react":
   version: 0.0.0-use.local
   resolution: "@bulmil/react@workspace:packages/react"
   dependencies:
-    "@bulmil/core": 0.39.2
+    "@bulmil/core": 0.39.3
     "@testing-library/jest-dom": 5.16.5
     "@testing-library/react": 13.4.0
     "@types/jest": 27.5.2
@@ -2211,8 +2211,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bulmil/vue-example@workspace:examples/vue"
   dependencies:
-    "@bulmil/core": 0.39.2
-    "@bulmil/vue": 0.39.2
+    "@bulmil/core": 0.39.3
+    "@bulmil/vue": 0.39.3
     "@vue/cli-plugin-typescript": 5.0.8
     "@vue/cli-service": 5.0.8
     sirv-cli: 2.0.2
@@ -2225,11 +2225,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bulmil/vue@0.39.2, @bulmil/vue@workspace:packages/vue":
+"@bulmil/vue@0.39.3, @bulmil/vue@workspace:packages/vue":
   version: 0.0.0-use.local
   resolution: "@bulmil/vue@workspace:packages/vue"
   dependencies:
-    "@bulmil/core": 0.39.2
+    "@bulmil/core": 0.39.3
     "@testing-library/jest-dom": 5.16.5
     "@types/jest": 27.5.2
     "@types/tapable": 2.2.2
@@ -5202,12 +5202,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stencil/core@npm:3.2.1":
-  version: 3.2.1
-  resolution: "@stencil/core@npm:3.2.1"
+"@stencil/core@npm:3.2.2":
+  version: 3.2.2
+  resolution: "@stencil/core@npm:3.2.2"
   bin:
     stencil: bin/stencil
-  checksum: b7349e0e7551d287264a6052ea0c3246ae6e55c173bffaf7b8db73e16f128ba1bb4e704b7b6d76810a22fc38b9e14daf67d273133f9c435ad327f1a4bd4434b5
+  checksum: ed30f202ed16f4506f2ded18dac0b2afbb080b53580f1d387c492c91cd5ab4ac3caa04baf646095ae01c5312d90ab834794b01f94c8e56a343666282869caf9d
   languageName: node
   linkType: hard
 
@@ -28537,7 +28537,7 @@ __metadata:
     npm-run-all: 4.1.5
     storybook-addon-turbo-build: 1.1.0
     ts-loader: 9.4.2
-    turbo: 1.8.6
+    turbo: 1.9.3
     typescript: 4.9.5
     webpack: 5.75.0
   languageName: unknown
@@ -31482,58 +31482,58 @@ __metadata:
   languageName: node
   linkType: hard
 
-"turbo-darwin-64@npm:1.8.6":
-  version: 1.8.6
-  resolution: "turbo-darwin-64@npm:1.8.6"
+"turbo-darwin-64@npm:1.9.3":
+  version: 1.9.3
+  resolution: "turbo-darwin-64@npm:1.9.3"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"turbo-darwin-arm64@npm:1.8.6":
-  version: 1.8.6
-  resolution: "turbo-darwin-arm64@npm:1.8.6"
+"turbo-darwin-arm64@npm:1.9.3":
+  version: 1.9.3
+  resolution: "turbo-darwin-arm64@npm:1.9.3"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"turbo-linux-64@npm:1.8.6":
-  version: 1.8.6
-  resolution: "turbo-linux-64@npm:1.8.6"
+"turbo-linux-64@npm:1.9.3":
+  version: 1.9.3
+  resolution: "turbo-linux-64@npm:1.9.3"
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
 
-"turbo-linux-arm64@npm:1.8.6":
-  version: 1.8.6
-  resolution: "turbo-linux-arm64@npm:1.8.6"
+"turbo-linux-arm64@npm:1.9.3":
+  version: 1.9.3
+  resolution: "turbo-linux-arm64@npm:1.9.3"
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
 
-"turbo-windows-64@npm:1.8.6":
-  version: 1.8.6
-  resolution: "turbo-windows-64@npm:1.8.6"
+"turbo-windows-64@npm:1.9.3":
+  version: 1.9.3
+  resolution: "turbo-windows-64@npm:1.9.3"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
-"turbo-windows-arm64@npm:1.8.6":
-  version: 1.8.6
-  resolution: "turbo-windows-arm64@npm:1.8.6"
+"turbo-windows-arm64@npm:1.9.3":
+  version: 1.9.3
+  resolution: "turbo-windows-arm64@npm:1.9.3"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"turbo@npm:1.8.6":
-  version: 1.8.6
-  resolution: "turbo@npm:1.8.6"
+"turbo@npm:1.9.3":
+  version: 1.9.3
+  resolution: "turbo@npm:1.9.3"
   dependencies:
-    turbo-darwin-64: 1.8.6
-    turbo-darwin-arm64: 1.8.6
-    turbo-linux-64: 1.8.6
-    turbo-linux-arm64: 1.8.6
-    turbo-windows-64: 1.8.6
-    turbo-windows-arm64: 1.8.6
+    turbo-darwin-64: 1.9.3
+    turbo-darwin-arm64: 1.9.3
+    turbo-linux-64: 1.9.3
+    turbo-linux-arm64: 1.9.3
+    turbo-windows-64: 1.9.3
+    turbo-windows-arm64: 1.9.3
   dependenciesMeta:
     turbo-darwin-64:
       optional: true
@@ -31549,7 +31549,7 @@ __metadata:
       optional: true
   bin:
     turbo: bin/turbo
-  checksum: f20983be69ac689eb8193adff5838fbc1248dc987fbecfa7433996ee50934dc5574c98f2b09e552bfae48386f2077ce810e203a8a9961819106098384bf4e806
+  checksum: ebf06d3b9b1401a5baabace238cd1e0d8fc1dc062b4f7bd577f644298c555f326d15f331144641c0b43a60ae8058769bcbd9d1660874fa9927ec64b5be8ee9dc
   languageName: node
   linkType: hard
 
