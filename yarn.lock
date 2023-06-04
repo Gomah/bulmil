@@ -2091,14 +2091,14 @@ __metadata:
   dependencies:
     "@creativebulma/bulma-badge": 1.0.1
     "@creativebulma/bulma-divider": 1.1.0
-    "@stencil/angular-output-target": 0.6.0
+    "@stencil/angular-output-target": 0.7.1
     "@stencil/core": 3.3.1
     "@stencil/eslint-plugin": 0.4.0
     "@stencil/postcss": 2.1.0
-    "@stencil/react-output-target": 0.5.0
-    "@stencil/sass": 3.0.1
+    "@stencil/react-output-target": 0.5.1
+    "@stencil/sass": 3.0.4
     "@stencil/svelte-output-target": 0.0.3
-    "@stencil/vue-output-target": 0.8.2
+    "@stencil/vue-output-target": 0.8.6
     "@types/autoprefixer": 10.2.0
     "@types/jest": 27.5.2
     "@types/node": 18.14.2
@@ -5193,12 +5193,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stencil/angular-output-target@npm:0.6.0":
-  version: 0.6.0
-  resolution: "@stencil/angular-output-target@npm:0.6.0"
+"@stencil/angular-output-target@npm:0.7.1":
+  version: 0.7.1
+  resolution: "@stencil/angular-output-target@npm:0.7.1"
   peerDependencies:
-    "@stencil/core": ^2.9.0 || ^3.0.0
-  checksum: 0d5aba8ef1ecfa980f992bc4a35efd7264c1167cade9acde98c101ffdb8a11ba81bedfa653304cc502ef80a9b404aaf000df4d78fd997855a5d5ddf11d95f3bb
+    "@stencil/core": ">=2.0.0 || >=3 || >= 4.0.0-beta.0 || >= 4.0.0"
+  checksum: 87d3994dbfe3f7018bf32132e757c9222d31417d1adee1814c08f51567e8a8e6c9a869dc3183701b08a1251d419d391580bec334244f90e7d0fa81632a436da3
   languageName: node
   linkType: hard
 
@@ -5239,21 +5239,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stencil/react-output-target@npm:0.5.0":
-  version: 0.5.0
-  resolution: "@stencil/react-output-target@npm:0.5.0"
+"@stencil/react-output-target@npm:0.5.1":
+  version: 0.5.1
+  resolution: "@stencil/react-output-target@npm:0.5.1"
   peerDependencies:
-    "@stencil/core": ^2.9.0 || ^3.0.0
-  checksum: 9e81878c23c0fae3cc299da261426f213e06e68506ddc8a6f98276d7311fb02588b30d2631fe815c111b1b13d1f35b57af01383c83f908f99299b0bc08400f07
+    "@stencil/core": ">=2.0.0 || >=3 || >= 4.0.0-beta.0 || >= 4.0.0"
+  checksum: b289f77e162a17e6795836896f43d632a14f70bdea3c6249e95d5048b20dcf5e437a0690e6a7afbfede883d5c5cfa94e1c415d84ee1f7aed9cbb810052a95ee5
   languageName: node
   linkType: hard
 
-"@stencil/sass@npm:3.0.1":
-  version: 3.0.1
-  resolution: "@stencil/sass@npm:3.0.1"
+"@stencil/sass@npm:3.0.4":
+  version: 3.0.4
+  resolution: "@stencil/sass@npm:3.0.4"
   peerDependencies:
-    "@stencil/core": ">=2.0.0 || >=3.0.0-beta.0"
-  checksum: ceb34fcd682f03451a1537f3a9d968dc91011a69775f48f804fdd0422eff928c8f2e12911cd0b49cedd6dedccda77b06c0cfe04446f28bd4bbea6db0118827db
+    "@stencil/core": ">=2.0.0 || >=3.0.0-beta.0 || >= 4.0.0-beta.0 || >= 4.0.0"
+  checksum: e0453126a4a89c12d3c88cfbfa308b2169678cd8a278a5a0a4b0cee6e531d32ba785a0f5adf791edc15f3b2f7af425172f7be4b03cc636428d273c4836dcc025
   languageName: node
   linkType: hard
 
@@ -5266,12 +5266,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stencil/vue-output-target@npm:0.8.2":
-  version: 0.8.2
-  resolution: "@stencil/vue-output-target@npm:0.8.2"
+"@stencil/vue-output-target@npm:0.8.6":
+  version: 0.8.6
+  resolution: "@stencil/vue-output-target@npm:0.8.6"
   peerDependencies:
-    "@stencil/core": ^2.9.0 || ^3.0.0
-  checksum: a82fc975e27a15d5facf47cf6683da9b7e6653cff122bddc608a3e8e315ca6d26060939a3da58fd5f5f346854f88cfebb6a1ab5d79a79b32f6f0aedbcf8ae5c7
+    "@stencil/core": ">=2.0.0 || >=3 || >= 4.0.0-beta.0 || >= 4.0.0"
+  checksum: 9bf9dc612ecddb6dd5aa73fa4496452d3c06acb45a0c79af8ddbd59e04a2e52bf34c26109f445a6d2be58f15735cdcc26a463b7201593beedd1bfc332a584b70
   languageName: node
   linkType: hard
 
@@ -31745,11 +31745,11 @@ __metadata:
 
 "typescript@patch:typescript@4.9.5#~builtin<compat/typescript>, typescript@patch:typescript@^3 || ^4#~builtin<compat/typescript>, typescript@patch:typescript@^4.6.4#~builtin<compat/typescript>":
   version: 4.9.5
-  resolution: "typescript@patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"
+  resolution: "typescript@patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=289587"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: ab417a2f398380c90a6cf5a5f74badd17866adf57f1165617d6a551f059c3ba0a3e4da0d147b3ac5681db9ac76a303c5876394b13b3de75fdd5b1eaa06181c9d
+  checksum: 1f8f3b6aaea19f0f67cba79057674ba580438a7db55057eb89cc06950483c5d632115c14077f6663ea76fd09fce3c190e6414bb98582ec80aa5a4eaf345d5b68
   languageName: node
   linkType: hard
 
