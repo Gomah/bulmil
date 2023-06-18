@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0](https://github.com/gomah/bulmil/compare/v0.40.1...v0.41.0) (2023-06-18)
+
+**Note:** Version bump only for package @bulmil/vue-example
+
+
+
+
+
 ## [0.40.1](https://github.com/gomah/bulmil/compare/v0.40.0...v0.40.1) (2023-06-11)
 
 **Note:** Version bump only for package @bulmil/vue-example
