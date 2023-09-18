@@ -2091,8 +2091,8 @@ __metadata:
   dependencies:
     "@creativebulma/bulma-badge": 1.0.1
     "@creativebulma/bulma-divider": 1.1.0
-    "@stencil/angular-output-target": 0.7.1
-    "@stencil/core": 4.0.4
+    "@stencil/angular-output-target": 0.8.2
+    "@stencil/core": 4.2.1
     "@stencil/eslint-plugin": 0.4.0
     "@stencil/postcss": 2.1.0
     "@stencil/react-output-target": 0.5.3
@@ -5193,21 +5193,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stencil/angular-output-target@npm:0.7.1":
-  version: 0.7.1
-  resolution: "@stencil/angular-output-target@npm:0.7.1"
+"@stencil/angular-output-target@npm:0.8.2":
+  version: 0.8.2
+  resolution: "@stencil/angular-output-target@npm:0.8.2"
   peerDependencies:
     "@stencil/core": ">=2.0.0 || >=3 || >= 4.0.0-beta.0 || >= 4.0.0"
-  checksum: 87d3994dbfe3f7018bf32132e757c9222d31417d1adee1814c08f51567e8a8e6c9a869dc3183701b08a1251d419d391580bec334244f90e7d0fa81632a436da3
+  checksum: da870acae32f2bc92b9d354e0935bce25502cfcb58e107e232114f60834f2190b268a781b4dbf305107b495d1f10e29abaaa357736c4fe38f2b787580ec1ba3a
   languageName: node
   linkType: hard
 
-"@stencil/core@npm:4.0.4":
-  version: 4.0.4
-  resolution: "@stencil/core@npm:4.0.4"
+"@stencil/core@npm:4.2.1":
+  version: 4.2.1
+  resolution: "@stencil/core@npm:4.2.1"
   bin:
     stencil: bin/stencil
-  checksum: 6a3ef9664eea29b7ed640bab5079fbeae7121c85752578fc57cc098845e79d2ffeeecead568c4ede0dfdde72215afaaa237132376ca44085d2a24d698564a98c
+  checksum: 82dfcea4134b5d3b57d0afa98370995f4b1855bc660ce753a945fc73df05d91887a95da3c7d4b156944ac98223a2d8877cf82d14c70d7583810461658b8beab2
   languageName: node
   linkType: hard
 
