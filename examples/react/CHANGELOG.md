@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.45.0](https://github.com/gomah/bulmil/compare/v0.44.0...v0.45.0) (2023-10-04)
+
+
+### Features
+
+* **core:** bump @stencil/core to 4.4.0 ([6648d7a](https://github.com/gomah/bulmil/commit/6648d7ab770e1c631f38ab4ac0249931683264b6))
+
+
+
+
+
 # [0.44.0](https://github.com/gomah/bulmil/compare/v0.43.0...v0.44.0) (2023-09-18)
 
 **Note:** Version bump only for package @bulmil/react-example
