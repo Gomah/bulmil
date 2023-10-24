@@ -2049,8 +2049,8 @@ __metadata:
     "@angular/platform-browser": 15.2.0
     "@angular/platform-browser-dynamic": 15.2.0
     "@angular/router": 15.2.0
-    "@bulmil/angular": 0.45.1
-    "@bulmil/core": 0.45.1
+    "@bulmil/angular": 0.45.2
+    "@bulmil/core": 0.45.2
     "@types/jest": 27.5.2
     "@types/node": 18.14.2
     codelyzer: 6.0.2
@@ -2064,7 +2064,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bulmil/angular@0.45.1, @bulmil/angular@workspace:packages/angular":
+"@bulmil/angular@0.45.2, @bulmil/angular@workspace:packages/angular":
   version: 0.0.0-use.local
   resolution: "@bulmil/angular@workspace:packages/angular"
   dependencies:
@@ -2072,7 +2072,7 @@ __metadata:
     "@angular/compiler": 15.2.0
     "@angular/compiler-cli": 15.2.0
     "@angular/core": 15.2.0
-    "@bulmil/core": 0.45.1
+    "@bulmil/core": 0.45.2
     ng-packagr: 15.2.2
     rimraf: 4.1.2
     rxjs: 7.8.0
@@ -2085,14 +2085,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bulmil/core@0.45.1, @bulmil/core@workspace:packages/core":
+"@bulmil/core@0.45.2, @bulmil/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@bulmil/core@workspace:packages/core"
   dependencies:
     "@creativebulma/bulma-badge": 1.0.1
     "@creativebulma/bulma-divider": 1.1.0
     "@stencil/angular-output-target": 0.8.2
-    "@stencil/core": 4.5.0
+    "@stencil/core": 4.6.0
     "@stencil/eslint-plugin": 0.4.0
     "@stencil/postcss": 2.1.0
     "@stencil/react-output-target": 0.5.3
@@ -2149,8 +2149,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bulmil/next-example@workspace:examples/next"
   dependencies:
-    "@bulmil/core": 0.45.1
-    "@bulmil/react": 0.45.1
+    "@bulmil/core": 0.45.2
+    "@bulmil/react": 0.45.2
     next: 12.3.4
     react: 18.2.0
     react-dom: 18.2.0
@@ -2161,7 +2161,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bulmil/nuxt-example@workspace:examples/nuxt"
   dependencies:
-    "@bulmil/core": 0.45.1
+    "@bulmil/core": 0.45.2
     eslint-config-prettier: 8.6.0
     eslint-plugin-prettier: 4.2.1
     nuxt: 2.16.1
@@ -2174,8 +2174,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bulmil/react-example@workspace:examples/react"
   dependencies:
-    "@bulmil/core": 0.45.1
-    "@bulmil/react": 0.45.1
+    "@bulmil/core": 0.45.2
+    "@bulmil/react": 0.45.2
     react: 17.0.2
     react-dom: 17.0.2
     react-scripts: 4.0.3
@@ -2183,11 +2183,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bulmil/react@0.45.1, @bulmil/react@workspace:packages/react":
+"@bulmil/react@0.45.2, @bulmil/react@workspace:packages/react":
   version: 0.0.0-use.local
   resolution: "@bulmil/react@workspace:packages/react"
   dependencies:
-    "@bulmil/core": 0.45.1
+    "@bulmil/core": 0.45.2
     "@testing-library/jest-dom": 5.16.5
     "@testing-library/react": 13.4.0
     "@types/jest": 27.5.2
@@ -2211,8 +2211,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bulmil/vue-example@workspace:examples/vue"
   dependencies:
-    "@bulmil/core": 0.45.1
-    "@bulmil/vue": 0.45.1
+    "@bulmil/core": 0.45.2
+    "@bulmil/vue": 0.45.2
     "@vue/cli-plugin-typescript": 5.0.8
     "@vue/cli-service": 5.0.8
     sirv-cli: 2.0.2
@@ -2225,11 +2225,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bulmil/vue@0.45.1, @bulmil/vue@workspace:packages/vue":
+"@bulmil/vue@0.45.2, @bulmil/vue@workspace:packages/vue":
   version: 0.0.0-use.local
   resolution: "@bulmil/vue@workspace:packages/vue"
   dependencies:
-    "@bulmil/core": 0.45.1
+    "@bulmil/core": 0.45.2
     "@testing-library/jest-dom": 5.16.5
     "@types/jest": 27.5.2
     "@types/tapable": 2.2.2
@@ -5220,12 +5220,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stencil/core@npm:4.5.0":
-  version: 4.5.0
-  resolution: "@stencil/core@npm:4.5.0"
+"@stencil/core@npm:4.6.0":
+  version: 4.6.0
+  resolution: "@stencil/core@npm:4.6.0"
   bin:
     stencil: bin/stencil
-  checksum: 2bdd960af33a52565c297ef2ac65fed017b2fbe5ec228b2bdaafa48b1d99a6fe41e4c3ffe429437d27f3ea9b410e361714d088cedd6e13bb035f4b96b0310038
+  checksum: a8f8a5c42c4a81417ad1196338c02cd014c502cf22ceeabd528f28eb4ed5757f64d899b221e57e8ea8d7e335fba760424ffa5f5199a3c2d28199da1bf27c9265
   languageName: node
   linkType: hard
 
