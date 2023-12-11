@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.49.0](https://github.com/gomah/bulmil/compare/v0.48.1...v0.49.0) (2023-12-11)
+
+
+### Features
+
+* **core:** bump @stencil/core to 4.8.2 ([2012a08](https://github.com/gomah/bulmil/commit/2012a085785870d1a7896b4ee8c0ae8138dbd3be))
+
+
+
+
+
 ## [0.48.1](https://github.com/gomah/bulmil/compare/v0.48.0...v0.48.1) (2023-11-21)
 
 **Note:** Version bump only for package bulmil
