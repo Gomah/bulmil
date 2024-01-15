@@ -2049,8 +2049,8 @@ __metadata:
     "@angular/platform-browser": "npm:15.2.0"
     "@angular/platform-browser-dynamic": "npm:15.2.0"
     "@angular/router": "npm:15.2.0"
-    "@bulmil/angular": "npm:0.50.0"
-    "@bulmil/core": "npm:0.50.0"
+    "@bulmil/angular": "npm:0.50.1"
+    "@bulmil/core": "npm:0.50.1"
     "@types/jest": "npm:27.5.2"
     "@types/node": "npm:18.14.2"
     codelyzer: "npm:6.0.2"
@@ -2064,7 +2064,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bulmil/angular@npm:0.50.0, @bulmil/angular@workspace:packages/angular":
+"@bulmil/angular@npm:0.50.1, @bulmil/angular@workspace:packages/angular":
   version: 0.0.0-use.local
   resolution: "@bulmil/angular@workspace:packages/angular"
   dependencies:
@@ -2072,7 +2072,7 @@ __metadata:
     "@angular/compiler": "npm:15.2.0"
     "@angular/compiler-cli": "npm:15.2.0"
     "@angular/core": "npm:15.2.0"
-    "@bulmil/core": "npm:0.50.0"
+    "@bulmil/core": "npm:0.50.1"
     ng-packagr: "npm:15.2.2"
     rimraf: "npm:4.1.2"
     rxjs: "npm:7.8.0"
@@ -2085,14 +2085,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bulmil/core@npm:0.50.0, @bulmil/core@workspace:packages/core":
+"@bulmil/core@npm:0.50.1, @bulmil/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@bulmil/core@workspace:packages/core"
   dependencies:
     "@creativebulma/bulma-badge": "npm:1.0.1"
     "@creativebulma/bulma-divider": "npm:1.1.0"
     "@stencil/angular-output-target": "npm:0.8.3"
-    "@stencil/core": "npm:4.9.1"
+    "@stencil/core": "npm:4.10.0"
     "@stencil/eslint-plugin": "npm:0.4.0"
     "@stencil/postcss": "npm:2.1.0"
     "@stencil/react-output-target": "npm:0.5.3"
@@ -2149,8 +2149,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bulmil/next-example@workspace:examples/next"
   dependencies:
-    "@bulmil/core": "npm:0.50.0"
-    "@bulmil/react": "npm:0.50.0"
+    "@bulmil/core": "npm:0.50.1"
+    "@bulmil/react": "npm:0.50.1"
     next: "npm:12.3.4"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
@@ -2161,7 +2161,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bulmil/nuxt-example@workspace:examples/nuxt"
   dependencies:
-    "@bulmil/core": "npm:0.50.0"
+    "@bulmil/core": "npm:0.50.1"
     eslint-config-prettier: "npm:8.6.0"
     eslint-plugin-prettier: "npm:4.2.1"
     nuxt: "npm:2.16.1"
@@ -2174,8 +2174,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bulmil/react-example@workspace:examples/react"
   dependencies:
-    "@bulmil/core": "npm:0.50.0"
-    "@bulmil/react": "npm:0.50.0"
+    "@bulmil/core": "npm:0.50.1"
+    "@bulmil/react": "npm:0.50.1"
     react: "npm:17.0.2"
     react-dom: "npm:17.0.2"
     react-scripts: "npm:4.0.3"
@@ -2183,11 +2183,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bulmil/react@npm:0.50.0, @bulmil/react@workspace:packages/react":
+"@bulmil/react@npm:0.50.1, @bulmil/react@workspace:packages/react":
   version: 0.0.0-use.local
   resolution: "@bulmil/react@workspace:packages/react"
   dependencies:
-    "@bulmil/core": "npm:0.50.0"
+    "@bulmil/core": "npm:0.50.1"
     "@testing-library/jest-dom": "npm:5.16.5"
     "@testing-library/react": "npm:13.4.0"
     "@types/jest": "npm:27.5.2"
@@ -2211,8 +2211,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bulmil/vue-example@workspace:examples/vue"
   dependencies:
-    "@bulmil/core": "npm:0.50.0"
-    "@bulmil/vue": "npm:0.50.0"
+    "@bulmil/core": "npm:0.50.1"
+    "@bulmil/vue": "npm:0.50.1"
     "@vue/cli-plugin-typescript": "npm:5.0.8"
     "@vue/cli-service": "npm:5.0.8"
     sirv-cli: "npm:2.0.2"
@@ -2225,11 +2225,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bulmil/vue@npm:0.50.0, @bulmil/vue@workspace:packages/vue":
+"@bulmil/vue@npm:0.50.1, @bulmil/vue@workspace:packages/vue":
   version: 0.0.0-use.local
   resolution: "@bulmil/vue@workspace:packages/vue"
   dependencies:
-    "@bulmil/core": "npm:0.50.0"
+    "@bulmil/core": "npm:0.50.1"
     "@testing-library/jest-dom": "npm:5.16.5"
     "@types/jest": "npm:27.5.2"
     "@types/tapable": "npm:2.2.2"
@@ -5220,12 +5220,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stencil/core@npm:4.9.1":
-  version: 4.9.1
-  resolution: "@stencil/core@npm:4.9.1"
+"@stencil/core@npm:4.10.0":
+  version: 4.10.0
+  resolution: "@stencil/core@npm:4.10.0"
   bin:
     stencil: bin/stencil
-  checksum: a83936e402783a5c07978a00e21d71265056f19fe206a5fe1681d8d849a81efcb0f315cae0aaeaca3f01c5f41d07b7bab6611ec9f96c099458240720f6bf743d
+  checksum: 84869637067a5aa411f6fb5105125264ef9a03eeec8fd5f8cca422a3648fc067dbc56a43fef3ac42c8bcd8b62f6704a8f7ce20efbf3f5f3c86a216e0e5fbb14f
   languageName: node
   linkType: hard
 
