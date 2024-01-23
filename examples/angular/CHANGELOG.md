@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.52.0](https://github.com/gomah/bulmil/compare/v0.51.0...v0.52.0) (2024-01-23)
+
+**Note:** Version bump only for package @bulmil/angular-example
+
+
+
+
+
 # [0.51.0](https://github.com/gomah/bulmil/compare/v0.50.1...v0.51.0) (2024-01-15)
 
 **Note:** Version bump only for package @bulmil/angular-example
