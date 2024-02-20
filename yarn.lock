@@ -2092,7 +2092,7 @@ __metadata:
     "@creativebulma/bulma-badge": "npm:1.0.1"
     "@creativebulma/bulma-divider": "npm:1.1.0"
     "@stencil/angular-output-target": "npm:0.8.3"
-    "@stencil/core": "npm:4.12.0"
+    "@stencil/core": "npm:4.12.3"
     "@stencil/eslint-plugin": "npm:0.4.0"
     "@stencil/postcss": "npm:2.1.0"
     "@stencil/react-output-target": "npm:0.5.3"
@@ -5220,12 +5220,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stencil/core@npm:4.12.0":
-  version: 4.12.0
-  resolution: "@stencil/core@npm:4.12.0"
+"@stencil/core@npm:4.12.3":
+  version: 4.12.3
+  resolution: "@stencil/core@npm:4.12.3"
   bin:
     stencil: bin/stencil
-  checksum: ad4f1058ac81b42d1c8e9e306f2f270a47a03fdabfaf7db89282f5e28b7b96bcd6f60c4bff9de35bf80fa7b6de062a7c7ed6515209793446c795e50d0cf7090e
+  checksum: 8b7761a11682a2782a7a9382e7f947f1a680e5f158618c1809d9d5f4c72031897b4eb6c1fc1b2cf883c9d20a6e1da6050c4ca005621d57fdffdba4068cc54740
   languageName: node
   linkType: hard
 
