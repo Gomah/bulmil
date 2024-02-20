@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.53.0](https://github.com/gomah/bulmil/compare/v0.52.0...v0.53.0) (2024-02-20)
+
+
+### Features
+
+* **core:** bump @stencil/core to 4.12.0 ([627910a](https://github.com/gomah/bulmil/commit/627910a7c255f27bad748d79445fee83a1d8da3a))
+
+
+
+
+
 # [0.52.0](https://github.com/gomah/bulmil/compare/v0.51.0...v0.52.0) (2024-01-23)
 
 
