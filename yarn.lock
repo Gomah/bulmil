@@ -2049,8 +2049,8 @@ __metadata:
     "@angular/platform-browser": "npm:15.2.0"
     "@angular/platform-browser-dynamic": "npm:15.2.0"
     "@angular/router": "npm:15.2.0"
-    "@bulmil/angular": "npm:0.53.1"
-    "@bulmil/core": "npm:0.53.1"
+    "@bulmil/angular": "npm:0.53.2"
+    "@bulmil/core": "npm:0.53.2"
     "@types/jest": "npm:27.5.2"
     "@types/node": "npm:18.14.2"
     codelyzer: "npm:6.0.2"
@@ -2064,7 +2064,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bulmil/angular@npm:0.53.1, @bulmil/angular@workspace:packages/angular":
+"@bulmil/angular@npm:0.53.2, @bulmil/angular@workspace:packages/angular":
   version: 0.0.0-use.local
   resolution: "@bulmil/angular@workspace:packages/angular"
   dependencies:
@@ -2072,7 +2072,7 @@ __metadata:
     "@angular/compiler": "npm:15.2.0"
     "@angular/compiler-cli": "npm:15.2.0"
     "@angular/core": "npm:15.2.0"
-    "@bulmil/core": "npm:0.53.1"
+    "@bulmil/core": "npm:0.53.2"
     ng-packagr: "npm:15.2.2"
     rimraf: "npm:4.1.2"
     rxjs: "npm:7.8.0"
@@ -2085,18 +2085,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bulmil/core@npm:0.53.1, @bulmil/core@workspace:packages/core":
+"@bulmil/core@npm:0.53.2, @bulmil/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@bulmil/core@workspace:packages/core"
   dependencies:
     "@creativebulma/bulma-badge": "npm:1.0.1"
     "@creativebulma/bulma-divider": "npm:1.1.0"
-    "@stencil/angular-output-target": "npm:0.8.3"
-    "@stencil/core": "npm:4.12.5"
+    "@stencil/angular-output-target": "npm:0.8.4"
+    "@stencil/core": "npm:4.12.6"
     "@stencil/eslint-plugin": "npm:0.4.0"
     "@stencil/postcss": "npm:2.1.0"
     "@stencil/react-output-target": "npm:0.5.3"
-    "@stencil/sass": "npm:3.0.8"
+    "@stencil/sass": "npm:3.0.10"
     "@stencil/svelte-output-target": "npm:0.0.3"
     "@stencil/vue-output-target": "npm:0.8.7"
     "@types/autoprefixer": "npm:10.2.0"
@@ -2149,8 +2149,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bulmil/next-example@workspace:examples/next"
   dependencies:
-    "@bulmil/core": "npm:0.53.1"
-    "@bulmil/react": "npm:0.53.1"
+    "@bulmil/core": "npm:0.53.2"
+    "@bulmil/react": "npm:0.53.2"
     next: "npm:12.3.4"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
@@ -2161,7 +2161,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bulmil/nuxt-example@workspace:examples/nuxt"
   dependencies:
-    "@bulmil/core": "npm:0.53.1"
+    "@bulmil/core": "npm:0.53.2"
     eslint-config-prettier: "npm:8.6.0"
     eslint-plugin-prettier: "npm:4.2.1"
     nuxt: "npm:2.16.1"
@@ -2174,8 +2174,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bulmil/react-example@workspace:examples/react"
   dependencies:
-    "@bulmil/core": "npm:0.53.1"
-    "@bulmil/react": "npm:0.53.1"
+    "@bulmil/core": "npm:0.53.2"
+    "@bulmil/react": "npm:0.53.2"
     react: "npm:17.0.2"
     react-dom: "npm:17.0.2"
     react-scripts: "npm:4.0.3"
@@ -2183,11 +2183,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bulmil/react@npm:0.53.1, @bulmil/react@workspace:packages/react":
+"@bulmil/react@npm:0.53.2, @bulmil/react@workspace:packages/react":
   version: 0.0.0-use.local
   resolution: "@bulmil/react@workspace:packages/react"
   dependencies:
-    "@bulmil/core": "npm:0.53.1"
+    "@bulmil/core": "npm:0.53.2"
     "@testing-library/jest-dom": "npm:5.16.5"
     "@testing-library/react": "npm:13.4.0"
     "@types/jest": "npm:27.5.2"
@@ -2211,8 +2211,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bulmil/vue-example@workspace:examples/vue"
   dependencies:
-    "@bulmil/core": "npm:0.53.1"
-    "@bulmil/vue": "npm:0.53.1"
+    "@bulmil/core": "npm:0.53.2"
+    "@bulmil/vue": "npm:0.53.2"
     "@vue/cli-plugin-typescript": "npm:5.0.8"
     "@vue/cli-service": "npm:5.0.8"
     sirv-cli: "npm:2.0.2"
@@ -2225,11 +2225,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bulmil/vue@npm:0.53.1, @bulmil/vue@workspace:packages/vue":
+"@bulmil/vue@npm:0.53.2, @bulmil/vue@workspace:packages/vue":
   version: 0.0.0-use.local
   resolution: "@bulmil/vue@workspace:packages/vue"
   dependencies:
-    "@bulmil/core": "npm:0.53.1"
+    "@bulmil/core": "npm:0.53.2"
     "@testing-library/jest-dom": "npm:5.16.5"
     "@types/jest": "npm:27.5.2"
     "@types/tapable": "npm:2.2.2"
@@ -5211,21 +5211,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stencil/angular-output-target@npm:0.8.3":
-  version: 0.8.3
-  resolution: "@stencil/angular-output-target@npm:0.8.3"
+"@stencil/angular-output-target@npm:0.8.4":
+  version: 0.8.4
+  resolution: "@stencil/angular-output-target@npm:0.8.4"
   peerDependencies:
     "@stencil/core": ">=2.0.0 || >=3 || >= 4.0.0-beta.0 || >= 4.0.0"
-  checksum: a85123c0f1c9942067e29a478c0dd8b096bae3da8e8d6a0cdf8c83dd2248acce8a26b589594dcc8afc97094d56f11bd118bd201825a4aad48974d3c50558dfad
+  checksum: 711917a19c7dfbdb90acf4b7f6f2a5be0a4fc248fc52c661f637c785f17f24eb4b3c1ef376e9996c6fc51081f3c734c91fc37a7fb3276445d848cc7ce4d7179d
   languageName: node
   linkType: hard
 
-"@stencil/core@npm:4.12.5":
-  version: 4.12.5
-  resolution: "@stencil/core@npm:4.12.5"
+"@stencil/core@npm:4.12.6":
+  version: 4.12.6
+  resolution: "@stencil/core@npm:4.12.6"
   bin:
     stencil: bin/stencil
-  checksum: 90b93ea648290aedf68cceccfd76a4df201c583770f04575dc740b0def8e44969ced9114324dee294b126984ef2ccf7bf2c08cb2e9727b54c7a45df134f5cba9
+  checksum: a4a52700771c5a1f3c94e1f808ebeaa1180c80837159e743525a4c9678e86f30de1937f244c7899941af319365de08db3abab761c00971fa5703374e3f94727b
   languageName: node
   linkType: hard
 
@@ -5266,12 +5266,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stencil/sass@npm:3.0.8":
-  version: 3.0.8
-  resolution: "@stencil/sass@npm:3.0.8"
+"@stencil/sass@npm:3.0.10":
+  version: 3.0.10
+  resolution: "@stencil/sass@npm:3.0.10"
   peerDependencies:
     "@stencil/core": ">=2.0.0 || >=3.0.0-beta.0 || >= 4.0.0-beta.0 || >= 4.0.0"
-  checksum: e6ccd347da81d0efb6e87985f75603a9df930ba5e12d0ba557c12b50fd9579ef9b401f5c44646eb582a3ddd9e4f1a1e6acbaaa97d85b18e1d4bad5dbfa363b64
+  checksum: f581b86ef36a9eb50542ae9c0e6335255a3c6d2cbb5c0832d32f945e5c005527d3b9ae889316786ba343cc094e1e013146f8bb8c021ebdc7465b251ad478e158
   languageName: node
   linkType: hard
 
