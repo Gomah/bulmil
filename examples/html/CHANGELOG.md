@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.56.0](https://github.com/gomah/bulmil/compare/v0.55.1...v0.56.0) (2024-04-08)
+
+**Note:** Version bump only for package @bulmil/html-example
+
+
+
+
+
 # [0.55.0](https://github.com/gomah/bulmil/compare/v0.54.0...v0.55.0) (2024-04-01)
 
 **Note:** Version bump only for package @bulmil/html-example
