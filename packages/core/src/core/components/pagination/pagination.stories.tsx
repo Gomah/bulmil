@@ -1,4 +1,3 @@
-import { boolean, select } from '@storybook/addon-knobs';
 import { html, TemplateResult } from 'lit-html';
 
 export default {
@@ -6,28 +5,14 @@ export default {
   component: 'bm-pagination',
 };
 
-// Knobs
-const alignments = {
-  Centered: 'is-centered',
-  Right: 'is-right',
-  None: null,
-};
-
-const sizes = {
-  Small: 'is-small',
-  Medium: 'is-medium',
-  Large: 'is-large',
-  None: null,
-};
-
-export const Example = (): TemplateResult => {
+export const Example = (props): TemplateResult => {
   return html`
     <bm-section>
       <bm-container>
         <bm-pagination
-          is-rounded=${boolean('Rounded', false)}
-          alignment=${select('Alignment', alignments, null)}
-          size=${select('Size', sizes, null)}
+          is-rounded="${props.isRounded}"
+          alignment="${props.alignment}"
+          size="${props.size}"
         >
           <a class="pagination-previous">Previous</a>
           <a class="pagination-next">Next page</a>
@@ -58,4 +43,28 @@ export const Example = (): TemplateResult => {
       </bm-container>
     </bm-section>
   `;
+};
+
+Example.args = { size: null, alignment: null, isRounded: false };
+
+Example.argTypes = {
+  size: {
+    options: ['is-small', 'is-medium', 'is-large', null],
+    control: {
+      type: 'select',
+    },
+  },
+
+  alignment: {
+    options: ['is-centered', 'is-right', null],
+    control: {
+      type: 'select',
+    },
+  },
+
+  isRounded: {
+    control: {
+      type: 'boolean',
+    },
+  },
 };

@@ -1,48 +1,71 @@
-import { select, boolean } from '@storybook/addon-knobs';
 import { html, TemplateResult } from 'lit-html';
-
 export default {
   title: 'Elements/Button',
   component: 'bm-button',
 };
 
-// Knobs
-const sizes = {
-  small: 'is-small',
-  normal: 'is-normal',
-  medium: 'is-medium',
-  large: 'is-large',
-  none: null,
-};
-
-const colors = {
-  primary: 'is-primary',
-  link: 'is-link',
-  info: 'is-info',
-  success: 'is-success',
-  danger: 'is-danger',
-  warning: 'is-warning',
-  white: 'is-white',
-  light: 'is-light',
-  dark: 'is-dark',
-  black: 'is-black',
-  text: 'is-text',
-  ghost: 'is-ghost',
-  none: null,
-};
-
-export const Example = (): TemplateResult => {
+export const Example = (props): TemplateResult => {
   return html`
     <bm-section class="story-center">
       <bm-button
-        size=${select('Size', sizes, null)}
-        color=${select('Color', colors, null)}
-        is-light=${boolean('Is light', false)}
-        is-outlined=${boolean('Is outlined', false)}
-        disabled=${boolean('Disabled', false)}
+        size="${props.size}"
+        color="${props.color}"
+        is-light="${props.isLight}"
+        is-outlined="${props.isOutlined}"
+        disabled="${props.disabled}"
       >
         Button
       </bm-button>
     </bm-section>
   `;
+};
+
+Example.args = { size: null, color: null, isLight: false, isOutlined: false, disabled: false };
+
+Example.argTypes = {
+  size: {
+    options: ['is-small', 'is-normal', 'is-medium', 'is-large', null],
+    control: {
+      type: 'select',
+    },
+  },
+
+  color: {
+    options: [
+      'is-primary',
+      'is-link',
+      'is-info',
+      'is-success',
+      'is-danger',
+      'is-warning',
+      'is-white',
+      'is-light',
+      'is-dark',
+      'is-black',
+      'is-text',
+      'is-ghost',
+      null,
+    ],
+    control: {
+      type: 'select',
+    },
+  },
+
+  disabled: {
+    control: {
+      type: 'boolean',
+    },
+  },
+
+  isLight: {
+    control: {
+      type: 'boolean',
+    },
+  },
+
+  isOutlined: {
+    control: {
+      type: 'boolean',
+    },
+  },
 };

@@ -1,4 +1,3 @@
-import { boolean, text, select } from '@storybook/addon-knobs';
 import { html, TemplateResult } from 'lit-html';
 
 export default {
@@ -6,48 +5,19 @@ export default {
   component: 'bm-select',
 };
 
-export const Example = (): TemplateResult => {
+export const Example = (props): TemplateResult => {
   return html`
     <bm-section class="story-center">
       <bm-field>
         <bm-select
-          state="${select(
-            'State',
-            {
-              'is-hovered': 'is-hovered',
-              'is-focused': 'is-focused',
-              'Not set': null,
-            },
-            null
-          )}"
-          size="${select(
-            'Size',
-            {
-              'is-small': 'is-small',
-              'is-normal': 'is-normal',
-              'is-medium': 'is-medium',
-              'is-large': 'is-large',
-              'Not set': null,
-            },
-            null
-          )}"
-          color="${select(
-            'Color',
-            {
-              'is-primary': 'is-primary',
-              'is-info': 'is-info',
-              'is-success': 'is-success',
-              'is-warning': 'is-warning',
-              'is-danger': 'is-danger',
-              'Not set': null,
-            },
-            null
-          )}"
-          is-rounded="${boolean('Rounded', false)}"
-          is-loading="${boolean('Loading', false)}"
-          is-multiple="${boolean('Multiple', false)}"
-          icon="${text('Icon', '')}"
-          value="${text('Value', '')}"
+          state="${props.state}"
+          size="${props.size}"
+          color="${props.color}"
+          is-rounded="${props.isRounded}"
+          is-loading="${props.isLoading}"
+          is-multiple="${props.isMultiple}"
+          icon="${props.icon}"
+          value="${props.value}"
         >
           <option value="dropdown">Select dropdown</option>
           <option value="options">With options</option>
@@ -55,4 +25,63 @@ export const Example = (): TemplateResult => {
       </bm-field>
     </bm-section>
   `;
+};
+
+Example.args = {
+  value: '',
+  icon: '',
+  isMultiple: false,
+  isLoading: false,
+  isRounded: false,
+  state: null,
+  size: null,
+  color: null,
+};
+
+Example.argTypes = {
+  size: {
+    options: ['is-small', 'is-normal', 'is-medium', 'is-large', null],
+    control: {
+      type: 'select',
+    },
+  },
+
+  state: {
+    options: ['is-hovered', 'is-focused', null],
+    control: {
+      type: 'select',
+    },
+  },
+
+  color: {
+    options: ['is-primary', 'is-info', 'is-success', 'is-danger', 'is-warning', null],
+    control: {
+      type: 'select',
+    },
+  },
+
+  isMultiple: {
+    control: {
+      type: 'boolean',
+    },
+  },
+
+  isLoading: {
+    control: {
+      type: 'boolean',
+    },
+  },
+
+  isRounded: {
+    control: {
+      type: 'boolean',
+    },
+  },
+
+  value: {
+    control: 'text',
+  },
+  icon: {
+    control: 'text',
+  },
 };

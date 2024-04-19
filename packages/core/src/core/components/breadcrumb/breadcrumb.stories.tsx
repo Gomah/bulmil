@@ -1,37 +1,18 @@
 import { html, TemplateResult } from 'lit-html';
-import { boolean, select } from '@storybook/addon-knobs';
 
 export default {
   title: 'Components/Breadcrumb',
   component: 'bm-breadcrumb',
 };
 
-export const Example = (): TemplateResult => {
-  const separators = {
-    'has-arrow-separator': 'has-arrow-separator',
-    'has-bullet-separator': 'has-bullet-separator',
-    'has-dot-separator': 'has-dot-separator',
-    'has-succeeds-separator': 'has-succeeds-separator',
-    None: null,
-  };
-
-  const sizes = {
-    Small: 'is-small',
-    Medium: 'is-medium',
-    Large: 'is-large',
-    None: null,
-  };
+export const Example = (props): TemplateResult => {
   return html`
     <bm-section>
       <bm-container>
         <bm-breadcrumb
-          alignment=${select(
-            'Alignment',
-            { 'is-centered': 'is-centered', 'is-right': 'is-right', 'Not set': null },
-            null
-          )}
-          separator=${select('Separator', separators, null)}
-          size=${select('Size', sizes, null)}
+          alignment="${props.alignment}"
+          separator="${props.separator}"
+          size="${props.size}"
         >
           <ul>
             <li><a href="#">Bulmil</a></li>
@@ -43,4 +24,33 @@ export const Example = (): TemplateResult => {
       </bm-container>
     </bm-section>
   `;
+};
+
+Example.args = { alignment: null, size: null, separator: null };
+
+Example.argTypes = {
+  alignment: {
+    options: ['is-centered', 'is-right', null],
+    control: {
+      type: 'select',
+    },
+  },
+  size: {
+    options: ['is-small', 'is-medium', 'is-large', null],
+    control: {
+      type: 'select',
+    },
+  },
+  separator: {
+    options: [
+      'has-arrow-separator',
+      'has-bullet-separator',
+      'has-dot-separator',
+      'has-succeeds-separator',
+      null,
+    ],
+    control: {
+      type: 'select',
+    },
+  },
 };

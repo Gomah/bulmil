@@ -1,4 +1,3 @@
-import { boolean } from '@storybook/addon-knobs';
 import { html, TemplateResult } from 'lit-html';
 
 export default {
@@ -6,14 +5,14 @@ export default {
   component: 'bm-dropdown',
 };
 
-export const Example = (): TemplateResult => {
+export const Example = (props): TemplateResult => {
   return html`
     <div class="story-center">
       <bm-dropdown
-        is-active="${boolean('Active', false)}"
-        is-hoverable="${boolean('Hoverable', false)}"
-        is-right="${boolean('Right aligned', false)}"
-        is-up="${boolean('Is UP?', false)}"
+        is-active="${props.active}"
+        is-hoverable="${props.isHoverable}"
+        is-right="${props.isRight}"
+        is-up="${props.isUp}"
       >
         <bm-button slot="trigger" color="is-primary" size="is-medium">Dropdown button</bm-button>
 
@@ -28,14 +27,14 @@ export const Example = (): TemplateResult => {
   `;
 };
 
-export const ContentType = (): TemplateResult => {
+export const ContentType = (props): TemplateResult => {
   return html`
     <div class="story-center">
       <bm-dropdown
-        is-active="${boolean('Active', false)}"
-        is-hoverable="${boolean('Hoverable', false)}"
-        is-right="${boolean('Right aligned', false)}"
-        is-up="${boolean('Is UP?', false)}"
+        is-active="${props.active}"
+        is-hoverable="${props.isHoverable}"
+        is-right="${props.isRight}"
+        is-up="${props.isUp}"
       >
         <bm-button slot="trigger" color="is-primary" size="is-medium">Content</bm-button>
 
@@ -51,4 +50,54 @@ export const ContentType = (): TemplateResult => {
       </bm-dropdown>
     </div>
   `;
+};
+
+Example.args = { active: false, isHoverable: false, isRight: false, isUp: false };
+
+Example.argTypes = {
+  active: {
+    control: {
+      type: 'boolean',
+    },
+  },
+  isHoverable: {
+    control: {
+      type: 'boolean',
+    },
+  },
+  isRight: {
+    control: {
+      type: 'boolean',
+    },
+  },
+  isUp: {
+    control: {
+      type: 'boolean',
+    },
+  },
+};
+
+ContentType.args = { active: false, isHoverable: false, isRight: false, isUp: false };
+
+ContentType.argTypes = {
+  active: {
+    control: {
+      type: 'boolean',
+    },
+  },
+  isHoverable: {
+    control: {
+      type: 'boolean',
+    },
+  },
+  isRight: {
+    control: {
+      type: 'boolean',
+    },
+  },
+  isUp: {
+    control: {
+      type: 'boolean',
+    },
+  },
 };

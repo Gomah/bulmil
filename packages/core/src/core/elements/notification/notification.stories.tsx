@@ -1,4 +1,3 @@
-import { boolean, select } from '@storybook/addon-knobs';
 import { html, TemplateResult } from 'lit-html';
 
 export default {
@@ -6,27 +5,30 @@ export default {
   component: 'bm-notification',
 };
 
-const colors = {
-  'is-primary': 'is-primary',
-  'is-link': 'is-link',
-  'is-info': 'is-info',
-  'is-success': 'is-success',
-  'is-warning': 'is-warning',
-  'is-danger': 'is-danger',
-  none: null,
-};
-
-export const Example = (): TemplateResult => {
+export const Example = (props): TemplateResult => {
   return html`
     <bm-section class="story-center">
       <bm-container>
-        <bm-notification
-          color=${select('Color', colors, null)}
-          dismissable="${boolean('Dismissable', false)}"
-        >
+        <bm-notification color="${props.color}" dismissable="${props.dismissable}">
           <h2 class="subtitle">Notification</h2>
         </bm-notification>
       </bm-container>
     </bm-section>
   `;
+};
+
+Example.args = { color: null, dismissable: false };
+
+Example.argTypes = {
+  color: {
+    options: ['is-primary', 'is-link', 'is-info', 'is-success', 'is-warning', 'is-danger', null],
+    control: {
+      type: 'select',
+    },
+  },
+  dismissable: {
+    control: {
+      type: 'boolean',
+    },
+  },
 };

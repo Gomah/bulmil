@@ -1,4 +1,3 @@
-import { boolean, select } from '@storybook/addon-knobs';
 import { html, TemplateResult } from 'lit-html';
 
 export default {
@@ -6,19 +5,29 @@ export default {
   component: 'bm-tags',
 };
 
-const sizes = {
-  'are-medium': 'are-medium',
-  'are-large': 'are-large',
-  none: null,
-};
-
-export const Example = (): TemplateResult => {
+export const Example = (props): TemplateResult => {
   return html`
     <bm-section class="story-center">
-      <bm-tags size="${select('Size', sizes, null)}" has-addons="${boolean('Has addons', false)}">
+      <bm-tags size="${props.size}" has-addons="${props.hasAddons}">
         <bm-tag color="is-primary"> Primary </bm-tag>
         <bm-tag color="is-dark"> Dark </bm-tag>
       </bm-tags>
     </bm-section>
   `;
+};
+
+Example.args = { size: null, hasAddons: false };
+
+Example.argTypes = {
+  size: {
+    options: ['are-medium', 'are-large', null],
+    control: {
+      type: 'select',
+    },
+  },
+  hasAddons: {
+    control: {
+      type: 'boolean',
+    },
+  },
 };

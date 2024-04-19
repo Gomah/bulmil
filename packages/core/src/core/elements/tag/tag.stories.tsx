@@ -1,4 +1,3 @@
-import { select, text } from '@storybook/addon-knobs';
 import { html, TemplateResult } from 'lit-html';
 
 export default {
@@ -6,41 +5,14 @@ export default {
   component: 'bm-tag',
 };
 
-const colors = {
-  'is-black': 'is-black',
-  'is-dark': 'is-dark',
-  'is-light': 'is-light',
-  'is-white': 'is-white',
-  'is-primary': 'is-primary',
-  'is-link': 'is-link',
-  'is-info': 'is-info',
-  'is-success': 'is-success',
-  'is-warning': 'is-warning',
-  'is-danger': 'is-danger',
-  none: null,
-};
-
-const sizes = {
-  'is-normal': 'is-normal',
-  'is-medium': 'is-medium',
-  'is-large': 'is-large',
-  none: null,
-};
-
-const modifiers = {
-  'is-rounded': 'is-rounded',
-  'is-delete': 'is-delete',
-  none: null,
-};
-
-export const Example = (): TemplateResult => {
+export const Example = (props): TemplateResult => {
   return html`
     <bm-section class="story-center">
       <bm-tag
-        color="${select('Color', colors, 'is-primary')}"
-        size="${select('Size', sizes, null)}"
-        tag="${text('Tag', 'span')}"
-        modifier="${select('Modifier', modifiers, null)}"
+        color="${props.color}"
+        size="${props.size}"
+        tag="${props.tag}"
+        modifier="${props.modifier}"
       >
         Tag
       </bm-tag>
@@ -77,4 +49,39 @@ export const Sizes = (): TemplateResult => {
       </bm-tags>
     </bm-section>
   `;
+};
+
+Example.args = { color: null, size: null, tag: 'span', modifier: null };
+
+Example.argTypes = {
+  color: {
+    options: [
+      'is-black',
+      'is-dark',
+      'is-light',
+      'is-white',
+      'is-primary',
+      'is-link',
+      'is-info',
+      'is-success',
+      'is-warning',
+      'is-danger',
+      null,
+    ],
+    control: {
+      type: 'select',
+    },
+  },
+  size: {
+    options: ['is-normal', 'is-medium', 'is-large', null],
+    control: {
+      type: 'select',
+    },
+  },
+  modifier: {
+    options: ['is-rounded', 'is-delete', null],
+    control: {
+      type: 'select',
+    },
+  },
 };

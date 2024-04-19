@@ -1,4 +1,3 @@
-import { text, select, boolean } from '@storybook/addon-knobs';
 import { html, TemplateResult } from 'lit-html';
 
 export default {
@@ -6,55 +5,97 @@ export default {
   component: 'bm-file',
 };
 
-export const Example = (): TemplateResult => {
+export const Example = (props): TemplateResult => {
   return html`
     <bm-section>
       <bm-container>
         <bm-field>
           <bm-file
             name="example"
-            placeholder="${text('Placeholder', 'Choose a file...')}"
-            color="${select(
-              'Color',
-              {
-                'is-white': 'is-white',
-                'is-black': 'is-black',
-                'is-light': 'is-light',
-                'is-dark': 'is-dark',
-                'is-primary': 'is-primary',
-                'is-link': 'is-link',
-                'is-info': 'is-info',
-                'is-success': 'is-success',
-                'is-warning': 'is-warning',
-                'is-danger': 'is-danger',
-              },
-              null
-            )}"
-            size="${select(
-              'Size',
-              {
-                'is-small': 'is-small',
-                'is-medium': 'is-medium',
-                'is-large': 'is-large',
-              },
-              null
-            )}"
-            alignment="${select(
-              'Alignment',
-              {
-                'is-centered': 'is-centered',
-                'is-right': 'is-right',
-              },
-              null
-            )}"
-            is-right="${boolean('Move the CTA to the right side', false)}"
-            is-fullwidth="${boolean('Expand the name to fill up the space', false)}"
-            is-boxed="${boolean('Boxed block', false)}"
-            has-name="${boolean('Has name', false)}"
+            placeholder="${props.placeholder}"
+            color="${props.color}"
+            size="${props.size}"
+            alignment="${props.alignment}"
+            is-right="${props.isRight}"
+            is-fullwidth="${props.isFullWidth}"
+            is-boxed="${props.isBoxed}"
+            has-name="${props.hasName}"
           >
           </bm-file>
         </bm-field>
       </bm-container>
     </bm-section>
   `;
+};
+
+Example.args = {
+  placeholder: 'Choose a file...',
+  alignment: null,
+  size: null,
+  color: null,
+  isRight: false,
+  isFullWidth: false,
+  isBoxed: false,
+  hasName: false,
+};
+
+Example.argTypes = {
+  alignment: {
+    options: ['is-centered', 'is-right', null],
+    control: {
+      type: 'select',
+    },
+  },
+  size: {
+    options: ['is-small', 'is-medium', 'is-large', null],
+    control: {
+      type: 'select',
+    },
+  },
+  color: {
+    options: [
+      'is-white',
+      'is-black',
+      'is-light',
+      'is-dark',
+      'is-primary',
+      'is-link',
+      'is-info',
+      'is-success',
+      'is-warning',
+      'is-danger',
+      null,
+    ],
+    control: {
+      type: 'select',
+    },
+  },
+
+  placeholder: {
+    control: 'text',
+  },
+
+  isRight: {
+    control: {
+      type: 'boolean',
+    },
+  },
+
+  isFullWidth: {
+    control: {
+      type: 'boolean',
+    },
+  },
+
+  isBoxed: {
+    control: {
+      type: 'boolean',
+    },
+  },
+
+  hasName: {
+    control: {
+      type: 'boolean',
+    },
+  },
 };

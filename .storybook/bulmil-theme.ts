@@ -1,4 +1,4 @@
-import { create } from '@storybook/theming';
+import { create } from '@storybook/theming/create';
 
 export const bulmilTheme = create({
   base: 'light',
@@ -33,6 +33,6 @@ export const bulmilTheme = create({
   inputBorderRadius: 4,
 
   brandTitle: 'Bulmil',
-  brandUrl: 'https://bulmil.netlify.com',
+  brandUrl: 'https://bulmil.vercel.app',
   // brandImage: ''
 });

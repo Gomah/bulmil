@@ -1,4 +1,3 @@
-import { boolean, select, text } from '@storybook/addon-knobs';
 import { html, TemplateResult } from 'lit-html';
 
 export default {
@@ -6,33 +5,53 @@ export default {
   component: 'bm-divider',
 };
 
-const alignments = {
-  left: 'is-left',
-  right: 'is-right',
-  none: null,
-};
-
-const colors = {
-  info: 'is-info',
-  success: 'is-success',
-  warning: 'is-warning',
-  danger: 'is-danger',
-  none: null,
-};
-
-export const Example = (): TemplateResult => {
+export const Example = (props): TemplateResult => {
   return html`
     <bm-section>
       <bm-container>
         <bm-divider
-          alignment="${select('Alignment', alignments, null)}"
-          color="${select('Color', colors, null)}"
-          is-light="${boolean('Is Light', false)}"
-          is-vertical="${boolean('Is vertical', false)}"
+          alignment="${props.alignment}"
+          color="${props.color}"
+          is-light="${props.isLight}"
+          is-vertical="${props.isVertical}"
         >
-          ${text('Slot', 'OR')}
+          ${props.slot}
         </bm-divider>
       </bm-container>
     </bm-section>
   `;
+};
+
+Example.args = { alignment: null, color: null, isLight: false, isVertical: false, slot: 'OR' };
+
+Example.argTypes = {
+  alignment: {
+    options: ['is-left', 'is-right', null],
+    control: {
+      type: 'select',
+    },
+  },
+
+  color: {
+    options: ['is-info', 'is-success', 'is-danger', 'is-warning', null],
+    control: {
+      type: 'select',
+    },
+  },
+
+  isLight: {
+    control: {
+      type: 'boolean',
+    },
+  },
+
+  isVertical: {
+    control: {
+      type: 'boolean',
+    },
+  },
+
+  slot: {
+    control: 'text',
+  },
 };

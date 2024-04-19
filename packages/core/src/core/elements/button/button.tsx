@@ -6,7 +6,7 @@ import { Component, Prop, h, JSX, ComponentInterface } from '@stencil/core';
 })
 export class Button implements ComponentInterface {
   /**
-   * Is disabled?
+   * Is disabled
    */
   @Prop() disabled = false;
 
@@ -34,51 +34,61 @@ export class Button implements ComponentInterface {
 
   /**
    * Display the button in full-width
+   * @default false
    */
   @Prop() isFullwidth = false;
 
   /**
    * Is outlined
+   * @default false
    */
   @Prop() isOutlined = false;
 
   /**
    * Is light
+   * @default false
    */
   @Prop() isLight = false;
 
   /**
    * Is inverted
+   * @default false
    */
   @Prop() isInverted = false;
 
   /**
    * Rounded button
+   * @default false
    */
   @Prop() isRounded = false;
 
   /**
    * Hovered state
+   * @default false
    */
   @Prop() isHovered = false;
 
   /**
    * Focused state
+   * @default false
    */
   @Prop() isFocused = false;
 
   /**
    * Active state
+   * @default false
    */
   @Prop() isActive = false;
 
   /**
    * Static
+   * @default false
    */
   @Prop() isStatic = false;
 
   /**
    * Loading state
+   * @default false
    */
   @Prop() isLoading = false;
 

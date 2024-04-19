@@ -1,4 +1,3 @@
-import { boolean, select } from '@storybook/addon-knobs';
 import { html, TemplateResult } from 'lit-html';
 
 export default {
@@ -6,36 +5,16 @@ export default {
   component: 'bm-tabs',
 };
 
-// Knobs
-const alignments = {
-  Centered: 'is-centered',
-  Right: 'is-right',
-  None: null,
-};
-
-const sizes = {
-  Small: 'is-small',
-  Medium: 'is-medium',
-  Large: 'is-large',
-  None: null,
-};
-
-const styles = {
-  Boxed: 'is-boxed',
-  Toggle: 'is-toggle',
-  None: null,
-};
-
-export const Example = (): TemplateResult => {
+export const Example = (props): TemplateResult => {
   return html`
     <bm-section>
       <bm-container>
         <bm-tabs
-          is-rounded=${boolean('Rounded', false)}
-          is-fullwidth=${boolean('Fullwidth', false)}
-          tab-style=${select('Style', styles, null)}
-          alignment=${select('Alignment', alignments, null)}
-          size=${select('Size', sizes, null)}
+          is-rounded=${props.isRounded}
+          is-fullwidth=${props.isFullWidth}
+          tab-style=${props.tabStyle}
+          alignment=${props.alignment}
+          size=${props.size}
         >
           <ul>
             <li class="is-active">
@@ -55,4 +34,47 @@ export const Example = (): TemplateResult => {
       </bm-container>
     </bm-section>
   `;
+};
+
+Example.args = {
+  size: null,
+  isRounded: false,
+  isFullWidth: false,
+  alignment: null,
+  tabStyle: null,
+};
+
+Example.argTypes = {
+  alignment: {
+    options: ['is-centered', 'is-right', null],
+    control: {
+      type: 'select',
+    },
+  },
+
+  size: {
+    options: ['is-small', 'is-medium', 'is-large', null],
+    control: {
+      type: 'select',
+    },
+  },
+
+  tabStyle: {
+    options: ['is-boxed', 'is-toggle', null],
+    control: {
+      type: 'select',
+    },
+  },
+
+  isRounded: {
+    control: {
+      type: 'boolean',
+    },
+  },
+
+  isFullWidth: {
+    control: {
+      type: 'boolean',
+    },
+  },
 };

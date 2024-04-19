@@ -1,4 +1,3 @@
-import { select, boolean } from '@storybook/addon-knobs';
 import { html, TemplateResult } from 'lit-html';
 
 export default {
@@ -6,39 +5,15 @@ export default {
   component: 'bm-badge',
 };
 
-const colors = {
-  primary: 'is-primary',
-  info: 'is-info',
-  success: 'is-success',
-  danger: 'is-danger',
-  warning: 'is-warning',
-  white: 'is-white',
-  dark: 'is-dark',
-  black: 'is-black',
-  none: null,
-};
-
-const positions = {
-  'is-top-left': 'is-top-left',
-  'is-top': 'is-top',
-  'is-top-right': 'is-top-right',
-  'is-right': 'is-right',
-  'is-bottom-right': 'is-bottom-right',
-  'is-bottom': 'is-bottom',
-  'is-bottom-left': 'is-bottom-left',
-  'is-left': 'is-left',
-  none: null,
-};
-
-export const Example = (): TemplateResult => {
+export const Example = (props): TemplateResult => {
   return html`
     <bm-section class="story-center">
       <bm-button size="is-large">
         <bm-badge
-          color=${select('Color', colors, null)}
-          position=${select('Position', positions, null)}
-          is-light=${boolean('Is light', false)}
-          is-outlined=${boolean('Is outlined', false)}
+          color="${props.color}"
+          position="${props.position}"
+          is-light=${props.isLight}
+          is-outlined=${props.isOutlined}
         >
           3
         </bm-badge>
@@ -46,4 +21,54 @@ export const Example = (): TemplateResult => {
       </bm-button>
     </bm-section>
   `;
+};
+
+Example.args = { position: null, isLight: false, color: null, isOutlined: false };
+
+Example.argTypes = {
+  color: {
+    options: [
+      'is-primary',
+      'is-info',
+      'is-success',
+      'is-danger',
+      'is-warning',
+      'is-white',
+      'is-dark',
+      'is-black',
+      null,
+    ],
+    control: {
+      type: 'select',
+    },
+  },
+
+  position: {
+    options: [
+      'is-top-left',
+      'is-top',
+      'is-top-right',
+      'is-right',
+      'is-bottom-right',
+      'is-bottom',
+      'is-bottom-left',
+      'is-left',
+      null,
+    ],
+    control: {
+      type: 'select',
+    },
+  },
+
+  isLight: {
+    control: {
+      type: 'boolean',
+    },
+  },
+
+  isOutlined: {
+    control: {
+      type: 'boolean',
+    },
+  },
 };

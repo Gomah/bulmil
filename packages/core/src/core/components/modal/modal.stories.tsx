@@ -1,4 +1,3 @@
-import { boolean } from '@storybook/addon-knobs';
 import { html, TemplateResult } from 'lit-html';
 
 export default {
@@ -6,14 +5,11 @@ export default {
   component: 'bm-modal',
 };
 
-export const Example = (): TemplateResult => {
+export const Example = (props): TemplateResult => {
   return html`
     <bm-section>
       <bm-container>
-        <bm-modal
-          is-active="${boolean('Active', true)}"
-          has-modal-card="${boolean('Has Modal Card', false)}"
-        >
+        <bm-modal is-active="${props.isActive}" has-modal-card="${props.hasModalCard}">
           <bm-box>
             <article class="media">
               <div class="media-left">
@@ -58,13 +54,28 @@ export const Example = (): TemplateResult => {
   `;
 };
 
-export const ModalCard = (): TemplateResult => {
+Example.args = { isActive: false, hasModalCard: false };
+
+Example.argTypes = {
+  isActive: {
+    control: {
+      type: 'boolean',
+    },
+  },
+  hasModalCard: {
+    control: {
+      type: 'boolean',
+    },
+  },
+};
+
+export const ModalCard = (props): TemplateResult => {
   return html`
     <bm-container>
       <bm-container>
         <bm-modal
-          is-active="${boolean('Active', true)}"
-          has-modal-card="${boolean('Has Modal Card', true)}"
+          is-active="${props.isActive}"
+          has-modal-card="${props.hasModalCard}"
         >
           <header class="modal-card-head">
             <p class="modal-card-title">Modal title</p>
@@ -174,4 +185,19 @@ export const ModalCard = (): TemplateResult => {
       </bm-container>
     </bm-section>
   `;
+};
+
+ModalCard.args = { isActive: false, hasModalCard: false };
+
+ModalCard.argTypes = {
+  isActive: {
+    control: {
+      type: 'boolean',
+    },
+  },
+  hasModalCard: {
+    control: {
+      type: 'boolean',
+    },
+  },
 };

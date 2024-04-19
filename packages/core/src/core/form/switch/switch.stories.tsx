@@ -1,4 +1,3 @@
-import { boolean, select } from '@storybook/addon-knobs';
 import { html, TemplateResult } from 'lit-html';
 
 export default {
@@ -6,36 +5,77 @@ export default {
   component: 'bm-switch',
 };
 
-const sizes = {
-  small: 'is-small',
-  medium: 'is-medium',
-  large: 'is-large',
-  none: null,
-};
-
-const colors = {
-  success: 'is-success',
-  warning: 'is-warning',
-  danger: 'is-danger',
-  info: 'is-info',
-  none: null,
-};
-
-export const Example = (): TemplateResult => {
+export const Example = (props): TemplateResult => {
   return html`
     <bm-section class="story-center">
       <bm-field>
         <bm-switch
-          checked="${boolean('Checked', false)}"
-          size="${select('Size', sizes, null)}"
-          color="${select('Color', colors, null)}"
-          is-rounded="${boolean('Rounded', false)}"
-          is-thin="${boolean('Thin', false)}"
-          is-outlined="${boolean('Outlined', false)}"
-          disabled="${boolean('Disabled', false)}"
+          checked="${props.checked}"
+          size="${props.size}"
+          color="${props.color}"
+          is-rounded="${props.isRounded}"
+          is-thin="${props.isThin}"
+          is-outlined="${props.isOutlined}"
+          disabled="${props.disabled}"
           >Example</bm-switch
         >
       </bm-field>
     </bm-section>
   `;
+};
+
+Example.args = {
+  checked: false,
+  size: null,
+  color: null,
+  isRounded: false,
+  isThin: false,
+  isOutlined: false,
+  disabled: false,
+};
+
+Example.argTypes = {
+  size: {
+    options: ['is-small', 'is-medium', 'is-large', null],
+    control: {
+      type: 'select',
+    },
+  },
+
+  color: {
+    options: ['is-info', 'is-success', 'is-danger', 'is-warning', null],
+    control: {
+      type: 'select',
+    },
+  },
+
+  checked: {
+    control: {
+      type: 'boolean',
+    },
+  },
+
+  isRounded: {
+    control: {
+      type: 'boolean',
+    },
+  },
+
+  isThin: {
+    control: {
+      type: 'boolean',
+    },
+  },
+
+  isOutlined: {
+    control: {
+      type: 'boolean',
+    },
+  },
+
+  disabled: {
+    control: {
+      type: 'boolean',
+    },
+  },
 };

@@ -1,4 +1,3 @@
-import { boolean, select, number } from '@storybook/addon-knobs';
 import { html, TemplateResult } from 'lit-html';
 
 export default {
@@ -6,36 +5,74 @@ export default {
   component: 'bm-slider',
 };
 
-const sizes = {
-  small: 'is-small',
-  medium: 'is-medium',
-  large: 'is-large',
-  none: null,
-};
-
-const colors = {
-  success: 'is-success',
-  warning: 'is-warning',
-  danger: 'is-danger',
-  info: 'is-info',
-  none: null,
-};
-
-export const Example = (): TemplateResult => {
+export const Example = (props): TemplateResult => {
   return html`
     <bm-section class="story-center">
       <bm-field>
         <bm-slider
-          size="${select('Size', sizes, null)}"
-          step="${number('Step', 1)}"
-          min="${number('Min', 0)}"
-          max="${number('Max', 100)}"
-          value="${number('Value', 50)}"
-          color="${select('Color', colors, null)}"
-          is-circle="${boolean('Circle', false)}"
-          disabled="${boolean('Disabled', false)}"
+          size="${props.size}"
+          step="${props.step}"
+          min="${props.min}"
+          max="${props.max}"
+          value="${props.value}"
+          color="${props.color}"
+          is-circle="${props.isCircle}"
+          disabled="${props.disabled}"
         />
       </bm-field>
     </bm-section>
   `;
+};
+
+Example.args = {
+  size: null,
+  color: null,
+  isCircle: false,
+  disabled: false,
+  step: 1,
+  min: 0,
+  max: 100,
+  value: 50,
+};
+
+Example.argTypes = {
+  size: {
+    options: ['is-small', 'is-medium', 'is-large', null],
+    control: {
+      type: 'select',
+    },
+  },
+
+  color: {
+    options: ['is-info', 'is-success', 'is-danger', 'is-warning', null],
+    control: {
+      type: 'select',
+    },
+  },
+
+  isCircle: {
+    control: {
+      type: 'boolean',
+    },
+  },
+
+  disabled: {
+    control: {
+      type: 'boolean',
+    },
+  },
+
+  step: {
+    control: 'number',
+  },
+
+  min: {
+    control: 'number',
+  },
+  max: {
+    control: 'number',
+  },
+  value: {
+    control: 'number',
+  },
 };

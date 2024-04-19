@@ -1,4 +1,3 @@
-import { select, boolean } from '@storybook/addon-knobs';
 import { html, TemplateResult } from 'lit-html';
 
 export default {
@@ -6,37 +5,13 @@ export default {
   component: 'bm-navbar',
 };
 
-export const Example = (): TemplateResult => {
+export const Example = (props): TemplateResult => {
   return html`
     <bm-navbar
-      color="${select(
-        'Color',
-        {
-          'is-black': 'is-black',
-          'is-dark': 'is-dark',
-          'is-light': 'is-light',
-          'is-white': 'is-white',
-          'is-primary': 'is-primary',
-          'is-link': 'is-link',
-          'is-info': 'is-info',
-          'is-success': 'is-success',
-          'is-warning': 'is-warning',
-          'is-danger': 'is-danger',
-          'not set': null,
-        },
-        null
-      )}"
-      is-spaced="${boolean('Spaced', false)}"
-      is-transparent="${boolean('Transparent', false)}"
-      fixed-position="${select(
-        'Fixed position',
-        {
-          top: 'is-fixed-top',
-          bottom: 'is-fixed-bottom',
-          'Not fixed': null,
-        },
-        null
-      )}"
+      color="${props.color}"
+      is-spaced="${props.isSpaced}"
+      is-transparent="${props.isTransparent}"
+      fixed-position="${props.fixedPosition}"
     >
       <div class="navbar-brand">
         <a class="navbar-item" href="https://bulma.io">
@@ -88,4 +63,56 @@ export const Example = (): TemplateResult => {
       </div>
     </bm-navbar>
   `;
+};
+
+// 'is-black': 'is-black',
+// 'is-dark': 'is-dark',
+// 'is-light': 'is-light',
+// 'is-white': 'is-white',
+// 'is-primary': 'is-primary',
+// 'is-link': 'is-link',
+// 'is-info': 'is-info',
+// 'is-success': 'is-success',
+// 'is-warning': 'is-warning',
+// 'is-danger': 'is-danger',
+
+Example.args = { color: false, isSpaced: false, isTransparent: false, fixedPosition: null };
+
+Example.argTypes = {
+  color: {
+    options: [
+      'is-black',
+      'is-dark',
+      'is-light',
+      'is-white',
+      'is-primary',
+      'is-link',
+      'is-info',
+      'is-success',
+      'is-warning',
+      'is-danger',
+    ],
+    control: {
+      type: 'select',
+    },
+  },
+
+  isSpaced: {
+    control: {
+      type: 'boolean',
+    },
+  },
+
+  isTransparent: {
+    control: {
+      type: 'boolean',
+    },
+  },
+
+  fixedPosition: {
+    options: ['is-fixed-top', 'is-fixed-bottom', null],
+    control: {
+      type: 'select',
+    },
+  },
 };

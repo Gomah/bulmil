@@ -74,47 +74,57 @@ export namespace Components {
     | 'is-text'
     | 'is-ghost';
         /**
-          * Is disabled?
+          * Is disabled
          */
         "disabled": boolean;
         /**
           * Active state
+          * @default false
          */
         "isActive": boolean;
         /**
           * Focused state
+          * @default false
          */
         "isFocused": boolean;
         /**
           * Display the button in full-width
+          * @default false
          */
         "isFullwidth": boolean;
         /**
           * Hovered state
+          * @default false
          */
         "isHovered": boolean;
         /**
           * Is inverted
+          * @default false
          */
         "isInverted": boolean;
         /**
           * Is light
+          * @default false
          */
         "isLight": boolean;
         /**
           * Loading state
+          * @default false
          */
         "isLoading": boolean;
         /**
           * Is outlined
+          * @default false
          */
         "isOutlined": boolean;
         /**
           * Rounded button
+          * @default false
          */
         "isRounded": boolean;
         /**
           * Static
+          * @default false
          */
         "isStatic": boolean;
         /**
@@ -1132,47 +1142,57 @@ declare namespace LocalJSX {
     | 'is-text'
     | 'is-ghost';
         /**
-          * Is disabled?
+          * Is disabled
          */
         "disabled"?: boolean;
         /**
           * Active state
+          * @default false
          */
         "isActive"?: boolean;
         /**
           * Focused state
+          * @default false
          */
         "isFocused"?: boolean;
         /**
           * Display the button in full-width
+          * @default false
          */
         "isFullwidth"?: boolean;
         /**
           * Hovered state
+          * @default false
          */
         "isHovered"?: boolean;
         /**
           * Is inverted
+          * @default false
          */
         "isInverted"?: boolean;
         /**
           * Is light
+          * @default false
          */
         "isLight"?: boolean;
         /**
           * Loading state
+          * @default false
          */
         "isLoading"?: boolean;
         /**
           * Is outlined
+          * @default false
          */
         "isOutlined"?: boolean;
         /**
           * Rounded button
+          * @default false
          */
         "isRounded"?: boolean;
         /**
           * Static
+          * @default false
          */
         "isStatic"?: boolean;
         /**

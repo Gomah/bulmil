@@ -1,4 +1,3 @@
-import { select } from '@storybook/addon-knobs';
 import { html, TemplateResult } from 'lit-html';
 
 export default {
@@ -6,20 +5,24 @@ export default {
   component: 'bm-buttons',
 };
 
-const sizes = {
-  small: 'are-small',
-  medium: 'are-medium',
-  large: 'are-large',
-  none: null,
-};
-
-export const Example = (): TemplateResult => {
+export const Example = (props): TemplateResult => {
   return html`
     <bm-section class="story-center">
-      <bm-buttons size=${select('Size', sizes, null)}>
+      <bm-buttons size="${props.size}">
         <bm-button color="is-primary">Primary</bm-button>
         <bm-button color="is-danger">Danger</bm-button>
       </bm-buttons>
     </bm-section>
   `;
+};
+
+Example.args = { size: null };
+
+Example.argTypes = {
+  size: {
+    options: ['are-small', 'are-medium', 'are-large', null],
+    control: {
+      type: 'select',
+    },
+  },
 };

@@ -1,4 +1,3 @@
-import { select } from '@storybook/addon-knobs';
 import { html, TemplateResult } from 'lit-html';
 
 export default {
@@ -12,9 +11,9 @@ const sizes = {
   none: null,
 };
 
-export const Sizes = (): TemplateResult => {
+export const Sizes = (props): TemplateResult => {
   return html`
-    <bm-section size="${select('Size', sizes, null)}">
+    <bm-section size="${props.size}">
       <bm-container>
         <h1 class="title">Section</h1>
         <h2 class="subtitle">
@@ -24,4 +23,15 @@ export const Sizes = (): TemplateResult => {
       </bm-container>
     </bm-section>
   `;
+};
+
+Sizes.args = { size: null };
+
+Sizes.argTypes = {
+  size: {
+    options: ['is-medium', 'is-large', null],
+    control: {
+      type: 'select',
+    },
+  },
 };

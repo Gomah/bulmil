@@ -1,4 +1,3 @@
-import { select } from '@storybook/addon-knobs';
 import { html, TemplateResult } from 'lit-html';
 
 export default {
@@ -6,17 +5,10 @@ export default {
   component: 'bm-content',
 };
 
-const sizes = {
-  small: 'is-small',
-  medium: 'is-medium',
-  large: 'is-large',
-  none: null,
-};
-
-export const Sizes = (): TemplateResult => {
+export const Sizes = (props): TemplateResult => {
   return html`
     <bm-section class="story-center">
-      <bm-content size="${select('Size', sizes, null)}">
+      <bm-content size="${props.size}">
         <h1>Hello World</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices
@@ -39,4 +31,15 @@ export const Sizes = (): TemplateResult => {
       </bm-content>
     </bm-section>
   `;
+};
+
+Sizes.args = { size: null };
+
+Sizes.argTypes = {
+  size: {
+    options: ['is-small', 'is-medium', 'is-large', null],
+    control: {
+      type: 'select',
+    },
+  },
 };

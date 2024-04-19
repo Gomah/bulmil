@@ -1,4 +1,3 @@
-import { select } from '@storybook/addon-knobs';
 import { html, TemplateResult } from 'lit-html';
 
 export default {
@@ -6,34 +5,11 @@ export default {
   component: 'bm-message',
 };
 
-export const Example = (): TemplateResult => {
+export const Example = (props): TemplateResult => {
   return html`
     <bm-section>
       <bm-container>
-        <bm-message
-          color="${select(
-            'Color',
-            {
-              'is-dark': 'is-dark',
-              'is-primary': 'is-primary',
-              'is-link': 'is-link',
-              'is-info': 'is-info',
-              'is-success': 'is-success',
-              'is-warning': 'is-warning',
-              'is-danger': 'is-danger',
-            },
-            null
-          )}"
-          size="${select(
-            'Size',
-            {
-              'is-small': 'is-small',
-              'is-medium': 'is-medium',
-              'is-large': 'is-large',
-            },
-            null
-          )}"
-        >
+        <bm-message color="${props.color}" size="${props.size}">
           <div class="message-header">
             <p>Hello World</p>
             <button class="delete" aria-label="delete"></button>
@@ -50,6 +26,32 @@ export const Example = (): TemplateResult => {
       </bm-container>
     </bm-section>
   `;
+};
+
+Example.args = { color: null, size: null };
+
+Example.argTypes = {
+  color: {
+    options: [
+      'is-dark',
+      'is-primary',
+      'is-link',
+      'is-info',
+      'is-success',
+      'is-warning',
+      'is-danger',
+      null,
+    ],
+    control: {
+      type: 'select',
+    },
+  },
+  size: {
+    options: ['is-small', 'is-medium', 'is-large', null],
+    control: {
+      type: 'select',
+    },
+  },
 };
 
 export const Colors = (): TemplateResult => {

@@ -1,27 +1,15 @@
 import { html, TemplateResult } from 'lit-html';
-import { select } from '@storybook/addon-knobs';
 
 export default {
   title: 'Components/Panel',
   component: 'bm-panel',
 };
 
-// Knobs
-const colors: { [key: string]: string } = {
-  primary: 'is-primary',
-  link: 'is-link',
-  info: 'is-info',
-  success: 'is-success',
-  danger: 'is-danger',
-  warning: 'is-warning',
-  none: null,
-};
-
-export const Example = (): TemplateResult => {
+export const Example = (props): TemplateResult => {
   return html`
     <bm-section>
       <bm-container>
-        <bm-panel color="${select('Color', colors, null)}">
+        <bm-panel color="${props.color}">
           <p class="panel-heading">repositories</p>
           <div class="panel-block">
             <p class="control has-icons-left">
@@ -82,4 +70,15 @@ export const Example = (): TemplateResult => {
       </bm-container>
     </bm-section>
   `;
+};
+
+Example.args = { color: null };
+
+Example.argTypes = {
+  color: {
+    options: ['is-primary', 'is-link', 'is-info', 'is-success', 'is-danger', 'is-warning', null],
+    control: {
+      type: 'select',
+    },
+  },
 };

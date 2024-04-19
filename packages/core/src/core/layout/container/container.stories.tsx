@@ -1,4 +1,3 @@
-import { boolean, select } from '@storybook/addon-knobs';
 import { html, TemplateResult } from 'lit-html';
 
 export default {
@@ -12,14 +11,28 @@ const breakpoints = {
   none: null,
 };
 
-export const Example = (): TemplateResult => {
+export const Example = (props): TemplateResult => {
   return html`
-    <bm-container
-      class="story-center"
-      is-fluid=${boolean('Fluid', false)}
-      breakpoint=${select('Breakpoint', breakpoints, null)}
-    >
+    <bm-container class="story-center" is-fluid=${props.isFluid} breakpoint=${props.breakpoint}>
       Hello Container 👋
     </bm-container>
   `;
+};
+
+Example.args = {
+  isFluid: false,
+  breakpoint: null,
+};
+
+Example.argTypes = {
+  breakpoint: {
+    options: ['is-widescreen', 'is-fullhd', null],
+    control: {
+      type: 'select',
+    },
+  },
+
+  isFluid: {
+    control: 'boolean',
+  },
 };
